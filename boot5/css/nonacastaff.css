@@ -1,0 +1,517 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-color: rgb(248, 217, 179);
+}
+
+.sidenav{
+    width: 13%;
+    height: 100%;
+    position: fixed;
+    overflow-x: hidden;
+    border-radius: 0%;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: white;
+    color:black;
+    display: flex;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    scrollbar-width: 1px;
+    scrollbar-color: #0b53d9 transparent;
+    box-shadow: 0px 0px 20px rgba(1, 19, 50, 0.1);
+}
+
+.sidenav-items{
+    /* margin-top: 12%; */
+    list-style: none;
+    
+}
+.sidenav-items .first{
+    /* margin-top: 20px; */
+}
+.sidenav-items a{
+    text-decoration: none;
+    color: black;
+    display: block;
+    margin-top: 30px;
+    text-align: center;
+}
+.sidenav-items a p{
+    color: black;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 5px; 
+} 
+
+.sidebar-nav .nav-content {
+    padding: 5px 0 0 0;
+    margin: 0;
+    list-style: none;
+}
+
+.sidebar-nav .nav-content a {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 600;
+    color: #012970;
+    transition: 0.3;
+    padding: 5px 0 5px 10px;
+    transition: 0.3s;
+}
+
+.sidebar-nav .nav-content a i {
+    font-size: 6px;
+    margin-right: 8px;
+    line-height: 0;
+    border-radius: 50%;
+}
+  
+.sidebar-nav .nav-content a:hover,
+.sidebar-nav .nav-content a.active {
+    color: #4154f1;
+}
+
+/* id id id  */
+.id{
+    /* border: 1px solid blue; */
+    border-radius: 50px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    width: 60px;
+    padding: 2px 2px;
+    margin: auto;
+    background-color: rgb(5, 8, 49);
+}
+.id h1{
+    color: white;
+    text-align: center;
+    
+}
+
+.sidenav .name{
+    text-align: center;
+    color: black;
+    font-size: 14px;
+    font-family: cursive;
+    /* margin-top: -210px; */
+}
+.sidenav .name i{
+    font-size: 12px;
+    padding-top: -162px;
+}
+
+/* tabcontent tabcontent  */
+.tab-pane{
+    /* margin-top: 15px; */
+}
+.real{
+    margin-left: 14%;
+    background-color: white;
+    border-radius: 10px;
+    /* width: 100%; */
+    /* border: 1px solid black; */
+    /* height: 100%; */
+}
+table{
+    text-align: center;
+}
+
+/* view tasks view tasks view tasks view tasks  */
+
+table .taskstab{
+    text-align: justify;
+}
+
+table button{
+    background-color: rgb(255, 255, 255);
+}
+
+table .almost{
+    background-color: orange;
+}
+
+table .complete{
+    background-color: green;
+}
+
+
+
+/* attendance attendance */
+.navbar .nav-pills{
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    list-style-type: none;
+    gap: 5rem;
+}
+.navbar .nav-pills .nav-item{
+    justify-content: space-between;
+    margin: auto;
+    background-color: rgb(2, 2, 112);
+    padding: 8px;
+    border-radius: 10px;
+}
+nav .nav-pills .nav-item a{
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+
+
+.mytabcontent{
+    display: block;
+    /* transition: margin-left .5s; */
+    /* margin-left: 3%; */
+    /* margin-right: 10px; */
+}
+.navbar .nav-pills .nav-item .active{
+    padding: 0;
+    animation: none;
+    transform: none;
+    background-color: none;
+    background: none;
+    color: rgb(242, 152, 49);
+}
+
+.navbar .nav-pills .nav-item .active:hover{
+    cursor: pointer;
+    color: rgb(242, 152, 49);
+    padding: 5px ;
+    transform: none;
+    /* background-color: rgb(252, 246, 246); */
+}
+.navbar .nav-pills .nav-item:hover{
+    color: rgb(242, 152, 49);
+    padding: 5px;
+    transform: none;
+    /* background-color: rgb(252, 246, 246); */
+}
+
+
+.title{
+    /* border: 1px solid rgb(92, 92, 204); */
+    background-color: rgb(10, 10, 10);
+    color: white;
+    padding: 10px;
+    /* padding-top: 3px; */
+    margin-left: 1px;
+}
+.title h1{
+    font-size: 25px;
+}
+#g101 .table{
+    text-align: center;
+}
+/* #g101 .search{
+    float: right;
+    margin-right: 2%;
+}
+#g101 .search button{
+    margin-bottom: 4px;
+    outline: none;
+    padding: 5px;
+}
+#g101 .search input{
+    outline: none;
+} */
+
+/* search search  */
+.search-bar{
+    float: right;
+    margin: auto;
+    margin-right: 1%;
+}
+.search-bar input{
+    border: none;
+    background: none;
+    width: 210px;
+}
+.search-bar button{
+    border: none;
+    background: none;
+    margin-left: -25px;
+    /* z-index: 1; */
+}
+.search-bar form{
+    border: 1px solid rgb(220, 15, 15);
+    background-color: white;
+    width: 210px;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+/* work plan work plan  submitted form  */
+
+#workplan .filled .hero{
+    text-transform: uppercase;
+}
+#workplan .filled{
+    justify-content: center;
+    justify-self: center;
+    align-items: center;
+    margin: auto;
+    /* border: 2px solid white; */
+    background-color: rgb(171, 171, 173);
+    color: black;
+    border-radius: 5px;
+}
+
+#workplan .hero{
+    font-weight: bold;
+}
+/* work plan work plan  main form  */
+#workplan .title{
+    /* margin-top: 5px; */
+    margin-left: 1px;
+    font-weight: bolder;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#workplan .form p{
+    font-weight: bold;
+    font-size: 16px;
+    margin-left: 430px;
+    margin-top: 10px;
+}
+#workplan .form{
+    /* width: max-content; */
+    /* width: 1000px; */
+    justify-content: center;
+    /* margin: auto; */
+    padding: 5px;
+    /* background-color: rgb(157, 156, 156); */
+    /* border: 1px solid grey; */
+}
+
+#workplan .form label{
+    font-size: 14px;
+    font-weight: bold;
+    width: 400px;
+}
+#workplan .form textarea{
+    width: 400px;
+}
+
+#workplan .first{
+    margin-left: 15px;
+}
+#workplan .second{
+    margin-left: 150px;
+}
+
+/* workplan and report */
+#plus{
+    /* margin-left: -360px */
+    float: left;
+    margin-left: -30%;
+}
+/* only report */
+#weekly #plus,
+#monthly #plus{
+    margin-left: -42%;
+}
+
+
+.fa-plus{
+    color: navy;
+    font-size: 30px;
+    font-weight: bold;
+    background-color: rgb(245, 206, 159);
+    border-radius: 40px;
+    /* width: 20px; */
+    padding: 7px 8px 7px 8px;
+    text-align: center;
+    margin-top: 2px;
+    /* float: right; */
+}
+.submit{
+    margin-left: 450px;
+}
+.submit button{
+    padding-left: 18px;
+    padding-right: 18px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* Generate Report Generate Report  */
+#weekly .filled .hero,
+#monthly .filled .hero,
+#yearly .filled .hero{
+    text-transform: uppercase;
+}
+#weekly .filled,
+#monthly .filled,
+#yearly .filled{
+    justify-content: center;
+    justify-self: center;
+    align-items: center;
+    margin: auto;
+    /* border: 2px solid white; */
+    background-color: rgb(173, 171, 171);
+    color: black;
+    border-radius: 5px;
+}
+
+#weekly .hero,
+#monthly .hero,
+#yearly .hero{
+    font-weight: bold;
+}
+
+/* work plan work plan  main form  */
+#weekly .title,
+#monthly .title,
+#yearly .title{
+    /* margin-top: 5px; */
+    margin-left: 1px;
+    font-weight: bolder;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#weekly .form p,
+#monthly .form p,
+#yearly .form p{
+    font-weight: bold;
+    font-size: 16px;
+    margin-left: 430px;
+    margin-top: 10px;
+}
+#weekly .form,
+#monthly .form,
+#yearly .form{
+    /* width: max-content; */
+    /* width: 1000px; */
+    justify-content: center;
+    /* margin: auto; */
+    padding: 5px;
+    /* background-color: rgb(157, 156, 156); */
+    /* border: 1px solid grey; */
+}
+
+#weekly .form label,
+#monthly .form label,
+#yearly .form label{
+    font-size: 14px;
+    font-weight: bold;
+    width: 400px;
+}
+#weekly .form textarea,
+#monthly .form textarea,
+#yearly .form textarea{
+    width: 400px;
+}
+
+#weekly .first,
+#monthly .first,
+#yearly .first{
+    margin-left: 15px;
+}
+#weekly .second,
+#monthly .second,
+#yearly .second{
+    margin-left: 150px;
+}
+
+
+/* messages messages messages messages  */
+#messages{
+    padding: 5px;
+}
+#messages .select{
+    float: left;
+    margin-left: -35%;
+}
+#messages .select p{
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#messages .nav-tabs .select{
+    margin-top: 13px;
+}
+
+#messages .nav-tabs .nav-item{
+    border: none;
+    background: none;
+}
+#messages .nav-tabs .nav-item input{
+    font-weight: bold;
+}
+
+/* attendance attendance */
+#messages .navbar .nav-tabs{
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    list-style-type: disc;
+    gap: 5rem;
+}
+#messages .navbar .nav-tabs .nav-item{
+    justify-content: space-between;
+    margin: auto;
+    /* background-color: rgb(2, 2, 112); */
+    padding: 8px;
+    border-radius: 10px;
+}
+#messages .nav-tabs .nav-item a{
+    color: black;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+
+#messages .navbar .nav-tabs .nav-item .active{
+    padding: 0;
+    animation: none;
+    transform: none;
+    background-color: none;
+    background: none;
+    color: rgb(242, 152, 49);
+}
+
+#messages .navbar .nav-tabs .nav-item .active:hover{
+    cursor: pointer;
+    color: rgb(242, 152, 49);
+    padding: 5px ;
+    transform: none;
+    /* background-color: rgb(252, 246, 246); */
+}
+#messages .navbar .nav-tabs .nav-item:hover{
+    color: rgb(242, 152, 49);
+    padding: 5px;
+    transform: none;
+    /* background-color: rgb(252, 246, 246); */
+}
+
+
+/* view messages view messages view messages view messages view messages */
+#viewmsg .message-item{
+    border-top: 8px solid rgb(248, 217, 179);
+}
+#viewmsg .msg-list .name h1,
+#viewmsg .msg-list .name i{
+    font-size: 15px;
+    margin-left: 3%;
+}
+#viewmsg .msg{
+    padding: 5px;
+    height: fit-content;
+}
+#viewmsg .msg p{
+    width: 80%;
+    margin-left: 3%;
+}
+#viewmsg .msg span{
+    font-size: 12px;
+    float: right;
+    margin-right: 1%;
+    margin-top: -1%;
+}

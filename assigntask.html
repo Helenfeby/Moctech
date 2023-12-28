@@ -1,0 +1,457 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="boot5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="boot5/css/assigntasks.css">
+    <title>Assign Tasks</title>
+</head>
+<body>
+
+   <div>
+
+        <nav class="nav navbar">
+
+            <div class="title">
+                <h1>Assign Tasks </h1>
+
+                <div id="plus">
+                    <a href="#addtasks" class="collapsed list nav-link" data-bs-toggle="collapse" data-bs-target="#addtasks"><span class="fa fa-plus"></span></a>
+                </div>
+            </div>
+
+            <!-- <div class="col-3 search-bar">
+                <form class="search-form d-flex align-items-center" method="POST" action="#">
+                <input type="text" name="query" placeholder="Search..." title="Enter search keyword">
+                <button type="submit" title="Search"><i class="fa fa-search"></i></button>
+                </form>
+            </div> -->
+
+            <div class="cancel">
+                <button><a href="superadmin.html">Cancel</a></button>
+            </div>
+        </nav>
+
+        <div class="form">
+            <!-- <form action="">
+                <div class="row mt-4 form-group">
+                    <div class="col-5 first">
+                        <label class="form-label" for="type">Staff type</label>
+                        <select name="" id="">
+                            <option value="Academic">Academic Staff</option> 
+                            <option value="Non-Academic">Non-Academic Staff</option> 
+                        </select>
+                    </div>
+
+                    <div class="col-5 second">
+                        <label class="form-label" for="department">Department</label>
+                        <select name="" id="">
+                            <option value="None">None</option> 
+                            <option value="Administration">Administration</option> 
+                            <option value="General">General</option> 
+                            <option value="Engineering">Engineering</option> 
+                            <option value="Carpentery">Carpentery</option> 
+                            <option value="Welding">Welding</option> 
+                            <option value="Fashion Designing">Fashion Designing</option> 
+                        </select>
+                    </div>
+
+                </div>
+
+                <div class="row mt-2 form-group">
+                    <div class="col-5 first">
+                        <label class="form-label" for="designation">Designation</label>
+                        <select name="" id="">
+                            <option value="None">None</option> 
+                            <option value="Admin staff">Admin Staff</option> 
+                            <option value="Admin">Admin</option> 
+                            <option value="Lecturer">Lecturer</option> 
+                            <option value="Assistant Lecturer">Assistant Lecturer</option>  
+                            <option value="Driver">Driver</option>  
+                        </select>
+                    </div>
+
+                    <div class="col-5 second">
+                        <label class="form-label" for="name">Name</label>
+                        <select name="" id="name">
+                            <option value="Vincent Okoro">Vincent Okoro</option> 
+                            <option value="Stanely Ugwu">Stanely Ugwu</option> 
+                            <option value="Chioma Gold">Chioma Gold</option> 
+                            <option value="Sandra okene">Sandra okene</option> 
+                        </select>
+                    </div>
+
+                    
+                </div>
+            </form> -->
+        </div>
+
+        <div class="sessiontasks mt-5">
+            <!-- <div class="head mt-4">
+                <h1>Session- 2022-2023</h1>
+
+            </div> -->
+
+
+            <div class="tablebg">
+
+                <div class="head semes">
+                    <div class="onep">
+                        <p>1st Semester</p>
+                    </div>
+    
+                    <div class="twop">
+                        <p>Session- 2022-2023</p>
+                    </div>
+                </div>
+            
+                <!-- weekly table weekly table weekly table weekly table weekly table -->
+                <div class="table-responsive  wtasks">
+                    <table class="table table-bordered table-striped table-hover table-">
+                        <div class="head">
+                            <p>Add Weekly Tasks</p>
+    
+                            <div id="wplus">
+                                <a href="#addtasks" class="collapsed list nav-link" data-bs-toggle="collapse" data-bs-target="#addtasks"><span class="fa fa-plus"></span></a>
+                            </div>
+                        </div>
+                        
+                        
+                        <tr>
+                            <th>Week</th>
+                            <th>Date</th>
+                            <th>Time</th>
+                            <th>Venue</th>
+                            <th>Tasks</th>
+                            <th>Delete</th>
+                        </tr>
+    
+                        <tr class="tab-content plus" data-bs-target="#wplus" data-bs-parent="#wplus">
+                            <td class="nav-content collapse" id="addtasks"><input type="number"></td>
+                            <td class="nav-content collapse" id="addtasks"><input type="date"></td>
+                            <td class="nav-content collapse" id="addtasks"><input type="text"></td>
+                            <td class="nav-content collapse" id="addtasks"><input type="text"></td>
+                            <td class="nav-content collapse taskstab" id="addtasks"><span class="fa fa-circle"></span> <input type="text"></td>
+                            <td class="nav-content collapse" id="addtasks"><button>Save</button></td>
+                        </tr>
+                        
+                        <tr>
+                            <td>1</td>
+                            <td>22/05/23</td>
+                            <td>12.00pm - 2.30pm</td>
+                            <td>Odili Lecture Hall</td>
+                            <td class="taskstab"><span class="fa fa-circle"></span> RLT 203 Lecture</td>
+                            <td><button>Delete</button></td>
+                        </tr>
+    
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td><button>Foward</button></td>
+                        </tr>
+    
+                        
+    
+                        <!-- tabcontent for add new report -->
+                        <!-- <div class="tab-content plus" data-bs-target="#wplus" data-bs-parent="#wplus">
+                            <div class="nav-content collapse" id="addtasks">
+                                <table class="table table-bordered table-striped table-hover table-">
+    
+                                    <div class="form">
+                                        <form action="" class="container was-validated">
+                        
+                                            <tr>
+                                                <td><input type="number"></td>
+                                                <td><input type="date"></td>
+                                                <td><input type="time"></td>
+                                                <td><input type="text"></td>
+                                                <td class="taskstab"><span class="fa fa-circle"></span> <input type="text"></td>
+                                                <td><button>Save</button> <button>Delete</button></td>
+                                            </tr>
+                        
+                                        </form>
+                                    </div>
+                                </table>
+                            </div>
+                        </div> -->
+                    </table>
+    
+                    
+                </div>
+    
+                <!-- monthly table monthly table  monthly table  monthly table  -->
+                <div class="table-responsive  mtasks">
+                    <table class="table table-bordered table-striped table-hover table-">
+                        <div class="head mt-4">
+                            <p>Add Monthly Tasks</p>
+    
+                            <div id="mplus">
+                                <a href="#addmtasks" class="collapsed list nav-link" data-bs-toggle="collapse" data-bs-target="#addmtasks"><span class="fa fa-plus"></span></a>
+                            </div>
+                        </div>
+                        
+                        
+                        
+                        <tr>
+                            <th>Month</th>
+                            <th>Date</th>
+                            <th>Tasks</th>
+                            <th>Delete</th>
+                        </tr>
+    
+                        <tr class="tab-content plus" data-bs-target="#mplus" data-bs-parent="#mplus">
+                            <td class="nav-content collapse" id="addmtasks"><input type="month"></td>
+                            <td class="nav-content collapse" id="addmtasks"><input type="date"></td>
+                            <td class="nav-content collapse taskstab" id="addmtasks"><span class="fa fa-circle"></span> <input type="text"></td>
+                            <td class="nav-content collapse" id="addmtasks"><button>Save</button></td>
+                        </tr>
+    
+                        <tr>
+                            <td>January</td>
+                            <td>22/05/23</td>
+                            <td class="taskstab"><span class="fa fa-circle"></span> 1st Test</td>
+                            <td><button>Delete</button></td>
+                        </tr>
+    
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td><button>Foward</button></td>
+                        </tr>
+    
+                    </table>
+                </div>
+    
+                <!-- Semester Table Semester Table Semester Table Semester Table Semester Table -->
+                <div class="table-responsive  gtasks">
+                    <table class="table table-bordered table-striped table-hover table-">
+                        <div class="head mt-4">
+                            <p>Add General Tasks</p>
+    
+                            <div id="gplus">
+                                <a href="#addgtasks" class="collapsed list nav-link" data-bs-toggle="collapse" data-bs-target="#addgtasks"><span class="fa fa-plus"></span></a>
+                            </div>
+                        </div>
+                        
+                        <tr>
+                            <th>Session</th>
+                            <th>Date</th>
+                            <th>Tasks</th>
+                            <th>Delete </th>
+                        </tr>
+    
+                        <tr class="tab-content plus" data-bs-target="#gplus" data-bs-parent="#gplus">
+                            <td class="nav-content collapse" id="addgtasks"><input type="month"></td>
+                            <td class="nav-content collapse" id="addgtasks"><input type="date"></td>
+                            <td class="nav-content collapse taskstab" id="addgtasks"><span class="fa fa-circle"></span> <input type="text"></td>
+                            <td class="nav-content collapse" id="addgtasks"><button>Save</button></td>
+                        </tr>
+    
+    
+                        <tr>
+                            <td>2023-2024</td>
+                            <td>22/05/23</td>
+                            <td class="taskstab"><span class="fa fa-circle"></span> Completed Curriculum</td>
+                            <td><button>Delete</button></td>
+                        </tr>
+    
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td><button>Foward</button></td>
+                        </tr>
+                    </table>
+    
+                </div>
+            </div>
+    
+    
+            <div class="tablebg">
+    
+                <div class="head semes mt-4">
+                    <div class="onep">
+                        <p>2nd Semester</p>
+                    </div>
+    
+                    <div class="twop">
+                        <p>Session- 2022-2023</p>
+                    </div>
+                </div>
+            
+                <!-- weekly table weekly table weekly table weekly table weekly table -->
+                <div class="table-responsive  wtasks">
+                    <table class="table table-bordered table-striped table-hover table-">
+                        <div class="head">
+                            <p>Add Weekly Tasks</p>
+    
+                            <div id="wplus">
+                                <a href="#addtasks" class="collapsed list nav-link" data-bs-toggle="collapse" data-bs-target="#addtasks"><span class="fa fa-plus"></span></a>
+                            </div>
+                        </div>
+                        
+                        
+                        <tr>
+                            <th>Week</th>
+                            <th>Date</th>
+                            <th>Time</th>
+                            <th>Venue</th>
+                            <th>Tasks</th>
+                            <th>Delete</th>
+                        </tr>
+    
+                        <tr class="tab-content plus" data-bs-target="#wplus" data-bs-parent="#wplus">
+                            <td class="nav-content collapse" id="addtasks"><input type="number"></td>
+                            <td class="nav-content collapse" id="addtasks"><input type="date"></td>
+                            <td class="nav-content collapse" id="addtasks"><input type="text"></td>
+                            <td class="nav-content collapse" id="addtasks"><input type="text"></td>
+                            <td class="nav-content collapse taskstab" id="addtasks"><span class="fa fa-circle"></span> <input type="text"></td>
+                            <td class="nav-content collapse" id="addtasks"><button>Save</button></td>
+                        </tr>
+                        
+                        <tr>
+                            <td>1</td>
+                            <td>22/05/23</td>
+                            <td>12.00pm - 2.30pm</td>
+                            <td>Odili Lecture Hall</td>
+                            <td class="taskstab"><span class="fa fa-circle"></span> RLT 203 Lecture</td>
+                            <td><button>Delete</button></td>
+                        </tr>
+    
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td><button>Foward</button></td>
+                        </tr>
+                        
+    
+                        <!-- tabcontent for add new report -->
+                        <!-- <div class="tab-content plus" data-bs-target="#wplus" data-bs-parent="#wplus">
+                            <div class="nav-content collapse" id="addtasks">
+                                <table class="table table-bordered table-striped table-hover table-">
+    
+                                    <div class="form">
+                                        <form action="" class="container was-validated">
+                        
+                                            <tr>
+                                                <td><input type="number"></td>
+                                                <td><input type="date"></td>
+                                                <td><input type="time"></td>
+                                                <td><input type="text"></td>
+                                                <td class="taskstab"><span class="fa fa-circle"></span> <input type="text"></td>
+                                                <td><button>Save</button> <button>Delete</button></td>
+                                            </tr>
+                        
+                                        </form>
+                                    </div>
+                                </table>
+                            </div>
+                        </div> -->
+                    </table>
+    
+                    
+                </div>
+    
+                <!-- monthly table monthly table  monthly table  monthly table  -->
+                <div class="table-responsive  mtasks">
+                    <table class="table table-bordered table-striped table-hover table-">
+                        <div class="head mt-4">
+                            <p>Add Monthly Tasks</p>
+    
+                            <div id="mplus">
+                                <a href="#addmtasks" class="collapsed list nav-link" data-bs-toggle="collapse" data-bs-target="#addmtasks"><span class="fa fa-plus"></span></a>
+                            </div>
+                        </div>
+                        
+                        
+                        
+                        <tr>
+                            <th>Month</th>
+                            <th>Date</th>
+                            <th>Tasks</th>
+                            <th>Delete</th>
+                        </tr>
+    
+                        <tr class="tab-content plus" data-bs-target="#mplus" data-bs-parent="#mplus">
+                            <td class="nav-content collapse" id="addmtasks"><input type="month"></td>
+                            <td class="nav-content collapse" id="addmtasks"><input type="date"></td>
+                            <td class="nav-content collapse taskstab" id="addmtasks"><span class="fa fa-circle"></span> <input type="text"></td>
+                            <td class="nav-content collapse" id="addmtasks"><button>Save</button></td>
+                        </tr>
+    
+                        <tr>
+                            <td>January</td>
+                            <td>22/05/23</td>
+                            <td class="taskstab"><span class="fa fa-circle"></span> 1st Test</td>
+                            <td><button>Delete</button></td>
+                        </tr>
+    
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td><button>Foward</button></td>
+                        </tr>
+    
+                    </table>
+                </div>
+    
+                <!-- Semester Table Semester Table Semester Table Semester Table Semester Table -->
+                <div class="table-responsive  gtasks">
+                    <table class="table table-bordered table-striped table-hover table-">
+                        <div class="head mt-4">
+                            <p>Add General Tasks</p>
+    
+                            <div id="gplus">
+                                <a href="#addgtasks" class="collapsed list nav-link" data-bs-toggle="collapse" data-bs-target="#addgtasks"><span class="fa fa-plus"></span></a>
+                            </div>
+                        </div>
+                        
+                        <tr>
+                            <th>Session</th>
+                            <th>Date</th>
+                            <th>Tasks</th>
+                            <th>Delete </th>
+                        </tr>
+    
+                        <tr class="tab-content plus" data-bs-target="#gplus" data-bs-parent="#gplus">
+                            <td class="nav-content collapse" id="addgtasks"><input type="month"></td>
+                            <td class="nav-content collapse" id="addgtasks"><input type="date"></td>
+                            <td class="nav-content collapse taskstab" id="addgtasks"><span class="fa fa-circle"></span> <input type="text"></td>
+                            <td class="nav-content collapse" id="addgtasks"><button>Save</button></td>
+                        </tr>
+    
+    
+                        <tr>
+                            <td>2023-2024</td>
+                            <td>22/05/23</td>
+                            <td class="taskstab"><span class="fa fa-circle"></span> Completed Curriculum</td>
+                            <td><button>Delete</button></td>
+                        </tr>
+    
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td><button>Foward</button></td>
+                        </tr>
+                       
+                    </table>
+    
+                </div>
+            </div>
+        </div>
+   </div>
+    
+</body>
+<script src="boot5/js/all.js"></script>
+<script src="boot5/js/bootstrap.bundle.min.js"></script>
+<script src="boot5/js/jquery-3.2.1.min.js"></script>
+</html> 

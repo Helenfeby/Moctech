@@ -1,0 +1,78 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+
+.acastafflist{
+    background-color: rgb(191, 191, 193);
+}
+.navbar{
+    height: fit-content;
+    background-color: black;
+    color: white;
+}
+.title{
+    color: white;
+    margin-left: 2%;
+}
+.title h1{
+    font-size: 25px;
+    margin-left: 10px;
+}
+
+.cancel{
+    margin-right: 2%;
+}
+
+.cancel button{
+    background: none;
+    border: none;
+    color: white;
+}
+
+.cancel a{
+    text-decoration: none;
+    color: white;
+}
+
+/* search search  */
+.search-bar{
+    /* float: right; */
+    margin: auto;
+    margin-right: 1%;
+}
+.search-bar input{
+    border: none;
+    background: none;
+    width: 210px;
+}
+.search-bar button{
+    border: none;
+    background: none;
+    margin-left: -25px;
+    /* z-index: 1; */
+}
+.search-bar form{
+    border: 1px solid rgb(220, 15, 15);
+    background-color: white;
+    width: 210px;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+/* table table table table table */
+.table{
+    text-align: center;
+    background-color: white;
+    margin-top: 10px;
+}
+
+.table button{
+    border-radius: 5px;
+}
+
+.table button a{
+    text-decoration: none;
+    color: black;
+}
+

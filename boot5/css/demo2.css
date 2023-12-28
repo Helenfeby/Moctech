@@ -1,0 +1,261 @@
+@media only screen
+and (min-width:768px) and (max-width:1250px){
+    .navbar-brand{
+        display: none;
+    }
+
+    .navbar .collapse .navbar-nav{
+        justify-content: space-between;
+        /* display: flex; */
+        /* margin: auto; */
+        gap: 10rem;
+        width: 90%;
+        /* padding: 10px; */
+    }
+    
+    .navbar .collapse .navbar-nav .first{
+        margin-left: 5%;
+    }
+
+    .head{
+        padding: 5px;
+    }
+
+    .stats p{
+        font-size: 15px;
+        margin-top: 15px;
+        color: white;
+    }
+
+    .profile{
+        /* margin-right: 16%; */
+    }
+
+    .students{
+        width: 250px;
+        height: 200px;
+        border-radius: 2px;
+        margin-left: 10px;
+        margin-top: 10px;
+        background-color: rgb(58, 162, 166);    
+    }
+    
+    .courses{
+        width: 250px;
+        height: 200px;
+        border-radius: 2px;
+        margin-left: 10px;
+        margin-top: 10px;
+        background-color: rgb(56, 191, 196);
+    }
+    
+    .staff{
+        width: 250px;
+        height: 200px;
+        border-radius: 2px;
+        margin-left: 10px;
+        margin-top: 10px;
+        background-color: rgb(231, 186, 39);
+    }
+    
+    .reports{
+        width: 250px;
+        height: 200px;
+        border-radius: 2px;
+        margin-left: 10px;
+        margin-top: 10px;
+        background-color: rgb(231, 41, 41);
+    }
+
+    .block{
+        width: 150px;
+        height: 70px;
+    }
+    .block a{
+        font-size: 14px;
+    }
+    .up{
+        margin-top: 50px;
+    }
+    .down{
+        margin-top: 50px;
+    }
+}
+
+@media only screen
+and (min-width:1250px) and (max-width:1500px){
+    .navbar-brand{
+        display: none;
+    }
+
+    .navbar .collapse .navbar-nav{
+        justify-content: space-between;
+        /* display: flex; */
+        /* margin: auto; */
+        gap: 10rem;
+        width: 90%;
+        /* padding: 10px; */
+    }
+    
+    .navbar .collapse .navbar-nav .first{
+        margin-left: 5%;
+    }
+
+    .head{
+        padding: 5px;
+    }
+
+    .stats p{
+        font-size: 12px;
+        margin-top: 15px;
+        color: white;
+    }
+
+    .profile{
+        /* margin-right: 16%; */
+    }
+
+    .students{
+        width: 200px;
+        height: 200px;
+        border-radius: 2px;
+        margin-left: 10px;
+        margin-top: 10px;
+        background-color: rgb(58, 162, 166);    
+    }
+    
+    .courses{
+        width: 200px;
+        height: 200px;
+        border-radius: 2px;
+        margin-left: 10px;
+        margin-top: 10px;
+        background-color: rgb(56, 191, 196);
+    }
+    
+    .staff{
+        width: 200px;
+        height: 200px;
+        border-radius: 2px;
+        margin-left: 10px;
+        margin-top: 10px;
+        background-color: rgb(231, 186, 39);
+    }
+    
+    .reports{
+        width: 200px;
+        height: 200px;
+        border-radius: 2px;
+        margin-left: 10px;
+        margin-top: 10px;
+        background-color: rgb(231, 41, 41);
+    }
+    .block{
+        width: 200px;
+        height: 100px;
+    }
+    .block a{
+        font-size: 16px;
+    }
+    .up{
+        margin-top: 50px;
+    }
+    .down{
+        margin-top: 50px;
+    }
+}
+
+@media only screen
+and (min-width:1500px){
+    .navbar-brand{
+        display: none;
+    }
+
+    .navbar .collapse .navbar-nav{
+        justify-content: space-between;
+        /* display: flex; */
+        /* margin: auto; */
+        gap: 10rem;
+        width: 90%;
+        /* padding: 10px; */
+    }
+    
+    .navbar .collapse .navbar-nav .first{
+        margin-left: 5%;
+    }
+    
+    .sidenav-items a{
+        font-size: 20px;
+    }
+
+    h2{
+        font-size: 30px;
+    }
+    .head{
+        padding: 5px;
+    }
+
+
+    .head h1{
+        font-size: 25px;
+    }
+
+    .stats p{
+        font-size: 20px;
+        margin-top: 15px;
+        color: white;
+    }
+
+    .profile{
+        /* margin-right: 16%; */
+    }
+
+    .students{
+        width: 230px;
+        height: 200px;
+        border-radius: 2px;
+        /* margin-left: 12px; */
+        margin-top: 10px;
+        background-color: rgb(58, 162, 166);    
+    }
+    
+    .courses{
+        width: 230px;
+        height: 200px;
+        border-radius: 2px;
+        margin-left: 18px;
+        margin-top: 10px;
+        background-color: rgb(56, 191, 196);
+    }
+    
+    .staff{
+        width: 230px;
+        height: 200px;
+        border-radius: 2px;
+        margin-left: 18px;
+        margin-top: 10px;
+        background-color: rgb(231, 186, 39);
+    }
+    
+    .reports{
+        width: 230px;
+        height: 200px;
+        border-radius: 2px;
+        margin-left: 18px;
+        margin-top: 10px;
+        background-color: rgb(231, 41, 41);
+    }
+    .block{
+        width: 350px;
+        height: 200px;
+    }
+    .block a{
+        font-size: 22px;
+    }
+    .up{
+        margin-top: 50px;
+    }
+    .down{
+        margin-top: 50px;
+    }
+}

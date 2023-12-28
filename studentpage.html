@@ -1,0 +1,615 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./boot5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./boot5/css/studentpage.css">
+    <title>Student Page</title>
+</head>
+<body>
+    
+
+    <div class="sidenav flex-column list-group" id="mysidenav" role="tablist">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="sidenav-items">
+            
+
+            <div class="id mt-4">
+                <h1>G</h1>
+            </div>
+            <div class="name mt-3">
+                <p>Gerald Benson</p>
+                <i>MCE/012/65098</i>
+            </div>
+           
+            <a href="#dashboard" class="list nav-link active mt-5" data-bs-toggle="tab" data-bs-target="#dashboard"><p> Dashboard</p></a>
+            <a href="#tasks" class="list nav-link" data-bs-toggle="tab" data-bs-target="#tasks"><p> View Timetable</p></a>
+            <a href="#workplan" class="list nav-link" data-bs-toggle="tab" data-bs-target="#workplan"><p> View Work plan  </p></a>
+            <a href="#attendance" class="list nav-link" data-bs-toggle="tab" data-bs-target="#attendance"><p>Attendance</p></a>
+            <a href="#viewmsg" class="list nav-link" data-bs-toggle="tab" data-bs-target="#viewmsg"><p class="view">  Messages</p> <span class="badge bg-success badge-number">3</span></a>
+        </div>
+        
+    </div>
+
+    <div class="tab-content real" data-bs-target="sidenav">
+
+        <!-- active active  -->
+        <div class="tab-pane fade show active" id="dashboard">
+           <div class="navbar">
+                <span class="btn" onclick="openNav()"><i class="fa fa-bars"></i></span>
+
+                <div class="title">
+                    <h1>DashBoard</h1>
+                </div>
+           </div>
+
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam ad iusto consequatur atque suscipit nobis, id dolor rerum? Aliquid nihil laboriosam eius accusantium adipisci natus rem! Deleniti corrupti tempore quod.</p>
+        </div>
+
+        <!-- work plan workplan workplan workpla workplan workplan -->
+        <div class="tab-pane fade" id="workplan">
+
+            <nav class="nav navbar">
+                <span class="btn" onclick="openNav()"><i class="fa fa-bars"></i></span>
+
+                <div class="title">
+                    <h1>Work Plan </h1>
+                </div>
+
+
+               <div id="workplannav">
+                    <a href="#" class="collapsed list nav-link" data-bs-toggle="collapse" data-bs-target="#wpnav-item"><span class="fa fa-sort-down"></span></a>
+                    <ul id="wpnav-item" class="nav-content collapse">
+                        <li>
+                            <a href="#course1" class="list nav-link active" data-bs-toggle="tab" data-bs-target="#course1">Course 1</a>
+                        </li>
+                        <li>
+                            <a href="#course2" class="list nav-link" data-bs-toggle="tab" data-bs-target="#course2">Course 2</a>
+                        </li>
+                        <li>
+                            <a href="#course3" class="list nav-link" data-bs-toggle="tab" data-bs-target="#course3">Course 3</a>
+                        </li>
+                        <li>
+                            <a href="#course4" class="list nav-link" data-bs-toggle="tab" data-bs-target="#course4">Course 4</a>
+                        </li>
+                        
+                    </ul>
+               </div>
+            </nav>
+
+           
+            <div class="tab-content" data-bs-target="workplannav">
+
+                <!-- Already filled form work plan  course 1 course 1 course 1-->
+                <div class="tab-pane fade show active" id="course1">
+
+                    <div class="tab-pane fade show active" id="course1">
+
+                        <div class="row mt-2 filled">
+    
+                            <div class="col-12">
+                                <div class="row mt-4">
+                                    <div class="col-5 first">
+                                        <p class="hero">Week</p>
+                                        <p class="heroin">1</p>
+                                    </div>
+            
+                                    <div class="col-5 second">
+                                        <p class="hero">Date</p>
+                                        <p class="heroin">05/12/2023</p>
+                                    </div>
+                                </div>
+            
+                                <div class="row mt-2">
+                                    <div class="col-5 first">
+                                        <p class="hero">Course Code</p>
+                                        <p class="heroin">GST 101</p>
+                                    </div>
+            
+                                    <div class="col-5 second">
+                                        <p class="hero">Course Title</p>
+                                        <p class="heroin">Introduction to Technology</p>
+                                    </div>
+                                </div>
+            
+                                <div class="row mt-2">
+                                    <div class="col-5 first">
+                                        <p class="hero">NBTE Curriculum</p>
+                                        <p class="heroin">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+            
+                                    <div class="col-5 second">
+                                        <p class="hero">MOCTECH Course Outline</p>
+                                        <p class="heroin">Eius excepturi labore architecto molestiae expedita esse perspiciatis ipsa sit a rem. Libero repellendus dolorum et ab sint modi, iste totam fuga? Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                </div>
+            
+                                <div class="row mt-2">
+                                    <div class="col-5 first">
+                                        <p class="hero">Assignment Research</p>
+                                        <p class="heroin">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa temporibus cupiditate odio distinctio magnam sapiente reprehenderit voluptas adipisci, sunt nemo nobis ad aliquam, sint a rem harum quos hic blanditiis.</p>
+                                    </div>
+            
+                                    <div class="col-3 second">
+                                        <p class="hero">File</p>
+                                        <img src="" alt="">
+                                    </div>
+            
+                                    <div class="col-2">
+                                        <p class="hero">Work type</p>
+                                        <p>Theory</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <!-- <div class="row mt-2 filled">
+                            <div class="col-5 mt-2 first">
+                                <div class="">
+                                    <p class="hero">Week</p>
+                                    <p class="heroin">1</p>
+                                </div>
+                                
+                                <div class="">
+                                    <p class="hero">Course Code</p>
+                                    <p class="heroin">GST 101</p>
+                                </div>
+    
+                                <div class="">
+                                    <p class="hero">NBTE Curriculum</p>
+                                    <p class="heroin">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                </div>
+    
+                                <div class="">
+                                    <p class="hero">Assignment Research</p>
+                                    <p class="heroin">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa temporibus cupiditate odio distinctio magnam sapiente reprehenderit voluptas adipisci, sunt nemo nobis ad aliquam, sint a rem harum quos hic blanditiis.</p>
+                                </div>
+    
+                                <div class="">
+                                    <p class="hero">File</p>
+                                    <img src="" alt="">
+                                </div>
+        
+                            </div>
+        
+                            <div class="col-5 mt-2 second">
+                                
+                                <div class="">
+                                    <p class="hero">Date</p>
+                                    <p class="heroin">05/12/2023</p>
+                                </div>
+    
+                                <div class="">
+                                    <p class="hero">Course Title</p>
+                                    <p class="heroin">Introduction to Technology</p>
+                                </div>
+    
+                                <div class="">
+                                    <p class="hero">MOCTECH Course Outline</p>
+                                    <p class="heroin">Eius excepturi labore architecto molestiae expedita esse perspiciatis ipsa sit a rem. Libero repellendus dolorum et ab sint modi, iste totam fuga? Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                </div>
+        
+                                <div class="">
+                                    <p class="hero">Work type</p>
+                                    <p>Theory</p>
+                                </div>
+                            </div>
+                        </div> -->
+                    
+                    </div>
+                </div>
+
+            
+                <!-- Already filled form  -->
+                <div class="tab-pane fade" id="course2">
+                    <div class="row mt-2 filled">
+                        <div class="col-12">
+                            <div class="row mt-4">
+                                <div class="col-5">
+                                    <p class="hero">Week</p>
+                                    <p class="heroin">1</p>
+                                </div>
+        
+                                <div class="col-5 second">
+                                    <p class="hero">Date</p>
+                                    <p class="heroin">05/12/2023</p>
+                                </div>
+                            </div>
+        
+                            <div class="row mt-2">
+                                <div class="col-5 first">
+                                    <p class="hero">Course Code</p>
+                                    <p class="heroin">GST 101</p>
+                                </div>
+        
+                                <div class="col-5 second">
+                                    <p class="hero">Course Title</p>
+                                    <p class="heroin">Introduction to Technology</p>
+                                </div>
+                            </div>
+        
+                            <div class="row mt-2">
+                                <div class="col-5 first">
+                                    <p class="hero">NBTE Curriculum</p>
+                                    <p class="heroin">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat doloremque commodi ea placeat cumque id odit odio voluptatem in unde reiciendis ipsa, blanditiis quasi, voluptas dignissimos ratione doloribus eos dolorem.</p>
+                                </div>
+        
+                                <div class="col-5 second">
+                                    <p class="hero">MOCTECH Course Outline</p>
+                                    <p class="heroin">Eius excepturi labore architecto molestiae expedita esse perspiciatis ipsa sit a rem. Libero repellendus dolorum et ab sint modi, iste totam fuga?</p>
+                                </div>
+                            </div>
+        
+                            <div class="row mt-2">
+                                <div class="col-5 first">
+                                    <p class="hero">Assignment Research</p>
+                                    <p class="heroin">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa temporibus cupiditate odio distinctio magnam sapiente reprehenderit voluptas adipisci, sunt nemo nobis ad aliquam, sint a rem harum quos hic blanditiis. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi, aliquid similique exercitationem nam praesentium facilis veritatis eum eligendi. Aspernatur possimus illo dolor rerum doloribus dolorum nostrum odio quaerat deserunt autem.</p>
+                                </div>
+        
+                                <div class="col-3 second">
+                                    <p class="hero">File</p>
+                                    <img src="" alt="">
+                                </div>
+        
+                                <div class="col-2">
+                                    <p class="hero">Work type</p>
+                                    <p>Practicals</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Already filled form  -->
+                <div class="tab-pane fade" id="course3">
+                    <div class="row mt-2 filled">
+                        <div class="col-12">
+                            <div class="row mt-4">
+                                <div class="col-5">
+                                    <p class="hero">Week</p>
+                                    <p class="heroin">1</p>
+                                </div>
+        
+                                <div class="col-5 second">
+                                    <p class="hero">Date</p>
+                                    <p class="heroin">05/12/2023</p>
+                                </div>
+                            </div>
+        
+                            <div class="row mt-2">
+                                <div class="col-5 first">
+                                    <p class="hero">Course Code</p>
+                                    <p class="heroin">GST 101</p>
+                                </div>
+        
+                                <div class="col-5 second">
+                                    <p class="hero">Course Title</p>
+                                    <p class="heroin">Introduction to Technology</p>
+                                </div>
+                            </div>
+        
+                            <div class="row mt-2">
+                                <div class="col-5 first">
+                                    <p class="hero">NBTE Curriculum</p>
+                                    <p class="heroin">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat doloremque commodi ea placeat cumque id odit odio voluptatem in unde reiciendis ipsa, blanditiis quasi, voluptas dignissimos ratione doloribus eos dolorem.</p>
+                                </div>
+        
+                                <div class="col-5 second">
+                                    <p class="hero">MOCTECH Course Outline</p>
+                                    <p class="heroin">Eius excepturi labore architecto molestiae expedita esse perspiciatis ipsa sit a rem. Libero repellendus dolorum et ab sint modi, iste totam fuga?</p>
+                                </div>
+                            </div>
+        
+                            <div class="row mt-2">
+                                <div class="col-5 first">
+                                    <p class="hero">Assignment Research</p>
+                                    <p class="heroin">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa temporibus cupiditate odio distinctio magnam sapiente reprehenderit voluptas adipisci, sunt nemo nobis ad aliquam, sint a rem harum quos hic blanditiis. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi, aliquid similique exercitationem nam praesentium facilis veritatis eum eligendi. Aspernatur possimus illo dolor rerum doloribus dolorum nostrum odio quaerat deserunt autem.</p>
+                                </div>
+        
+                                <div class="col-3 second">
+                                    <p class="hero">File</p>
+                                    <img src="" alt="">
+                                </div>
+        
+                                <div class="col-2">
+                                    <p class="hero">Work type</p>
+                                    <p>Practicals</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Already filled form  -->
+                <div class="tab-pane fade" id="course4">
+                    <div class="row mt-2 filled">
+                        <div class="col-12">
+                            <div class="row mt-4">
+                                <div class="col-5">
+                                    <p class="hero">Week</p>
+                                    <p class="heroin">1</p>
+                                </div>
+        
+                                <div class="col-5 second">
+                                    <p class="hero">Date</p>
+                                    <p class="heroin">05/12/2023</p>
+                                </div>
+                            </div>
+        
+                            <div class="row mt-2">
+                                <div class="col-5 first">
+                                    <p class="hero">Course Code</p>
+                                    <p class="heroin">GST 101</p>
+                                </div>
+        
+                                <div class="col-5 second">
+                                    <p class="hero">Course Title</p>
+                                    <p class="heroin">Introduction to Technology</p>
+                                </div>
+                            </div>
+        
+                            <div class="row mt-2">
+                                <div class="col-5 first">
+                                    <p class="hero">NBTE Curriculum</p>
+                                    <p class="heroin">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat doloremque commodi ea placeat cumque id odit odio voluptatem in unde reiciendis ipsa, blanditiis quasi, voluptas dignissimos ratione doloribus eos dolorem.</p>
+                                </div>
+        
+                                <div class="col-5 second">
+                                    <p class="hero">MOCTECH Course Outline</p>
+                                    <p class="heroin">Eius excepturi labore architecto molestiae expedita esse perspiciatis ipsa sit a rem. Libero repellendus dolorum et ab sint modi, iste totam fuga?</p>
+                                </div>
+                            </div>
+        
+                            <div class="row mt-2">
+                                <div class="col-5 first">
+                                    <p class="hero">Assignment Research</p>
+                                    <p class="heroin">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa temporibus cupiditate odio distinctio magnam sapiente reprehenderit voluptas adipisci, sunt nemo nobis ad aliquam, sint a rem harum quos hic blanditiis. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi, aliquid similique exercitationem nam praesentium facilis veritatis eum eligendi. Aspernatur possimus illo dolor rerum doloribus dolorum nostrum odio quaerat deserunt autem.</p>
+                                </div>
+        
+                                <div class="col-3 second">
+                                    <p class="hero">File</p>
+                                    <img src="" alt="">
+                                </div>
+        
+                                <div class="col-2">
+                                    <p class="hero">Work type</p>
+                                    <p>Practicals</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+        <!-- Attendance Attendance Attendance Attendance Attendance -->
+        <div class="tab-pane fade" id="attendance">
+            <div class="navbar">
+                <span class="btn" onclick="openNav()"><i class="fa fa-bars"></i></span>
+
+               <div class="title">
+                    <h1>My Course Attendance</h1>
+               </div>
+            </div>
+            
+
+
+            <div class="tablediv">
+
+                <div class="row">
+                    <div class="col-lg-12">
+        
+                        <div class="table-responsive">
+                            <table class="table table-bordered table-striped table-hover table-">
+                                <tr>
+                                    <th>Reg course / Lectures</th>
+                                    <th>Lecture 1</th>
+                                    <th>Lecture 2</th>
+                                    <th>Lecture 3</th>
+                                    <th>Lecture 4</th>
+                                    <th>Lecture 5</th>
+                                    <th>Lecture 6</th>
+                                    <th>Lecture 7</th>
+                                    <th>Lecture 8</th>
+                                    <th>Progress Bar</th>
+                                    
+                                </tr>
+                                <tr>
+                                    <th>GST 102</th>
+                                    <td><input type="checkbox" name="check"></td>
+                                    <td><input type="checkbox" name="check"></td>
+                                    <td><input type="checkbox" name="check"></td>
+                                    <td><input type="checkbox" name="check"></td>
+                                    <td><input type="checkbox" name="check"></td>
+                                    <td><input type="checkbox" name="check"></td>
+                                    <td><input type="checkbox" name="check"></td>
+                                    <td><input type="checkbox" name="check"></td>
+                                    <!-- progress bar  -->
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <th>Course 2</th>
+                                    <td><input type="checkbox" name="check"></td>
+                                    <td><input type="checkbox" name="check"></td>
+                                    <td><input type="checkbox" name="check"></td>
+                                    <td><input type="checkbox" name="check"></td>
+                                    <td><input type="checkbox" name="check"></td>
+                                    <td><input type="checkbox" name="check"></td>
+                                    <td><input type="checkbox" name="check"></td>
+                                    <td><input type="checkbox" name="check"></td>
+                                    <!-- proress bar -->
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <th>Course 3</th>
+                                    <td><input type="checkbox" name="check"></td>
+                                    <td><input type="checkbox" name="check"></td>
+                                    <td><input type="checkbox" name="check"></td>
+                                    <td><input type="checkbox" name="check"></td>
+                                    <td><input type="checkbox" name="check"></td>
+                                    <td><input type="checkbox" name="check"></td>
+                                    <td><input type="checkbox" name="check"></td>
+                                    <td><input type="checkbox" name="check"></td>
+                                    <!-- proress bar -->
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <th>Course 4</th>
+                                    <td><input type="checkbox" name="check"></td>
+                                    <td><input type="checkbox" name="check"></td>
+                                    <td><input type="checkbox" name="check"></td>
+                                    <td><input type="checkbox" name="check"></td>
+                                    <td><input type="checkbox" name="check"></td>
+                                    <td><input type="checkbox" name="check"></td>
+                                    <td><input type="checkbox" name="check"></td>
+                                    <td><input type="checkbox" name="check"></td>
+                                    <!-- proress bar -->
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <th>Course 5</th>
+                                    <td><input type="checkbox" name="check"></td>
+                                    <td><input type="checkbox" name="check"></td>
+                                    <td><input type="checkbox" name="check"></td>
+                                    <td><input type="checkbox" name="check"></td>
+                                    <td><input type="checkbox" name="check"></td>
+                                    <td><input type="checkbox" name="check"></td>
+                                    <td><input type="checkbox" name="check"></td>
+                                    <td><input type="checkbox" name="check"></td>
+                                    <!-- proress bar -->
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <th>Course 6</th>
+                                    <td><input type="checkbox" name="check"></td>
+                                    <td><input type="checkbox" name="check"></td>
+                                    <td><input type="checkbox" name="check"></td>
+                                    <td><input type="checkbox" name="check"></td>
+                                    <td><input type="checkbox" name="check"></td>
+                                    <td><input type="checkbox" name="check"></td>
+                                    <td><input type="checkbox" name="check"></td>
+                                    <td><input type="checkbox" name="check"></td>
+                                    <!-- proress bar -->
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <th>Course 7</th>
+                                    <td><input type="checkbox" name="check"></td>
+                                    <td><input type="checkbox" name="check"></td>
+                                    <td><input type="checkbox" name="check"></td>
+                                    <td><input type="checkbox" name="check"></td>
+                                    <td><input type="checkbox" name="check"></td>
+                                    <td><input type="checkbox" name="check"></td>
+                                    <td><input type="checkbox" name="check"></td>
+                                    <td><input type="checkbox" name="check"></td>
+                                    <!-- proress bar -->
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <th>Course 8</th>
+                                    <td><input type="checkbox" name="check"></td>
+                                    <td><input type="checkbox" name="check"></td>
+                                    <td><input type="checkbox" name="check"></td>
+                                    <td><input type="checkbox" name="check"></td>
+                                    <td><input type="checkbox" name="check"></td>
+                                    <td><input type="checkbox" name="check"></td>
+                                    <td><input type="checkbox" name="check"></td>
+                                    <td><input type="checkbox" name="check"></td>
+                                    <!-- proress bar -->
+                                    <td></td>
+                                </tr>
+                               
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+
+        <!-- view messages view messages view messages view messages view messages -->
+
+        <div class="tab-pane fade" id="viewmsg">
+
+            <div class="navbar">
+                <div class="col-7 title">
+                    <h1>MESSAGES</h1>
+                </div>
+ 
+                <div class="col-3 search-bar">
+                    <form class="search-form d-flex align-items-center" method="POST" action="#">
+                        <input type="text" name="query" placeholder="Search..." title="Enter search keyword">
+                        <button type="submit" title="Search"><i class="fa fa-search"></i></button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="msg-list">
+
+
+                <div class="message-item">
+                    <div class="name mt-3">
+                        <ul>
+                            <li>
+                                <h1>Mr. Vincent Okoro</h1>
+                                <i>Academic Staff</i> <br> <br>
+                                <span>Message Type: Private</span>
+                            </li>
+                        </ul> <hr>
+                        
+                    </div>
+
+                    <div class="msg">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus consectetur illum, sapiente accusamus ipsam libero recusandae sint tempore doloremque eum non repellat. Nesciunt, perspiciatis molestiae eveniet beatae hic a dicta! Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, magnam nobis tempore velit ipsum temporibus iste modi quae vel, soluta quos ex non vitae dolorem accusantium. Eveniet magnam libero rem.</p>
+
+                        <span>Tuesday, 2.30pm</span>
+                    </div>
+                </div>
+
+                <div class="message-item">
+                    <div class="name mt-3">
+                        <ul>
+                            <li>
+                                <h1>Mrs. Rita Ugwu</h1>
+                                <i>Admin</i> <br> <br>
+                                <span>Message Type: General</span>
+                            </li>
+                        </ul> <hr>
+                        
+                    </div>
+
+                    <div class="msg">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus consectetur illum, sapiente accusamus ipsam libero recusandae sint tempore doloremque eum non repellat. Nesciunt, perspiciatis molestiae eveniet beatae hic a dicta! Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, magnam nobis tempore velit ipsum temporibus iste modi quae vel, soluta quos ex non vitae dolorem accusantium. Eveniet magnam libero rem.</p>
+
+                        <span>Tuesday, 2.30pm</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="./boot5/js/all.js"></script>
+<script src="./boot5/js/bootstrap.bundle.min.js"></script>
+<script src="./boot5/js/jquery-3.2.1.min.js"></script>
+<script>
+    function openNav() {
+        document.getElementById('mysidenav').style.width = '40%'
+        // document.getElementById('main').style.marginRight = '0%'
+        // document.getElementById('profile').style.marginRight = '40%'
+        // document.getElementById('navbar').style.marginRight = '40%'
+        // document.body.style.backgroundColor = 'rgb(61, 61, 61)'
+    }
+    function closeNav() {
+        document.getElementById('mysidenav').style.width = '0'
+        // document.getElementById('main').style.marginRight = '0'
+        // document.getElementById('profile').style.marginRight = '0'
+        // document.getElementById('navbar').style.marginRight = '0'
+        // document.body.style.backgroundColor = 'black'
+    }
+
+</script>
+</html>

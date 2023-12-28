@@ -1,0 +1,1583 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="boot5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="boot5/css/superadmin.css">
+    <title>SuperAdmin</title>
+</head>
+<body>
+
+    <div class="firstsection">
+        <h1>Device not supported</h1>
+    </div>
+     
+    <nav class="navbar navbar-expand-md navbar-expand-lg fixed-top">
+        <div class="container-fluid">
+            <h1 class="navbar-brand">SuperAdmin</h1>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="mynavbar">
+                <div class="navbar-nav">
+                    <div class="nav-item first">
+                        <a href="" class="nav-link"><i class="fa fa-home"></i> Home</a>
+                    </div>
+                    <div class="nav-item">
+                        <a href="" class="nav-link"><i class="fa fa-search"></i> Search</a>
+                    </div>
+                    <div class="nav-item">
+                        <a href="" class="nav-link"><i class="fa fa-chat"></i> Inbox</a>
+                    </div>
+                    
+                    <div class="nav-item profile">
+                        <a href="" class="nav-link"><i class="fa fa-user"></i> Profile</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    
+    <div class="start">
+        <div class="sidenav flex-column list-group" id="mysidenav" role="tablist">
+
+
+            <div class="sidenav-items">
+
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="#main" class="list nav-link active" data-bs-toggle="tab" data-bs-target="#main"><p> Overview</p></a>
+                <a href="#enroll" class="list nav-link" data-bs-toggle="tab" data-bs-target="#enroll"><p> Enrollment</p></a>
+                <a href="#" class="collapsed list nav-link" data-bs-toggle="collapse" data-bs-target="#report-nav"><p>Create Report <span class="dropdown-toggle"></span></p></a>
+                <ul id="report-nav" class="nav-content collapse" data-bs-parent="#sidebar-nav">
+                    <li>
+                        <a href="#weekly" data-bs-toggle="tab" data-bs-target="#weekly">Weekly</a>
+                    </li>
+                    <li>
+                        <a href="#monthly" data-bs-toggle="tab" data-bs-target="#monthly">Monthly</a>
+                    </li>
+                    <li>
+                        <a href="" data-bs-toggle="tab" data-bs-target="">Semester</a>
+                    </li>
+                    <li>
+                        <a href="" data-bs-toggle="tab" data-bs-target="">Session/Yearly</a>
+                    </li>
+                    <li>
+                        <a href="" data-bs-toggle="tab" data-bs-target="">General</a>
+                    </li>
+                </ul>
+                <a href="#staffstatus" class="list nav-link" data-bs-toggle="tab" data-bs-target="#staffstatus"><p> View Status</p></a>
+                <a href="#messages" class="list nav-link" data-bs-toggle="tab" data-bs-target="#messages"><p> Mails</p></a>
+                <a href="#settings" class="list nav-link" data-bs-toggle="tab" data-bs-target="#settings"><p> System Settings</p></a>
+                
+            </div>
+            
+        </div>
+        
+        <div class="tab-content real" data-target="#mysidenav">
+            
+            <!-- main  -->
+            <div class="tab-pane fade show active display" id="main">
+
+                <nav class="nav navbar navhead">
+                    <span class="btn" onclick="openNav()"><i class="fa fa-bars"></i></span>
+    
+                    <div class="title">
+                        <h1>MOCTECH MIS: SUPER ADMIN MODULE</h1>
+                    </div>
+                </nav><br><br><br><br>
+
+                <!-- <div class="head">
+                    <h1><span class="btn" onclick="openNav()"><i class="fa fa-bars"></i></span>
+                        <p>MOCTECH MIS: SUPER ADMIN MODULE</p>
+                    </h1>
+                </div><br><br><br><br> -->
+    
+                <h2>QUICK STATS</h2> 
+    
+                <div class="row stats justify-content-center">
+                    <div class="col-3 students">
+                        <div class="row">
+                            <div class="col-6">
+                                <p><span>394</span> <br> Total Students</p>
+                            </div>
+    
+                            <div class="col-2 settings">
+                                <button><a href=""><i class="fa fa-settings"></i></a></button>
+                            </div>
+    
+                            <div class="col-2 dropdown">
+                                <button><a href=""><i class="dropdown-toggle"></i></a></button>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="col-3 courses">
+                        <div class="row">
+                            <div class="col-6">
+                                <p><span>489</span> <br> Total Courses</p>
+                            </div>
+    
+                            <div class="col-2 settings">
+                                <button><a href=""><i class="fa fa-settings"></i></a></button>
+                            </div>
+    
+                            <div class="col-2 dropdown">
+                                <button><a href=""><i class="dropdown-toggle"></i></a></button>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="col-3 staff">
+                        <div class="row">
+                            <div class="col-6">
+                                <p><span>38</span><br> Total Staff</p>
+                            </div>
+    
+                            <div class="col-2 settings">
+                                <button><a href=""><i class="fa fa-settings"></i></a></button>
+                            </div>
+    
+                            <div class="col-2 dropdown">
+                                <button><a href=""><i class="dropdown-toggle"></i></a></button>
+                            </div>
+                        </div>
+                    </div>
+    
+    
+                    <div class="col-3 reports">
+                        <div class="row">
+                            <div class="col-6">
+                                <p><span>10468</span> <br> Admin Reports</p>
+                            </div>
+    
+                            <div class="col-2 settings">
+                                <button><a href=""><i class="fa fa-settings"></i></a></button>
+                            </div>
+    
+                            <div class="col-2 dropdown">
+                                <button><a href=""><i class="dropdown-toggle"></i></a></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- enroll -->
+            <div class="tab-pane fade" id="enroll">
+                
+                <nav class="nav navbar navhead">
+                    <span class="btn" onclick="openNav()"><i class="fa fa-bars"></i></span>
+    
+                    <div class="title">
+                        <h1>ENROLLMENT</h1>
+                    </div>
+                </nav><br><br><br>
+                
+
+                
+    
+                <div class="row">
+                    <div class=" col-3 block up">
+                        <a href=""><p>Admin</p></a>
+                    </div>
+                    
+                    <div class=" col-3 Astaff block up">
+                        <a href=""><p>Academic Staff</p></a>
+                    </div>
+                </div>
+    
+               <div class="row">
+                    <div class="col-3 Nastaff block down">
+                        <a href=""><p>Non-Academic Staff</p></a>
+                    </div>
+    
+                    <div class="col-3 Stuts block down">
+                        <a href=""><p>Students</p></a>
+                    </div>
+               </div>
+            </div>
+    
+            <!-- Generate report  -->
+            <div class="tab-pane fade move" id="weekly">
+    
+    
+                <nav class="nav navbar navhead">
+                    <span class="btn" onclick="openNav()"><i class="fa fa-bars"></i></span>
+    
+                    <div class="title">
+                        <h1>WEEKLY REPORT</h1>
+                    </div>
+    
+
+    
+                    <div id="wplus">
+                        <a href="#addreport" class="collapsed list nav-link" data-bs-toggle="collapse" data-bs-target="#addreport"><span class="fa fa-plus"></span></a>
+                    </div>
+    
+                   <div class="sortdown" id="wreport">
+                        <a href="#wreportnav-item" class="collapsed list nav-link" data-bs-toggle="collapse" data-bs-target="#wreportnav-item"><span class="fa fa-sort-down"></span></a>
+
+                        <ul  class="nav-content collapse" id="wreportnav-item">
+                            <li>
+                                <a href="#wlecturer" class="list nav-link active" data-bs-toggle="tab" data-bs-target="#wlecturer">Lecturers</a>
+                            </li>
+                            <li>
+                                <a href="#wnonacad" class="list nav-link" data-bs-toggle="tab" data-bs-target="#wnonacad">Non-Academic Staff</a>
+                            </li>
+                            <li>
+                                <a href="#wstudent" class="list nav-link" data-bs-toggle="tab" data-bs-target="#wstudent">Students</a>
+                            </li>
+                            <li>
+                                <a href="#wcourse4" class="list nav-link" data-bs-toggle="tab" data-bs-target="#wcourse4">Course 4</a>
+                            </li>
+                        </ul>
+                   </div>
+                </nav><br><br><br>
+
+                <!-- <div class="head">
+                    <h1><span class="btn" onclick="openNav()"><i class="fa fa-bars"></i></span>
+                        <p>ENROLLMENT</p>
+                    </h1>
+                </div> <br> -->
+                
+
+                
+
+                
+                
+                <!-- tabcontent for weekly nav bar tabcontent for weekly nav bar tabcontent for weekly nav bar -->
+                <div class="tab-content mytabcontent" data-bs-parent="#wreport">
+                    
+                    <!-- tabcontent for add new report -->
+                    <div class="tab-content mytabcontent plus" data-bs-target="#wplus" data-bs-parent="#wplus">
+                        <div class="nav-content collapse" id="addreport">
+                            <div class="form">
+                                <form action="" class="container was-validated">
+                
+                                    <p>GENERATE NEW WORK REPORT</p><hr>
+                                    <div class="row mt-4 form-group">
+                                        <div class="col-5 first">
+                                            <label class="form-label" for="week">Week</label>
+                                            <input type="number" id="week" required>
+                                        </div>
+                
+                                        <div class="col-5 second">
+                                            <label class="form-label" for="date">Date</label>
+                                            <input type="date" id="date" required>
+                                        </div>
+
+                                    </div>
+
+                
+                                    <div class="row mt-2 form-group">
+                                        <div class="col-5 first">
+                                            <label class="form-label" for="name">Name</label>
+                                            <input type="text" id="name" required>
+                                        </div>
+                
+                                        <div class="col-5 second">
+                                            <label class="form-label" for="designation">Designation</label>
+                                            <input type="text" id="designation" required>
+                                        </div>
+                                    </div>
+                
+                                    <div class="row mt-2 form-group">
+                                        <div class="col-5 first">
+                                            <label class="form-label" for="description">Description</label>
+                                            <input type="text" id="" required>
+                                        </div>
+                
+                                        <div class="col-5 mco second">
+                                            <label class="form-label" for="coutline">MOCTECH Course Outline</label>
+                                            <textarea name="" id="coutline" required></textarea>
+                                        </div>
+                                    </div>
+                
+                                    <div class="row mt-2 form-group">
+                                        <div class="col-5 first">
+                                            <label class="form-label" for="research">Report</label>
+                                            <textarea name="text" id="research" required></textarea>
+                                        </div>
+                
+                                        <div class="col-5 second attav">
+                                            <label class="form-label" for="file">Attendance Average</label><br>
+                                            <input type="text" id="attend" placeholder="Attendance/Total number">
+                                        </div>
+                                        
+                                    </div>
+
+                                    <div class="row mt-2 form-group">
+
+                                        <div class="col-5">
+                                            <label class="form-label" for="file">Upload</label><br>
+                                            <input type="file" id="upload">
+                                        </div>
+
+                                        <div class="col-5 second">
+                                            <label class="radio" for="">Work type <br>
+                                                <input type="radio" name="type" id="">Theory <br>
+                                                <input type="radio" name="type" id="">Practical
+                                            </label>
+                                        </div>
+                                    </div>
+                
+                                    <div class="submit">
+                                        <button>Save</button>
+                                    </div>
+                
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- weekly course 1 weekly course 1 -->
+                    <div class="tab-pane fade show active" id="wlecturer">
+    
+                        <!-- Already filled form  -->
+                        <div class="row mt-2 filled">
+                            <div class="col-12">
+                                <div class="row mt-4">
+                                    <div class="col-5 first">
+                                        <p class="hero">Week</p>
+                                        <p class="heroin">1</p>
+                                    </div>
+    
+                                    <div class="col-5 second">
+                                        <p class="hero">Date</p>
+                                        <p class="heroin">05/12/2023</p>
+                                    </div>
+    
+                                    
+                                </div>
+    
+                                <div class="row mt-1">
+                                    <div class="col-5 first">
+                                        <p class="hero">Course Code</p>
+                                        <p class="heroin">GST 101</p>
+                                    </div>
+    
+                                    <div class="col-5 second">
+                                        <p class="hero">Course Title</p>
+                                        <p class="heroin">Introduction to Technology</p>
+                                    </div>
+                                </div>
+    
+                                <div class="row mt-1">
+                                    <div class="col-5 first">
+                                        <p class="hero">NBTE Curriculum</p>
+                                        <p class="heroin">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+    
+                                    <div class="col-5 second mco">
+                                        <p class="hero">MOCTECH Course Outline</p>
+                                        <p class="heroin">Eius excepturi labore architecto molestiae expedita esse perspiciatis ipsa sit a rem. Libero repellendus dolorum et ab sint modi, iste totam fuga? Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis quidem iusto neque eum, voluptatum unde earum distinctio ipsam fuga sed! Officiis provident incidunt assumenda consequatur aliquid ea accusantium, alias ut.</p>
+                                    </div>
+                                </div>
+    
+                                <div class="row mt-1">
+                                    <div class="col-5 first">
+                                        <p class="hero">Work Report</p>
+                                        <p class="heroin">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa temporibus cupiditate odio distinctio magnam sapiente reprehenderit voluptas adipisci, sunt nemo nobis ad aliquam, sint a rem harum quos hic blanditiis.</p>
+                                    </div>
+            
+                                    <div class="col-5 second">
+                                        <p class="hero">Attendance Average</p>
+                                        <p class="heroin">12/30</p>
+                                    </div>
+            
+                                    
+                                </div>
+    
+                                <div class="row mt-1">
+    
+                                    <div class="col-5 first">
+                                        <p class="hero">File</p>
+                                        <img src="" alt="">
+                                    </div>
+    
+                                    <div class="col-5 second">
+                                        <p class="hero">Work type</p>
+                                        <p>Theory</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                       
+                       
+                    </div>
+    
+                    <!-- weekly course 2 weekly course 2 -->
+                    <div class="tab-pane fade" id="wnonacad">
+    
+                        <!-- Already filled form  -->
+                        <div class="row mt-2 filled">
+                            <div class="col-12">
+                                <div class="row mt-4">
+                                    <div class="col-5 first">
+                                        <p class="hero">Week</p>
+                                        <p class="heroin">2</p>
+                                    </div>
+    
+                                    <div class="col-5 second">
+                                        <p class="hero">Date</p>
+                                        <p class="heroin">05/12/2023</p>
+                                    </div>
+    
+                                    
+                                </div>
+    
+                                <div class="row mt-1">
+                                    <div class="col-5 first">
+                                        <p class="hero">Course Code</p>
+                                        <p class="heroin">GST 101</p>
+                                    </div>
+    
+                                    <div class="col-5 second">
+                                        <p class="hero">Course Title</p>
+                                        <p class="heroin">Introduction to Technology</p>
+                                    </div>
+                                </div>
+    
+                                <div class="row mt-1">
+                                    <div class="col-5 first">
+                                        <p class="hero">NBTE Curriculum</p>
+                                        <p class="heroin">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+    
+                                    <div class="col-5 second mco">
+                                        <p class="hero">MOCTECH Course Outline</p>
+                                        <p class="heroin">Eius excepturi labore architecto molestiae expedita esse perspiciatis ipsa sit a rem. Libero repellendus dolorum et ab sint modi, iste totam fuga? Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis quidem iusto neque eum, voluptatum unde earum distinctio ipsam fuga sed! Officiis provident incidunt assumenda consequatur aliquid ea accusantium, alias ut.</p>
+                                    </div>
+                                </div>
+    
+                                <div class="row mt-1">
+                                    <div class="col-5 first">
+                                        <p class="hero">Work Report</p>
+                                        <p class="heroin">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa temporibus cupiditate odio distinctio magnam sapiente reprehenderit voluptas adipisci, sunt nemo nobis ad aliquam, sint a rem harum quos hic blanditiis.</p>
+                                    </div>
+            
+                                    <div class="col-5 second">
+                                        <p class="hero">Attendance Average</p>
+                                        <p class="heroin">12/30</p>
+                                    </div>
+            
+                                    
+                                </div>
+    
+                                <div class="row mt-1">
+    
+                                    <div class="col-5 first">
+                                        <p class="hero">File</p>
+                                        <img src="" alt="">
+                                    </div>
+    
+                                    <div class="col-5 second">
+                                        <p class="hero">Work type</p>
+                                        <p>Theory</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                       
+                       
+                    </div>
+    
+                    <!-- weekly course 3 weekly course 3 -->
+                    <div class="tab-pane fade" id="wstudent">
+    
+                        <!-- Already filled form  -->
+                        <div class="row mt-2 filled">
+                            <div class="col-12">
+                                <div class="row mt-4">
+                                    <div class="col-5 first">
+                                        <p class="hero">Week</p>
+                                        <p class="heroin">3</p>
+                                    </div>
+    
+                                    <div class="col-5 second">
+                                        <p class="hero">Date</p>
+                                        <p class="heroin">05/12/2023</p>
+                                    </div>
+    
+                                    
+                                </div>
+    
+                                <div class="row mt-1">
+                                    <div class="col-5 first">
+                                        <p class="hero">Course Code</p>
+                                        <p class="heroin">GST 101</p>
+                                    </div>
+    
+                                    <div class="col-5 second">
+                                        <p class="hero">Course Title</p>
+                                        <p class="heroin">Introduction to Technology</p>
+                                    </div>
+                                </div>
+    
+                                <div class="row mt-1">
+                                    <div class="col-5 first">
+                                        <p class="hero">NBTE Curriculum</p>
+                                        <p class="heroin">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+    
+                                    <div class="col-5 second mco">
+                                        <p class="hero">MOCTECH Course Outline</p>
+                                        <p class="heroin">Eius excepturi labore architecto molestiae expedita esse perspiciatis ipsa sit a rem. Libero repellendus dolorum et ab sint modi, iste totam fuga? Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis quidem iusto neque eum, voluptatum unde earum distinctio ipsam fuga sed! Officiis provident incidunt assumenda consequatur aliquid ea accusantium, alias ut.</p>
+                                    </div>
+                                </div>
+    
+                                <div class="row mt-1">
+                                    <div class="col-5 first">
+                                        <p class="hero">Work Report</p>
+                                        <p class="heroin">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa temporibus cupiditate odio distinctio magnam sapiente reprehenderit voluptas adipisci, sunt nemo nobis ad aliquam, sint a rem harum quos hic blanditiis.</p>
+                                    </div>
+            
+                                    <div class="col-5 second">
+                                        <p class="hero">Attendance Average</p>
+                                        <p class="heroin">12/30</p>
+                                    </div>
+            
+                                    
+                                </div>
+    
+                                <div class="row mt-1">
+    
+                                    <div class="col-5 first">
+                                        <p class="hero">File</p>
+                                        <img src="" alt="">
+                                    </div>
+    
+                                    <div class="col-5 second">
+                                        <p class="hero">Work type</p>
+                                        <p>Theory</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                       
+                       
+                    </div>
+    
+                    <!-- weekly course 4 weekly course 4 -->
+                    <div class="tab-pane fade" id="wcourse4">
+    
+                        <!-- Already filled form  -->
+                        <div class="row mt-2 filled">
+                            <div class="col-12">
+                                <div class="row mt-4">
+                                    <div class="col-5 first">
+                                        <p class="hero">Week</p>
+                                        <p class="heroin">4</p>
+                                    </div>
+    
+                                    <div class="col-5 second">
+                                        <p class="hero">Date</p>
+                                        <p class="heroin">05/12/2023</p>
+                                    </div>
+    
+                                    
+                                </div>
+    
+                                <div class="row mt-1">
+                                    <div class="col-5 first">
+                                        <p class="hero">Course Code</p>
+                                        <p class="heroin">GST 101</p>
+                                    </div>
+    
+                                    <div class="col-5 second">
+                                        <p class="hero">Course Title</p>
+                                        <p class="heroin">Introduction to Technology</p>
+                                    </div>
+                                </div>
+    
+                                <div class="row mt-1">
+                                    <div class="col-5 first">
+                                        <p class="hero">NBTE Curriculum</p>
+                                        <p class="heroin">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+    
+                                    <div class="col-5 second mco">
+                                        <p class="hero">MOCTECH Course Outline</p>
+                                        <p class="heroin">Eius excepturi labore architecto molestiae expedita esse perspiciatis ipsa sit a rem. Libero repellendus dolorum et ab sint modi, iste totam fuga? Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis quidem iusto neque eum, voluptatum unde earum distinctio ipsam fuga sed! Officiis provident incidunt assumenda consequatur aliquid ea accusantium, alias ut.</p>
+                                    </div>
+                                </div>
+    
+                                <div class="row mt-1">
+                                    <div class="col-5 first">
+                                        <p class="hero">Work Report</p>
+                                        <p class="heroin">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa temporibus cupiditate odio distinctio magnam sapiente reprehenderit voluptas adipisci, sunt nemo nobis ad aliquam, sint a rem harum quos hic blanditiis.</p>
+                                    </div>
+            
+                                    <div class="col-5 second">
+                                        <p class="hero">Attendance Average</p>
+                                        <p class="heroin">12/30</p>
+                                    </div>
+            
+                                    
+                                </div>
+    
+                                <div class="row mt-1">
+    
+                                    <div class="col-5 first">
+                                        <p class="hero">File</p>
+                                        <img src="" alt="">
+                                    </div>
+    
+                                    <div class="col-5 second">
+                                        <p class="hero">Work type</p>
+                                        <p>Theory</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                       
+                       
+                    </div>
+                    
+                </div>
+                
+            </div>
+
+            <!-- generate report generate report  -->
+            <!-- Monthly Monthly Monthly  -->
+            <div class="tab-pane fade move" id="monthly">
+    
+                <nav class="nav navbar navhead">
+                    <span class="btn" onclick="openNav()"><i class="fa fa-bars"></i></span>
+    
+                    <div class="title">
+                        <h1>MONTHLY REPORT </h1>
+                    </div>
+    
+                    <!-- <div class="col-3 search-bar">
+                        <form class="search-form d-flex align-items-center" method="POST" action="#">
+                          <input type="text" name="query" placeholder="Search..." title="Enter search keyword">
+                          <button type="submit" title="Search"><i class="fa fa-search"></i></button>
+                        </form>
+                    </div> -->
+    
+                    <div id="mplus">
+                        <a href="#addreport" class="collapsed list nav-link" data-bs-toggle="collapse" data-bs-target="#addreport"><span class="fa fa-plus"></span></a>
+                    </div>
+    
+                   <div class="sortdown" id="mreport">
+                        <a href="#" class="collapsed list nav-link" data-bs-toggle="collapse" data-bs-target="#mreportnav-item"><span class="fa fa-sort-down"></span></a>
+                        <ul id="mreportnav-item" class="nav-content collapse">
+                            <li>
+                                <a href="#mcourse1" class="list nav-link active" data-bs-toggle="tab" data-bs-target="#mcourse1">Lecturers</a>
+                            </li>
+                            <li>
+                                <a href="#mcourse2" class="list nav-link" data-bs-toggle="tab" data-bs-target="#mcourse2">Non-academic Staff</a>
+                            </li>
+                            <li>
+                                <a href="#mcourse3" class="list nav-link" data-bs-toggle="tab" data-bs-target="#mcourse3">Students</a>
+                            </li>
+                            <li>
+                                <a href="#mcourse4" class="list nav-link" data-bs-toggle="tab" data-bs-target="#mcourse4">Course 4</a>
+                            </li>
+                           
+                        </ul>
+                   </div>
+                </nav><br><br><br>
+    
+                
+                <!-- tabcontent for weekly nav bar tabcontent for weekly nav bar tabcontent for weekly nav bar -->
+                <div class="tab-content mytabcontent" data-target="#mreport">
+    
+                    <!-- tabcontent for add new report -->
+                    <div class="tab-content mytabcontent plus" data-bs-target="#mplus" data-bs-parent="#mplus">
+                        <div class="nav-content collapse" id="addreport">
+                            <div class="form">
+                                <form action="" class="container was-validated">
+                
+                                    <p>GENERATE NEW WORK REPORT</p><hr>
+                                    <div class="row mt-4 form-group"> 
+                                        <div class="col-5 first">
+                                            <label class="form-label" for="month">Month</label>
+                                            <input type="month" id="month" required>
+                                        </div>
+                
+                                        <div class="col-5 second">
+                                            <label class="form-label" for="date">Date</label>
+                                            <input type="date" id="date" required>
+                                        </div>
+    
+                                    </div>
+    
+                
+                                    <div class="row mt-2 form-group">
+                                        <div class="col-5 first">
+                                            <label class="form-label" for="course Code">Course Code</label>
+                                            <input type="text" id="ccode" required>
+                                        </div>
+                
+                                        <div class="col-5 second">
+                                            <label class="form-label" for="Course Title">Course Title</label>
+                                            <input type="text" id="ctitle" required>
+                                        </div>
+                                    </div>
+                
+                                    <div class="row mt-2 form-group">
+                                        <div class="col-5 first">
+                                            <label class="form-label" for="NBTE">NBTE Curriculum</label>
+                                            <textarea name="" id="" required></textarea>
+                                        </div>
+                
+                                        <div class="col-5 mco second">
+                                            <label class="form-label" for="coutline">MOCTECH Course Outline</label>
+                                            <textarea name="" id="coutline" required></textarea>
+                                        </div>
+                                    </div>
+                
+                                    <div class="row mt-2 form-group">
+                                        <div class="col-5 first">
+                                            <label class="form-label" for="research">Work Report</label>
+                                            <textarea name="text" id="research" required></textarea>
+                                        </div>
+                
+                                        <div class="col-5 second attav">
+                                            <label class="form-label" for="file">Attendance Average</label><br>
+                                            <input type="text" id="attend" placeholder="Attendance/Total number">
+                                        </div>
+                                        
+                                    </div>
+    
+                                    <div class="row mt-2 form-group">
+    
+                                        <div class="col-5">
+                                            <label class="form-label" for="file">Upload</label><br>
+                                            <input type="file" id="upload">
+                                        </div>
+    
+                                        <div class="col-5 second">
+                                            <label class="radio" for="">Work type <br>
+                                                <input type="radio" name="type" id="">Theory <br>
+                                                <input type="radio" name="type" id="">Practical
+                                            </label>
+                                        </div>
+                                    </div>
+                
+                                    <div class="submit">
+                                        <button>Save</button>
+                                    </div>
+                
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    
+    
+                    <!-- monthlyly course 1 monthlyly course 1 -->
+                    <div class="tab-pane fade show active" id="mcourse1">
+    
+                        <!-- Already filled form  -->
+                        <div class="row mt-2 filled">
+                            <div class="col-12">
+                                <div class="row mt-4">
+                                    <div class="col-5 first">
+                                        <p class="hero">Month</p>
+                                        <p class="heroin">March</p>
+                                    </div>
+    
+                                    <div class="col-5 second">
+                                        <p class="hero">Date</p>
+                                        <p class="heroin">05/12/2023</p>
+                                    </div>
+    
+                                    
+                                </div>
+    
+                                <div class="row mt-1">
+                                    <div class="col-5 first">
+                                        <p class="hero">Course Code</p>
+                                        <p class="heroin">GST 101</p>
+                                    </div>
+    
+                                    <div class="col-5 second">
+                                        <p class="hero">Course Title</p>
+                                        <p class="heroin">Introduction to Technology</p>
+                                    </div>
+                                </div>
+    
+                                <div class="row mt-1">
+                                    <div class="col-5 first">
+                                        <p class="hero">NBTE Curriculum</p>
+                                        <p class="heroin">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+    
+                                    <div class="col-5 second mco">
+                                        <p class="hero">MOCTECH Course Outline</p>
+                                        <p class="heroin">Eius excepturi labore architecto molestiae expedita esse perspiciatis ipsa sit a rem. Libero repellendus dolorum et ab sint modi, iste totam fuga? Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis quidem iusto neque eum, voluptatum unde earum distinctio ipsam fuga sed! Officiis provident incidunt assumenda consequatur aliquid ea accusantium, alias ut.</p>
+                                    </div>
+                                </div>
+    
+                                <div class="row mt-1">
+                                    <div class="col-5 first">
+                                        <p class="hero">Work Report</p>
+                                        <p class="heroin">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa temporibus cupiditate odio distinctio magnam sapiente reprehenderit voluptas adipisci, sunt nemo nobis ad aliquam, sint a rem harum quos hic blanditiis.</p>
+                                    </div>
+            
+                                    <div class="col-5 second">
+                                        <p class="hero">Attendance Average</p>
+                                        <p class="heroin">12/30</p>
+                                    </div>
+            
+                                    
+                                </div>
+    
+                                <div class="row mt-1">
+    
+                                    <div class="col-5 first">
+                                        <p class="hero">File</p>
+                                        <img src="" alt="">
+                                    </div>
+    
+                                    <div class="col-5 second">
+                                        <p class="hero">Work type</p>
+                                        <p>Theory</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                       
+                       
+                    </div>
+    
+                    <!-- monthlyly course 2 monthlyly course 2 -->
+                    <div class="tab-pane fade" id="mcourse2">
+    
+                        <!-- Already filled form  -->
+                        <div class="row mt-2 filled">
+                            <div class="col-12">
+                                <div class="row mt-4">
+                                    <div class="col-5 first">
+                                        <p class="hero">monthly</p>
+                                        <p class="heroin">May</p>
+                                    </div>
+    
+                                    <div class="col-5 second">
+                                        <p class="hero">Date</p>
+                                        <p class="heroin">05/12/2023</p>
+                                    </div>
+    
+                                    
+                                </div>
+    
+                                <div class="row mt-1">
+                                    <div class="col-5 first">
+                                        <p class="hero">Course Code</p>
+                                        <p class="heroin">GST 101</p>
+                                    </div>
+    
+                                    <div class="col-5 second">
+                                        <p class="hero">Course Title</p>
+                                        <p class="heroin">Introduction to Technology</p>
+                                    </div>
+                                </div>
+    
+                                <div class="row mt-1">
+                                    <div class="col-5 first">
+                                        <p class="hero">NBTE Curriculum</p>
+                                        <p class="heroin">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+    
+                                    <div class="col-5 second mco">
+                                        <p class="hero">MOCTECH Course Outline</p>
+                                        <p class="heroin">Eius excepturi labore architecto molestiae expedita esse perspiciatis ipsa sit a rem. Libero repellendus dolorum et ab sint modi, iste totam fuga? Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis quidem iusto neque eum, voluptatum unde earum distinctio ipsam fuga sed! Officiis provident incidunt assumenda consequatur aliquid ea accusantium, alias ut.</p>
+                                    </div>
+                                </div>
+    
+                                <div class="row mt-1">
+                                    <div class="col-5 first">
+                                        <p class="hero">Work Report</p>
+                                        <p class="heroin">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa temporibus cupiditate odio distinctio magnam sapiente reprehenderit voluptas adipisci, sunt nemo nobis ad aliquam, sint a rem harum quos hic blanditiis.</p>
+                                    </div>
+            
+                                    <div class="col-5 second">
+                                        <p class="hero">Attendance Average</p>
+                                        <p class="heroin">12/30</p>
+                                    </div>
+            
+                                    
+                                </div>
+    
+                                <div class="row mt-1">
+    
+                                    <div class="col-5 first">
+                                        <p class="hero">File</p>
+                                        <img src="" alt="">
+                                    </div>
+    
+                                    <div class="col-5 second">
+                                        <p class="hero">Work type</p>
+                                        <p>Theory</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                       
+                       
+                    </div>
+    
+                    <!-- monthlyly course 3 monthlyly course 3 -->
+                    <div class="tab-pane fade" id="mcourse3">
+    
+                        <!-- Already filled form  -->
+                        <div class="row mt-2 filled">
+                            <div class="col-12">
+                                <div class="row mt-4">
+                                    <div class="col-5 first">
+                                        <p class="hero">Monthly</p>
+                                        <p class="heroin">July</p>
+                                    </div>
+    
+                                    <div class="col-5 second">
+                                        <p class="hero">Date</p>
+                                        <p class="heroin">05/12/2023</p>
+                                    </div>
+    
+                                    
+                                </div>
+    
+                                <div class="row mt-1">
+                                    <div class="col-5 first">
+                                        <p class="hero">Course Code</p>
+                                        <p class="heroin">GST 101</p>
+                                    </div>
+    
+                                    <div class="col-5 second">
+                                        <p class="hero">Course Title</p>
+                                        <p class="heroin">Introduction to Technology</p>
+                                    </div>
+                                </div>
+    
+                                <div class="row mt-1">
+                                    <div class="col-5 first">
+                                        <p class="hero">NBTE Curriculum</p>
+                                        <p class="heroin">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+    
+                                    <div class="col-5 second mco">
+                                        <p class="hero">MOCTECH Course Outline</p>
+                                        <p class="heroin">Eius excepturi labore architecto molestiae expedita esse perspiciatis ipsa sit a rem. Libero repellendus dolorum et ab sint modi, iste totam fuga? Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis quidem iusto neque eum, voluptatum unde earum distinctio ipsam fuga sed! Officiis provident incidunt assumenda consequatur aliquid ea accusantium, alias ut.</p>
+                                    </div>
+                                </div>
+    
+                                <div class="row mt-1">
+                                    <div class="col-5 first">
+                                        <p class="hero">Work Report</p>
+                                        <p class="heroin">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa temporibus cupiditate odio distinctio magnam sapiente reprehenderit voluptas adipisci, sunt nemo nobis ad aliquam, sint a rem harum quos hic blanditiis.</p>
+                                    </div>
+            
+                                    <div class="col-5 second">
+                                        <p class="hero">Attendance Average</p>
+                                        <p class="heroin">12/30</p>
+                                    </div>
+            
+                                    
+                                </div>
+    
+                                <div class="row mt-1">
+    
+                                    <div class="col-5 first">
+                                        <p class="hero">File</p>
+                                        <img src="" alt="">
+                                    </div>
+    
+                                    <div class="col-5 second">
+                                        <p class="hero">Work type</p>
+                                        <p>Theory</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                       
+                       
+                    </div>
+    
+                    <!-- monthlyly course 4 monthlyly course 4 -->
+                    <div class="tab-pane fade" id="mcourse4">
+    
+                        <!-- Already filled form  -->
+                        <div class="row mt-2 filled">
+                            <div class="col-12">
+                                <div class="row mt-4">
+                                    <div class="col-5 first">
+                                        <p class="hero">Monthly</p>
+                                        <p class="heroin">August</p>
+                                    </div>
+    
+                                    <div class="col-5 second">
+                                        <p class="hero">Date</p>
+                                        <p class="heroin">05/12/2023</p>
+                                    </div>
+    
+                                    
+                                </div>
+    
+                                <div class="row mt-1">
+                                    <div class="col-5 first">
+                                        <p class="hero">Course Code</p>
+                                        <p class="heroin">GST 101</p>
+                                    </div>
+    
+                                    <div class="col-5 second">
+                                        <p class="hero">Course Title</p>
+                                        <p class="heroin">Introduction to Technology</p>
+                                    </div>
+                                </div>
+    
+                                <div class="row mt-1">
+                                    <div class="col-5 first">
+                                        <p class="hero">NBTE Curriculum</p>
+                                        <p class="heroin">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+    
+                                    <div class="col-5 second mco">
+                                        <p class="hero">MOCTECH Course Outline</p>
+                                        <p class="heroin">Eius excepturi labore architecto molestiae expedita esse perspiciatis ipsa sit a rem. Libero repellendus dolorum et ab sint modi, iste totam fuga? Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis quidem iusto neque eum, voluptatum unde earum distinctio ipsam fuga sed! Officiis provident incidunt assumenda consequatur aliquid ea accusantium, alias ut.</p>
+                                    </div>
+                                </div>
+    
+                                <div class="row mt-1">
+                                    <div class="col-5 first">
+                                        <p class="hero">Work Report</p>
+                                        <p class="heroin">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa temporibus cupiditate odio distinctio magnam sapiente reprehenderit voluptas adipisci, sunt nemo nobis ad aliquam, sint a rem harum quos hic blanditiis.</p>
+                                    </div>
+            
+                                    <div class="col-5 second">
+                                        <p class="hero">Attendance Average</p>
+                                        <p class="heroin">12/30</p>
+                                    </div>
+            
+                                    
+                                </div>
+    
+                                <div class="row mt-1">
+    
+                                    <div class="col-5 first">
+                                        <p class="hero">File</p>
+                                        <img src="" alt="">
+                                    </div>
+    
+                                    <div class="col-5 second">
+                                        <p class="hero">Work type</p>
+                                        <p>Theory</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                       
+                       
+                    </div>
+                    
+                </div>
+                
+            </div>
+
+            <!-- View Staff Status View Staff Status View Staff Status View Staff Status  -->
+            <div class="tab-pane fade" id="staffstatus"> 
+
+                <nav class="nav navbar navhead">
+                    <span class="btn" onclick="openNav()"><i class="fa fa-bars"></i></span>
+
+                    <div class="title">
+                        <h1>VIEW STAFF STATUS </h1>
+                    </div>
+
+                    <!-- <div class="col-3 search-bar">
+                        <form class="search-form d-flex align-items-center" method="POST" action="#">
+                        <input type="text" name="query" placeholder="Search..." title="Enter search keyword">
+                        <button type="submit" title="Search"><i class="fa fa-search"></i></button>
+                        </form>
+                    </div> -->
+                </nav><br><br><br>
+
+                <!-- <div class="">
+                    <div class="row">
+                        <div class=" col-3 Astaff block up">
+                            <a href="acastaffstatus.html"><p>Academic Staff</p></a>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-3 Nastaff block up">
+                                <a href="nonacastaffstatus.html"><p>Non-Academic Staff</p></a>
+                            </div>
+                        </div>
+                    </div>
+        
+                    
+                </div> -->
+
+                <div class="row">
+                    <div class=" col-3 block up">
+                        <a href="acastaffstatus.html"><p>Academic Staff</p></a>
+                    </div>
+                    
+                    <div class=" col-3 block up">
+                        <a href="nonacastaffstatus.html"><p>Non-Academic Staff</p></a>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Messages Messages Messages Messages Messages Messages Messages -->
+            <div class="tab-pane fade" id="messages">
+    
+    
+                <div class="nav navbar navhead">
+    
+                    <span class="btn" onclick="openNav()"><i class="fa fa-bars"></i></span>
+    
+                    <div class="title">
+                        <h1>MESSAGES </h1>
+                    </div>
+    
+                    
+    
+                    <div class="nav-pills" id="msg-nav">
+                        <div class="nav-item">
+                            <a href="#sendmsg" class="list nav-link active" data-bs-toggle="tab" data-bs-target="#sendmsg">Send</a>
+                        </div>
+                        <div class="nav-item">
+                            <a href="#viewmsg" class="list nav-link" data-bs-toggle="tab" data-bs-target="#viewmsg">Inbox</a>
+                        </div>
+                        <div class="nav-item">
+                            <a href="#outmsg" class="list nav-link" data-bs-toggle="tab" data-bs-target="#outmsg">Outbox</a>
+                        </div>
+                    </div>
+                </div> <br>
+    
+                <div class="tab-content mytabcontent" data-target="#msg-nav">
+    
+                    <!-- send messages send messages send messages send messages send messages -->
+                    <div class="tab-pane fade show active" id="sendmsg">
+                        
+                        <div class="nav navbar" id="msgtype">
+                            <ul class="nav-tabs type">
+                                <div class="select">
+                                    <p>SELECT MESSAGE TYPE:</p>
+                                </div>
+    
+                               <div class="nav-group">
+                                    <li class="nav-item one">
+                                        <a href="#pmsg" class="list nav-link active" data-bs-toggle="tab" data-bs-target="#pmsg">Private</a>
+                                    </li>
+    
+                                    <li class="nav-item two item">
+                                        <a href="#dmsg" class="list nav-link" data-bs-toggle="tab" data-bs-target="#dmsg">Department</a>
+                                    </li>
+    
+                                    <li class="nav-item three item">
+                                        <a href="#gmsg" class="list nav-link" data-bs-toggle="tab" data-bs-target="#gmsg">General</a>
+                                    </li>
+                               </div>
+                            </ul>
+                        </div>
+    
+                        <div class="tab-content mytabcontent" data-bs-parent="#msgtype">
+    
+                            <!-- private message private message private message private message private message -->
+                            <div class="tab-pane fade show active" id="pmsg">
+                                <div class="form">
+                                    <form action="" class="container was-validated">
+                    
+    
+                                        <div class="row mt-4 form-group">
+                                            <div class="col-5 first">
+                                                <label class="form-label" for="monthly">Title</label>
+                                                <select name="" id="title">
+                                                    <option value="Academic Staff">Academic Staff</option>
+                                                    <option value="Non-Academic Staff">Non-Academic Staff</option>
+                                                    <option value="Admin">Admin</option>
+                                                    <option value="Students">Students</option>
+                                                </select>
+                                            </div>
+                    
+                                            <div class="col-5 second">
+                                                <label class="form-label" for="week">Department</label>
+                                                <select name="" id="dept">
+                                                    <option value="None">None</option>
+                                                    <option value="Computer Science">Computer Science</option>
+                                                    <option value="Engineering">Engineering</option>
+                                                    <option value="Welding">Welding</option>
+                                                    <option value="Fashion Designing">Fashion Designing</option>
+                                                </select>
+                                            </div>
+    
+                                            
+                                        </div> <br>
+                    
+                                        <div class="row mt-1 form-group">
+                                            <div class="col-5 first">
+                                                <label class="form-label" for="">Name</label>
+                                                <select name="" id="name">
+                                                    <ul>
+                                                        <li>
+                                                            <option type="checkbox" value="Williams Barth">Williams Barth</option>
+                                                            <option type="checkbox" value="Rita Hycinth">Rita Hycinth</option>
+                                                            <option type="checkbox" value="Diamien Okonkwo">Diamien Okonkwo</option>
+                                                            <option type="checkbox" value="Chioma Nwaigwe">Chioma Nwaigwe</option>
+    
+                                                        </li>
+                                                    </ul>
+                                                </select>
+                                                
+                                            </div>
+                    
+                                            <div class="col-5 second">
+                                                <label class="form-label" for="description">Description</label>
+                                                <input type="text" id="description" required>
+                                            </div>
+                                        </div> <br>
+                    
+                                        <div class="row mt-1 form-group">
+                                            <div class="textarea">
+                                                <label class="form-label" for="message">Message</label> <br>
+                                                <textarea name="" rows="5" placeholder="Drop a Message..."></textarea>
+                                            </div>
+                    
+                                            
+                                        </div>
+                    
+                                        
+                    
+                                        <div class="submit mt-4">
+                                            <button>Send</button>
+                                        </div>
+                    
+                                    </form>
+                                </div>
+                            </div>
+    
+    
+                            <!-- Department Message Department Message Department Message Department Message -->
+                            <div class="tab-pane fade" id="dmsg">
+                                <div class="form">
+                                    <form action="" class="container was-validated">
+                    
+    
+                                        <div class="row mt-4 form-group">
+                                            <div class="col-5 first">
+                                                <label class="form-label" for="week">Title</label>
+                                                <select name="" id="">
+                                                    <option value="Academic Staff">Academic Staff</option>
+                                                    <option value="Non-Academic Staff">Non-Academic Staff</option>
+                                                    <option value="Admin">Admin</option>
+                                                    <option value="Students">Students</option>
+                                                </select>
+                                            </div>
+                    
+                                            <div class="col-5 second">
+                                                <label class="form-label" for="week">Department</label>
+                                                <select name="" id="">
+                                                    <option value="None">None</option>
+                                                    <option value="Computer Science">Computer Science</option>
+                                                    <option value="Engineering">Engineering</option>
+                                                    <option value="Welding">Welding</option>
+                                                    <option value="Fashion Designing">Fashion Designing</option>
+                                                </select>
+                                            </div>
+    
+                                            
+                                        </div> <br>
+                    
+                                        <div class="row mt-1 form-group">
+                                            
+                                            <div class="col-5 first">
+                                                <label class="form-label" for="course">Course</label>
+                                                <select name="" id="">
+                                                    <option value="None">None</option>
+                                                    <option value="GST 101">GST 101</option>
+                                                    <option value="Lan 456">Lan 456</option>
+                                                    <option value="CIT 245">CIT 245</option>
+                                                    <option value="Gst 208">Gst 208</option>
+                                                </select>
+                                            </div>
+    
+                                            <div class="col-5 second">
+                                                <label class="form-label" for="description">Description</label>
+                                                <input type="text" id="description" required>
+                                            </div>
+                                        </div> <br>
+                    
+                                        <div class="row mt-1 form-group">
+                                            <div class="textarea">
+                                                <label class="form-label" for="message">Message</label> <br>
+                                            <textarea name="" id="" rows="5" placeholder="Drop a Message..."></textarea>
+                                            </div>
+                    
+                                            
+                                        </div>
+                    
+                                        
+                    
+                                        <div class="submit mt-4">
+                                            <button>Send</button>
+                                        </div>
+                    
+                                    </form>
+                                </div>
+                            </div>
+    
+                            <!-- General message General message General message General message -->
+                            <div class="tab-pane fade" id="gmsg">
+                                <div class="form">
+                                    <form action="" class="container was-validated">
+                    
+    
+                                        <div class="row mt-4 form-group">
+                                            <div class="col-5 first">
+                                                <label class="form-label" for="week">Title</label>
+                                                <select name="" id="">
+                                                    <option value="All">All</option>
+                                                </select>
+                                            </div>
+                    
+                                            <div class="col-5 second">
+                                                <label class="form-label" for="week">Department</label>
+                                                <select name="" id="">
+                                                    <option value="None">None</option>
+                                                    <option value="Computer Science">Computer Science</option>
+                                                    <option value="Engineering">Engineering</option>
+                                                    <option value="Welding">Welding</option>
+                                                    <option value="Fashion Designing">Fashion Designing</option>
+                                                </select>
+                                            </div>
+    
+                                            
+                                        </div> <br>
+                    
+                                        <div class="row mt-1 form-group">
+                                            
+                                            <div class="col-5 first">
+                                                <label class="form-label" for="course">Course</label>
+                                                <select name="" id="">
+                                                    <option value="None">None</option>
+                                                    <option value="GST 101">GST 101</option>
+                                                    <option value="Lan 456">Lan 456</option>
+                                                    <option value="CIT 245">CIT 245</option>
+                                                    <option value="Gst 208">Gst 208</option>
+                                                </select>
+                                            </div>
+    
+                                            <div class="col-5 second">
+                                                <label class="form-label" for="description">Description</label>
+                                                <input type="text" id="description" required>
+                                            </div>
+                                        </div> <br>
+                    
+                                        <div class="row mt-1 form-group">
+                                            <div class="textarea">
+                                                <label class="form-label" for="message">Message</label> <br>
+                                            <textarea name="" id="" cols="100" rows="5" placeholder="Drop a Message..."></textarea>
+                                            </div>
+                    
+                                            
+                                        </div>
+                    
+                                        
+                    
+                                        <div class="submit mt-4">
+                                            <button>Send</button>
+                                        </div>
+                    
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <!-- view messages view messages view messages view messages view messages -->
+                    <div class="tab-pane fade" id="viewmsg">
+    
+                        <div class="msg-list">
+    
+    
+                            <div class="message-item">
+                                <div class="name mt-3">
+                                    <ul>
+                                        <li>
+                                            <h1>Mr. Vincent Okoro</h1>
+                                            <i>Academic Staff</i> <br> <br>
+                                            <span>Message Type: Private</span>
+                                        </li>
+                                    </ul> <hr>
+                                    
+                                </div>
+    
+                                <div class="msg">
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus consectetur illum, sapiente accusamus ipsam libero recusandae sint tempore doloremque eum non repellat. Nesciunt, perspiciatis molestiae eveniet beatae hic a dicta! Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, magnam nobis tempore velit ipsum temporibus iste modi quae vel, soluta quos ex non vitae dolorem accusantium. Eveniet magnam libero rem.</p> <br>
+    
+                                    <span>Tuesday, 2.30pm</span>
+                                </div>
+                            </div>
+    
+                            <div class="message-item">
+                                <div class="name mt-3">
+                                    <ul>
+                                        <li>
+                                            <h1>Mrs. Rita Ugwu</h1>
+                                            <i>Admin</i> <br> <br>
+                                            <span>Message Type: General</span>
+                                        </li>
+                                    </ul> <hr>
+                                    
+                                </div>
+    
+                                <div class="msg">
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus consectetur illum, sapiente accusamus ipsam libero recusandae sint tempore doloremque eum non repellat. Nesciunt, perspiciatis molestiae eveniet beatae hic a dicta! Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, magnam nobis tempore velit ipsum temporibus iste modi quae vel, soluta quos ex non vitae dolorem accusantium. Eveniet magnam libero rem.</p><br>
+    
+                                    <span>Tuesday, 2.30pm</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+    
+    
+                    <!-- outbox messages outbox messages outbox messages outbox messages outbox messages -->
+                    <div class="tab-pane fade" id="outmsg">
+    
+                        <div class="msg-list">
+    
+    
+                            <div class="message-item">
+                                <div class="name mt-3">
+                                    <ul>
+                                        <li>
+                                            <h1>Mr. Vincent Okoro</h1>
+                                            <i>Academic Staff</i> <br> <br>
+                                            <span>Message Type: Private</span>
+                                        </li>
+                                    </ul> <hr>
+                                    
+                                </div>
+    
+                                <div class="msg">
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus consectetur illum, sapiente accusamus ipsam libero recusandae sint tempore doloremque eum non repellat. Nesciunt, perspiciatis molestiae eveniet beatae hic a dicta! Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, magnam nobis tempore velit ipsum temporibus iste modi quae vel, soluta quos ex non vitae dolorem accusantium. Eveniet magnam libero rem.</p><br>
+    
+                                    <span>Tuesday, 2.30pm</span>
+                                </div>
+                            </div>
+    
+                            <div class="message-item">
+                                <div class="name mt-3">
+                                    <ul>
+                                        <li>
+                                            <h1>Mrs. Rita Ugwu</h1>
+                                            <i>Admin</i> <br> <br>
+                                            <span>Message Type: General</span>
+                                        </li>
+                                    </ul> <hr>
+                                    
+                                </div>
+    
+                                <div class="msg">
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus consectetur illum, sapiente accusamus ipsam libero recusandae sint tempore doloremque eum non repellat. Nesciunt, perspiciatis molestiae eveniet beatae hic a dicta! Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, magnam nobis tempore velit ipsum temporibus iste modi quae vel, soluta quos ex non vitae dolorem accusantium. Eveniet magnam libero rem.</p><br>
+    
+                                    <span>Tuesday, 2.30pm</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+            </div>
+
+            <!-- system settings sytem settings system settings  -->
+            <div class="tab-pane fade" id="settings">
+
+                <nav class="nav navbar navhead">
+                    <span class="btn" onclick="openNav()"><i class="fa fa-bars"></i></span>
+
+                    <div class="title">
+                        <h1>SYSTEM SETTINGS </h1>
+                    </div>
+
+                    <!-- <div class="col-3 search-bar">
+                        <form class="search-form d-flex align-items-center" method="POST" action="#">
+                        <input type="text" name="query" placeholder="Search..." title="Enter search keyword">
+                        <button type="submit" title="Search"><i class="fa fa-search"></i></button>
+                        </form>
+                    </div> -->
+
+                </nav><br><br>
+
+                <div class="row">
+                    <div class=" col-5 block up">
+                        <a href="" data-bs-toggle="modal" data-bs-target="#mymodal"><p>Add New Semester</p></a>
+                    </div>
+
+                    <div class="modal fade" id="mymodal">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title">Update Current Semester</h1>
+                                    <button class="btn-close" data-bs-dismiss="modal">&times;</button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde libero quam modi voluptatum consequatur veritatis non quidem iusto! Et explicabo harum dignissimos quae perspiciatis nisi dolorum libero, aut alias. Ipsum?</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button class="btn btn-primary" data-bs-dismiss="modal">close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class=" col-5 Astaff block up">
+                        <a href=""><p>Add New Session</p></a>
+                    </div>
+                </div>
+    
+               <div class="row">
+                    <div class="col-5 Nastaff block down">
+                        <a href="assigntask.html"><p>Assign Tasks</p></a>
+                    </div>
+    
+                    <div class="col-5 Stuts block down">
+                        <a href=""><p>Delete/Modify Profile</p></a>
+                    </div>
+               </div>
+            </div>
+        </div>
+    </div>
+
+    
+    
+
+    <!-- <div class="container-fluid">
+        <div class="navbar-two">
+            <h3>Notification Area</h3>
+        </div>
+    </div> -->
+
+</body>
+
+<script src="boot5/js/all.js"></script>
+<script src="boot5/js/bootstrap.bundle.min.js"></script>
+<script src="boot5/js/jquery-3.2.1.min.js"></script>
+
+<script>
+
+    function openNav() {
+        document.getElementById('mysidenav').style.width = '35%'
+        // document.getElementById('main').style.marginRight = '0%'
+        // document.getElementById('profile').style.marginRight = '40%'
+        // document.getElementById('navbar').style.marginRight = '40%'
+        // document.body.style.backgroundColor = 'rgb(61, 61, 61)'
+    }
+    function closeNav() {
+        document.getElementById('mysidenav').style.width = '0%'
+        // document.getElementById('main').style.marginRight = '0'
+        // document.getElementById('profile').style.marginRight = '0'
+        // document.getElementById('navbar').style.marginRight = '0'
+        // document.body.style.backgroundColor = 'black'
+    }
+
+</script>
+</html>
