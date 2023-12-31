@@ -27,8 +27,8 @@
                     <i>Non-Academic Staff</i>
                 </div>
                
-                <a href="#display" class="list nav-link  mt-5" data-bs-toggle="tab" data-bs-target="#display"><p> DashBoard</p></a>
-                <a href="#tasks" class="list nav-link active mt-4" data-bs-toggle="tab" data-bs-target="#tasks"><p> View Tasks</p></a>
+                <a href="#display" class="list nav-link active  mt-5" data-bs-toggle="tab" data-bs-target="#display"><p> DashBoard</p></a>
+                <a href="#tasks" class="list nav-link mt-4" data-bs-toggle="tab" data-bs-target="#tasks"><p> View Tasks</p></a>
     
                 <a href="#messages" class="list nav-link mt-4" data-bs-toggle="tab" data-bs-target="#messages"><p>Messages <span class="badge bg-success badge-number"> 3</span></p></a>
                 
@@ -45,15 +45,75 @@
         <div class="tab-content real" data-target="#mysidenav">
     
     
-            <div class="tab-pane fade" id="display">
+            <div class="tab-pane fade show active" id="display">
     
-                <span class="btn" onclick="openNav()"><i class="fa fa-bars"></i></span>
+                <nav class="nav navbar">
+                    <span class="btn" onclick="openNav()"><i class="fa fa-bars"></i></span>
+    
+                    <div class="title">
+                        <h1>DASHBOARD</h1>
+                    </div>
+                </nav>
+
+                <div class="row login">
+                    <p>Last Logged In: 2.10pm</p>
+                </div>
     
                 <!-- Right side columns -->
-                <div class="row">
+                <div class="row activerow"> 
+
+                    <!-- Profile profile  -->
+                    <div class="card col-6 activeleft">
+                        <div class="card-body">
+                            <h5 class="card-title">PROFILE</h5>
+
+                            <div class="table-responsive mt-4">
+                                <table class="table table-">
+            
+                                    
+                                    <tr>
+                                        <th>Full Name</th>
+                                        <td>Vincent Okoro</td>
+                                    </tr>
+
+                                    <tr>
+                                        <th>Gender</th>
+                                        <td>Male</td>
+                                    </tr>
+
+                                    <tr>
+                                        <th>Category</th>
+                                        <td>Non-academic Staff</td>
+                                    </tr>
+
+                                    <tr>
+                                        <th>Designation</th>
+                                        <td>Faculty Officer</td>
+                                    </tr>
+            
+                                    <tr>
+                                        <th>Department</th>
+                                        <td>Engineering</td>
+                                    </tr>
+
+                                    <tr>
+                                        <th>Current Semester</th>
+                                        <td>2nd Semester</td>
+                                    </tr>
+            
+                                    <tr>
+                                        <th>Current Session</th>
+                                        <td>2023-2024</td>
+                                    </tr>
+            
+                                    
+                                </table>
+                            </div>
+                        </div>
+                    </div>
     
                     <!-- Recent Activity -->
-                    <div class="card col-4">
+                    <div class="card col-4 activeright">
                         <!-- <div class="filter">
                             <a class="icon" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots"></i></a>
                             <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
@@ -68,7 +128,7 @@
                         </div> -->
         
                         <div class="card-body">
-                            <h5 class="card-title">Recent Activity <span>| Today</span></h5>
+                            <h5 class="card-title">RECENT ACTIVITY</h5>
             
                             <div class="activity mt-4">
             
@@ -76,7 +136,7 @@
                                     <div class="activite-label">32 min</div>
                                     <i class='fa fa-circle activity-badge text-success align-self-start'></i>
                                     <div class="activity-content">
-                                    <a href="">You have a message...</a>
+                                    <a href="">You have a new message...</a>
                                     </div>
                                 </div><!-- End activity item-->
             
@@ -127,11 +187,66 @@
         
         
                 </div><!-- End Right side columns -->
+
+                <div class="row activerow2">
+
+                    <div class="col-11 daytask card activeleft">
+
+                        <div class="card-body">
+                            <h5 class="card-title">DAILY TASKS</h5>
+
+                            <div class="table-responsive mt-4">
+                                <table class="table table-hover table-">
+            
+                                    
+                                    <tr>
+                                        <th>Week</th>
+                                        <th>Date</th>
+                                        <th>Time</th>
+                                        <th>Venue</th>
+                                        <th>Tasks</th>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>22/05/23</td>
+                                        <td>12.00pm - 2.30pm</td>
+                                        <td>Odili Lecture Hall</td>
+                                        <td class="taskstab"><span class="fa fa-circle"></span> RLT 203 Lecture</td>
+                                    </tr>
+            
+                                    <tr>
+                                        <td>2</td>
+                                        <td>22/05/23</td>
+                                        <td>12.00pm - 2.30pm</td>
+                                        <td>Azikiwe Lecture Hall</td>
+                                        <td class="taskstab"><span class="fa fa-circle"></span> RLT 203 Practicals on Solar Installation</td>
+                                    </tr>
+            
+            
+                                    <tr>
+                                        <td>2</td>
+                                        <td>22/05/23</td>
+                                        <td>12.00pm - 2.30pm</td>
+                                        <td>Odili Lecture Hall</td>
+                                        <td class="taskstab"><span class="fa fa-circle"></span> RLT 203 Lecture</td>
+                                    </tr>
+            
+            
+                                    
+            
+            
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
+
+
     
-             <!-- View tasks  View tasks  View tasks  View tasks  View tasks -->
-             <div class="tab-pane fade" id="tasks">
-    
+            <!-- View tasks  View tasks  View tasks  View tasks  View tasks -->
+            <div class="tab-pane fade" id="tasks">
+
                 <nav class="nav navbar">
                     <span class="btn" onclick="openNav()"><i class="fa fa-bars"></i></span>
     
@@ -148,354 +263,843 @@
     
                   
                 </nav>
-    
-                <div class="tablebg">
+
+                <!-- Session one Session one Session one Session one Session one -->
+                <div class="head mt-4">
+                    <h1>Session- 2023-2024</h1>
+        
+                    <div id="sortdown">
+                        <a href="#semesters" class="collapsed list nav-link" data-bs-toggle="collapse" data-bs-target="#semesters"><span class="fa fa-sort-down"></span></a>
+                    </div>
+                </div>
+
+                <div class="sessiontasks" data-bs-target="#sortdown" data-bs-parent="#sortdown">
+
+                    <div class="nav-content collapse" id="semesters">
+                        <div class="tablebg">
                     
-                    <div class="head semes mt-4">
-                        <div class="onep">
-                            <p>1st Semester</p>
+                            <div class="head semes">
+                                <div class="onep">
+                                    <p>1st Semester</p>
+                                </div>
+                
+                                <div class="twop">
+                                    <p>2023-2024</p>
+                                </div>
+                            </div>
+        
+        
+                            <div class="table-responsive">
+                                <!-- weekly table weekly table weekly table weekly table weekly table -->
+                                <table class="table table-bordered table-striped table-hover table- wtasks">
+                                    <div class="head">
+                                        <p>Weekly Tasks</p>
+                                    </div>
+                                    
+                                    <tr>
+                                        <th>Week</th>
+                                        <th>Date</th>
+                                        <th>Time</th>
+                                        <th>Venue</th>
+                                        <th>Tasks</th>
+                                        <th>Done <br> (Me)</th>
+                                        <th>Done <br> (Course Rep)</th>
+                                        <th>Done <br> (HOD/Admin)</th>
+                                        <th>Observed</th>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>22/05/23</td>
+                                        <td>12.00pm - 2.30pm</td>
+                                        <td>Odili Lecture Hall</td>
+                                        <td class="taskstab"><span class="fa fa-circle"></span> RLT 203 Lecture</td>
+                                        <td><input type="checkbox" name="check"></td>
+                                        <td><input type="checkbox" name="check"></td>
+                                        <td><input type="checkbox" name="check"></td>
+                                        <td><button>Completed</button></td>
+                                    </tr>
+            
+                                    <tr>
+                                        <td>2</td>
+                                        <td>22/05/23</td>
+                                        <td>12.00pm - 2.30pm</td>
+                                        <td>Azikiwe Lecture Hall</td>
+                                        <td class="taskstab"><span class="fa fa-circle"></span> RLT 203 Practicals on Solar Installation</td>
+                                        <td><input type="checkbox" name="check"></td>
+                                        <td><input type="checkbox" name="check"></td>
+                                        <td><input type="checkbox" name="check"></td>
+                                        <td><button class="almost">Completed</button></td>
+                                    </tr>
+            
+            
+                                    <tr>
+                                        <td>1</td>
+                                        <td>22/05/23</td>
+                                        <td>12.00pm - 2.30pm</td>
+                                        <td>Odili Lecture Hall</td>
+                                        <td class="taskstab"><span class="fa fa-circle"></span> RLT 203 Lecture</td>
+                                        <td><input type="checkbox" name="check"></td>
+                                        <td><input type="checkbox" name="check"></td>
+                                        <td><input type="checkbox" name="check"></td>
+                                        <td><button class="complete">Completed</button></td>
+                                    </tr>
+            
+            
+                                    <tr>
+                                        <td>1</td>
+                                        <td>22/05/23</td>
+                                        <td>12.00pm - 2.30pm</td>
+                                        <td>Odili Lecture Hall</td>
+                                        <td class="taskstab"><span class="fa fa-circle"></span> RLT 203 Lecture</td>
+                                        <td><input type="checkbox" name="check"></td>
+                                        <td><input type="checkbox" name="check"></td>
+                                        <td><input type="checkbox" name="check"></td>
+                                        <td><button>Completed</button></td>
+                                    </tr>
+            
+                                    <tr>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td><button>Forward</button></td>
+                                    </tr>
+            
+            
+                                </table>
+        
+                                <!-- monthly table monthly table  monthly table  monthly table  -->
+                                <table class="table table-bordered table-striped table-hover table- mtasks">
+                                    <div class="head mt-4">
+                                        <p>Monthly Tasks</p>
+                                    </div>
+                                    
+                                    
+                                    <tr>
+                                        <th>Month</th>
+                                        <th>Date</th>
+                                        <th>Tasks</th>
+                                        <th>Done <br> (Me)</th>
+                                        <th>Done <br> (Course Rep)</th>
+                                        <th>Done <br> (HOD/Admin)</th>
+                                        <th>Observed</th>
+                                    </tr>
+            
+                                    <tr>
+                                        <td>January</td>
+                                        <td>22/05/23</td>
+                                        <td class="taskstab"><span class="fa fa-circle"></span> 1st Test</td>
+                                        <td><input type="checkbox" name="check"></td>
+                                        <td><input type="checkbox" name="check"></td>
+                                        <td><input type="checkbox" name="check"></td>
+                                        <td><button>Completed</button></td>
+                                    </tr>
+            
+                                    <tr>
+                                        <td>February</td>
+                                        <td>22/05/23</td>
+                                        <td class="taskstab"><span class="fa fa-circle"></span> 2nd Test</td>
+                                        <td><input type="checkbox" name="check"></td>
+                                        <td><input type="checkbox" name="check"></td>
+                                        <td><input type="checkbox" name="check"></td>
+                                        <td><button>Completed</button></td>
+                                    </tr>
+            
+                                    <tr>
+                                        <td>March</td>
+                                        <td>22/05/23</td>
+                                        <td class="taskstab"><span class="fa fa-circle"></span> Practicals Presentation</td>
+                                        <td><input type="checkbox" name="check"></td>
+                                        <td><input type="checkbox" name="check"></td>
+                                        <td><input type="checkbox" name="check"></td>
+                                        <td><button>Completed</button></td>
+                                    </tr>
+            
+                                    <tr>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td><button>Forward</button></td>
+                                    </tr>
+                                </table>
+        
+                                <!-- Semester Table Semester Table Semester Table Semester Table Semester Table -->
+                                <table class="table table-bordered table-striped table-hover table- gtasks">
+                                    <div class="head mt-4">
+                                        <p>General Tasks</p>
+                                    </div>
+                                    
+                                    <tr>
+                                        <th>Session</th>
+                                        <th>Date</th>
+                                        <th>Tasks</th>
+                                        <th>Done <br> (Me)</th>
+                                        <th>Done <br> (Course Rep)</th>
+                                        <th>Done <br> (HOD/Admin)</th>
+                                        <th>Observed</th>
+                                    </tr>
+            
+                                    <tr>
+                                        <td>2022-2023</td>
+                                        <td>22/05/23</td>
+                                        <td class="taskstab"><span class="fa fa-circle"></span> Completed Curriculum</td>
+                                        <td><input type="checkbox" name="check"></td>
+                                        <td><input type="checkbox" name="check"></td>
+                                        <td><input type="checkbox" name="check"></td>
+                                        <td><button>Completed</button></td>
+                                    </tr>
+            
+                                    <tr>
+                                        <td>2022-2023</td>
+                                        <td>22/05/23</td>
+                                        <td class="taskstab"><span class="fa fa-circle"></span> Completed Practicals</td>
+                                        <td><input type="checkbox" name="check"></td>
+                                        <td><input type="checkbox" name="check"></td>
+                                        <td><input type="checkbox" name="check"></td>
+                                        <td><button>Completed</button></td>
+                                    </tr>
+            
+                                    <tr>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td><button>Forward</button></td>
+                                    </tr>
+                                </table>
+                            </div>
                         </div>
         
-                        <div class="twop">
-                            <p>Session- 2022-2023</p>
+        
+                        <div class="tablebg">
+                            
+                            <div class="head semes mt-5">
+                                <div class="onep">
+                                    <p>2nd Semester</p>
+                                </div>
+                
+                                <div class="twop">
+                                    <p>2023-2024</p>
+                                </div>
+                            </div>
+    
+                            <div class="table-responsive">
+                                <!-- weekly table weekly table weekly table weekly table weekly table -->
+                                <table class="table table-bordered table-striped table-hover table- wtasks">
+                                    <div class="head">
+                                        <p>Weekly Tasks</p>
+                                    </div>
+                                    
+                                    <tr>
+                                        <th>Week</th>
+                                        <th>Date</th>
+                                        <th>Time</th>
+                                        <th>Venue</th>
+                                        <th>Tasks</th>
+                                        <th>Done <br> (Me)</th>
+                                        <th>Done <br> (Course Rep)</th>
+                                        <th>Done <br> (HOD/Admin)</th>
+                                        <th>Observed</th>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>22/05/23</td>
+                                        <td>12.00pm - 2.30pm</td>
+                                        <td>Odili Lecture Hall</td>
+                                        <td class="taskstab"><span class="fa fa-circle"></span> RLT 203 Lecture</td>
+                                        <td><input type="checkbox" name="check"></td>
+                                        <td><input type="checkbox" name="check"></td>
+                                        <td><input type="checkbox" name="check"></td>
+                                        <td><button>Completed</button></td>
+                                    </tr>
+            
+                                    <tr>
+                                        <td>2</td>
+                                        <td>22/05/23</td>
+                                        <td>12.00pm - 2.30pm</td>
+                                        <td>Azikiwe Lecture Hall</td>
+                                        <td class="taskstab"><span class="fa fa-circle"></span> RLT 203 Practicals on Solar Installation</td>
+                                        <td><input type="checkbox" name="check"></td>
+                                        <td><input type="checkbox" name="check"></td>
+                                        <td><input type="checkbox" name="check"></td>
+                                        <td><button class="almost">Completed</button></td>
+                                    </tr>
+            
+            
+                                    <tr>
+                                        <td>1</td>
+                                        <td>22/05/23</td>
+                                        <td>12.00pm - 2.30pm</td>
+                                        <td>Odili Lecture Hall</td>
+                                        <td class="taskstab"><span class="fa fa-circle"></span> RLT 203 Lecture</td>
+                                        <td><input type="checkbox" name="check"></td>
+                                        <td><input type="checkbox" name="check"></td>
+                                        <td><input type="checkbox" name="check"></td>
+                                        <td><button class="complete">Completed</button></td>
+                                    </tr>
+            
+            
+                                    <tr>
+                                        <td>1</td>
+                                        <td>22/05/23</td>
+                                        <td>12.00pm - 2.30pm</td>
+                                        <td>Odili Lecture Hall</td>
+                                        <td class="taskstab"><span class="fa fa-circle"></span> RLT 203 Lecture</td>
+                                        <td><input type="checkbox" name="check"></td>
+                                        <td><input type="checkbox" name="check"></td>
+                                        <td><input type="checkbox" name="check"></td>
+                                        <td><button>Completed</button></td>
+                                    </tr>
+            
+                                    <tr>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td><button>Forward</button></td>
+                                    </tr>
+            
+            
+                                </table>
+        
+        
+                                <table class="table table-bordered table-striped table-hover table- mtasks">
+                                    <div class="head mt-4">
+                                        <p>Monthly Tasks</p>
+                                    </div>
+                                    
+                                    <tr>
+                                        <th>Month</th>
+                                        <th>Date</th>
+                                        <th>Tasks</th>
+                                        <th>Done <br> (Me)</th>
+                                        <th>Done <br> (Course Rep)</th>
+                                        <th>Done <br> (HOD/Admin)</th>
+                                        <th>Observed</th>
+                                    </tr>
+            
+                                    <tr>
+                                        <td>January</td>
+                                        <td>22/05/23</td>
+                                        <td class="taskstab"><span class="fa fa-circle"></span> 1st Test</td>
+                                        <td><input type="checkbox" name="check"></td>
+                                        <td><input type="checkbox" name="check"></td>
+                                        <td><input type="checkbox" name="check"></td>
+                                        <td><button>Completed</button></td>
+                                    </tr>
+            
+                                    <tr>
+                                        <td>February</td>
+                                        <td>22/05/23</td>
+                                        <td class="taskstab"><span class="fa fa-circle"></span> 2nd Test</td>
+                                        <td><input type="checkbox" name="check"></td>
+                                        <td><input type="checkbox" name="check"></td>
+                                        <td><input type="checkbox" name="check"></td>
+                                        <td><button>Completed</button></td>
+                                    </tr>
+            
+                                    <tr>
+                                        <td>March</td>
+                                        <td>22/05/23</td>
+                                        <td class="taskstab"><span class="fa fa-circle"></span> Practicals Presentation</td>
+                                        <td><input type="checkbox" name="check"></td>
+                                        <td><input type="checkbox" name="check"></td>
+                                        <td><input type="checkbox" name="check"></td>
+                                        <td><button>Completed</button></td>
+                                    </tr>
+            
+                                    <tr>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td><button>Forward</button></td>
+                                    </tr>
+                                </table>
+        
+                                <!-- general semsester Table general semsester Table general semsester Table general semsester Table general semsester Table -->
+                                <table class="table table-bordered table-striped table-hover table- gtasks">
+                                    <div class="head mt-4">
+                                        <p>General Tasks</p>
+                                    </div>
+                                    
+                                    <tr>
+                                        <th>Session</th>
+                                        <th>Date</th>
+                                        <th>Tasks</th>
+                                        <th>Done <br> (Me)</th>
+                                        <th>Done <br> (Course Rep)</th>
+                                        <th>Done <br> (HOD/Admin)</th>
+                                        <th>Observed</th>
+                                    </tr>
+            
+                                    <tr>
+                                        <td>2022-2023</td>
+                                        <td>22/05/23</td>
+                                        <td class="taskstab"><span class="fa fa-circle"></span> Completed Curriculum</td>
+                                        <td><input type="checkbox" name="check"></td>
+                                        <td><input type="checkbox" name="check"></td>
+                                        <td><input type="checkbox" name="check"></td>
+                                        <td><button>Completed</button></td>
+                                    </tr>
+            
+                                    <tr>
+                                        <td>2022-2023</td>
+                                        <td>22/05/23</td>
+                                        <td class="taskstab"><span class="fa fa-circle"></span> Completed Practicals</td>
+                                        <td><input type="checkbox" name="check"></td>
+                                        <td><input type="checkbox" name="check"></td>
+                                        <td><input type="checkbox" name="check"></td>
+                                        <td><button>Completed</button></td>
+                                    </tr>
+            
+                                    <tr>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td><button>Forward</button></td>
+                                    </tr>
+                                </table>
+                            </div>
                         </div>
-                    </div>
-                    <!-- weekly table weekly table weekly table weekly table weekly table -->
-                    <div class="table-responsive  wtasks">
-                        <table class="table table-bordered table-striped table-hover table-">
-                            <div class="head">
-                                <p>Weekly Tasks</p>
-                            </div>
-                            
-                            <tr>
-                                <th>Week</th>
-                                <th>Date</th>
-                                <th>Time</th>
-                                <th>Venue</th>
-                                <th>Tasks</th>
-                                <th>Done <br> (Me)</th>
-                                <th>Done <br> (Course Rep)</th>
-                                <th>Done <br> (HOD/Admin)</th>
-                                <th>Observed</th>
-                            </tr>
-                            <tr>
-                                <td>1</td>
-                                <td>22/05/23</td>
-                                <td>12.00pm - 2.30pm</td>
-                                <td>Odili Lecture Hall</td>
-                                <td class="taskstab"><span class="fa fa-circle"></span> RLT 203 Lecture</td>
-                                <td><input type="checkbox" name="check"></td>
-                                <td><input type="checkbox" name="check"></td>
-                                <td><input type="checkbox" name="check"></td>
-                                <td><button>Completed</button></td>
-                            </tr>
-    
-                            <tr>
-                                <td>2</td>
-                                <td>22/05/23</td>
-                                <td>12.00pm - 2.30pm</td>
-                                <td>Azikiwe Lecture Hall</td>
-                                <td class="taskstab"><span class="fa fa-circle"></span> RLT 203 Practicals on Solar Installation</td>
-                                <td><input type="checkbox" name="check"></td>
-                                <td><input type="checkbox" name="check"></td>
-                                <td><input type="checkbox" name="check"></td>
-                                <td><button class="almost">Completed</button></td>
-                            </tr>
-    
-    
-                            <tr>
-                                <td>1</td>
-                                <td>22/05/23</td>
-                                <td>12.00pm - 2.30pm</td>
-                                <td>Odili Lecture Hall</td>
-                                <td class="taskstab"><span class="fa fa-circle"></span> RLT 203 Lecture</td>
-                                <td><input type="checkbox" name="check"></td>
-                                <td><input type="checkbox" name="check"></td>
-                                <td><input type="checkbox" name="check"></td>
-                                <td><button class="complete">Completed</button></td>
-                            </tr>
-    
-    
-                            <tr>
-                                <td>1</td>
-                                <td>22/05/23</td>
-                                <td>12.00pm - 2.30pm</td>
-                                <td>Odili Lecture Hall</td>
-                                <td class="taskstab"><span class="fa fa-circle"></span> RLT 203 Lecture</td>
-                                <td><input type="checkbox" name="check"></td>
-                                <td><input type="checkbox" name="check"></td>
-                                <td><input type="checkbox" name="check"></td>
-                                <td><button>Completed</button></td>
-                            </tr>
-    
-                            <tr>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td><button>Forward</button></td>
-                            </tr>
-    
-    
-                        </table>
-                    </div>
-    
-                    <!-- monthly table monthly table  monthly table  monthly table  -->
-                    <div class="table-responsive  mtasks">
-                        <table class="table table-bordered table-striped table-hover table-">
-                            <div class="head mt-4">
-                                <p>Monthly Tasks</p>
-                            </div>
-                            
-                            
-                            <tr>
-                                <th>Month</th>
-                                <th>Date</th>
-                                <th>Tasks</th>
-                                <th>Done <br> (Me)</th>
-                                <th>Done <br> (Course Rep)</th>
-                                <th>Done <br> (HOD/Admin)</th>
-                                <th>Observed</th>
-                            </tr>
-    
-                            <tr>
-                                <td>January</td>
-                                <td>22/05/23</td>
-                                <td class="taskstab"><span class="fa fa-circle"></span> 1st Test</td>
-                                <td><input type="checkbox" name="check"></td>
-                                <td><input type="checkbox" name="check"></td>
-                                <td><input type="checkbox" name="check"></td>
-                                <td><button>Completed</button></td>
-                            </tr>
-    
-                            <tr>
-                                <td>February</td>
-                                <td>22/05/23</td>
-                                <td class="taskstab"><span class="fa fa-circle"></span> 2nd Test</td>
-                                <td><input type="checkbox" name="check"></td>
-                                <td><input type="checkbox" name="check"></td>
-                                <td><input type="checkbox" name="check"></td>
-                                <td><button>Completed</button></td>
-                            </tr>
-    
-                            <tr>
-                                <td>March</td>
-                                <td>22/05/23</td>
-                                <td class="taskstab"><span class="fa fa-circle"></span> Practicals Presentation</td>
-                                <td><input type="checkbox" name="check"></td>
-                                <td><input type="checkbox" name="check"></td>
-                                <td><input type="checkbox" name="check"></td>
-                                <td><button>Completed</button></td>
-                            </tr>
-    
-                            <tr>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td><button>Forward</button></td>
-                            </tr>
-                        </table>
-                    </div>
-    
-    
-                   <!-- Semester Table Semester Table Semester Table Semester Table Semester Table -->
-                   <div class="table-responsive  stasks">
-                        <table class="table table-bordered table-striped table-hover table-">
-                            <div class="head mt-4">
-                                <p>General Tasks</p>
-                            </div>
-                            
-                            <tr>
-                                <th>Session</th>
-                                <th>Date</th>
-                                <th>Tasks</th>
-                                <th>Done <br> (Me)</th>
-                                <th>Done <br> (Course Rep)</th>
-                                <th>Done <br> (HOD/Admin)</th>
-                                <th>Observed</th>
-                            </tr>
-    
-                            <tr>
-                                <td>2022-2023</td>
-                                <td>22/05/23</td>
-                                <td class="taskstab"><span class="fa fa-circle"></span> Completed Curriculum</td>
-                                <td><input type="checkbox" name="check"></td>
-                                <td><input type="checkbox" name="check"></td>
-                                <td><input type="checkbox" name="check"></td>
-                                <td><button>Completed</button></td>
-                            </tr>
-    
-                            <tr>
-                                <td>2022-2023</td>
-                                <td>22/05/23</td>
-                                <td class="taskstab"><span class="fa fa-circle"></span> Completed Practicals</td>
-                                <td><input type="checkbox" name="check"></td>
-                                <td><input type="checkbox" name="check"></td>
-                                <td><input type="checkbox" name="check"></td>
-                                <td><button>Completed</button></td>
-                            </tr>
-    
-                            <tr>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td><button>Forward</button></td>
-                            </tr>
-                        </table>
                     </div>
                 </div>
 
 
-                <div class="tablebg">
+                <!-- Session two Session two Session two Session two Session two -->
+                <div class="head mt-4">
+                    <h1>Session- 2022-2023</h1>
+        
+                    <div id="sortdown">
+                        <a href="#semesters" class="collapsed list nav-link" data-bs-toggle="collapse" data-bs-target="#semesters"><span class="fa fa-sort-down"></span></a>
+                    </div>
+                </div>
+
+                <div class="sessiontasks" data-bs-target="#sortdown" data-bs-parent="#sortdown">
+
+                    <div class="nav-content collapse" id="semesters">
+                        <div class="tablebg">
                     
-                    <div class="head semes mt-5">
-                        <div class="onep">
-                            <p>2nd Semester</p>
+                            <div class="head semes">
+                                <div class="onep">
+                                    <p>1st Semester</p>
+                                </div>
+                
+                                <div class="twop">
+                                    <p>2022-2023</p>
+                                </div>
+                            </div>
+        
+        
+                            <div class="table-responsive">
+                                <!-- weekly table weekly table weekly table weekly table weekly table -->
+                                <table class="table table-bordered table-striped table-hover table- wtasks">
+                                    <div class="head">
+                                        <p>Weekly Tasks</p>
+                                    </div>
+                                    
+                                    <tr>
+                                        <th>Week</th>
+                                        <th>Date</th>
+                                        <th>Time</th>
+                                        <th>Venue</th>
+                                        <th>Tasks</th>
+                                        <th>Done <br> (Me)</th>
+                                        <th>Done <br> (Course Rep)</th>
+                                        <th>Done <br> (HOD/Admin)</th>
+                                        <th>Observed</th>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>22/05/23</td>
+                                        <td>12.00pm - 2.30pm</td>
+                                        <td>Odili Lecture Hall</td>
+                                        <td class="taskstab"><span class="fa fa-circle"></span> RLT 203 Lecture</td>
+                                        <td><input type="checkbox" name="check"></td>
+                                        <td><input type="checkbox" name="check"></td>
+                                        <td><input type="checkbox" name="check"></td>
+                                        <td><button>Completed</button></td>
+                                    </tr>
+            
+                                    <tr>
+                                        <td>2</td>
+                                        <td>22/05/23</td>
+                                        <td>12.00pm - 2.30pm</td>
+                                        <td>Azikiwe Lecture Hall</td>
+                                        <td class="taskstab"><span class="fa fa-circle"></span> RLT 203 Practicals on Solar Installation</td>
+                                        <td><input type="checkbox" name="check"></td>
+                                        <td><input type="checkbox" name="check"></td>
+                                        <td><input type="checkbox" name="check"></td>
+                                        <td><button class="almost">Completed</button></td>
+                                    </tr>
+            
+            
+                                    <tr>
+                                        <td>1</td>
+                                        <td>22/05/23</td>
+                                        <td>12.00pm - 2.30pm</td>
+                                        <td>Odili Lecture Hall</td>
+                                        <td class="taskstab"><span class="fa fa-circle"></span> RLT 203 Lecture</td>
+                                        <td><input type="checkbox" name="check"></td>
+                                        <td><input type="checkbox" name="check"></td>
+                                        <td><input type="checkbox" name="check"></td>
+                                        <td><button class="complete">Completed</button></td>
+                                    </tr>
+            
+            
+                                    <tr>
+                                        <td>1</td>
+                                        <td>22/05/23</td>
+                                        <td>12.00pm - 2.30pm</td>
+                                        <td>Odili Lecture Hall</td>
+                                        <td class="taskstab"><span class="fa fa-circle"></span> RLT 203 Lecture</td>
+                                        <td><input type="checkbox" name="check"></td>
+                                        <td><input type="checkbox" name="check"></td>
+                                        <td><input type="checkbox" name="check"></td>
+                                        <td><button>Completed</button></td>
+                                    </tr>
+            
+                                    <tr>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td><button>Forward</button></td>
+                                    </tr>
+            
+            
+                                </table>
+        
+                                <!-- monthly table monthly table  monthly table  monthly table  -->
+                                <table class="table table-bordered table-striped table-hover table- mtasks">
+                                    <div class="head mt-4">
+                                        <p>Monthly Tasks</p>
+                                    </div>
+                                    
+                                    
+                                    <tr>
+                                        <th>Month</th>
+                                        <th>Date</th>
+                                        <th>Tasks</th>
+                                        <th>Done <br> (Me)</th>
+                                        <th>Done <br> (Course Rep)</th>
+                                        <th>Done <br> (HOD/Admin)</th>
+                                        <th>Observed</th>
+                                    </tr>
+            
+                                    <tr>
+                                        <td>January</td>
+                                        <td>22/05/23</td>
+                                        <td class="taskstab"><span class="fa fa-circle"></span> 1st Test</td>
+                                        <td><input type="checkbox" name="check"></td>
+                                        <td><input type="checkbox" name="check"></td>
+                                        <td><input type="checkbox" name="check"></td>
+                                        <td><button>Completed</button></td>
+                                    </tr>
+            
+                                    <tr>
+                                        <td>February</td>
+                                        <td>22/05/23</td>
+                                        <td class="taskstab"><span class="fa fa-circle"></span> 2nd Test</td>
+                                        <td><input type="checkbox" name="check"></td>
+                                        <td><input type="checkbox" name="check"></td>
+                                        <td><input type="checkbox" name="check"></td>
+                                        <td><button>Completed</button></td>
+                                    </tr>
+            
+                                    <tr>
+                                        <td>March</td>
+                                        <td>22/05/23</td>
+                                        <td class="taskstab"><span class="fa fa-circle"></span> Practicals Presentation</td>
+                                        <td><input type="checkbox" name="check"></td>
+                                        <td><input type="checkbox" name="check"></td>
+                                        <td><input type="checkbox" name="check"></td>
+                                        <td><button>Completed</button></td>
+                                    </tr>
+            
+                                    <tr>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td><button>Forward</button></td>
+                                    </tr>
+                                </table>
+        
+                                <!-- Semester Table Semester Table Semester Table Semester Table Semester Table -->
+                                <table class="table table-bordered table-striped table-hover table- gtasks">
+                                    <div class="head mt-4">
+                                        <p>General Tasks</p>
+                                    </div>
+                                    
+                                    <tr>
+                                        <th>Session</th>
+                                        <th>Date</th>
+                                        <th>Tasks</th>
+                                        <th>Done <br> (Me)</th>
+                                        <th>Done <br> (Course Rep)</th>
+                                        <th>Done <br> (HOD/Admin)</th>
+                                        <th>Observed</th>
+                                    </tr>
+            
+                                    <tr>
+                                        <td>2022-2023</td>
+                                        <td>22/05/23</td>
+                                        <td class="taskstab"><span class="fa fa-circle"></span> Completed Curriculum</td>
+                                        <td><input type="checkbox" name="check"></td>
+                                        <td><input type="checkbox" name="check"></td>
+                                        <td><input type="checkbox" name="check"></td>
+                                        <td><button>Completed</button></td>
+                                    </tr>
+            
+                                    <tr>
+                                        <td>2022-2023</td>
+                                        <td>22/05/23</td>
+                                        <td class="taskstab"><span class="fa fa-circle"></span> Completed Practicals</td>
+                                        <td><input type="checkbox" name="check"></td>
+                                        <td><input type="checkbox" name="check"></td>
+                                        <td><input type="checkbox" name="check"></td>
+                                        <td><button>Completed</button></td>
+                                    </tr>
+            
+                                    <tr>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td><button>Forward</button></td>
+                                    </tr>
+                                </table>
+                            </div>
                         </div>
         
-                        <div class="twop">
-                            <p>Session- 2022-2023</p>
+        
+                        <div class="tablebg">
+                            
+                            <div class="head semes mt-5">
+                                <div class="onep">
+                                    <p>2nd Semester</p>
+                                </div>
+                
+                                <div class="twop">
+                                    <p>2022-2023</p>
+                                </div>
+                            </div>
+    
+                            <div class="table-responsive">
+                                <!-- weekly table weekly table weekly table weekly table weekly table -->
+                                <table class="table table-bordered table-striped table-hover table- wtasks">
+                                    <div class="head">
+                                        <p>Weekly Tasks</p>
+                                    </div>
+                                    
+                                    <tr>
+                                        <th>Week</th>
+                                        <th>Date</th>
+                                        <th>Time</th>
+                                        <th>Venue</th>
+                                        <th>Tasks</th>
+                                        <th>Done <br> (Me)</th>
+                                        <th>Done <br> (Course Rep)</th>
+                                        <th>Done <br> (HOD/Admin)</th>
+                                        <th>Observed</th>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>22/05/23</td>
+                                        <td>12.00pm - 2.30pm</td>
+                                        <td>Odili Lecture Hall</td>
+                                        <td class="taskstab"><span class="fa fa-circle"></span> RLT 203 Lecture</td>
+                                        <td><input type="checkbox" name="check"></td>
+                                        <td><input type="checkbox" name="check"></td>
+                                        <td><input type="checkbox" name="check"></td>
+                                        <td><button>Completed</button></td>
+                                    </tr>
+            
+                                    <tr>
+                                        <td>2</td>
+                                        <td>22/05/23</td>
+                                        <td>12.00pm - 2.30pm</td>
+                                        <td>Azikiwe Lecture Hall</td>
+                                        <td class="taskstab"><span class="fa fa-circle"></span> RLT 203 Practicals on Solar Installation</td>
+                                        <td><input type="checkbox" name="check"></td>
+                                        <td><input type="checkbox" name="check"></td>
+                                        <td><input type="checkbox" name="check"></td>
+                                        <td><button class="almost">Completed</button></td>
+                                    </tr>
+            
+            
+                                    <tr>
+                                        <td>1</td>
+                                        <td>22/05/23</td>
+                                        <td>12.00pm - 2.30pm</td>
+                                        <td>Odili Lecture Hall</td>
+                                        <td class="taskstab"><span class="fa fa-circle"></span> RLT 203 Lecture</td>
+                                        <td><input type="checkbox" name="check"></td>
+                                        <td><input type="checkbox" name="check"></td>
+                                        <td><input type="checkbox" name="check"></td>
+                                        <td><button class="complete">Completed</button></td>
+                                    </tr>
+            
+            
+                                    <tr>
+                                        <td>1</td>
+                                        <td>22/05/23</td>
+                                        <td>12.00pm - 2.30pm</td>
+                                        <td>Odili Lecture Hall</td>
+                                        <td class="taskstab"><span class="fa fa-circle"></span> RLT 203 Lecture</td>
+                                        <td><input type="checkbox" name="check"></td>
+                                        <td><input type="checkbox" name="check"></td>
+                                        <td><input type="checkbox" name="check"></td>
+                                        <td><button>Completed</button></td>
+                                    </tr>
+            
+                                    <tr>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td><button>Forward</button></td>
+                                    </tr>
+            
+            
+                                </table>
+        
+        
+                                <table class="table table-bordered table-striped table-hover table- mtasks">
+                                    <div class="head mt-4">
+                                        <p>Monthly Tasks</p>
+                                    </div>
+                                    
+                                    <tr>
+                                        <th>Month</th>
+                                        <th>Date</th>
+                                        <th>Tasks</th>
+                                        <th>Done <br> (Me)</th>
+                                        <th>Done <br> (Course Rep)</th>
+                                        <th>Done <br> (HOD/Admin)</th>
+                                        <th>Observed</th>
+                                    </tr>
+            
+                                    <tr>
+                                        <td>January</td>
+                                        <td>22/05/23</td>
+                                        <td class="taskstab"><span class="fa fa-circle"></span> 1st Test</td>
+                                        <td><input type="checkbox" name="check"></td>
+                                        <td><input type="checkbox" name="check"></td>
+                                        <td><input type="checkbox" name="check"></td>
+                                        <td><button>Completed</button></td>
+                                    </tr>
+            
+                                    <tr>
+                                        <td>February</td>
+                                        <td>22/05/23</td>
+                                        <td class="taskstab"><span class="fa fa-circle"></span> 2nd Test</td>
+                                        <td><input type="checkbox" name="check"></td>
+                                        <td><input type="checkbox" name="check"></td>
+                                        <td><input type="checkbox" name="check"></td>
+                                        <td><button>Completed</button></td>
+                                    </tr>
+            
+                                    <tr>
+                                        <td>March</td>
+                                        <td>22/05/23</td>
+                                        <td class="taskstab"><span class="fa fa-circle"></span> Practicals Presentation</td>
+                                        <td><input type="checkbox" name="check"></td>
+                                        <td><input type="checkbox" name="check"></td>
+                                        <td><input type="checkbox" name="check"></td>
+                                        <td><button>Completed</button></td>
+                                    </tr>
+            
+                                    <tr>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td><button>Forward</button></td>
+                                    </tr>
+                                </table>
+        
+                                <!-- general semsester Table general semsester Table general semsester Table general semsester Table general semsester Table -->
+                                <table class="table table-bordered table-striped table-hover table- gtasks">
+                                    <div class="head mt-4">
+                                        <p>General Tasks</p>
+                                    </div>
+                                    
+                                    <tr>
+                                        <th>Session</th>
+                                        <th>Date</th>
+                                        <th>Tasks</th>
+                                        <th>Done <br> (Me)</th>
+                                        <th>Done <br> (Course Rep)</th>
+                                        <th>Done <br> (HOD/Admin)</th>
+                                        <th>Observed</th>
+                                    </tr>
+            
+                                    <tr>
+                                        <td>2022-2023</td>
+                                        <td>22/05/23</td>
+                                        <td class="taskstab"><span class="fa fa-circle"></span> Completed Curriculum</td>
+                                        <td><input type="checkbox" name="check"></td>
+                                        <td><input type="checkbox" name="check"></td>
+                                        <td><input type="checkbox" name="check"></td>
+                                        <td><button>Completed</button></td>
+                                    </tr>
+            
+                                    <tr>
+                                        <td>2022-2023</td>
+                                        <td>22/05/23</td>
+                                        <td class="taskstab"><span class="fa fa-circle"></span> Completed Practicals</td>
+                                        <td><input type="checkbox" name="check"></td>
+                                        <td><input type="checkbox" name="check"></td>
+                                        <td><input type="checkbox" name="check"></td>
+                                        <td><button>Completed</button></td>
+                                    </tr>
+            
+                                    <tr>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td><button>Forward</button></td>
+                                    </tr>
+                                </table>
+                            </div>
                         </div>
-                    </div>
-                    <!-- weekly table weekly table weekly table weekly table weekly table -->
-                    <div class="table-responsive  wtasks">
-                        <table class="table table-bordered table-striped table-hover table-">
-                            <div class="head">
-                                <p>Weekly Tasks</p>
-                            </div>
-                            
-                            <tr>
-                                <th>Week</th>
-                                <th>Date</th>
-                                <th>Time</th>
-                                <th>Venue</th>
-                                <th>Tasks</th>
-                                <th>Done <br> (Me)</th>
-                                <th>Done <br> (Course Rep)</th>
-                                <th>Done <br> (HOD/Admin)</th>
-                                <th>Observed</th>
-                            </tr>
-                            <tr>
-                                <td>-</td>
-                                <td>-</td>
-                                <td>-</td>
-                                <td>-</td>
-                                <td class="taskstab"><span class="fa fa-circle"></span> -</td>
-                                <td><input type="checkbox" name="check"></td>
-                                <td><input type="checkbox" name="check"></td>
-                                <td><input type="checkbox" name="check"></td>
-                                <td><button>Completed</button></td>
-                            </tr>
-    
-                           
-    
-                            <tr>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td><button>Forward</button></td>
-                            </tr>
-    
-    
-                        </table>
-                    </div>
-    
-                    <!-- monthly table monthly table  monthly table  monthly table  -->
-                    <div class="table-responsive  mtasks">
-                        <table class="table table-bordered table-striped table-hover table-">
-                            <div class="head mt-4">
-                                <p>Monthly Tasks</p>
-                            </div>
-                            
-                            
-                            <tr>
-                                <th>Month</th>
-                                <th>Date</th>
-                                <th>Tasks</th>
-                                <th>Done <br> (Me)</th>
-                                <th>Done <br> (Course Rep)</th>
-                                <th>Done <br> (HOD/Admin)</th>
-                                <th>Observed</th>
-                            </tr>
-    
-                            <tr>
-                                <td>-</td>
-                                <td>-</td>
-                                <td class="taskstab"><span class="fa fa-circle"></span> -t</td>
-                                <td><input type="checkbox" name="check"></td>
-                                <td><input type="checkbox" name="check"></td>
-                                <td><input type="checkbox" name="check"></td>
-                                <td><button>Completed</button></td>
-                            </tr>
-    
-                            
-    
-                            <tr>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td><button>Forward</button></td>
-                            </tr>
-                        </table>
-                    </div>
-    
-    
-                   <!-- Semester Table Semester Table Semester Table Semester Table Semester Table -->
-                   <div class="table-responsive  gtasks">
-                        <table class="table table-bordered table-striped table-hover table-">
-                            <div class="head mt-4">
-                                <p>General Tasks</p>
-                            </div>
-                            
-                            <tr>
-                                <th>Session</th>
-                                <th>Date</th>
-                                <th>Tasks</th>
-                                <th>Done <br> (Me)</th>
-                                <th>Done <br> (Course Rep)</th>
-                                <th>Done <br> (HOD/Admin)</th>
-                                <th>Observed</th>
-                            </tr>
-    
-                            <tr>
-                                <td>-</td>
-                                <td>-</td>
-                                <td class="taskstab"><span class="fa fa-circle"></span> -</td>
-                                <td><input type="checkbox" name="check"></td>
-                                <td><input type="checkbox" name="check"></td>
-                                <td><input type="checkbox" name="check"></td>
-                                <td><button>Completed</button></td>
-                            </tr>
-    
-    
-                            <tr>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td><button>Forward</button></td>
-                            </tr>
-                        </table>
                     </div>
                 </div>
             </div>
@@ -514,13 +1118,263 @@
                         <h1>MESSAGES </h1>
                     </div>
     
+                    
+    
+                    <div class="nav-pills" id="msg-nav">
+                        <div class="nav-item">
+                            <a href="#sendmsg" class="list nav-link active" data-bs-toggle="tab" data-bs-target="#sendmsg">Send</a>
+                        </div>
+                        <div class="nav-item">
+                            <a href="#viewmsg" class="list nav-link" data-bs-toggle="tab" data-bs-target="#viewmsg">Inbox</a>
+                        </div>
+                        <div class="nav-item">
+                            <a href="#outmsg" class="list nav-link" data-bs-toggle="tab" data-bs-target="#outmsg">Outbox</a>
+                        </div>
+                    </div>
                 </div>
     
                 <div class="tab-content mytabcontent" data-target="#msg-nav">
     
+                    <!-- send messages send messages send messages send messages send messages -->
+                    <div class="tab-pane fade show active" id="sendmsg">
+                        
+                        <div class="nav navbar" id="msgtype">
+                            <ul class="nav-tabs type">
+                                <div class="select">
+                                    <p>SELECT MESSAGE TYPE:</p>
+                                </div>
+    
+                               <div class="nav-group">
+                                    <li class="nav-item one">
+                                        <a href="#pmsg" class="list nav-link active" data-bs-toggle="tab" data-bs-target="#pmsg">Private</a>
+                                    </li>
+    
+                                    <li class="nav-item two item">
+                                        <a href="#dmsg" class="list nav-link" data-bs-toggle="tab" data-bs-target="#dmsg">Department</a>
+                                    </li>
+    
+                                    <li class="nav-item three item">
+                                        <a href="#gmsg" class="list nav-link" data-bs-toggle="tab" data-bs-target="#gmsg">General</a>
+                                    </li>
+                               </div>
+                            </ul>
+                        </div>
+    
+                        <div class="tab-content mytabcontent" data-bs-parent="#msgtype">
+    
+                            <!-- private message private message private message private message private message -->
+                            <div class="tab-pane fade show active" id="pmsg">
+                                <div class="form">
+                                    <form action="" class="container was-validated">
+                    
+    
+                                        <div class="row mt-4 form-group">
+                                            <div class="col-5 first">
+                                                <label class="form-label" for="monthly">Title</label>
+                                                <select name="" id="title">
+                                                    <option value="Academic Staff">Academic Staff</option>
+                                                    <option value="Non-Academic Staff">Non-Academic Staff</option>
+                                                    <option value="Admin">Admin</option>
+                                                    <option value="Students">Students</option>
+                                                </select>
+                                            </div>
+                    
+                                            <div class="col-5 second">
+                                                <label class="form-label" for="week">Department</label>
+                                                <select name="" id="dept">
+                                                    <option value="None">None</option>
+                                                    <option value="Computer Science">Computer Science</option>
+                                                    <option value="Engineering">Engineering</option>
+                                                    <option value="Welding">Welding</option>
+                                                    <option value="Fashion Designing">Fashion Designing</option>
+                                                </select>
+                                            </div>
+    
+                                            
+                                        </div> <br>
+                    
+                                        <div class="row mt-1 form-group">
+                                            <div class="col-5 first">
+                                                <label class="form-label" for="">Name</label>
+                                                <select name="" id="name">
+                                                    <ul>
+                                                        <li>
+                                                            <option type="checkbox" value="Williams Barth">Williams Barth</option>
+                                                            <option type="checkbox" value="Rita Hycinth">Rita Hycinth</option>
+                                                            <option type="checkbox" value="Diamien Okonkwo">Diamien Okonkwo</option>
+                                                            <option type="checkbox" value="Chioma Nwaigwe">Chioma Nwaigwe</option>
+    
+                                                        </li>
+                                                    </ul>
+                                                </select>
+                                                
+                                            </div>
+                    
+                                            <div class="col-5 second">
+                                                <label class="form-label" for="description">Description</label>
+                                                <input type="text" id="description" required>
+                                            </div>
+                                        </div> <br>
+                    
+                                        <div class="row mt-1 form-group">
+                                            <div class="textarea">
+                                                <label class="form-label" for="message">Message</label> <br>
+                                                <textarea name="" rows="5" placeholder="Drop a Message..."></textarea>
+                                            </div>
+                    
+                                            
+                                        </div>
+                    
+                                        
+                    
+                                        <div class="submit mt-4">
+                                            <button>Send</button>
+                                        </div>
+                    
+                                    </form>
+                                </div>
+                            </div>
+    
+    
+                            <!-- Department Message Department Message Department Message Department Message -->
+                            <div class="tab-pane fade" id="dmsg">
+                                <div class="form">
+                                    <form action="" class="container was-validated">
+                    
+    
+                                        <div class="row mt-4 form-group">
+                                            <div class="col-5 first">
+                                                <label class="form-label" for="week">Title</label>
+                                                <select name="" id="">
+                                                    <option value="Academic Staff">Academic Staff</option>
+                                                    <option value="Non-Academic Staff">Non-Academic Staff</option>
+                                                    <option value="Admin">Admin</option>
+                                                    <option value="Students">Students</option>
+                                                </select>
+                                            </div>
+                    
+                                            <div class="col-5 second">
+                                                <label class="form-label" for="week">Department</label>
+                                                <select name="" id="">
+                                                    <option value="None">None</option>
+                                                    <option value="Computer Science">Computer Science</option>
+                                                    <option value="Engineering">Engineering</option>
+                                                    <option value="Welding">Welding</option>
+                                                    <option value="Fashion Designing">Fashion Designing</option>
+                                                </select>
+                                            </div>
+    
+                                            
+                                        </div> <br>
+                    
+                                        <div class="row mt-1 form-group">
+                                            
+                                            <div class="col-5 first">
+                                                <label class="form-label" for="course">Course</label>
+                                                <select name="" id="">
+                                                    <option value="None">None</option>
+                                                    <option value="GST 101">GST 101</option>
+                                                    <option value="Lan 456">Lan 456</option>
+                                                    <option value="CIT 245">CIT 245</option>
+                                                    <option value="Gst 208">Gst 208</option>
+                                                </select>
+                                            </div>
+    
+                                            <div class="col-5 second">
+                                                <label class="form-label" for="description">Description</label>
+                                                <input type="text" id="description" required>
+                                            </div>
+                                        </div> <br>
+                    
+                                        <div class="row mt-1 form-group">
+                                            <div class="textarea">
+                                                <label class="form-label" for="message">Message</label> <br>
+                                            <textarea name="" id="" rows="5" placeholder="Drop a Message..."></textarea>
+                                            </div>
+                    
+                                            
+                                        </div>
+                    
+                                        
+                    
+                                        <div class="submit mt-4">
+                                            <button>Send</button>
+                                        </div>
+                    
+                                    </form>
+                                </div>
+                            </div>
+    
+                            <!-- General message General message General message General message -->
+                            <div class="tab-pane fade" id="gmsg">
+                                <div class="form">
+                                    <form action="" class="container was-validated">
+                    
+    
+                                        <div class="row mt-4 form-group">
+                                            <div class="col-5 first">
+                                                <label class="form-label" for="week">Title</label>
+                                                <select name="" id="">
+                                                    <option value="All">All</option>
+                                                </select>
+                                            </div>
+                    
+                                            <div class="col-5 second">
+                                                <label class="form-label" for="week">Department</label>
+                                                <select name="" id="">
+                                                    <option value="None">None</option>
+                                                    <option value="Computer Science">Computer Science</option>
+                                                    <option value="Engineering">Engineering</option>
+                                                    <option value="Welding">Welding</option>
+                                                    <option value="Fashion Designing">Fashion Designing</option>
+                                                </select>
+                                            </div>
+    
+                                            
+                                        </div> <br>
+                    
+                                        <div class="row mt-1 form-group">
+                                            
+                                            <div class="col-5 first">
+                                                <label class="form-label" for="course">Course</label>
+                                                <select name="" id="">
+                                                    <option value="None">None</option>
+                                                    <option value="GST 101">GST 101</option>
+                                                    <option value="Lan 456">Lan 456</option>
+                                                    <option value="CIT 245">CIT 245</option>
+                                                    <option value="Gst 208">Gst 208</option>
+                                                </select>
+                                            </div>
+    
+                                            <div class="col-5 second">
+                                                <label class="form-label" for="description">Description</label>
+                                                <input type="text" id="description" required>
+                                            </div>
+                                        </div> <br>
+                    
+                                        <div class="row mt-1 form-group">
+                                            <div class="textarea">
+                                                <label class="form-label" for="message">Message</label> <br>
+                                            <textarea name="" id="" cols="100" rows="5" placeholder="Drop a Message..."></textarea>
+                                            </div>
+                    
+                                            
+                                        </div>
+                    
+                                        
+                    
+                                        <div class="submit mt-4">
+                                            <button>Send</button>
+                                        </div>
+                    
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 
                     <!-- view messages view messages view messages view messages view messages -->
-                    <div class="tab-pane fade show active" id="viewmsg">
+                    <div class="tab-pane fade" id="viewmsg">
     
                         <div class="msg-list">
     
@@ -567,6 +1421,52 @@
                     </div>
     
     
+                    <!-- outbox messages outbox messages outbox messages outbox messages outbox messages -->
+                    <div class="tab-pane fade" id="outmsg">
+    
+                        <div class="msg-list">
+    
+    
+                            <div class="message-item">
+                                <div class="name mt-3">
+                                    <ul>
+                                        <li>
+                                            <h1>Mr. Vincent Okoro</h1>
+                                            <i>Academic Staff</i> <br> <br>
+                                            <span>Message Type: Private</span>
+                                        </li>
+                                    </ul> <hr>
+                                    
+                                </div>
+    
+                                <div class="msg">
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus consectetur illum, sapiente accusamus ipsam libero recusandae sint tempore doloremque eum non repellat. Nesciunt, perspiciatis molestiae eveniet beatae hic a dicta! Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, magnam nobis tempore velit ipsum temporibus iste modi quae vel, soluta quos ex non vitae dolorem accusantium. Eveniet magnam libero rem.</p><br>
+    
+                                    <span>Tuesday, 2.30pm</span>
+                                </div>
+                            </div>
+    
+                            <div class="message-item">
+                                <div class="name mt-3">
+                                    <ul>
+                                        <li>
+                                            <h1>Mrs. Rita Ugwu</h1>
+                                            <i>Admin</i> <br> <br>
+                                            <span>Message Type: General</span>
+                                        </li>
+                                    </ul> <hr>
+                                    
+                                </div>
+    
+                                <div class="msg">
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus consectetur illum, sapiente accusamus ipsam libero recusandae sint tempore doloremque eum non repellat. Nesciunt, perspiciatis molestiae eveniet beatae hic a dicta! Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, magnam nobis tempore velit ipsum temporibus iste modi quae vel, soluta quos ex non vitae dolorem accusantium. Eveniet magnam libero rem.</p><br>
+    
+                                    <span>Tuesday, 2.30pm</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
                 </div>
                 
             </div>

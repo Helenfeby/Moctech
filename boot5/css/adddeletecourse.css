@@ -1,0 +1,449 @@
+body{
+    padding: 0;
+    margin: 10px;
+    /* background-color: rgb(246, 241, 236); */
+}
+.firstsection{
+    display: none;
+}
+
+.navbar{
+    height: fit-content;
+    background-color: black;
+    color: white;
+    border-radius: 8px;
+}
+.title{
+    color: white;
+    margin-left: 2%;
+}
+.title h1{
+    font-size: 25px;
+    margin-left: 10px;
+}
+
+.cancel{
+    margin-right: 2%;
+}
+
+.cancel button{
+    background: none;
+    /* border: none; */
+    color: white;
+}
+
+
+
+
+.head{
+    background-color: rgb(61, 61, 61);
+    padding: 8px;
+    /* padding: 1px; */
+}
+
+.head h1{
+    color: white;
+    margin-left: 2%;
+    padding: 2px;
+    margin-bottom: 4px;
+    text-transform: uppercase;
+    font-size: 24px;
+}
+
+.fa-sort-down{
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    background-color: rgba(204, 200, 196, 0.368);
+    border-radius: 10px;
+    width: 20px;
+    height: 20px;
+    /* margin-bottom: 8px; */
+    padding: 0px 0px 6px 0px;
+}
+
+#sortdown,
+#sortdowntwo{
+    margin-top: -30px;
+    margin-left: 96%;
+}
+
+.tablebg .table{
+    text-align: center;
+    margin: auto;
+}
+
+table button{
+    font-size: 14px;
+    font-weight: 400;
+    color: white;
+    background-color: black;
+    padding: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: fit-content;
+    border-radius: 5px;
+    border: none;
+}
+
+table .savdel{
+    background-color: rgb(88, 1, 1);
+}
+
+table .submit{
+    background-color: rgb(1, 74, 2);
+    font-weight: 700;
+    padding: 8px;
+}
+.tablebg .head{
+    background-color: black;
+    /* padding: 1px; */
+}
+
+.tablebg .head p{
+    color: white;
+    margin-left: 2%;
+    padding: 2px;
+    margin-bottom: 4px;
+}
+
+.tablebg .semes{
+    background-color: rgb(2, 2, 103);
+    /* padding: 1px; */
+}
+
+.tablebg .semes p{
+    color: white;
+    margin-left: 2%;
+    padding: 2px;
+    margin-bottom: 4px;
+    font-size: 21px;
+    text-transform: uppercase;
+}
+
+.tablebg table input{
+    color: blue;
+}
+
+.fa-plus{
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: rgba(142, 140, 140, 0.281);
+    border-radius: 25px;
+    /* width: 20px; */
+    padding: 4px 4px 4px 4px;
+    /* margin-top: -25px;
+    margin-left: 97%; */
+}
+.navbar .fa-plus{
+    color: white;
+}
+
+table #oplus,
+table #hplus{
+    margin-left: 60%;
+    margin-top: -20px;
+    
+}
+
+.navbar #plus{
+    margin-left: 110%;
+    margin-top: -35px;
+}
+
+.tablebg label{
+    color: white;
+}
+
+
+/* modal modal modal modal modal modal modal  */
+.modal .modal-dialog{
+    margin-top: 15%;
+    /* justify-content: center;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+    text-align: center; */
+    justify-self: center;
+    /* margin: auto; */
+    width: 350px;
+}
+.modal .modal-title{
+    font-size: 20px;
+}
+.modal .update{
+    text-align: center;
+}
+
+.modal .fa-times{
+    font-size: 2px;
+}
+
+.modal .update button{
+    border-radius: 5px;
+    /* background-color: rgb(44, 43, 43); */
+    color: white;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-weight: 500;
+}
+
+.modal .update .yes{
+    background-color: green;
+}
+
+.modal .update .no{
+    background-color: rgb(129, 0, 0);
+}
+
+.modal .update button a{
+    text-decoration: none;
+    color: white;
+}
+
+
+@media only screen
+and (max-width:318px){
+    .navbar,
+    .head,
+    .sessiontasks{
+        display: none;
+    }
+
+    .firstsection{
+        display: flex;
+        text-align: center;
+        margin: auto;
+        color: red;
+        text-transform: uppercase;
+        margin-top: 50%;
+    }
+    .firstsection h1{
+        text-align: center;
+        margin: auto;
+        font-size: 20px;
+    }
+}
+
+@media only screen
+  and (min-width:418px) and (max-width:529px){
+
+    .modal{
+        margin: 5%;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        align-self: center;
+        text-align: center;
+        justify-self: center;
+    }
+    .modal .modal-dialog{
+        
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        align-self: center;
+        text-align: center;
+        justify-self: center;
+        /* margin: auto; */
+        width: 300px;
+    }
+
+    .modal .form-group p{
+        font-size: 14px;
+    }
+
+    .navbar #plus{
+        margin-left: 95%;
+        margin-top: -35px;
+    }
+
+    table #oplus,
+    table #hplus{
+        margin-left: 88%;
+        margin-top: -20px;
+        
+    }
+
+    .tablebg .table tr th{
+        margin-left: -18px;
+        width: 150px;
+        padding: 18px;
+        font-size: 12px;
+    }
+}
+
+@media only screen
+  and (min-width:530px) and (max-width:768px){
+
+    .modal{
+        margin: 10%;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        align-self: center;
+        text-align: center;
+        justify-self: center;
+    }
+    .modal .modal-dialog{
+        
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        align-self: center;
+        text-align: center;
+        justify-self: center;
+        /* margin: auto; */
+        width: 300px;
+    }
+
+    .modal .form-group p{
+        font-size: 14px;
+    }
+    table #oplus,
+    table #hplus{
+        margin-left: 88%;
+        margin-top: -20px;
+        
+    }
+}
+
+@media only screen
+  and (min-width:319px) and (max-width:417px){
+   
+    .title{
+        color: white;
+        margin-left: 2%;
+    }
+    .title h1{
+        font-size: 17px;
+        margin-left: 10px;
+    }
+    
+    .cancel button{
+        background: none;
+        outline: none;
+        margin-left: -10%;
+    }
+    .cancel button a{
+        text-decoration: none;
+        color: white;
+    }
+    
+    .tablebg .semes p{
+        color: white;
+        margin-left: 2%;
+        padding: 2px;
+        margin-bottom: 4px;
+        font-size: 18px;
+        text-transform: uppercase;
+    }
+
+    #sortdown,
+    #sortdowntwo{
+        margin-top: -30px;
+        margin-left: 90%;
+    }
+
+    .modal{
+        margin: 2%;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        align-self: center;
+        text-align: center;
+        justify-self: center;
+    }
+    .modal .modal-dialog{
+        
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        align-self: center;
+        text-align: center;
+        justify-self: center;
+        /* margin: auto; */
+        width: 300px;
+    }
+
+    .modal .form-group p{
+        font-size: 12px;
+    }
+    .navbar #plus{
+        margin-left: 95%;
+        margin-top: -35px;
+    }
+
+    table #oplus,
+    table #hplus{
+        margin-left: 80%;
+        margin-top: -20px;
+        
+    }
+
+    .tablebg .table tr th{
+        margin-left: -18px;
+        width: 150px;
+        padding: 18px;
+        font-size: 12px;
+    }
+}
+
+@media only screen
+  and (min-width:418px) and (max-width:920px){
+   
+    .title{
+        color: white;
+        margin-left: 2%;
+    }
+    .title h1{
+        font-size: 20px;
+        margin-left: 10px;
+    }
+    
+    .cancel button{
+        background: none;
+        outline: none;
+        margin-left: -18%;
+    }
+    .cancel button a{
+        text-decoration: none;
+        color: white;
+    }
+
+    .tablebg .semes p{
+        color: white;
+        margin-left: 2%;
+        padding: 2px;
+        margin-bottom: 4px;
+        font-size: 20px;
+        text-transform: uppercase;
+    }
+    
+
+    #sortdown,
+    #sortdowntwo{
+        margin-top: -30px;
+        margin-left: 92%;
+    }
+
+   
+
+    .modal .modal-dialog{
+        
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        align-self: center;
+        text-align: center;
+        justify-self: center;
+        /* margin-top: 35%; */
+        margin: 15%;
+        width: 300px;
+    }
+
+    .modal .form-group p{
+        font-size: 14px;
+    }
+}

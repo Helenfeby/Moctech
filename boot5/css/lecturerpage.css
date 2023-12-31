@@ -14,33 +14,52 @@ body{
 
 .real .sortdown{
     /* float: right; */
-    margin-right: 1%;
+    margin-right: 5%;
     border-radius: 30px;
-}
-.real #plus,
-.real #mplus,
-.real #wplus{
-    /* float: right; */
-    /* margin-left: -360px */
-    /* float: right; */
-    /* margin-right: -65%; */
-    /* margin-top: -6px; */
 }
 
-#weekly #plus,
-#monthly #plus{
-    margin-left: 0%;
-    margin-top: 0px;
+ /* attendance attendance  */
+#ond-nav .title,
+#hnd-nav .title{
+    /* text-align: left;
+    margin-left: -21px; */
 }
-.real .sortdown{
-    /* float: right; */
-    margin-right: 1%;
-    border-radius: 30px;
+
+#ond-nav .title h1,
+#hnd-nav .title h1{
+    /* margin-left: -135px; */
 }
-.real #plus{
-    /* float: right; */
-    margin-right: 1%;
+#ond-nav .sortdown,
+#hnd-nav .sortdown{
+    /* margin-left: 80%;
+    margin-top: -35px; */
 }
+
+
+/* plus and sortdown design */
+/* plus and sortdown design */
+#workplan .title{
+    /* text-align: left;
+    margin-left: -71px; */
+}
+
+#workplan .title h1{
+    /* margin-left: -130px; */
+}
+
+#workplan #plus,
+#weekly #wplus,
+#monthly #mplus{
+    margin-left: 55%;
+    /* margin-top: -35px; */
+}
+
+#workplan .sortdown{
+    /* margin-left: 80%;
+    margin-top: -36px; */
+}
+
+
     
 
 .fa-plus{
@@ -52,6 +71,8 @@ body{
     /* width: 20px; */
     padding: 4px 4px 4px 4px;
 }
+
+
 
 .fa-sort-down{
     color: white;
@@ -110,34 +131,28 @@ body{
     padding: 5px; 
 } 
 
-.sidebar-nav .nav-content {
-    padding: 5px 0 0 0;
-    margin: 0;
-    list-style: none;
-}
 
-.sidebar-nav .nav-content a {
-    display: flex;
-    align-items: center;
-    font-size: 14px;
-    font-weight: 600;
-    color: #012970;
-    transition: 0.3;
-    padding: 5px 0 5px 10px;
-    transition: 0.3s;
-}
-
-.sidebar-nav .nav-content a i {
-    font-size: 6px;
-    margin-right: 8px;
-    line-height: 0;
-    border-radius: 50%;
-}
   
-.sidebar-nav .nav-content a:hover,
-.sidebar-nav .nav-content a.active {
-    color: #4154f1;
+.sidenav a:hover,
+.sidenav a.active {
+    color: rgb(242, 152, 49);
 }
+
+
+
+.sidenav button{
+    /* align-self: center;
+    align-content: center;
+    justify-content: center; */
+    text-align: center;
+    /* margin: auto; */
+    border: none;
+    background: none;
+}
+.sidenav button p{
+    font-weight: 600;
+}
+
 
 /* id id id  */
 .id{
@@ -206,6 +221,7 @@ body{
 
 .activerow{
     margin: 8px;
+    margin-top: -6px;
 }
 .activerow2{
     margin-left: 8px;
@@ -213,15 +229,7 @@ body{
 }
 
 
-.card{
-    margin: 40px;
-    border-radius: 10px;
-    /* padding-left: 10px; */
-    /* padding-right: 10px; */
-    /* color: white; */
-    /* background-color: rgb(23, 39, 130); */
-    /* border: 5px solid rgb(8, 8, 68); */
-}
+
 
 .login{
     /* float: right; */
@@ -230,7 +238,17 @@ body{
     margin: auto;
     margin-top: 10px;
 }
+
 /* activity activity activity activity  */
+.card{
+    margin: 40px;
+    border-radius: 10px;
+    /* padding-left: 10px; */
+    /* padding-right: 10px; */
+    /* color: white; */
+    /* background-color: rgb(23, 39, 130); */
+    border: 2px solid rgb(8, 8, 68);
+}
 
 .show .activity {
     font-size: 14px;
@@ -283,11 +301,10 @@ body{
     padding-bottom: 0;
 }
 
+
 .fa-circle{
     font-size: 3px;
 }
-
-
 
 table{
     text-align: center;
@@ -302,7 +319,37 @@ table{
 }
 
 
+.head{
+    background-color: rgb(103, 6, 6);
+    padding: 8px;
+    /* padding: 1px; */
+}
 
+.head h1{
+    color: white;
+    margin-left: 2%;
+    padding: 2px;
+    margin-bottom: 4px;
+    text-transform: uppercase;
+    font-size: 24px;
+}
+
+.head .fa-sort-down{
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    background-color: rgba(204, 196, 196, 0.368);
+    border-radius: 10px;
+    width: 20px;
+    height: 20px;
+    /* margin-bottom: 8px; */
+    padding: 0px 0px 6px 0px;
+}
+
+#sortdown{
+    margin-top: -30px;
+    margin-left: 96%;
+}
 
 
 table .taskstab{
@@ -311,7 +358,7 @@ table .taskstab{
 
 table button{
     font-size: 14px;
-    background-color: rgb(240, 236, 236);
+    background-color: rgb(154, 153, 153);
     width: fit-content;
     border-radius: 5px;
     border: none;
@@ -340,12 +387,12 @@ table .complete{
     margin-left: 2%;
     padding: 2px;
     margin-bottom: 4px;
-    font-size: 20px;
+    font-size: 17px;
 }
 
 .tablebg .semes{
     background-color: rgb(2, 2, 103);
-    padding-left: 5px;
+    /* padding-left: 5px; */
     /* padding: 1px; */
 }
 
@@ -354,12 +401,12 @@ table .complete{
     margin-left: 2%;
     padding: 2px;
     margin-bottom: 4px;
-    font-size: 23px;
+    font-size: 20px;
     text-transform: uppercase;
 }
 
 .tablebg .twop{
-    margin-left: 80%;
+    margin-left: 90%;
     margin-top: -40px;
 }
 
@@ -508,7 +555,12 @@ nav .nav-tabs .nav-item a{
 
 .filled,
 .form{
-    margin-left: 30px;
+    margin-left: 1px;
+}
+
+.filled{
+    background-color: #ecebeb;
+    border-radius: 15px;
 }
 
 .filled .hero{
@@ -519,7 +571,7 @@ nav .nav-tabs .nav-item a{
 }
 
 .filled .heroin{
-    width: 90%;
+    width: 100%;
     /* height: 50%; */
 }
 
@@ -531,14 +583,42 @@ nav .nav-tabs .nav-item a{
     box-shadow: 0px 5px 5px 0px rgb(63, 62, 62);
     /* transition: margin-top 4s; */
 }
-/* workplan and report */
 
-/* only report */
-/* #weekly #plus,
-#monthly #plus{
-    margin-left: -44%;
-    margin-top: -6px;
-} */
+
+/*  generate report generate report generate report */
+ 
+
+.generate{
+    background-color: rgb(1, 1, 103);
+    /* text-align: end; */
+    padding-top: 1px;
+    padding: 1px;
+}
+.generate a{
+    text-decoration: none;
+    text-align: center;
+    /* margin-top: 8px; */
+    
+}
+.generate a p{
+    color: white;
+    margin-right: 3%;
+    margin-top: 4px;
+    font-size: 17px;
+}
+
+.fa-download{
+    color: white;
+    font-size: 21px;
+    font-weight: bold;
+    background-color: rgba(204, 200, 200, 0.281);
+    border-radius: 25px;
+    /* width: 20px; */
+    padding: 6px 6px 6px 6px;
+    margin-left: 5px;
+    margin-bottom: -3px;
+}
+
 
 
 .submit{
@@ -551,6 +631,36 @@ nav .nav-tabs .nav-item a{
     padding-right: 18px;
     border-radius: 5px;
     font-weight: bold;
+}
+
+/* Generate files generate files generate files generate files  */
+.block{
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+    border: 1px solid black;
+    border-radius: 8px;
+    /* background-color: rgb(84, 23, 3); */
+    background-color: rgb(8, 2, 57);
+    height: 150px;
+    width: 450px;
+    margin-top: 6%;
+}
+.block a{
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    margin: auto;
+}
+
+.block p{
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 13%;
 }
 
 
@@ -628,15 +738,12 @@ nav .nav-tabs .nav-item a{
 
 #sendmsg .navbar .nav-tabs{
     display: flex;
-    /* justify-content: space-between; */
-    /* margin: auto; */
     list-style-type: none;
     /* gap: 1rem; */
 }
 #sendmsg .navbar .nav-tabs .nav-item{
     justify-content: space-between;
     margin: auto;
-    /* background-color: rgb(2, 2, 112); */
     padding: 8px;
     border-radius: 10px;
 }
@@ -660,7 +767,6 @@ nav .nav-tabs .nav-item a{
 }
 
 #sendmsg .navbar .nav-tabs .nav-item .active{
-    padding: 0;
     animation: none;
     transform: none;
     background-color: none;
@@ -671,11 +777,11 @@ nav .nav-tabs .nav-item a{
 #sendmsg .navbar .nav-tabs .nav-item .active:hover{
     cursor: pointer;
     color: rgb(108, 108, 108);
-    padding: 5px ;
+    /* padding: 5px; */
     transform: none;
 }
 #sendmsg .navbar .nav-tabs .nav-item:hover{
-    padding: 5px; 
+    /* padding: 5px;  */
     transform: none;
     /* background-color: rgb(252, 246, 246); */
 }
@@ -780,6 +886,143 @@ nav .nav-tabs .nav-item a{
 
 
 
+/* tab-content tab-content tab-content  */
+.tab-pane .nav-content{
+    /* justify-content: space-between; */
+    /* margin: auto; */
+    /* background-color: rgb(2, 2, 112); */
+    /* padding: 2px; */
+    border-radius: 10px;
+}
+.tab-pane .nav-content a{
+    text-decoration: none;
+    font-size: 13px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.tab-pane .sortdown .nav-content .active{
+    color: rgb(242, 152, 49);
+}
+
+.tab-pane .sortdown .nav-content .active:hover{
+    /* cursor: pointer; */
+    color: rgb(242, 152, 49);
+    transform: none;
+}
+.tab-pane .sortdown .nav-content:hover{
+    color: rgb(242, 152, 49);
+    transform: none;
+}
+
+
+
+/* modal modal modal modal modal modal  */
+.modal{
+    margin-top: 5%;
+}
+.modal .modal-title{
+    font-size: 20px;
+}
+.modal .update{
+    text-align: center;
+}
+
+.modal .update button{
+    border-radius: 5px;
+    background-color: rgb(44, 43, 43);
+    color: white;
+    font-weight: 500;
+}
+
+.modal .update button a{
+    text-decoration: none;
+    color: white;
+}
+
+.modal .navbar{
+    background-color: transparent;
+}
+.modal .select p{
+    font-weight: 700;
+    font-size: 18px;
+    color: black;
+}
+
+.modal .nav-tabs .select{
+    /* margin-top: 28px; */
+}
+
+.modal .nav-tabs .one{
+    margin-left: 25px;
+}
+.modal .nav-tabs .nav-item{
+    border: none;
+    background: none;
+}
+.modal .nav-tabs .nav-item input{
+    font-weight: bold;
+}
+
+
+.modal .navbar .nav-tabs{
+    display: flex;
+    /* list-style-type: none; */
+    /* gap: 1rem; */
+}
+.modal .navbar .nav-tabs .nav-item{
+    justify-content: space-between;
+    margin: auto;
+    padding: 8px;
+    border-radius: 10px;
+}
+.modal .nav-tabs .nav-item a{
+    color: black;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+}
+.modal .navbar .nav-tabs .nav-group{
+    display: flex;
+    /* margin-right: 1%; */
+}
+.modal .nav-tabs .select{
+    margin-top: 15px;
+    margin-left: -18px;
+}
+.modal .mytabcontent .tab-pane .textarea{
+    width: 100%;
+    /* height: 100%; */
+}
+
+.modal .navbar .nav-tabs .nav-item .active{
+    color: rgb(242, 152, 49);
+}
+
+.modal .navbar .nav-tabs .nav-item .active:hover{
+    cursor: pointer;
+    color: rgb(108, 108, 108);
+    /* padding: 5px; */
+}
+.modal .navbar .nav-tabs .nav-item:hover{
+    /* padding: 5px;  */
+    transform: none;
+    /* background-color: rgb(252, 246, 246); */
+}
+
+.modal .main{
+    padding: 5px;
+    background-color: rgb(196, 192, 192);
+    margin-top: 5px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.modal .tab-pane{
+    padding-bottom: 0px;
+}
+
+
+
 @media only screen
 and (max-width:318px){
     .secondsection{
@@ -799,6 +1042,48 @@ and (max-width:318px){
         font-size: 20px;
     }
 }
+
+@media only screen
+and (max-width:768px){
+    .tab-pane .nav-content{
+        /* justify-content: space-between; */
+        /* margin: auto; */
+        /* background-color: rgb(2, 2, 112); */
+        /* padding: 9px; */
+        border-radius: 10px;
+    }
+
+    .tab-pane .nav-content a{
+        text-decoration: none;
+        font-size: 12px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    
+}
+@media only screen
+  and (min-width:427px) and (max-width:717px){
+    /* plus and sortdown design */
+    #workplan .title{
+        text-align: center;
+        margin: auto;
+        margin-left: 5%;
+    }
+
+    #workplan .title h1{
+        margin-left: 0px;
+    }
+
+    #workplan #plus{
+        margin-left: 0%;
+        margin-top: -30px;
+    }
+
+    #workplan .sortdown{
+        margin-left: 0%;
+        margin-top: -33px;
+    }
+}
+
 
 @media only screen
 and (min-width:319px) and (max-width:374px){
@@ -829,6 +1114,7 @@ and (min-width:319px) and (max-width:374px){
     .fa-bars{
         margin-top: -10px;
     }
+
 
     #main{
         transition: margin-right .5s;
@@ -870,6 +1156,20 @@ and (min-width:319px) and (max-width:374px){
         /* float: right; */
         margin-right: -16%;
     }
+
+
+    /* tab-content tab-content tab-content  */
+    .tab-pane .nav-content{
+        padding: 3px;
+        border-radius: 10px;
+    }
+    .tab-pane .nav-content a{
+        text-decoration: none;
+        font-size: 13px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    
+    
     .real{
         margin-top: 0;
         margin-left: 0;
@@ -877,41 +1177,140 @@ and (min-width:319px) and (max-width:374px){
         border-radius: 10px;
     }
 
+    .real .sortdown{
+        /* float: right; */
+        margin-right: 5%;
+        border-radius: 30px;
+    }
+    
+    
+
     /* navbar for tab-content navbar for tab-content  */
     .title{
-        text-align: center;
-        margin: auto;
+        text-align: left;
+        margin-right: 120px;
     }
     .title h1{
         font-size: 18px;
     }
 
 
-    /* attendance attendance  */
-    #attendance{
-        margin-top: 0px;
-        border-right: 5px solid  white;
+    /* dasboard dashboard dashboard dashboard  */
+    .login{
+        /* float: right; */
+        justify-content: left;
+        text-align: left;
+        margin: auto;
+        margin-top: 10px;
     }
 
-    #tasks .title{
-        margin-right: 30%;
+    .activeleft,
+    .activeright{
+        width: 80%;
+        padding: 0;
     }
+
+    /* attendance attendance  */
+    #ond-nav .title,
+    #hnd-nav .title{
+        text-align: left;
+        margin-left: -71px;
+    }
+
+    #ond-nav .title h1,
+    #hnd-nav .title h1{
+        margin-left: -130px;
+    }
+    #ond-nav .sortdown,
+    #hnd-nav .sortdown{
+        margin-left: 70%;
+        margin-top: -35px;
+    }
+    
+
+    /* #tasks .title{
+        margin-right: 30%;
+    } */
+
+    /* view tasks view tasks view tasks  */
+    .head{
+        background-color: rgb(103, 6, 6);
+        padding: 5px;
+        /* padding: 1px; */
+    }
+    
+    .head h1{
+        color: white;
+        margin-left: 2%;
+        padding: 2px;
+        margin-bottom: 4px;
+        text-transform: uppercase;
+        font-size: 22px;
+    }
+    
+    .head .fa-sort-down{
+        color: white;
+        font-size: 30px;
+        font-weight: bold;
+        background-color: rgba(204, 196, 196, 0.368);
+        border-radius: 10px;
+        width: 20px;
+        height: 20px;
+        /* margin-bottom: 8px; */
+        padding: 0px 0px 6px 0px;
+    }
+    
+    #sortdown{
+        margin-top: -30px;
+        margin-left: 90%;
+    }
+    
+    
+    
+    .tablebg .head p{
+        color: white;
+        margin-left: 2%;
+        padding: 2px;
+        margin-bottom: 4px;
+        font-size: 15px;
+    }
+    
+    
+    .tablebg .semes p{
+        color: white;
+        margin-left: 2%;
+        padding: 2px;
+        margin-bottom: 4px;
+        font-size: 17px;
+        text-transform: uppercase;
+    }
+    
+    .tablebg .twop{
+        margin-left: 70%;
+        margin-top: -33px;
+    }
+
 
     /* plus and sortdown design */
-    #weekly .fa-plus,
-    #monthly .fa-plus{
-        margin-right: -15px;
-        margin-top: 0px;
+    #workplan .title{
+        /* /* text-align: left; */
+        margin-left: -31px;
     }
-    .real .sortdown{
-        float: right;
-        margin-right: 1%;
-        border-radius: 30px;
+
+    #workplan .title h1{
+        margin-left: -150px;
     }
-    .real #plus{
-        float: right;
-        margin-right: 1%;
+
+    #workplan #plus{
+        margin-left: 50%;
+        margin-top: -35px;
     }
+
+    #workplan .sortdown{
+        margin-left: 65%;
+        margin-top: -36px;
+    }
+   
     
     .fa-plus{
         color: white;
@@ -936,11 +1335,32 @@ and (min-width:319px) and (max-width:374px){
     }
 
     /* workplan and report form design  */
-    .plus .form p{
-        text-align: center;
-        margin-top: 5px;
-        font-size: 15px;
-        font-weight: 600;
+   /* workplan and report form design  */
+    #weekly .title{
+    text-align: left;
+    margin-left: -71px;
+    }
+
+    #weekly .title h1{
+        margin-left: -130px;
+    }
+
+    #weekly #plus{
+        margin-left: 60%;
+        margin-top: -35px;
+    }
+
+    #weekly .sortdown{
+        margin-left: 75%;
+        margin-top: -36px;
+    }
+
+
+   .plus .form p{
+    text-align: center;
+    margin-top: 5px;
+    font-size: 15px;
+    font-weight: 600;
     }
     .plus .nav-content{
         margin: 1%;
@@ -954,7 +1374,7 @@ and (min-width:319px) and (max-width:374px){
 
     .form .form-group .col-5,
     .filled .col-5{
-        /* width: 50%; */
+        width: 50%;
     }
     .form .form-group label{
         width: 100%;
@@ -975,11 +1395,11 @@ and (min-width:319px) and (max-width:374px){
         width: 30px;
         height: 18%;
     }
-    
+
     .form .submit{
         margin-top: 50px;
     }
-    
+
     .form .submit button{
         width: 100px;
         padding: 5px;
@@ -996,12 +1416,12 @@ and (min-width:319px) and (max-width:374px){
         font-weight: 500;
         width: 100%;
     }
-    
+
     .filled,
     .form{
-        /* margin: 2%; */
+        margin: 1%;
     }
-    
+
     .filled .hero{
         width: 100%;
         text-transform: uppercase;
@@ -1015,11 +1435,12 @@ and (min-width:319px) and (max-width:374px){
         width: 100%;
         font-weight: 580;
     }
-    
+
     .filled .heroin{
-        width: 80%;
+        width: 100%;
         font-size: 14px;
     }
+
 
 
     /* #messages .navbar .nav-pills{
@@ -1039,6 +1460,11 @@ and (min-width:319px) and (max-width:374px){
         margin: auto;
     } */
 
+    #messages .title{
+        text-align: left;
+        margin-right: 10px;
+    }
+
     #messages .navbar .nav-pills{
         /* display: block; */
         /* text-align: end; */
@@ -1054,8 +1480,8 @@ and (min-width:319px) and (max-width:374px){
 
     #messages .nav-pills .nav-item a{
         text-decoration: none;
-        font-size: 10px;
-        font-weight: 200;
+        font-size: 13px;
+        font-weight: 500;
         padding: 3px;
         margin-left: 0;
     }
@@ -1184,6 +1610,10 @@ and (min-width:319px) and (max-width:374px){
         /* float: right; */
         margin-right: -16%;
     }
+    
+
+    /* tab-content tab-content tab-content  */
+
     .real{
         margin-top: 0;
         margin-left: 0;
@@ -1191,37 +1621,142 @@ and (min-width:319px) and (max-width:374px){
         border-radius: 10px;
 
     }
+    .tab-pane .nav-content{
+        padding: 3px;
+        border-radius: 10px;
+    }
+    .tab-pane .nav-content a{
+        text-decoration: none;
+        font-size: 13px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
 
     /* navbar for tab-content navbar for tab-content  */
     .title{
-        text-align: center;
-        margin: auto;
+        text-align: left;
+        margin-right: 180px;
     }
     .title h1{
-        font-size: 20px;
+        font-size: 18px;
     }
+
+    /* dasboard dashboard dashboard dashboard  */
+    .login{
+        /* float: right; */
+        justify-content: left;
+        text-align: left;
+        margin: auto;
+        margin-top: 10px;
+    }
+
+    .activeleft,
+    .activeright{
+        width: 80%;
+        padding: 0;
+    }
+
+
+
+    /* view tasks view tasks view tasks  */
+    .head{
+        background-color: rgb(103, 6, 6);
+        padding: 5px;
+        /* padding: 1px; */
+    }
+    
+    .head h1{
+        color: white;
+        margin-left: 2%;
+        padding: 2px;
+        margin-bottom: 4px;
+        text-transform: uppercase;
+        font-size: 22px;
+    }
+    
+    .head .fa-sort-down{
+        color: white;
+        font-size: 30px;
+        font-weight: bold;
+        background-color: rgba(204, 196, 196, 0.368);
+        border-radius: 10px;
+        width: 20px;
+        height: 20px;
+        /* margin-bottom: 8px; */
+        padding: 0px 0px 6px 0px;
+    }
+    
+    #sortdown{
+        margin-top: -30px;
+        margin-left: 90%;
+    }
+    
+    
+    
+    .tablebg .head p{
+        color: white;
+        margin-left: 2%;
+        padding: 2px;
+        margin-bottom: 4px;
+        font-size: 15px;
+    }
+    
+    
+    .tablebg .semes p{
+        color: white;
+        margin-left: 2%;
+        padding: 2px;
+        margin-bottom: 4px;
+        font-size: 17px;
+        text-transform: uppercase;
+    }
+    
+    .tablebg .twop{
+        margin-left: 70%;
+        margin-top: -34px;
+    }
+
 
 
     /* attendance attendance  */
-    #attendance{
-        margin-top: 0px;
-        border-right: 5px solid  white;
+    /* attendance attendance  */
+    #ond-nav .title,
+    #hnd-nav .title{
+        text-align: left;
+        margin-left: -21px;
     }
 
+    #ond-nav .title h1,
+    #hnd-nav .title h1{
+        margin-left: -155px;
+    }
+    #ond-nav .sortdown,
+    #hnd-nav .sortdown{
+        margin-left: 70%;
+        margin-top: -35px;
+    }
+    
+
+
+
     /* plus and sortdown design */
-    #weekly #plus,
-    #monthly #plus{
-        margin-left: 0%;
-        margin-top: 0px;
+    /* plus and sortdown design */
+    #workplan .title{
+        text-align: left;
+        margin-left: -71px;
     }
-    .real .sortdown{
-        float: right;
-        margin-right: 1%;
-        border-radius: 30px;
+
+    #workplan .title h1{
+        margin-left: -130px;
     }
-    .real #plus{
-        float: right;
-        margin-right: 1%;
+
+    #workplan #plus{
+        /* margin-left: 50%; */
+        margin-top: -35px;
+    }
+
+    #workplan .sortdown{
+        margin-left: 75%;
+        margin-top: -36px;
     }
     
     .fa-plus{
@@ -1304,7 +1839,7 @@ and (min-width:319px) and (max-width:374px){
     
     .filled,
     .form{
-        margin: 2%;
+        margin: 1%;
     }
     
     .filled .hero{
@@ -1321,13 +1856,27 @@ and (min-width:319px) and (max-width:374px){
     }
     
     .filled .heroin{
-        width: 80%;
+        width: 100%;
         font-size: 14px;
         /* text-align: justify; */
         /* height: 50%; */
     }
+
+
+    #messages .title{
+        text-align: left;
+        margin-right: 10px;
+    }
+
     #messages .navbar .nav-pills{
-        display: block;
+        /* display: block; */
+        /* text-align: end; */
+        margin: auto;
+        margin-top: -3px;
+        margin-right: 5px;
+    }
+    #messages .navbar .nav-pills{
+        display: flex;
         /* margin-left: 35%; */
         /* text-align: justify; */
         /* margin: auto; */
@@ -1344,6 +1893,402 @@ and (min-width:319px) and (max-width:374px){
         font-size: 14px;
         font-weight: bold;
         padding: 5px;
+        text-align: center;
+        margin: auto;
+    }
+    
+    #sendmsg .select p{
+        font-weight: bold;
+        font-size: 12px;
+        color: black;
+    }
+    
+    #sendmsg .nav-tabs .select{
+        margin-top: 5px;
+        margin-left: -18px;
+    }
+    
+    #sendmsg .nav-tabs .one{
+        margin-left: -175px;
+    }
+    #sendmsg .navbar .nav-tabs{
+        margin-right: 1%;
+    }
+    
+    #sendmsg .navbar .nav-tabs .nav-item{
+        justify-content: none;
+        margin: none;
+        /* background-color: rgb(2, 2, 112); */
+        padding: 0px;
+        border-radius: 3px;
+    }
+    #sendmsg .nav-tabs .nav-item a{
+        color: black;
+        text-decoration: none;
+        font-size: 13px;
+        font-weight: bold;
+    }
+
+    
+    
+    
+
+    #viewmsg .msg span,
+    #outmsg .msg span{
+        font-size: 12px;
+        float: right;
+        margin-right: 1%;
+        margin-top: -4%;
+    }
+}
+
+@media only screen
+  and (min-width:427px) and (max-width:768px){
+    .btn{
+        display: flex;
+        border: none;
+        margin-right: 2%;
+    }
+    .sidenav{
+        width: 0;
+        min-height: 100vh;
+        border-bottom-right-radius: 0%;
+        border-top-right-radius: 0%;
+        position: fixed;
+        top: 0;
+        /* left: 0; */
+        /* right: 0; */
+        transition: .4s ease-in-out;
+        z-index: 1;
+        overflow-x: hidden;
+        transition: 0.8s;
+        /* padding-top: 15px; */
+        text-align: center;
+        /* justify-content: center; */
+    }
+
+    .fa-bars{
+        margin-top: -10px;
+    }
+
+    #main{
+        transition: margin-right .5s;
+        /* padding: 20px; */
+    }
+
+    .closebtn{
+        display: flex;
+        float: right;
+        margin-top: 2%;
+        margin-left: 80%;
+        text-decoration: none;
+        color: #012970;
+    }
+
+    /* id id id  */
+    .id{
+        /* border: 1px solid blue; */
+        border-radius: 50px;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        width: 40px;
+        padding: 8px 10px 4px 10px;
+        margin: auto;
+        background-color: rgb(5, 8, 49);
+    }
+    .id h1{
+        color: white;
+        text-align: center;
+        font-size: 20px;
+    }
+    .sidenav-items a p{
+        font-size: 13px;
+    } 
+    .sidenav span{
+        font-size: 12px;
+        /* float: right; */
+        margin-right: -16%;
+    }
+    .real{
+        margin-top: 0;
+        margin-left: 0;
+        /* background-color: white; */
+        border-radius: 10px;
+
+    }
+
+    .tab-pane .nav-content{
+        padding: 3px;
+        border-radius: 10px;
+    }
+    .tab-pane .nav-content a{
+        text-decoration: none;
+        font-size: 14px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+
+
+
+    /* navbar for tab-content navbar for tab-content  */
+    .title{
+        text-align: left;
+        margin-right: 510px;
+    }
+    .title h1{
+        font-size: 22px;
+    }
+
+    /* dasboard dashboard dashboard dashboard  */
+    .login{
+        /* float: right; */
+        justify-content: left;
+        text-align: left;
+        margin: auto;
+        margin-top: 10px;
+    }
+
+    .activeleft,
+    .activeright{
+        width: 90%;
+        padding: 0;
+    }
+
+    /* view tasks view tasks view tasks  */
+    .head{
+        background-color: rgb(103, 6, 6);
+        padding: 5px;
+        /* padding: 1px; */
+    }
+
+    .head h1{
+        color: white;
+        margin-left: 2%;
+        padding: 2px;
+        margin-bottom: 4px;
+        text-transform: uppercase;
+        font-size: 24px;
+    }
+
+    .head .fa-sort-down{
+        color: white;
+        font-size: 30px;
+        font-weight: bold;
+        background-color: rgba(204, 196, 196, 0.368);
+        border-radius: 10px;
+        width: 20px;
+        height: 20px;
+        /* margin-bottom: 8px; */
+        padding: 0px 0px 6px 0px;
+    }
+
+    #sortdown{
+        margin-top: -30px;
+        margin-left: 92%;
+    }
+
+
+
+    .tablebg .head p{
+        color: white;
+        margin-left: 2%;
+        padding: 2px;
+        margin-bottom: 4px;
+        font-size: 15px;
+    }
+
+
+    .tablebg .semes p{
+        color: white;
+        margin-left: 2%;
+        padding: 2px;
+        margin-bottom: 4px;
+        font-size: 21px;
+        text-transform: uppercase;
+    }
+
+    .tablebg .twop{
+        margin-left: 85%;
+        margin-top: -34px;
+    } 
+
+
+    /* attendance attendance  */
+    /* attendance attendance  */
+    #ond-nav .title,
+    #hnd-nav .title{
+        text-align: left;
+        margin-left: -21px;
+    }
+
+    #ond-nav .title h1,
+    #hnd-nav .title h1{
+        margin-left: -135px;
+    }
+    #ond-nav .sortdown,
+    #hnd-nav .sortdown{
+        margin-left: 80%;
+        margin-top: -35px;
+    }
+    
+
+    /* plus and sortdown design */
+    /* plus and sortdown design */
+    #workplan .title{
+        text-align: left;
+        margin-left: 19px;
+    }
+
+    #workplan .title h1{
+        margin-left: 33px;
+    }
+
+    #workplan #plus{
+        margin-left: 65%;
+        margin-top: -35px;
+    }
+
+    #workplan .sortdown{
+        margin-left: 75%;
+        margin-top: -35px;
+    }
+    
+    .fa-plus{
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+        background-color: rgba(204, 196, 196, 0.281);
+        border-radius: 25px;
+        /* width: 20px; */
+        padding: 4px 4px 4px 4px;
+        /* margin-top: 2px; */
+        /* float: right; */
+    }
+    
+    .fa-sort-down{
+        color: white;
+        font-size: 30px;
+        font-weight: bold;
+        background-color: rgba(204, 196, 196, 0.368);
+        border-radius: 10px;
+        width: 20px;
+        height: 20px;
+        /* margin-bottom: 8px; */
+        padding: 0px 0px 6px 0px;
+        /* margin-top: 2px; */
+        /* float: right; */
+    }
+
+    /* workplan and report form design  */
+    .plus .form p{
+        text-align: center;
+        margin-top: 5px;
+        font-size: 15px;
+        font-weight: 600;
+    }
+    .plus .nav-content{
+        margin: 1%;
+        padding: 5px;
+        background-color: white;
+        border: 2px solid black;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        box-shadow: 0px 5px 5px 0px rgb(63, 62, 62);
+    } 
+    .form .form-group .col-5,
+    .filled .col-5{
+        width: 50%;
+    }
+    .form .form-group label{
+        width: 100%;
+        font-weight: 500;
+        font-family: 'Franklin Gothic Medium';
+        font-size: 14px;
+    }
+
+
+    .form .form-group input,
+    .form .form-group textarea,
+    .form .form-group select{
+        width: 90%;
+        height: 50%;
+        /* box-shadow: 0px 1px 1px 0px rgb(63, 62, 62); */
+        /* border-radius: 3px; */
+        /* border: 2px solid black; */
+    }
+    .form .form-group .radio input{
+        width: 30px;
+        height: 18%;
+    }
+    
+    .form .submit{
+        margin-top: 50px;
+    }
+    
+    .form .submit button{
+        width: 100px;
+        padding: 5px;
+        border-radius: 8px;
+    }
+    
+    .filled,
+    .form{
+        margin: 1%;
+    }
+    
+    .filled .hero{
+        width: 100%;
+        text-transform: uppercase;
+        font-weight: 500;
+        font-family: 'Franklin Gothic Medium';
+        font-size: 14px;
+    }
+
+    .filled .mco .hero{
+        font-size: 13px;
+        /* font-weight: 580; */
+    }
+    
+    .filled .heroin{
+        width: 100%;
+        font-size: 14px;
+        /* text-align: justify; */
+        /* height: 50%; */
+    }
+
+
+    #messages .title{
+        text-align: left;
+        margin-right: 10px;
+    }
+
+    #messages .navbar .nav-pills{
+        /* display: block; */
+        /* text-align: end; */
+        margin: auto;
+        margin-top: -3px;
+        margin-right: 15px;
+    }
+    #messages .navbar .nav-pills{
+        display: flex;
+        /* margin-left: 35%; */
+        /* text-align: justify; */
+        /* margin: auto; */
+    }
+    
+
+    #messages .nav-pills .nav-item{
+        margin-right: 1%;
+    }
+
+    #messages .nav-pills .nav-item a{
+        /* background-color: rgb(236, 236, 252); */
+        /* width: fit-content; */
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: bold;
+        padding: 8px;
         text-align: center;
         margin: auto;
     }

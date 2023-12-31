@@ -1,0 +1,343 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="boot5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="boot5/css/modifyprofile.css">
+    <title>Modify Profile</title>
+</head>
+<body>
+    
+   <div class="title navbar">
+        <div class="head">
+            <h1>MODIFY PROFILE</h1>
+        </div>
+
+        <div class="cancel">
+            <button onclick="history.go(-1)">Cancel</button>
+        </div>
+   </div>
+    
+    <nav class="nav navbar">
+
+        <div class="nav-pills" id="mynavbar">
+            <div class="nav-item">
+                <a href="#acastaff" class="list nav-link active" data-bs-toggle="tab" data-bs-target="#acastaff">Academic Staff</a>
+            </div>
+            <div class="nav-item">
+                <a href="#nonacastaff" class="list nav-link" data-bs-toggle="tab" data-bs-target="#nonacastaff">Non-academic Staff</a>
+            </div>
+            <div class="nav-item">
+                <a href="#student" class="list nav-link" data-bs-toggle="tab" data-bs-target="#student">Students</a>
+            </div>
+        </div>
+    </nav><hr>
+
+
+
+    <div class="tab-content real" data-target="#mynavbar">
+
+        <div class="tab-pane fade show active" id="acastaff">
+
+
+            <!-- old form old form old form  -->
+            <div class="form">
+                <form action="" class="container">
+                    <p>SELECT STAFF OLD PROFILE</p><hr>
+                    <div class="row mt-3 form-group">
+                        <div class="col-5 first">
+                            <label class="form-label" for="department">Department</label>
+                            <select name="" id="">
+                                <option value="None">None</option> 
+                                <option value="Administration">Administration</option> 
+                                <option value="General">General</option> 
+                                <option value="Engineering">Engineering</option> 
+                                <option value="Carpentery">Carpentery</option> 
+                                <option value="Welding">Welding</option> 
+                                <option value="Fashion Designing">Fashion Designing</option> 
+                            </select>
+                        </div>
+    
+                        <div class="col-5 second">
+                            <label class="form-label" for="name">Name</label>
+                            <select name="" id="name">
+                                <option value="Vincent Okoro">Vincent Okoro</option> 
+                                <option value="Stanely Ugwu">Stanely Ugwu</option> 
+                                <option value="Chioma Gold">Chioma Gold</option> 
+                                <option value="Sandra okene">Sandra okene</option> 
+                            </select>
+                        </div>
+    
+                    </div>
+                </form>
+            </div><br>
+    
+
+            <!-- edit new form edit new form edit new form  -->
+            <div class="form mt-5">
+                <form action="" class="container">
+    
+                    <p>EDIT STAFF NEW PROFILE</p><hr>
+                    <div class="row mt-4 form-group">
+                        <div class="col-5 first">
+                            <label class="form-label" for="name">NAME</label>
+                            <input type="text" id="name" placeholder="Stanely Ugwu">
+                        </div>
+    
+                        <div class="col-5 second">
+                            <label class="form-label" for="gender">Gender</label>
+                            <select name="" id="">
+                                <option value="Male">Male</option> 
+                                <option value="Female">Female</option> 
+                            </select>
+                        </div>
+    
+                    </div>
+    
+    
+                    <div class="row mt-2 form-group">
+                        <div class="col-5 first">
+
+                            <label class="form-label" for="stafftype">Staff Type</label>
+                            <select name="" id="">
+                                <option value="Academic Staff">Academic Staff</option> 
+                                <option value="Non-Academic staff">Non-Academic Staff</option> 
+                            </select>
+                        </div>
+    
+                        <div class="col-5 second">
+                            <label class="form-label" for="designation">Designation</label>
+                            <select name="" id="">
+                                <option value="Assistant Lecturer">Assistant Lecturer</option> 
+                                <option value="Admin staff">Admin Staff</option> 
+                                <option value="Admin">Admin</option> 
+                                <option value="Lecturer">Lecturer</option>  
+                                <option value="Driver">Driver</option>  
+                            </select>
+
+                            
+                        </div>
+                    </div>
+
+                    <div class="row mt-2 form-group">
+                        <div class="col-5 first">
+                            <label class="form-label" for="department">Department</label>
+                            <select name="" id=""> 
+                                <option value="General">General</option> 
+                                <option value="Engineering">Engineering</option> 
+                                <option value="Carpentery">Carpentery</option> 
+                                <option value="Administration">Administration</option> 
+                                <option value="Welding">Welding</option> 
+                                <option value="Fashion Designing">Fashion Designing</option> 
+                            </select>
+                        </div>
+    
+                        
+                    </div>
+    
+    
+                    <div class="submit">
+                        <button>Save</button>
+                    </div>
+    
+                </form>
+            </div>
+        </div>
+        
+
+        <div class="tab-pane fade" id="nonacastaff">
+                
+            <!-- old form old form old form  -->
+            <div class="form">
+                <form action="" class="container">
+                    <p>SELECT STAFF OLD PROFILE</p><hr>
+                    <div class="row mt-3 form-group">
+                        <div class="col-5 first">
+                            <label class="form-label" for="department">Department</label>
+                            <select name="" id=""> 
+                                <option value="Administration">Administration</option> 
+                                <option value="General">General</option> 
+                                <option value="Engineering">Engineering</option> 
+                                <option value="Carpentery">Carpentery</option> 
+                                <option value="Welding">Welding</option> 
+                                <option value="Fashion Designing">Fashion Designing</option> 
+                            </select>
+                        </div>
+    
+                        <div class="col-5 second">
+                            <label class="form-label" for="name">Name</label>
+                            <select name="" id="name">
+                                <option value="Stanely Ugwu">Stanely Ugwu</option> 
+                                <option value="Chioma Gold">Chioma Gold</option> 
+                                <option value="Sandra okene">Sandra okene</option> 
+                            </select>
+                        </div>
+    
+                    </div>
+                </form>
+            </div><br>
+    
+
+            <!-- edit new form edit new form edit new form  -->
+            <div class="form mt-5">
+                <form action="" class="container">
+    
+                    <p>EDIT STAFF NEW PROFILE</p><hr>
+                    <div class="row mt-4 form-group">
+                        <div class="col-5 first">
+                            <label class="form-label" for="name">NAME</label>
+                            <input type="text" id="name" placeholder="Vincent Okoro">
+                        </div>
+    
+                        <div class="col-5 second">
+                            <label class="form-label" for="gender">Gender</label>
+                            <select name="" id="">
+                                <option value="Male">Male</option> 
+                                <option value="Female">Female</option> 
+                            </select>
+                        </div>
+    
+                    </div>
+    
+    
+                    <div class="row mt-2 form-group">
+                        <div class="col-5 first">
+
+                            <label class="form-label" for="stafftype">Staff Type</label>
+                            <select name="" id="">
+                                <option value="Academic Staff">Academic Staff</option> 
+                                <option value="Non-Academic staff">Non-Academic Staff</option> 
+                            </select>
+                        </div>
+    
+                        <div class="col-5 second">
+                            <label class="form-label" for="designation">Designation</label>
+                            <select name="" id="">
+                                <option value="Faculty Officer">Faculty Officer</option> 
+                                <option value="Admin staff">Admin Staff</option> 
+                                <option value="Admin">Admin</option>   
+                                <option value="Driver">Driver</option>  
+                            </select>
+
+                            
+                        </div>
+                    </div>
+
+                    <div class="row mt-2 form-group">
+                        <div class="col-5 first">
+                            <label class="form-label" for="department">Department</label>
+                            <select name="" id=""> 
+                                <option value="General">General</option> 
+                                <option value="Engineering">Engineering</option> 
+                                <option value="Carpentery">Carpentery</option> 
+                                <option value="Administration">Administration</option> 
+                                <option value="Welding">Welding</option> 
+                                <option value="Fashion Designing">Fashion Designing</option> 
+                            </select>
+                        </div>
+    
+                        
+                    </div>
+    
+    
+                    <div class="submit">
+                        <button>Save</button>
+                    </div>
+    
+                </form>
+            </div>
+        </div>
+
+        <div class="tab-pane fade" id="student">
+                
+            <!-- old form old form old form  -->
+            <div class="form">
+                <form action="" class="container">
+                    <p>SELECT STUDENT OLD PROFILE</p><hr>
+                    <div class="row mt-3 form-group">
+                        <div class="col-5 first">
+                            <label class="form-label" for="matricno">Matric No</label>
+                            <input type="text">
+                        </div>
+    
+                        <div class="col-5 second">
+                            <label class="form-label" for="name">Name</label>
+                            <select name="" id="name">
+                                <option value="Vincent Okoro">Vincent Okoro</option> 
+                                <option value="Stanely Ugwu">Stanely Ugwu</option> 
+                                <option value="Chioma Gold">Chioma Gold</option> 
+                                <option value="Sandra okene">Sandra okene</option> 
+                            </select>
+                        </div>
+    
+                    </div>
+                </form>
+            </div><br>
+    
+
+            <!-- edit new form edit new form edit new form  -->
+            <div class="form mt-5">
+                <form action="" class="container">
+    
+                    <p>EDIT STUDENT NEW PROFILE</p><hr>
+                    <div class="row mt-4 form-group">
+                        <div class="col-5 first">
+                            <label class="form-label" for="name">NAME</label>
+                            <input type="text" id="name" placeholder="Vincent Okoro">
+                        </div>
+    
+                        <div class="col-5 second">
+                            <label class="form-label" for="gender">Gender</label>
+                            <select name="" id="">
+                                <option value="Male">Male</option> 
+                                <option value="Female">Female</option> 
+                            </select>
+                        </div>
+    
+                    </div>
+    
+    
+                    <div class="row mt-2 form-group">
+                        <div class="col-5 first">
+                            <label class="form-label" for="">Matric No</label>
+                            <input type="text">
+                        </div>
+    
+                        <div class="col-5 second">
+                            <label class="form-label" for="department">Department</label>
+                            <select name="" id=""> 
+                                <option value="General">General</option> 
+                                <option value="Engineering">Engineering</option> 
+                                <option value="Carpentery">Carpentery</option> 
+                                <option value="Administration">Administration</option> 
+                                <option value="Welding">Welding</option> 
+                                <option value="Fashion Designing">Fashion Designing</option> 
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="row mt-2 form-group">
+                        <div class="col-5 first">
+                            <label for="">
+                                 <br>
+                                <input class="check" type="checkbox" name="music">Assign Course Rep
+                            </label>
+                        </div>
+    
+                        
+                    </div>
+    
+    
+                    <div class="submit">
+                        <button>Save</button>
+                    </div>
+    
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="boot5/js/all.js"></script>
+<script src="boot5/js/bootstrap.bundle.min.js"></script>
+<script src="boot5/js/jquery-3.2.1.min.js"></script>
+</html>

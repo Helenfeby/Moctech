@@ -4,7 +4,7 @@ body{
 }
 
 .acastafflist{
-    background-color: rgb(191, 191, 193);
+    /* background-color: rgb(191, 191, 193); */
 }
 .navbar{
     height: fit-content;
@@ -26,7 +26,7 @@ body{
 
 .cancel button{
     background: none;
-    border: none;
+    /* border: none; */
     color: white;
 }
 
@@ -60,6 +60,17 @@ body{
     margin-top: 5px;
 }
 
+
+.head{
+    background-color: rgb(2, 2, 74);
+    padding: 3px;
+}
+.head h1{
+    font-size: 20px;
+    margin-left: 25px;
+    color: white;
+}
+
 /* table table table table table */
 .table{
     text-align: center;
@@ -76,3 +87,20 @@ body{
     color: black;
 }
 
+
+
+@media only screen
+and (min-width:319px) and (max-width:374px){
+    .title h1{
+        font-size: 17px;
+        margin-left: 10px;
+    }
+}
+
+@media only screen
+  and (min-width:375px) and (max-width:427px){
+    .title h1{
+        font-size: 17px;
+        margin-left: 10px;
+    }
+  }

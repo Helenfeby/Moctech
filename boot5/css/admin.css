@@ -52,7 +52,7 @@ body{
 
 
 .sidenav{
-    width: 13%;
+    width: 14%;
     height: 100%;
     position: fixed;
     overflow-x: hidden;
@@ -94,33 +94,10 @@ body{
     padding: 5px; 
 } 
 
-.sidebar-nav .nav-content {
-    padding: 5px 0 0 0;
-    margin: 0;
-    list-style: none;
-}
 
-.sidebar-nav .nav-content a {
-    display: flex;
-    align-items: center;
-    font-size: 14px;
-    font-weight: 600;
-    color: #012970;
-    transition: 0.3;
-    padding: 5px 0 5px 10px;
-    transition: 0.3s;
-}
-
-.sidebar-nav .nav-content a i {
-    font-size: 6px;
-    margin-right: 8px;
-    line-height: 0;
-    border-radius: 50%;
-}
-  
-.sidebar-nav .nav-content a:hover,
-.sidebar-nav .nav-content a.active {
-    color: #4154f1;
+.sidenav a:hover,
+.sidenav a.active {
+    color: rgb(242, 152, 49);
 }
 
 /* id id id  */
@@ -155,7 +132,7 @@ body{
 }
 
 .real{
-    margin-left: 14%;
+    margin-left: 15%;
     background-color: white;
     border-radius: 10px;
     box-shadow: 1px 5px 8px rgb(63, 62, 62);
@@ -189,7 +166,28 @@ body{
     float: right;
 }
 
+/* dashboard dashboard dashboard dashboard */
+#display{
+    /* background-color: rgb(235, 234, 234); */
+}
+
 /* activity activity activity activity  */
+.login{
+    /* float: right; */
+    justify-content: end;
+    text-align: end;
+    margin: auto;
+    margin-top: 10px;
+}
+.card{
+    margin: 40px;
+    border-radius: 10px;
+    /* padding-left: 10px; */
+    /* padding-right: 10px; */
+    /* color: white; */
+    /* background-color: rgb(252, 249, 249); */
+    border: 2px solid rgb(3, 3, 66);
+}
 
 .show .activity {
     font-size: 14px;
@@ -254,7 +252,77 @@ table{
 
 
 
-/* view tasks view tasks view tasks view tasks  */
+/* view tasks view tasks view tasks view tasks view tasks view tasks view tasks view tasks */
+
+.tablebg .tick:checked{
+    color: #060606;
+    background-color: #012970;
+}
+
+.head{
+    background-color: rgb(103, 6, 6);
+    padding: 8px;
+    /* padding: 1px; */
+}
+
+.head h1{
+    color: white;
+    margin-left: 2%;
+    padding: 2px;
+    margin-bottom: 4px;
+    text-transform: uppercase;
+    font-size: 24px;
+}
+
+.head .fa-sort-down{
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    background-color: rgba(204, 196, 196, 0.368);
+    border-radius: 10px;
+    width: 20px;
+    height: 20px;
+    /* margin-bottom: 8px; */
+    padding: 0px 0px 6px 0px;
+}
+
+#sortdown{
+    margin-top: -30px;
+    margin-left: 96%;
+}
+
+.tablebg .head{
+    background-color: black;
+    /* padding: 1px; */
+}
+
+.tablebg .head p{
+    color: white;
+    margin-left: 2%;
+    padding: 2px;
+    margin-bottom: 4px;
+    font-size: 17px;
+}
+
+.tablebg .semes{
+    background-color: rgb(2, 2, 103);
+    /* padding-left: 5px; */
+    /* padding: 1px; */
+}
+
+.tablebg .semes p{
+    color: white;
+    margin-left: 2%;
+    padding: 2px;
+    margin-bottom: 4px;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.tablebg .twop{
+    margin-left: 90%;
+    margin-top: -40px;
+}
 
 .tablebg{
     border-left: 1px solid black;
@@ -267,10 +335,13 @@ table .taskstab{
 
 table button{
     font-size: 14px;
-    background-color: rgb(240, 236, 236);
+    background-color: rgb(126, 125, 125);
     width: fit-content;
     border-radius: 5px;
     border: none;
+    padding: 2px;
+    padding-left: 8px;
+    padding-right: 8px;
 }
 
 table .almost{
@@ -431,7 +502,12 @@ nav .nav-tabs .nav-item a{
 
 .filled,
 .form{
-    margin-left: 30px;
+    margin-left: 1px;
+}
+
+.filled{
+    background-color: #ecebeb;
+    border-radius: 15px;
 }
 
 .filled .hero{
@@ -442,8 +518,44 @@ nav .nav-tabs .nav-item a{
 }
 
 .filled .heroin{
-    width: 90%;
+    width: 100%;
     /* height: 50%; */
+}
+
+
+
+/*  generate report generate report generate report */
+ 
+
+.generate{
+    background-color: rgb(1, 1, 103);
+    /* text-align: end; */
+    padding-top: 1px;
+    padding: 1px;
+}
+.generate a{
+    text-decoration: none;
+    text-align: center;
+    /* margin-top: 8px; */
+    
+}
+.generate a p{
+    color: white;
+    margin-right: 3%;
+    margin-top: 4px;
+    font-size: 17px;
+}
+
+.fa-download{
+    color: white;
+    font-size: 21px;
+    font-weight: bold;
+    background-color: rgba(204, 200, 200, 0.281);
+    border-radius: 25px;
+    /* width: 20px; */
+    padding: 6px 6px 6px 6px;
+    margin-left: 5px;
+    margin-bottom: -3px;
 }
 
 .plus .nav-content{
@@ -521,7 +633,7 @@ nav .nav-tabs .nav-item a{
 
 #messages .navbar .nav-pills .nav-item .active{
     background-color: rgb(57, 55, 55);
-    /* color: rgb(13, 20, 88); */
+    color: rgb(242, 152, 49);
 }
 
 #messages .navbar .nav-pills .nav-item .active:hover{
@@ -728,9 +840,116 @@ nav .nav-tabs .nav-item a{
 }
 
 
+/* modal modal modal modal modal modal  */
+.modal{
+    margin-top: 5%;
+}
+.modal .modal-title{
+    font-size: 20px;
+}
+.modal .update{
+    text-align: center;
+}
+
+.modal .update button{
+    border-radius: 5px;
+    background-color: rgb(44, 43, 43);
+    color: white;
+    font-weight: 500;
+}
+
+.modal .update button a{
+    text-decoration: none;
+    color: white;
+}
+
+.modal .navbar{
+    background-color: transparent;
+}
+.modal .select p{
+    font-weight: 700;
+    font-size: 18px;
+    color: black;
+}
+
+.modal .nav-tabs .select{
+    /* margin-top: 28px; */
+}
+
+.modal .nav-tabs .one{
+    margin-left: 25px;
+}
+.modal .nav-tabs .nav-item{
+    border: none;
+    background: none;
+}
+.modal .nav-tabs .nav-item input{
+    font-weight: bold;
+}
+
+
+.modal .navbar .nav-tabs{
+    display: flex;
+    /* list-style-type: none; */
+    /* gap: 1rem; */
+}
+.modal .navbar .nav-tabs .nav-item{
+    justify-content: space-between;
+    margin: auto;
+    padding: 8px;
+    border-radius: 10px;
+}
+.modal .nav-tabs .nav-item a{
+    color: black;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+}
+.modal .navbar .nav-tabs .nav-group{
+    display: flex;
+    /* margin-right: 1%; */
+}
+.modal .nav-tabs .select{
+    margin-top: 15px;
+    margin-left: -18px;
+}
+.modal .mytabcontent .tab-pane .textarea{
+    width: 100%;
+    /* height: 100%; */
+}
+
+.modal .navbar .nav-tabs .nav-item .active{
+    color: rgb(242, 152, 49);
+}
+
+.modal .navbar .nav-tabs .nav-item .active:hover{
+    cursor: pointer;
+    color: rgb(108, 108, 108);
+    /* padding: 5px; */
+}
+.modal .navbar .nav-tabs .nav-item:hover{
+    /* padding: 5px;  */
+    transform: none;
+    /* background-color: rgb(252, 246, 246); */
+}
+
+.modal .main{
+    padding: 5px;
+    background-color: rgb(196, 192, 192);
+    margin-top: 5px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.modal .tab-pane{
+    padding-bottom: 0px;
+}
+
+
 @media only screen
 and (max-width:319px){
-    .secondsection{
+    .sidenav,
+    .tab-content{
         display: none;
     }
     .firstsection{
@@ -750,7 +969,7 @@ and (max-width:319px){
 
 
 @media only screen
-and (max-width:350px){
+and (min-width:320px) and (max-width:375px){
 
     .btn{
         display: flex;
@@ -829,19 +1048,83 @@ and (max-width:350px){
 
     /* navbar for tab-content navbar for tab-content  */
     .title{
-        text-align: center;
-        margin: auto;
+        text-align: left;
+        margin-right: 120px;
     }
     .title h1{
         font-size: 18px;
     }
 
+    
+
+    /* dasboard dashboard dashboard dashboard  */
+    .activeleft,
+    .activeright{
+        width: 80%;
+        padding: 0;
+    }
+
+    /* view tasks view tasks view tasks  */
+    .head{
+        background-color: rgb(103, 6, 6);
+        padding: 5px;
+        /* padding: 1px; */
+    }
+    
+    .head h1{
+        color: white;
+        margin-left: 2%;
+        padding: 2px;
+        margin-bottom: 4px;
+        text-transform: uppercase;
+        font-size: 22px;
+    }
+    
+    .head .fa-sort-down{
+        color: white;
+        font-size: 30px;
+        font-weight: bold;
+        background-color: rgba(204, 196, 196, 0.368);
+        border-radius: 10px;
+        width: 20px;
+        height: 20px;
+        /* margin-bottom: 8px; */
+        padding: 0px 0px 6px 0px;
+    }
+    
+    #sortdown{
+        margin-top: -30px;
+        margin-left: 90%;
+    }
+    
+    
+    
+    .tablebg .head p{
+        color: white;
+        margin-left: 2%;
+        padding: 2px;
+        margin-bottom: 4px;
+        font-size: 15px;
+    }
+    
+    
+    .tablebg .semes p{
+        color: white;
+        margin-left: 2%;
+        padding: 2px;
+        margin-bottom: 4px;
+        font-size: 17px;
+        text-transform: uppercase;
+    }
+    
+    .tablebg .twop{
+        margin-left: 70%;
+        margin-top: -33px;
+    }
+
 
     /* attendance attendance  */
-    #attendance{
-        margin-top: 0px;
-        border-right: 5px solid  white;
-    }
+    
 
     #tasks .title{
         margin-right: 30%;
@@ -997,22 +1280,35 @@ and (max-width:350px){
         width: 80%;
         font-size: 14px;
     }
+
+
+    /* messsages messages messages messsages */
+    #messages .title{
+        text-align: left;
+        margin-right: 10px;
+    }
     #messages .navbar .nav-pills{
-        display: block;
+        /* display: block; */
+        /* text-align: end; */
+        margin: auto;
+        margin-top: -3px;
+        margin-right: 5px;
     }
 
     #messages .nav-pills .nav-item{
-        margin-right: 5px;
+        margin-right: 2px;
+        
     }
 
     #messages .nav-pills .nav-item a{
         text-decoration: none;
-        font-size: 14px;
-        font-weight: bold;
-        padding: 5px;
-        text-align: center;
-        margin: auto;
+        font-size: 13px;
+        font-weight: 500;
+        padding: 3px;
+        margin-left: 0;
     }
+
+    
     
     #sendmsg .select p{
         font-weight: bold;
@@ -1066,6 +1362,10 @@ and (max-width:350px){
         margin-right: 1%;
         margin-top: -4%;
     }
+
+
+
+    
     
 }
 
@@ -1147,12 +1447,80 @@ and (max-width:350px){
     }
 
     /* navbar for tab-content navbar for tab-content  */
+    /* navbar for tab-content navbar for tab-content  */
     .title{
-        text-align: center;
-        margin: auto;
+        text-align: left;
+        margin-right: 150px;
     }
     .title h1{
-        font-size: 20px;
+        font-size: 18px;
+    }
+
+    /* view tasks view tasks view tasks  */
+    .head{
+        background-color: rgb(103, 6, 6);
+        padding: 5px;
+        /* padding: 1px; */
+    }
+    
+    .head h1{
+        color: white;
+        margin-left: 2%;
+        padding: 2px;
+        margin-bottom: 4px;
+        text-transform: uppercase;
+        font-size: 22px;
+    }
+    
+    .head .fa-sort-down{
+        color: white;
+        font-size: 30px;
+        font-weight: bold;
+        background-color: rgba(204, 196, 196, 0.368);
+        border-radius: 10px;
+        width: 20px;
+        height: 20px;
+        /* margin-bottom: 8px; */
+        padding: 0px 0px 6px 0px;
+    }
+    
+    #sortdown{
+        margin-top: -30px;
+        margin-left: 90%;
+    }
+    
+    
+    
+    .tablebg .head p{
+        color: white;
+        margin-left: 2%;
+        padding: 2px;
+        margin-bottom: 4px;
+        font-size: 15px;
+    }
+    
+    
+    .tablebg .semes p{
+        color: white;
+        margin-left: 2%;
+        padding: 2px;
+        margin-bottom: 4px;
+        font-size: 17px;
+        text-transform: uppercase;
+    }
+    
+    .tablebg .twop{
+        margin-left: 70%;
+        margin-top: -34px;
+    }
+
+    
+
+    /* dasboard dashboard dashboard dashboard  */
+    .activeleft,
+    .activeright{
+        width: 80%;
+        padding: 0;
     }
 
     /* view staff status view staff status  */
@@ -1303,27 +1671,35 @@ and (max-width:350px){
         /* text-align: justify; */
         /* height: 50%; */
     }
+
+
+    /* messsages messages messages messsages */
+    #messages .title{
+        text-align: left;
+        margin-right: 10px;
+    }
     #messages .navbar .nav-pills{
-        display: block;
-        /* margin-left: 35%; */
-        /* text-align: justify; */
-        /* margin: auto; */
+        /* display: block; */
+        /* text-align: end; */
+        margin: auto;
+        margin-top: -3px;
+        margin-right: 5px;
     }
 
     #messages .nav-pills .nav-item{
-        margin-right: 1%;
+        margin-right: 2px;
+        
     }
 
     #messages .nav-pills .nav-item a{
-        /* background-color: rgb(236, 236, 252); */
-        /* width: fit-content; */
         text-decoration: none;
         font-size: 14px;
-        font-weight: bold;
-        padding: 5px;
-        text-align: center;
-        margin: auto;
+        font-weight: 500;
+        padding: 4px;
+        margin-left: 0;
     }
+
+    
     
     #sendmsg .select p{
         font-weight: bold;
@@ -1333,14 +1709,19 @@ and (max-width:350px){
     
     #sendmsg .nav-tabs .select{
         margin-top: 5px;
-        margin-left: -18px;
+        margin-left: 3px; 
     }
     
     #sendmsg .nav-tabs .one{
-        margin-left: -175px;
+        /* margin-left: -15px; */
     }
+
+    #sendmsg .nav-tabs .item{
+        margin-left: -35px;
+    }
+    
     #sendmsg .navbar .nav-tabs{
-        margin-right: 1%;
+        padding: 0px;
     }
     
     #sendmsg .navbar .nav-tabs .nav-item{
@@ -1355,12 +1736,16 @@ and (max-width:350px){
         text-decoration: none;
         font-size: 13px;
         font-weight: bold;
+        text-align: center;
+    }
+
+    #sendmsg .navbar .nav-tabs .nav-group{
+        margin-left: 80px;
+        display: block;
+        /* margin-right: 1%; */
     }
 
     
-    
-    
-
     #viewmsg .msg span,
     #outmsg .msg span{
         font-size: 12px;
@@ -1368,6 +1753,7 @@ and (max-width:350px){
         margin-right: 1%;
         margin-top: -4%;
     }
+
 }
 
 @media only screen
@@ -1375,7 +1761,7 @@ and (max-width:350px){
     .btn{
         display: flex;
         border: none;
-        margin-right: 2%;
+        margin-right: 4%;
     }
     .sidenav{
         width: 0;
@@ -1447,14 +1833,83 @@ and (max-width:350px){
 
     }
 
-    /* navbar for tab-content navbar for tab-content  */
-    .title{
-        text-align: center;
-        margin: auto;
+    /* dasboard dashboard dashboard dashboard  */
+    .activeleft,
+    .activeright{
+        width: 90%;
+        padding: 0;
+    }
+
+    
+   /* navbar for tab-content navbar for tab-content  */
+   .title{
+    text-align: left;
+    margin-right: 510px;
     }
     .title h1{
-        font-size: 20px;
+        font-size: 22px;
     }
+
+    /* view tasks view tasks view tasks  */
+    .head{
+        background-color: rgb(103, 6, 6);
+        padding: 5px;
+        /* padding: 1px; */
+    }
+
+    .head h1{
+        color: white;
+        margin-left: 2%;
+        padding: 2px;
+        margin-bottom: 4px;
+        text-transform: uppercase;
+        font-size: 24px;
+    }
+
+    .head .fa-sort-down{
+        color: white;
+        font-size: 30px;
+        font-weight: bold;
+        background-color: rgba(204, 196, 196, 0.368);
+        border-radius: 10px;
+        width: 20px;
+        height: 20px;
+        /* margin-bottom: 8px; */
+        padding: 0px 0px 6px 0px;
+    }
+
+    #sortdown{
+        margin-top: -30px;
+        margin-left: 92%;
+    }
+
+
+
+    .tablebg .head p{
+        color: white;
+        margin-left: 2%;
+        padding: 2px;
+        margin-bottom: 4px;
+        font-size: 15px;
+    }
+
+
+    .tablebg .semes p{
+        color: white;
+        margin-left: 2%;
+        padding: 2px;
+        margin-bottom: 4px;
+        font-size: 21px;
+        text-transform: uppercase;
+    }
+
+    .tablebg .twop{
+        margin-left: 85%;
+        margin-top: -34px;
+    }
+
+
+    
 
 
     /* attendance attendance  */
@@ -1605,27 +2060,35 @@ and (max-width:350px){
         /* text-align: justify; */
         /* height: 50%; */
     }
+
+
+    /* messsages messages messages messsages */
+    #messages .title{
+        text-align: left;
+        margin-right: 10px;
+    }
     #messages .navbar .nav-pills{
-        display: block;
-        /* margin-left: 35%; */
-        /* text-align: justify; */
-        /* margin: auto; */
+        /* display: block; */
+        /* text-align: end; */
+        margin: auto;
+        margin-top: -3px;
+        margin-right: 5px;
     }
 
     #messages .nav-pills .nav-item{
-        margin-right: 1%;
+        margin-right: 2px;
+        
     }
 
     #messages .nav-pills .nav-item a{
-        /* background-color: rgb(236, 236, 252); */
-        /* width: fit-content; */
         text-decoration: none;
-        font-size: 14px;
-        font-weight: bold;
+        font-size: 15px;
+        font-weight: 500;
         padding: 5px;
-        text-align: center;
-        margin: auto;
+        margin-left: 0;
     }
+
+    
     
     #sendmsg .select p{
         font-weight: bold;
@@ -1635,14 +2098,19 @@ and (max-width:350px){
     
     #sendmsg .nav-tabs .select{
         margin-top: 5px;
-        margin-left: -18px;
+        margin-left: 3px; 
     }
     
     #sendmsg .nav-tabs .one{
-        margin-left: -175px;
+        /* margin-left: -15px; */
     }
+
+    #sendmsg .nav-tabs .item{
+        margin-left: -35px;
+    }
+    
     #sendmsg .navbar .nav-tabs{
-        margin-right: 1%;
+        padding: 0px;
     }
     
     #sendmsg .navbar .nav-tabs .nav-item{
@@ -1657,12 +2125,16 @@ and (max-width:350px){
         text-decoration: none;
         font-size: 13px;
         font-weight: bold;
+        text-align: center;
+    }
+
+    #sendmsg .navbar .nav-tabs .nav-group{
+        margin-left: 80px;
+        display: block;
+        /* margin-right: 1%; */
     }
 
     
-    
-    
-
     #viewmsg .msg span,
     #outmsg .msg span{
         font-size: 12px;
@@ -1670,4 +2142,5 @@ and (max-width:350px){
         margin-right: 1%;
         margin-top: -4%;
     }
+
 }  

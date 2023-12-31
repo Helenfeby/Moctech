@@ -28,6 +28,10 @@ body{
     display: none;
 }
 
+.navbar .collapse .navbar-nav{
+    justify-content: space-evenly;
+    gap: 20rem;
+}
 
 .navbar .collapse .navbar-nav .nav-item a{
     /* float: right; */
@@ -35,20 +39,19 @@ body{
     font-size: 15px;
     font-weight: bold;
     justify-content: space-between;
+    /* margin: auto; */
+    /* gap: 10rem; */
 }
 
 .navbar .collapse .navbar-nav .nav-item{
     justify-content: space-around;
     display: flex;
+    /* gap: 10rem; */
 }
 
 
-.navbar .collapse .navbar-nav{
-    justify-content: space-between;
-    display: flex;
-    /* gap: 5rem; */
-    /* width: 90%; */
-    /* padding: 10px; */
+.navbar .collapse .navbar-nav .first{
+    margin-left: 9%;
 }
 
 
@@ -103,6 +106,11 @@ body{
     font-weight: bold;
     padding: 5px; 
 } 
+
+.sidenav a:hover,
+.sidenav a.active {
+    color: rgb(242, 152, 49);
+}
 
 /* display display display  */
 
@@ -204,6 +212,79 @@ body{
     margin-left: 12px;
     margin-top: 10px;
     background-color: rgb(231, 186, 39);
+}
+
+/* activity activity activity activity  */
+
+#main .navbar-two{
+    margin-top: 10%;
+    height: 40px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    font-size: 15px;
+}
+#main .navbar-two h3{
+    margin-top: -5px;
+}
+.card{
+    margin: 40px;
+    border-radius: 10px;
+    /* padding-left: 10px; */
+    /* padding-right: 10px; */
+    /* color: white; */
+    /* background-color: rgb(23, 39, 130); */
+    /* border: 5px solid rgb(8, 8, 68); */
+}
+
+.show .activity {
+    font-size: 14px;
+}
+  
+.show .activity .activity-item .activite-label {
+    color: #605e5e;
+    position: relative;
+    flex-shrink: 0;
+    flex-grow: 0;
+    min-width: 64px;
+}
+  
+.show .activity .activity-item .activite-label::before {
+    content: "";
+    position: absolute;
+    right: -11px;
+    width: 4px;
+    top: 0;
+    bottom: 0;
+    background-color: #eceefe;
+}
+  
+.show .activity .activity-item .activity-badge {
+    margin-top: 3px;
+    z-index: 1;
+    font-size: 11px;
+    line-height: 0;
+    border-radius: 50%;
+    flex-shrink: 0;
+    border: 3px solid #fff;
+    flex-grow: 0;
+}
+  
+.show .activity .activity-item .activity-content {
+    padding-left: 10px;
+    padding-bottom: 20px;
+}
+
+.show .activity .activity-item .activity-content a{
+    text-decoration: none;
+    color: black;
+}
+  
+.show .activity .activity-item:first-child .activite-label::before {
+    top: 5px;
+}
+  
+.show .activity .activity-item:last-child .activity-content {
+    padding-bottom: 0;
 }
 
 .reports{
@@ -330,6 +411,10 @@ body{
 .form{
     margin: 1%;
 }
+.filled{
+    background-color: #ecebeb;
+    border-radius: 15px;
+}
 
 .filled .hero{
     width: 100%;
@@ -392,9 +477,11 @@ body{
 
 .tab-pane .navhead{
     /* height: 45px; */
-    background-color: black;
+    background-color: rgb(0, 0, 0);
     position: fixed;
     width: 100%;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
     /* height: 600px; */
 }
 
@@ -521,7 +608,8 @@ body{
     margin: auto;
     border: 1px solid black;
     border-radius: 8px;
-    background-color: rgb(128, 32, 0);
+    /* background-color: rgb(84, 23, 3); */
+    background-color: rgb(8, 2, 57);
     height: 150px;
     width: 450px;
     margin-top: 6%;
@@ -572,6 +660,40 @@ body{
 
 /* generate report  */
 
+/*  generate report generate report generate report */
+ 
+
+.generate{
+    background-color: rgb(1, 1, 103);
+    /* text-align: end; */
+    padding-top: 1px;
+    padding: 1px;
+}
+.generate a{
+    text-decoration: none;
+    text-align: center;
+    /* margin-top: 8px; */
+    
+}
+.generate a p{
+    color: white;
+    margin-right: 3%;
+    margin-top: 4px;
+    font-size: 17px;
+}
+
+.fa-download{
+    color: white;
+    font-size: 21px;
+    font-weight: bold;
+    background-color: rgba(204, 200, 200, 0.281);
+    border-radius: 25px;
+    /* width: 20px; */
+    padding: 6px 6px 6px 6px;
+    margin-left: 5px;
+    margin-bottom: -3px;
+}
+z
 
 .label label{
     font-size: 13px;
@@ -805,6 +927,117 @@ body{
     margin-top: -1%;
 }
 
+
+/* settings settings settings settings settings  */
+
+/* add new semester add new semester add new semester add new semester */
+.modal{
+    margin-top: 5%;
+}
+.modal .modal-title{
+    font-size: 20px;
+}
+.modal .update{
+    text-align: center;
+}
+.generate .tab-content{
+    margin-left: -1%;
+}
+
+.modal .update button{
+    border-radius: 5px;
+    background-color: rgb(44, 43, 43);
+    color: white;
+    font-weight: 500;
+}
+
+.modal .update button a{
+    text-decoration: none;
+    color: white;
+}
+
+.modal .navbar{
+    background-color: transparent;
+}
+.modal .select p{
+    font-weight: 700;
+    font-size: 18px;
+    color: black;
+}
+
+.modal .nav-tabs .select{
+    /* margin-top: 28px; */
+}
+
+.modal .nav-tabs .one{
+    margin-left: 25px;
+}
+.modal .nav-tabs .nav-item{
+    border: none;
+    background: none;
+}
+.modal .nav-tabs .nav-item input{
+    font-weight: bold;
+}
+
+
+.modal .navbar .nav-tabs{
+    display: flex;
+    /* list-style-type: none; */
+    /* gap: 1rem; */
+}
+.modal .navbar .nav-tabs .nav-item{
+    justify-content: space-between;
+    margin: auto;
+    padding: 8px;
+    border-radius: 10px;
+}
+.modal .nav-tabs .nav-item a{
+    color: black;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+}
+.modal .navbar .nav-tabs .nav-group{
+    display: flex;
+    /* margin-right: 1%; */
+}
+.modal .nav-tabs .select{
+    margin-top: 15px;
+    margin-left: -18px;
+}
+.modal .mytabcontent .tab-pane .textarea{
+    width: 100%;
+    /* height: 100%; */
+}
+
+.modal .navbar .nav-tabs .nav-item .active{
+    color: rgb(242, 152, 49);
+}
+
+.modal .navbar .nav-tabs .nav-item .active:hover{
+    cursor: pointer;
+    color: rgb(108, 108, 108);
+    /* padding: 5px; */
+}
+.modal .navbar .nav-tabs .nav-item:hover{
+    /* padding: 5px;  */
+    transform: none;
+    /* background-color: rgb(252, 246, 246); */
+}
+
+.modal .main{
+    padding: 5px;
+    background-color: rgb(196, 192, 192);
+    margin-top: 5px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.modal .tab-pane{
+    padding-bottom: 0px;
+}
+
 @media only screen
 and (max-width:318px){
     .navbar,
@@ -939,10 +1172,20 @@ and (max-width:318px){
         }
 }
 
+@media only screen
+    and (min-width:768px) and (max-width:1024px) {
+        .navbar .collapse .navbar-nav{
+            justify-content: space-evenly;
+            gap: 8rem;
+        }
+        .navbar .collapse .navbar-nav .first,
+        .navbar .collapse .navbar-nav .last{
+            margin-left: 5%;
+        }    
+}
 
 
-
-    
+ 
 
 @media only screen
   and (min-width:319px) and (max-width:417px){

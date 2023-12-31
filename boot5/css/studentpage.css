@@ -4,6 +4,10 @@ body{
     /* background-color: rgb(255, 249, 241); */
 }
 
+.firstsection{
+    display: none;
+}
+
 /* navbar navbar navbar  */
 .closebtn, .btn{
     display: none;
@@ -42,6 +46,7 @@ body{
     display: block;
     margin-top: 30px;
     text-align: center;
+    justify-content: center;
 }
 .sidenav-items a p{
     color: black;
@@ -51,33 +56,26 @@ body{
     padding: 5px; 
 } 
 
-.sidebar-nav .nav-content {
-    padding: 5px 0 0 0;
-    margin: 0;
-    list-style: none;
-}
-
-.sidebar-nav .nav-content a {
-    display: flex;
-    align-items: center;
-    font-size: 14px;
-    font-weight: 600;
-    color: #012970;
-    transition: 0.3;
-    padding: 5px 0 5px 10px;
-    transition: 0.3s;
-}
-
-.sidebar-nav .nav-content a i {
-    font-size: 6px;
-    margin-right: 8px;
-    line-height: 0;
-    border-radius: 50%;
-}
   
-.sidebar-nav .nav-content a:hover,
-.sidebar-nav .nav-content a.active {
-    color: #4154f1;
+.sidenav a:hover,
+.sidenav a.active {
+    color: rgb(242, 152, 49);
+}
+
+#sendmsg .sidenav-item .active{
+    padding: 0;
+    animation: none;
+    transform: none;
+    background-color: none;
+    background: none;
+    color: rgb(242, 152, 49);
+}
+
+#sendmsg .sidenav-item .active:hover{
+    cursor: pointer;
+    color: rgb(108, 108, 108);
+    padding: 5px ;
+    transform: none;
 }
 
 /* id id id  */
@@ -116,10 +114,23 @@ body{
     margin-left: 50%;
 }
 
+.sidenav button{
+    /* align-self: center;
+    align-content: center;
+    justify-content: center; */
+    text-align: center;
+    /* margin: auto; */
+    border: none;
+    background: none;
+}
+.sidenav button p{
+    font-weight: 600;
+}
+
 /* tabcontent tabcontent  */
 
 .real{
-    margin-left: 14%;
+    margin-left: 15%;
     background-color: white;
     border-radius: 10px;
     box-shadow: 1px 5px 8px rgb(63, 62, 62);
@@ -133,6 +144,32 @@ body{
     color: white;
 }
 
+.fa-plus{
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: rgba(204, 196, 196, 0.281);
+    border-radius: 25px;
+    /* width: 20px; */
+    padding: 4px 4px 4px 4px;
+}
+
+.fa-sort-down{
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    background-color: rgba(204, 196, 196, 0.368);
+    border-radius: 10px;
+    width: 20px;
+    height: 20px;
+    /* margin-bottom: 8px; */
+    padding: 0px 0px 6px 0px;
+}
+
+.sortdown{
+    margin-right: 2%;
+}
+
 /* title and heading for tab-content  */
 .title{
     color: white;
@@ -144,6 +181,95 @@ body{
 }
 
 
+.activerow{
+    margin: 8px;
+}
+.activerow2{
+    margin-left: 8px;
+    margin-right: 28px;
+}
+
+
+
+
+.login{
+    /* float: right; */
+    justify-content: end;
+    text-align: end;
+    margin: auto;
+    margin-top: 10px;
+}
+
+/* activity activity activity activity  */
+.card{
+    margin: 40px;
+    border-radius: 10px;
+    /* padding-left: 10px; */
+    /* padding-right: 10px; */
+    /* color: white; */
+    /* background-color: rgb(23, 39, 130); */
+    border: 2px solid rgb(8, 8, 68);
+}
+
+.show .activity {
+    font-size: 14px;
+}
+  
+.show .activity .activity-item .activite-label {
+    color: #605e5e;
+    position: relative;
+    flex-shrink: 0;
+    flex-grow: 0;
+    min-width: 64px;
+}
+  
+.show .activity .activity-item .activite-label::before {
+    content: "";
+    position: absolute;
+    right: -11px;
+    width: 4px;
+    top: 0;
+    bottom: 0;
+    background-color: #eceefe;
+}
+  
+.show .activity .activity-item .activity-badge {
+    margin-top: 3px;
+    z-index: 1;
+    font-size: 11px;
+    line-height: 0;
+    border-radius: 50%;
+    flex-shrink: 0;
+    border: 3px solid #fff;
+    flex-grow: 0;
+}
+  
+.show .activity .activity-item .activity-content {
+    padding-left: 10px;
+    padding-bottom: 20px;
+}
+
+.show .activity .activity-item .activity-content a{
+    text-decoration: none;
+    color: black;
+}
+  
+.show .activity .activity-item:first-child .activite-label::before {
+    top: 5px;
+}
+  
+.show .activity .activity-item:last-child .activity-content {
+    padding-bottom: 0;
+}
+
+
+.fa-circle{
+    font-size: 3px;
+}
+
+table{
+    text-align: center;
+}
 
 .mytabcontent{
     display: block;
@@ -247,63 +373,76 @@ nav .nav-tabs .nav-item a{
 
 /* work plan work plan  submitted form  */
 
-#workplan .filled .hero{
-    text-transform: uppercase;
-}
-#workplan .filled{
-    margin: 8px;
-    /* border: 2px solid white; */
-    background-color: rgba(245, 245, 247, 0.43);
-    color: black;
-    border-radius: 5px;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-#workplan .filled .second{
-    margin-left: 210px;
-}
+/* work plan work plan  submitted form  */
 
-#workplan .hero{
-    font-weight: bold;
-}
 
-/* work plan work plan  main form  */
-#workplan .title{
-    /* margin-top: 5px; */
-    /* margin-left: 1px; */
-    font-weight: bolder;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-#workplan .form p{
-    font-weight: bold;
-    font-size: 16px;
+.plus .form p{
     text-align: center;
-    margin-top: 10px;
+    margin-top: 5px;
+    font-size: 17px;
+    font-weight: 600;
 }
-#workplan .form{
-    /* width: max-content; */
-    /* width: 1000px; */
+.form .form-group .col-5,
+.filled .col-5{
+    width: 50%;
+}
+.form .form-group label{
+    width: 50%;
+    font-weight: 500;
+    font-family: 'Franklin Gothic Medium';
+}
+.form .form-group input,
+.form .form-group textarea,
+.form .form-group select{
+    width: 95%;
+    height: 50%;
+    /* box-shadow: 0px 1px 1px 0px rgb(63, 62, 62); */
+    /* border-radius: 3px; */
+    /* border: 2px solid black; */
+}
+.form .form-group .radio input{
+    width: 30px;
+    height: 18%;
+}
+
+.form .submit{
+    margin-top: 50px;
+}
+
+.form .submit button{
+    width: 100px;
     padding: 5px;
-    /* background-color: rgb(223, 222, 222); */
-    /* margin: 3px; */
+    border-radius: 8px;
+}
+
+.filled,
+.form{
+    margin-left: 30px;
+}
+.filled{
+    background-color: #ecebeb;
     border-radius: 15px;
-    /* background-color: rgb(157, 156, 156); */
-    /* border: 1px solid grey; */
 }
 
-#workplan .form label{
-    font-size: 14px;
-    font-weight: bold;
-    width: 400px;
-}
-#workplan .form textarea{
-    width: 400px;
+.filled .hero{
+    width: 50%;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-family: 'Franklin Gothic Medium';
 }
 
-#workplan .first{
-    /* margin-left: 15px; */
+.filled .heroin{
+    width: 100%;
+    /* height: 50%; */
 }
-#workplan .second{
-    margin-left: 150px;
+
+.plus .nav-content{
+    padding: 5px;
+    background-color: white;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 0px 5px 5px 0px rgb(63, 62, 62);
+    /* transition: margin-top 4s; */
 }
 
 
@@ -334,6 +473,12 @@ nav .nav-tabs .nav-item a{
 
 /* view messages view messages view messages  */
 /* view messages view messages view messages view messages view messages */
+.sidenav .msg{
+    margin: 3%;
+}
+.sidenav .badge{
+    margin: auto;
+}
 #viewmsg .msg-list{
     /* border-top: 8px solid rgb(248, 217, 179); */
     background-color: grey;
@@ -378,10 +523,35 @@ nav .nav-tabs .nav-item a{
 }
 
 
+@media only screen
+and (max-width:319px){
+    .sidenav,
+    .tab-content{
+        display: none;
+    }
+    .firstsection{
+        display: flex;
+        text-align: center;
+        margin: auto;
+        color: red;
+        text-transform: uppercase;
+        margin-top: 50%;
+    }
+    .firstsection h1{
+        text-align: center;
+        margin: auto;
+        font-size: 20px;
+    }
+}
+
+
+
 
 
 @media only screen
-  and (min-width:200px) and (max-width:427px){
+  and (min-width:319px) and (max-width:374px){
+
+    
     .btn{
         display: flex;
         border: none;
@@ -405,6 +575,546 @@ nav .nav-tabs .nav-item a{
 
     .fa-bars{
         margin-top: -8px;
+    }
+
+    #main{
+        transition: margin-right .5s;
+        /* padding: 20px; */
+    }
+
+    /* dasboard dashboard dashboard dashboard  */
+    .login{
+        /* float: right; */
+        justify-content: left;
+        text-align: left;
+        margin: auto;
+        margin-top: 10px;
+    }
+
+    .activeleft,
+    .activeright{
+        width: 80%;
+        padding: 0;
+    }
+
+    .closebtn{
+        display: flex;
+        float: right;
+        margin-top: 2%;
+        margin-left: 80%;
+        text-decoration: none;
+        color: #012970;
+    }
+
+    /* id id id  */
+    .id{
+        /* border: 1px solid blue; */
+        border-radius: 50px;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        width: 40px;
+        padding: 8px 10px 4px 10px;
+        margin: auto;
+        background-color: rgb(5, 8, 49);
+    }
+    .id h1{
+        color: white;
+        text-align: center;
+        font-size: 20px;
+    }
+    .sidenav-items a p{
+        font-size: 13px;
+    } 
+    .sidenav span{
+        font-size: 12px;
+        /* float: right; */
+        margin-right: -16%;
+    }
+    .real{
+        margin-top: 0;
+        margin-left: 0;
+        /* background-color: white; */
+        border-radius: 10px;
+
+    }
+
+    /* navbar for tab-content navbar for tab-content  */
+    .title{
+        text-align: left;
+        margin-right: 120px;
+    }
+    .title h1{
+        font-size: 18px;
+    }
+
+
+    /* dasboard dashboard dashboard dashboard  */
+    .login{
+        /* float: right; */
+        justify-content: left;
+        text-align: left;
+        margin: auto;
+        margin-top: 10px;
+    }
+
+    .activeleft,
+    .activeright{
+        width: 80%;
+        padding: 0;
+    }
+
+    /* search search  */
+    .search-bar{
+        display: none;
+    }
+
+    .plus .form p{
+        text-align: center;
+        margin-top: 5px;
+        font-size: 15px;
+        font-weight: 600;
+    }
+    .plus .nav-content{
+        margin: 1%;
+        padding: 5px;
+        background-color: white;
+        border: 2px solid black;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        box-shadow: 0px 5px 5px 0px rgb(63, 62, 62);
+    } 
+
+    .form .form-group .col-5,
+    .filled .col-5{
+        width: 50%;
+    }
+    .form .form-group label{
+        width: 100%;
+        font-weight: 500;
+        font-family: 'Franklin Gothic Medium';
+        font-size: 14px;
+    }
+
+
+    .form .form-group input,
+    .form .form-group textarea,
+    .form .form-group select{
+        width: 90%;
+        height: 50%;
+    }
+
+    .form .form-group .radio input{
+        width: 30px;
+        height: 18%;
+    }
+
+    .form .submit{
+        margin-top: 50px;
+    }
+
+    .form .submit button{
+        width: 100px;
+        padding: 5px;
+        border-radius: 8px;
+    }
+    .form .mco label{
+        font-size: 11px;
+        font-weight: 500;
+        width: 100%;
+    }
+
+    .form .attav label{
+        font-size: 13px;
+        font-weight: 500;
+        width: 100%;
+    }
+
+    .filled,
+    .form{
+        margin: 1%;
+    }
+
+    .filled .hero{
+        width: 100%;
+        text-transform: uppercase;
+        font-weight: 500;
+        font-family: 'Franklin Gothic Medium';
+        font-size: 14px;
+    }
+
+    .filled .mco .hero{
+        font-size: 13px;
+        width: 100%;
+        font-weight: 580;
+    }
+
+    .filled .heroin{
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .title h1{
+        margin-right: 130px;
+    }
+
+    /* attendance attendance  */
+    #attendance{
+        margin-top: 0px;
+        border-right: 5px solid  white;
+    }
+
+    /* plus and sortdown design */
+    
+
+    #workplan .title h1{
+        margin-right: -22px;
+    }
+
+    #viewmsg .title{
+        margin-left: 100px;
+    }
+    #viewmsg .title h1{
+        /* margin-right: -82px; */
+        margin-top: -22px;
+    }
+
+    
+}
+
+
+@media only screen
+  and (min-width:375px) and (max-width:427px){
+    .btn{
+        display: flex;
+        border: none;
+        margin-right: 2%;
+    }
+    .sidenav{
+        width: 0;
+        min-height: 100vh;
+        border-bottom-right-radius: 0%;
+        border-top-right-radius: 0%;
+        position: fixed;
+        top: 0;
+        /* left: 0; */
+        /* right: 0; */
+        transition: .4s ease-in-out;
+        z-index: 1;
+        overflow-x: hidden;
+        transition: 0.8s;
+        /* padding-top: 15px; */
+        text-align: center;
+        /* justify-content: center; */
+    }
+
+    .fa-bars{
+        margin-top: -10px;
+    }
+
+    #main{
+        transition: margin-right .5s;
+        /* padding: 20px; */
+    }
+
+    .closebtn{
+        display: flex;
+        float: right;
+        margin-top: 2%;
+        margin-left: 80%;
+        text-decoration: none;
+        color: #012970;
+    }
+
+    /* id id id  */
+    .id{
+        /* border: 1px solid blue; */
+        border-radius: 50px;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        width: 40px;
+        padding: 8px 10px 4px 10px;
+        margin: auto;
+        background-color: rgb(5, 8, 49);
+    }
+    .id h1{
+        color: white;
+        text-align: center;
+        font-size: 20px;
+    }
+    .sidenav-items a p{
+        font-size: 13px;
+    } 
+    .sidenav span{
+        font-size: 12px;
+        /* float: right; */
+        margin-right: -16%;
+    }
+    
+
+    /* tab-content tab-content tab-content  */
+
+    .real{
+        margin-top: 0;
+        margin-left: 0;
+        /* background-color: white; */
+        border-radius: 10px;
+
+    }
+    .tab-pane .nav-content{
+        padding: 3px;
+        border-radius: 10px;
+    }
+    .tab-pane .nav-content a{
+        text-decoration: none;
+        font-size: 13px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+
+    /* navbar for tab-content navbar for tab-content  */
+    .title{
+        text-align: left;
+        margin-right: 180px;
+    }
+    .title h1{
+        font-size: 18px;
+    }
+
+    /* dasboard dashboard dashboard dashboard  */
+    .login{
+        /* float: right; */
+        justify-content: left;
+        text-align: left;
+        margin: auto;
+        margin-top: 10px;
+    }
+
+    .activeleft,
+    .activeright{
+        width: 80%;
+        padding: 0;
+    }
+
+
+
+    /* view tasks view tasks view tasks  */
+    .head{
+        background-color: rgb(103, 6, 6);
+        padding: 5px;
+        /* padding: 1px; */
+    }
+    
+    .head h1{
+        color: white;
+        margin-left: 2%;
+        padding: 2px;
+        margin-bottom: 4px;
+        text-transform: uppercase;
+        font-size: 22px;
+    }
+    
+    .head .fa-sort-down{
+        color: white;
+        font-size: 30px;
+        font-weight: bold;
+        background-color: rgba(204, 196, 196, 0.368);
+        border-radius: 10px;
+        width: 20px;
+        height: 20px;
+        /* margin-bottom: 8px; */
+        padding: 0px 0px 6px 0px;
+    }
+    
+    #sortdown{
+        margin-top: -30px;
+        margin-left: 90%;
+    }
+    
+    
+    
+    .tablebg .head p{
+        color: white;
+        margin-left: 2%;
+        padding: 2px;
+        margin-bottom: 4px;
+        font-size: 15px;
+    }
+    
+    
+    .tablebg .semes p{
+        color: white;
+        margin-left: 2%;
+        padding: 2px;
+        margin-bottom: 4px;
+        font-size: 17px;
+        text-transform: uppercase;
+    }
+    
+    .tablebg .twop{
+        margin-left: 70%;
+        margin-top: -34px;
+    }
+
+
+
+    /* attendance attendance  */
+    /* attendance attendance  */
+    #ond-nav .title,
+    #hnd-nav .title{
+        text-align: left;
+        margin-left: -21px;
+    }
+
+    #ond-nav .title h1,
+    #hnd-nav .title h1{
+        margin-left: -155px;
+    }
+    #ond-nav .sortdown,
+    #hnd-nav .sortdown{
+        margin-left: 70%;
+        margin-top: -35px;
+    }
+    
+
+
+
+    /* plus and sortdown design */
+    /* plus and sortdown design */
+    #workplan .title h1{
+        margin-left: -13px;
+    }
+
+    #workplan .sortdown{
+        /* margin-left: 75%; */
+        /* margin-top: -36px; */
+        margin-right: 10px;
+    }
+    
+    #viewmsg .title{
+        margin-left: 100px;
+    }
+    #viewmsg .title h1{
+        /* margin-right: -82px; */
+        margin-top: -22px;
+    }
+
+    /* workplan and report form design  */
+    .plus .form p{
+        text-align: center;
+        margin-top: 5px;
+        font-size: 15px;
+        font-weight: 600;
+    }
+    .plus .nav-content{
+        margin: 1%;
+        padding: 5px;
+        background-color: white;
+        border: 2px solid black;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        box-shadow: 0px 5px 5px 0px rgb(63, 62, 62);
+    } 
+    .form .form-group .col-5,
+    .filled .col-5{
+        width: 50%;
+    }
+    .form .form-group label{
+        width: 100%;
+        font-weight: 500;
+        font-family: 'Franklin Gothic Medium';
+        font-size: 14px;
+    }
+
+
+    .form .form-group input,
+    .form .form-group textarea,
+    .form .form-group select{
+        width: 90%;
+        height: 50%;
+        /* box-shadow: 0px 1px 1px 0px rgb(63, 62, 62); */
+        /* border-radius: 3px; */
+        /* border: 2px solid black; */
+    }
+    .form .form-group .radio input{
+        width: 30px;
+        height: 18%;
+    }
+    
+    .form .submit{
+        margin-top: 50px;
+    }
+    
+    .form .submit button{
+        width: 100px;
+        padding: 5px;
+        border-radius: 8px;
+    }
+    
+    .filled,
+    .form{
+        margin: 1%;
+    }
+    
+    .filled .hero{
+        width: 100%;
+        text-transform: uppercase;
+        font-weight: 500;
+        font-family: 'Franklin Gothic Medium';
+        font-size: 14px;
+    }
+
+    .filled .mco .hero{
+        font-size: 13px;
+        /* font-weight: 580; */
+    }
+    
+    .filled .heroin{
+        width: 100%;
+        font-size: 14px;
+        /* text-align: justify; */
+        /* height: 50%; */
+    }
+
+
+    #viewmsg .msg span,
+    #outmsg .msg span{
+        font-size: 12px;
+        float: right;
+        margin-right: 1%;
+        margin-top: -4%;
+    }
+}
+    
+@media only screen
+  and (min-width:427px) and (max-width:768px){
+    .btn{
+        display: flex;
+        border: none;
+        margin-right: 2%;
+    }
+    .sidenav{
+        width: 0;
+        min-height: 100vh;
+        border-bottom-right-radius: 0%;
+        border-top-right-radius: 0%;
+        position: fixed;
+        top: 0;
+        /* left: 0; */
+        /* right: 0; */
+        transition: .4s ease-in-out;
+        z-index: 1;
+        overflow-x: hidden;
+        transition: 0.8s;
+        /* padding-top: 15px; */
+        text-align: center;
+        /* justify-content: center; */
+    }
+
+    .fa-bars{
+        margin-top: -10px;
     }
 
     #main{
@@ -455,48 +1165,262 @@ nav .nav-tabs .nav-item a{
 
     }
 
+    .tab-pane .nav-content{
+        padding: 3px;
+        border-radius: 10px;
+    }
+    .tab-pane .nav-content a{
+        text-decoration: none;
+        font-size: 14px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+
+
+
     /* navbar for tab-content navbar for tab-content  */
-   
+    .title{
+        text-align: left;
+        margin-right: 310px;
+    }
     .title h1{
-        font-size: 20px;
+        font-size: 22px;
     }
 
-    /* search search  */
-    .search-bar{
-        display: none;
+    /* dasboard dashboard dashboard dashboard  */
+    .login{
+        /* float: right; */
+        justify-content: left;
+        text-align: left;
+        margin: auto;
+        margin-top: 10px;
     }
 
-    #workplan .filled .hero{
+    .activeleft,
+    .activeright{
+        width: 90%;
+        padding: 0;
+    }
+
+    /* view tasks view tasks view tasks  */
+    .head{
+        background-color: rgb(103, 6, 6);
+        padding: 5px;
+        /* padding: 1px; */
+    }
+
+    .head h1{
+        color: white;
+        margin-left: 2%;
+        padding: 2px;
+        margin-bottom: 4px;
+        text-transform: uppercase;
+        font-size: 24px;
+    }
+
+    .head .fa-sort-down{
+        color: white;
+        font-size: 30px;
+        font-weight: bold;
+        background-color: rgba(204, 196, 196, 0.368);
+        border-radius: 10px;
+        width: 20px;
+        height: 20px;
+        /* margin-bottom: 8px; */
+        padding: 0px 0px 6px 0px;
+    }
+
+    #sortdown{
+        margin-top: -30px;
+        margin-left: 92%;
+    }
+
+
+
+    .tablebg .head p{
+        color: white;
+        margin-left: 2%;
+        padding: 2px;
+        margin-bottom: 4px;
+        font-size: 15px;
+    }
+
+
+    .tablebg .semes p{
+        color: white;
+        margin-left: 2%;
+        padding: 2px;
+        margin-bottom: 4px;
+        font-size: 21px;
         text-transform: uppercase;
     }
-    #workplan .filled{
-        background-color: rgba(245, 245, 247, 0.43);
-        color: black;
-        border-radius: 5px;
-        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    }
-    
-    #workplan .hero{
-        font-weight: bold;
-    }
 
-    #workplan .first{
-        margin-left: 2%;
-    }
-    #workplan .second{
-        /* margin-left: 10%; */
-    }
+    .tablebg .twop{
+        margin-left: 85%;
+        margin-top: -34px;
+    } 
 
-    .title h1{
-        margin-right: 130px;
-    }
 
     /* attendance attendance  */
-    #attendance{
-        margin-top: 0px;
-        border-right: 5px solid  white;
+    /* attendance attendance  */
+    #ond-nav .title,
+    #hnd-nav .title{
+        text-align: left;
+        margin-left: -21px;
     }
-}
 
+    #ond-nav .title h1,
+    #hnd-nav .title h1{
+        margin-left: -135px;
+    }
+    #ond-nav .sortdown,
+    #hnd-nav .sortdown{
+        margin-left: 80%;
+        margin-top: -35px;
+    }
     
 
+    /* plus and sortdown design */
+    /* plus and sortdown design */
+    #workplan .title{
+        text-align: left;
+        margin-left: 19px;
+    }
+
+    #workplan .title h1{
+        margin-left: 33px;
+    }
+
+    #workplan #plus{
+        margin-left: 65%;
+        margin-top: -35px;
+    }
+
+    #workplan .sortdown{
+        margin-left: 75%;
+        margin-top: -35px;
+    }
+
+    #viewmsg .fa-bars{
+        margin-top: 3px;
+    }
+
+    #viewmsg .title{
+        margin-left: 100px;
+    }
+    #viewmsg .title h1{
+        /* margin-right: -82px; */
+        margin-top: -22px;
+    }
+    
+    .fa-plus{
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+        background-color: rgba(204, 196, 196, 0.281);
+        border-radius: 25px;
+        /* width: 20px; */
+        padding: 4px 4px 4px 4px;
+        /* margin-top: 2px; */
+        /* float: right; */
+    }
+    
+    .fa-sort-down{
+        color: white;
+        font-size: 30px;
+        font-weight: bold;
+        background-color: rgba(204, 196, 196, 0.368);
+        border-radius: 10px;
+        width: 20px;
+        height: 20px;
+        /* margin-bottom: 8px; */
+        padding: 0px 0px 6px 0px;
+        /* margin-top: 2px; */
+        /* float: right; */
+    }
+
+    /* workplan and report form design  */
+    .plus .form p{
+        text-align: center;
+        margin-top: 5px;
+        font-size: 15px;
+        font-weight: 600;
+    }
+    .plus .nav-content{
+        margin: 1%;
+        padding: 5px;
+        background-color: white;
+        border: 2px solid black;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        box-shadow: 0px 5px 5px 0px rgb(63, 62, 62);
+    } 
+    .form .form-group .col-5,
+    .filled .col-5{
+        width: 50%;
+    }
+    .form .form-group label{
+        width: 100%;
+        font-weight: 500;
+        font-family: 'Franklin Gothic Medium';
+        font-size: 14px;
+    }
+
+
+    .form .form-group input,
+    .form .form-group textarea,
+    .form .form-group select{
+        width: 90%;
+        height: 50%;
+        /* box-shadow: 0px 1px 1px 0px rgb(63, 62, 62); */
+        /* border-radius: 3px; */
+        /* border: 2px solid black; */
+    }
+    .form .form-group .radio input{
+        width: 30px;
+        height: 18%;
+    }
+    
+    .form .submit{
+        margin-top: 50px;
+    }
+    
+    .form .submit button{
+        width: 100px;
+        padding: 5px;
+        border-radius: 8px;
+    }
+    
+    .filled,
+    .form{
+        margin: 1%;
+    }
+    
+    .filled .hero{
+        width: 100%;
+        text-transform: uppercase;
+        font-weight: 500;
+        font-family: 'Franklin Gothic Medium';
+        font-size: 14px;
+    }
+
+    .filled .mco .hero{
+        font-size: 13px;
+        /* font-weight: 580; */
+    }
+    
+    .filled .heroin{
+        width: 100%;
+        font-size: 14px;
+        /* text-align: justify; */
+        /* height: 50%; */
+    }
+
+
+    #viewmsg .msg span,
+    #outmsg .msg span{
+        font-size: 12px;
+        float: right;
+        margin-right: 1%;
+        margin-top: -4%;
+    }
+}

@@ -28,10 +28,10 @@
                         <a href="" class="nav-link"><i class="fa fa-search"></i> Search</a>
                     </div>
                     <div class="nav-item">
-                        <a href="" class="nav-link"><i class="fa fa-chat"></i> Inbox</a>
+                        <a href="" class="nav-link"><i class="fa fa-envelope"></i> Inbox</a>
                     </div>
                     
-                    <div class="nav-item profile">
+                    <div class="nav-item profile last">
                         <a href="" class="nav-link"><i class="fa fa-user"></i> Profile</a>
                     </div>
                 </div>
@@ -68,7 +68,7 @@
                     </li>
                 </ul>
                 <a href="#staffstatus" class="list nav-link" data-bs-toggle="tab" data-bs-target="#staffstatus"><p> View Status</p></a>
-                <a href="#messages" class="list nav-link" data-bs-toggle="tab" data-bs-target="#messages"><p> Mails</p></a>
+                <a href="#messages" class="list nav-link" data-bs-toggle="tab" data-bs-target="#messages"><p> Mails <span class="badge bg-success badge-number"> 3</span></p></a>
                 <a href="#settings" class="list nav-link" data-bs-toggle="tab" data-bs-target="#settings"><p> System Settings</p></a>
                 
             </div>
@@ -162,6 +162,73 @@
                         </div>
                     </div>
                 </div>
+
+
+                <div class="footer">
+                    <div class="navbar navbar-two">
+                        <h3>Notification Area</h3>
+                    </div>
+
+                    <div class="card activeright">
+        
+                        <div class="card-body">
+                            <h5 class="card-title">RECENT ACTIVITY</h5>
+            
+                            <div class="activity mt-4">
+            
+                                <div class="activity-item d-flex">
+                                    <div class="activite-label">32 min</div>
+                                    <i class='fa fa-circle activity-badge text-success align-self-start'></i>
+                                    <div class="activity-content">
+                                    <a href="">You have a new message...</a>
+                                    </div>
+                                </div><!-- End activity item-->
+            
+                                <div class="activity-item d-flex">
+                                    <div class="activite-label">56 min</div>
+                                    <i class='fa fa-circle activity-badge text-danger align-self-start'></i>
+                                    <div class="activity-content">
+                                    <a href="">A New Task has been added...</a>
+                                    </div>
+                                </div><!-- End activity item-->
+            
+                                <div class="activity-item d-flex">
+                                    <div class="activite-label">2 hrs</div>
+                                    <i class='fa fa-circle activity-badge text-primary align-self-start'></i>
+                                    <div class="activity-content">
+                                    <a href="">Student Attendance has been marked...</a>
+                                    </div>
+                                </div><!-- End activity item-->
+            
+                                <div class="activity-item d-flex">
+                                    <div class="activite-label">1 day</div>
+                                    <i class='fa fa-circle activity-badge text-info align-self-start'></i>
+                                    <div class="activity-content">
+                                    Tempore autem saepe <a href="#" class="fw-bold text-dark">occaecati voluptatem</a> tempore
+                                    </div>
+                                </div><!-- End activity item-->
+            
+                                <div class="activity-item d-flex">
+                                    <div class="activite-label">2 days</div>
+                                    <i class='fa fa-circle activity-badge text-warning align-self-start'></i>
+                                    <div class="activity-content">
+                                    Est sit eum reiciendis exercitationem
+                                    </div>
+                                </div><!-- End activity item-->
+            
+                                <div class="activity-item d-flex">
+                                    <div class="activite-label">4 weeks</div>
+                                    <i class='fa fa-circle activity-badge text-muted align-self-start'></i>
+                                    <div class="activity-content">
+                                    Dicta dolorem harum nulla eius. Ut quidem quidem sit quas
+                                    </div>
+                                </div><!-- End activity item-->
+            
+                            </div>
+            
+                        </div>
+                    </div>
+                </div>
             </div>
     
             <!-- enroll -->
@@ -230,22 +297,155 @@
                                 <a href="#wstudent" class="list nav-link" data-bs-toggle="tab" data-bs-target="#wstudent">Students</a>
                             </li>
                             <li>
-                                <a href="#wcourse4" class="list nav-link" data-bs-toggle="tab" data-bs-target="#wcourse4">Course 4</a>
+                                <a href="#wgeneral" class="list nav-link" data-bs-toggle="tab" data-bs-target="#wgeneral">General</a>
                             </li>
                         </ul>
                    </div>
                 </nav><br><br><br>
 
+                <div class="generate mt-3">
+                    <a href="" data-bs-toggle="modal" data-bs-target="#myweekmodal"><p>Generate Report <span class="fa fa-download"></span></p></a>
+
+                    <div class="modal fade" id="myweekmodal">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title">Generate Weekly Report</h1>
+                                    <button class="btn-close" data-bs-dismiss="modal">&times;</button>
+                                </div>
+
+                                <div class="modal-body">
+                                    <div class="form">
+                                        <form action="" class="container was-validated">
+                                            <div class="nav navbar" id="wgenreport">
+                                                <ul class="nav-tabs">
+                                                    <div class="select">
+                                                        <p>Select Type:</p>
+                                                    </div>
+                        
+                                                   <div class="nav-tabs">
+                                                        <li class="nav-item one">
+                                                            <a href="#wone" class="list nav-link active" data-bs-toggle="tab" data-bs-target="#wone">One</a>
+                                                        </li>
+                        
+                                                        <li class="nav-item two item">
+                                                            <a href="#wmulti" class="list nav-link" data-bs-toggle="tab" data-bs-target="#wmulti">Multiple</a>
+                                                        </li>
+                                                   </div>
+                                                </ul>
+                                            </div>
+                            
+                                            <div class="tab-content" data-bs-parent="#wgenreport">
+    
+                                                <!-- one selection one selection one selection one selection one selection -->
+                                                <div class="tab-pane fade show active" id="wone">
+                                                    <div class="form">
+                                                        <form action="" class="container was-validated">
+                                                            
+                                                            <div class="row mt-2 form-group">
+                                                                <div class="col-12 first">
+                                                                    <label class="form-label" for="Week">Week</label>
+                                                                    <input type="number">
+                                                                   
+                                                                </div>
+                        
+                                                                
+                                                            </div> <br>
+                        
+                                                            <div class="row mt-2 form-group">
+                                                                <div class="col-5 first">
+                                                                    <label class="form-label" for="course">Course</label>
+                                                                    <select name="" id="course">
+                                                                        <option value="Course 1">Course 1</option>
+                                                                        <option value="Course 2">Course 2</option>
+                                                                        <option value="Course 3">Course 3</option>
+                                                                        <option value="Course 4">Course 4</option>
+                                                                    </select>
+                                                                   
+                                                                </div>
+                                        
+                                                                <div class="col-5 second">
+                                                                    <label class="form-label" for="date">Date</label>
+                                                                    <input type="date">
+                                                                </div>
+                        
+                                                                
+                                                            </div> <br>
+                                        
+                                        
+                                                            <div class="submit mt-4">
+                                                                <button>Submit</button>
+                                                            </div>
+                                        
+                                                        </form>
+                                                    </div>
+                                                </div>
+                        
+                        
+                                                <!-- multiple selection multiple selection multiple selection multiple selection multiple selection -->
+                                                <div class="tab-pane fade" id="wmulti">
+                                                    <div class="form">
+                                                        <form action="" class="container was-validated">
+                                                            
+                                                            <div class="row mt-2 form-group">
+                                                                <div class="col-5 first">
+                                                                    <label class="form-label" for="Week">Week</label>
+                                                                    <input type="number">
+                                                                   
+                                                                </div>
+
+                                                                <div class="col-5 second">
+                                                                    <label class="form-label" for="course">Course</label>
+                                                                    <select name="" id="course">
+                                                                        <option value="Course 1">Course 1</option>
+                                                                        <option value="Course 2">Course 2</option>
+                                                                        <option value="Course 3">Course 3</option>
+                                                                        <option value="Course 4">Course 4</option>
+                                                                    </select>
+                                                                   
+                                                                </div>
+                                                            </div> <br>
+                        
+                                                            <div class="row mt-2 form-group">
+                                                                <div class="col-5 first">
+                                                                    <label class="form-label" for="from">From(Date)</label>
+                                                                    <input type="date">
+                                                                   
+                                                                </div>
+                                        
+                                                                <div class="col-5 second">
+                                                                    <label class="form-label" for="date">To(Date)</label>
+                                                                    <input type="date">
+                                                                </div>
+                        
+                                                                
+                                                            </div> <br>
+                                        
+                                        
+                                                            <div class="submit mt-4">
+                                                                <button>Send</button>
+                                                            </div>
+                                        
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button class="btn btn-primary" data-bs-dismiss="modal">close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
                 <!-- <div class="head">
                     <h1><span class="btn" onclick="openNav()"><i class="fa fa-bars"></i></span>
                         <p>ENROLLMENT</p>
                     </h1>
                 </div> <br> -->
-                
-
-                
-
-                
                 
                 <!-- tabcontent for weekly nav bar tabcontent for weekly nav bar tabcontent for weekly nav bar -->
                 <div class="tab-content mytabcontent" data-bs-parent="#wreport">
@@ -254,7 +454,7 @@
                     <div class="tab-content mytabcontent plus" data-bs-target="#wplus" data-bs-parent="#wplus">
                         <div class="nav-content collapse" id="addreport">
                             <div class="form">
-                                <form action="" class="container was-validated">
+                                <form action="" class="container">
                 
                                     <p>GENERATE NEW WORK REPORT</p><hr>
                                     <div class="row mt-4 form-group">
@@ -273,25 +473,13 @@
                 
                                     <div class="row mt-2 form-group">
                                         <div class="col-5 first">
-                                            <label class="form-label" for="name">Name</label>
-                                            <input type="text" id="name" required>
+                                            <label class="form-label" for="title">Title</label>
+                                            <input type="text" id="title" required>
                                         </div>
                 
                                         <div class="col-5 second">
-                                            <label class="form-label" for="designation">Designation</label>
-                                            <input type="text" id="designation" required>
-                                        </div>
-                                    </div>
-                
-                                    <div class="row mt-2 form-group">
-                                        <div class="col-5 first">
-                                            <label class="form-label" for="description">Description</label>
-                                            <input type="text" id="" required>
-                                        </div>
-                
-                                        <div class="col-5 mco second">
-                                            <label class="form-label" for="coutline">MOCTECH Course Outline</label>
-                                            <textarea name="" id="coutline" required></textarea>
+                                            <label class="form-label" for="comment">Comment</label>
+                                            <input type="text" id="comment" required>
                                         </div>
                                     </div>
                 
@@ -301,26 +489,11 @@
                                             <textarea name="text" id="research" required></textarea>
                                         </div>
                 
-                                        <div class="col-5 second attav">
-                                            <label class="form-label" for="file">Attendance Average</label><br>
-                                            <input type="text" id="attend" placeholder="Attendance/Total number">
-                                        </div>
-                                        
-                                    </div>
-
-                                    <div class="row mt-2 form-group">
-
                                         <div class="col-5">
                                             <label class="form-label" for="file">Upload</label><br>
                                             <input type="file" id="upload">
                                         </div>
-
-                                        <div class="col-5 second">
-                                            <label class="radio" for="">Work type <br>
-                                                <input type="radio" name="type" id="">Theory <br>
-                                                <input type="radio" name="type" id="">Practical
-                                            </label>
-                                        </div>
+                                        
                                     </div>
                 
                                     <div class="submit">
@@ -354,58 +527,80 @@
     
                                 <div class="row mt-1">
                                     <div class="col-5 first">
-                                        <p class="hero">Course Code</p>
-                                        <p class="heroin">GST 101</p>
+                                        <p class="hero">Title</p>
+                                        <p class="heroin">Staff Report</p>
                                     </div>
     
                                     <div class="col-5 second">
-                                        <p class="hero">Course Title</p>
-                                        <p class="heroin">Introduction to Technology</p>
+                                        <p class="hero">Comment</p>
+                                        <p class="heroin">Mr. Akin and Mrs. Stella</p>
                                     </div>
                                 </div>
     
-                                <div class="row mt-1">
-                                    <div class="col-5 first">
-                                        <p class="hero">NBTE Curriculum</p>
-                                        <p class="heroin">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                                    </div>
-    
-                                    <div class="col-5 second mco">
-                                        <p class="hero">MOCTECH Course Outline</p>
-                                        <p class="heroin">Eius excepturi labore architecto molestiae expedita esse perspiciatis ipsa sit a rem. Libero repellendus dolorum et ab sint modi, iste totam fuga? Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis quidem iusto neque eum, voluptatum unde earum distinctio ipsam fuga sed! Officiis provident incidunt assumenda consequatur aliquid ea accusantium, alias ut.</p>
-                                    </div>
-                                </div>
     
                                 <div class="row mt-1">
-                                    <div class="col-5 first">
-                                        <p class="hero">Work Report</p>
-                                        <p class="heroin">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa temporibus cupiditate odio distinctio magnam sapiente reprehenderit voluptas adipisci, sunt nemo nobis ad aliquam, sint a rem harum quos hic blanditiis.</p>
-                                    </div>
-            
-                                    <div class="col-5 second">
-                                        <p class="hero">Attendance Average</p>
-                                        <p class="heroin">12/30</p>
-                                    </div>
-            
-                                    
-                                </div>
-    
-                                <div class="row mt-1">
-    
                                     <div class="col-5 first">
                                         <p class="hero">File</p>
                                         <img src="" alt="">
                                     </div>
-    
+            
                                     <div class="col-5 second">
-                                        <p class="hero">Work type</p>
-                                        <p>Theory</p>
+                                        <p class="hero">Report</p>
+                                        <p class="heroin">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa temporibus cupiditate odio distinctio magnam sapiente reprehenderit voluptas adipisci, sunt nemo nobis ad aliquam, sint a rem harum quos hic blanditiis.</p>
                                     </div>
+            
                                 </div>
+    
+                                
                             </div>
                         </div>
                        
-                       
+                       <!-- Already filled form  -->
+                       <div class="row mt-2 filled">
+                        <div class="col-12">
+                            <div class="row mt-4">
+                                <div class="col-5 first">
+                                    <p class="hero">Week</p>
+                                    <p class="heroin">1</p>
+                                </div>
+
+                                <div class="col-5 second">
+                                    <p class="hero">Date</p>
+                                    <p class="heroin">05/12/2023</p>
+                                </div>
+
+                                
+                            </div>
+
+                            <div class="row mt-1">
+                                <div class="col-5 first">
+                                    <p class="hero">Title</p>
+                                    <p class="heroin">Behavioural Report</p>
+                                </div>
+
+                                <div class="col-5 second">
+                                    <p class="hero">Comment</p>
+                                    <p class="heroin">Mr. Akin and Mrs. Stella</p>
+                                </div>
+                            </div>
+
+
+                            <div class="row mt-1">
+                                <div class="col-5 first">
+                                    <p class="hero">File</p>
+                                    <img src="" alt="">
+                                </div>
+        
+                                <div class="col-5 second">
+                                    <p class="hero">Report</p>
+                                    <p class="heroin">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa temporibus cupiditate odio distinctio magnam sapiente reprehenderit voluptas adipisci, sunt nemo nobis ad aliquam, sint a rem harum quos hic blanditiis.</p>
+                                </div>
+        
+                            </div>
+
+                            
+                        </div>
+                    </div>
                     </div>
     
                     <!-- weekly course 2 weekly course 2 -->
@@ -417,7 +612,7 @@
                                 <div class="row mt-4">
                                     <div class="col-5 first">
                                         <p class="hero">Week</p>
-                                        <p class="heroin">2</p>
+                                        <p class="heroin">1</p>
                                     </div>
     
                                     <div class="col-5 second">
@@ -430,54 +625,31 @@
     
                                 <div class="row mt-1">
                                     <div class="col-5 first">
-                                        <p class="hero">Course Code</p>
-                                        <p class="heroin">GST 101</p>
+                                        <p class="hero">Title</p>
+                                        <p class="heroin">Behavioural</p>
                                     </div>
     
                                     <div class="col-5 second">
-                                        <p class="hero">Course Title</p>
-                                        <p class="heroin">Introduction to Technology</p>
+                                        <p class="hero">Comment</p>
+                                        <p class="heroin">Mr. Akin and Mrs. Stella</p>
                                     </div>
                                 </div>
     
-                                <div class="row mt-1">
-                                    <div class="col-5 first">
-                                        <p class="hero">NBTE Curriculum</p>
-                                        <p class="heroin">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                                    </div>
-    
-                                    <div class="col-5 second mco">
-                                        <p class="hero">MOCTECH Course Outline</p>
-                                        <p class="heroin">Eius excepturi labore architecto molestiae expedita esse perspiciatis ipsa sit a rem. Libero repellendus dolorum et ab sint modi, iste totam fuga? Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis quidem iusto neque eum, voluptatum unde earum distinctio ipsam fuga sed! Officiis provident incidunt assumenda consequatur aliquid ea accusantium, alias ut.</p>
-                                    </div>
-                                </div>
     
                                 <div class="row mt-1">
-                                    <div class="col-5 first">
-                                        <p class="hero">Work Report</p>
-                                        <p class="heroin">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa temporibus cupiditate odio distinctio magnam sapiente reprehenderit voluptas adipisci, sunt nemo nobis ad aliquam, sint a rem harum quos hic blanditiis.</p>
-                                    </div>
-            
-                                    <div class="col-5 second">
-                                        <p class="hero">Attendance Average</p>
-                                        <p class="heroin">12/30</p>
-                                    </div>
-            
-                                    
-                                </div>
-    
-                                <div class="row mt-1">
-    
                                     <div class="col-5 first">
                                         <p class="hero">File</p>
                                         <img src="" alt="">
                                     </div>
-    
+            
                                     <div class="col-5 second">
-                                        <p class="hero">Work type</p>
-                                        <p>Theory</p>
+                                        <p class="hero">Report</p>
+                                        <p class="heroin">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa temporibus cupiditate odio distinctio magnam sapiente reprehenderit voluptas adipisci, sunt nemo nobis ad aliquam, sint a rem harum quos hic blanditiis.</p>
                                     </div>
+            
                                 </div>
+    
+                                
                             </div>
                         </div>
                        
@@ -493,7 +665,7 @@
                                 <div class="row mt-4">
                                     <div class="col-5 first">
                                         <p class="hero">Week</p>
-                                        <p class="heroin">3</p>
+                                        <p class="heroin">1</p>
                                     </div>
     
                                     <div class="col-5 second">
@@ -506,54 +678,31 @@
     
                                 <div class="row mt-1">
                                     <div class="col-5 first">
-                                        <p class="hero">Course Code</p>
-                                        <p class="heroin">GST 101</p>
+                                        <p class="hero">Title</p>
+                                        <p class="heroin">Behavioural</p>
                                     </div>
     
                                     <div class="col-5 second">
-                                        <p class="hero">Course Title</p>
-                                        <p class="heroin">Introduction to Technology</p>
+                                        <p class="hero">Comment</p>
+                                        <p class="heroin">violence</p>
                                     </div>
                                 </div>
     
-                                <div class="row mt-1">
-                                    <div class="col-5 first">
-                                        <p class="hero">NBTE Curriculum</p>
-                                        <p class="heroin">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                                    </div>
-    
-                                    <div class="col-5 second mco">
-                                        <p class="hero">MOCTECH Course Outline</p>
-                                        <p class="heroin">Eius excepturi labore architecto molestiae expedita esse perspiciatis ipsa sit a rem. Libero repellendus dolorum et ab sint modi, iste totam fuga? Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis quidem iusto neque eum, voluptatum unde earum distinctio ipsam fuga sed! Officiis provident incidunt assumenda consequatur aliquid ea accusantium, alias ut.</p>
-                                    </div>
-                                </div>
     
                                 <div class="row mt-1">
-                                    <div class="col-5 first">
-                                        <p class="hero">Work Report</p>
-                                        <p class="heroin">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa temporibus cupiditate odio distinctio magnam sapiente reprehenderit voluptas adipisci, sunt nemo nobis ad aliquam, sint a rem harum quos hic blanditiis.</p>
-                                    </div>
-            
-                                    <div class="col-5 second">
-                                        <p class="hero">Attendance Average</p>
-                                        <p class="heroin">12/30</p>
-                                    </div>
-            
-                                    
-                                </div>
-    
-                                <div class="row mt-1">
-    
                                     <div class="col-5 first">
                                         <p class="hero">File</p>
                                         <img src="" alt="">
                                     </div>
-    
+            
                                     <div class="col-5 second">
-                                        <p class="hero">Work type</p>
-                                        <p>Theory</p>
+                                        <p class="hero">Report</p>
+                                        <p class="heroin">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa temporibus cupiditate odio distinctio magnam sapiente reprehenderit voluptas adipisci, sunt nemo nobis ad aliquam, sint a rem harum quos hic blanditiis.</p>
                                     </div>
+            
                                 </div>
+    
+                                
                             </div>
                         </div>
                        
@@ -561,7 +710,7 @@
                     </div>
     
                     <!-- weekly course 4 weekly course 4 -->
-                    <div class="tab-pane fade" id="wcourse4">
+                    <div class="tab-pane fade" id="wgeneral">
     
                         <!-- Already filled form  -->
                         <div class="row mt-2 filled">
@@ -569,7 +718,7 @@
                                 <div class="row mt-4">
                                     <div class="col-5 first">
                                         <p class="hero">Week</p>
-                                        <p class="heroin">4</p>
+                                        <p class="heroin">1</p>
                                     </div>
     
                                     <div class="col-5 second">
@@ -582,54 +731,31 @@
     
                                 <div class="row mt-1">
                                     <div class="col-5 first">
-                                        <p class="hero">Course Code</p>
-                                        <p class="heroin">GST 101</p>
+                                        <p class="hero">Title</p>
+                                        <p class="heroin">Behavioural</p>
                                     </div>
     
                                     <div class="col-5 second">
-                                        <p class="hero">Course Title</p>
-                                        <p class="heroin">Introduction to Technology</p>
+                                        <p class="hero">Comment</p>
+                                        <p class="heroin">Mr. Akin and Mrs. Stella</p>
                                     </div>
                                 </div>
     
-                                <div class="row mt-1">
-                                    <div class="col-5 first">
-                                        <p class="hero">NBTE Curriculum</p>
-                                        <p class="heroin">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                                    </div>
-    
-                                    <div class="col-5 second mco">
-                                        <p class="hero">MOCTECH Course Outline</p>
-                                        <p class="heroin">Eius excepturi labore architecto molestiae expedita esse perspiciatis ipsa sit a rem. Libero repellendus dolorum et ab sint modi, iste totam fuga? Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis quidem iusto neque eum, voluptatum unde earum distinctio ipsam fuga sed! Officiis provident incidunt assumenda consequatur aliquid ea accusantium, alias ut.</p>
-                                    </div>
-                                </div>
     
                                 <div class="row mt-1">
-                                    <div class="col-5 first">
-                                        <p class="hero">Work Report</p>
-                                        <p class="heroin">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa temporibus cupiditate odio distinctio magnam sapiente reprehenderit voluptas adipisci, sunt nemo nobis ad aliquam, sint a rem harum quos hic blanditiis.</p>
-                                    </div>
-            
-                                    <div class="col-5 second">
-                                        <p class="hero">Attendance Average</p>
-                                        <p class="heroin">12/30</p>
-                                    </div>
-            
-                                    
-                                </div>
-    
-                                <div class="row mt-1">
-    
                                     <div class="col-5 first">
                                         <p class="hero">File</p>
                                         <img src="" alt="">
                                     </div>
-    
+            
                                     <div class="col-5 second">
-                                        <p class="hero">Work type</p>
-                                        <p>Theory</p>
+                                        <p class="hero">Report</p>
+                                        <p class="heroin">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa temporibus cupiditate odio distinctio magnam sapiente reprehenderit voluptas adipisci, sunt nemo nobis ad aliquam, sint a rem harum quos hic blanditiis.</p>
                                     </div>
+            
                                 </div>
+    
+                                
                             </div>
                         </div>
                        
@@ -666,23 +792,183 @@
                         <a href="#" class="collapsed list nav-link" data-bs-toggle="collapse" data-bs-target="#mreportnav-item"><span class="fa fa-sort-down"></span></a>
                         <ul id="mreportnav-item" class="nav-content collapse">
                             <li>
-                                <a href="#mcourse1" class="list nav-link active" data-bs-toggle="tab" data-bs-target="#mcourse1">Lecturers</a>
+                                <a href="#mlecturer" class="list nav-link active" data-bs-toggle="tab" data-bs-target="#mlecturer">Lecturers</a>
                             </li>
                             <li>
-                                <a href="#mcourse2" class="list nav-link" data-bs-toggle="tab" data-bs-target="#mcourse2">Non-academic Staff</a>
+                                <a href="#mnonacad" class="list nav-link" data-bs-toggle="tab" data-bs-target="#mnonacad">Non-academic Staff</a>
                             </li>
                             <li>
-                                <a href="#mcourse3" class="list nav-link" data-bs-toggle="tab" data-bs-target="#mcourse3">Students</a>
+                                <a href="#mstudent" class="list nav-link" data-bs-toggle="tab" data-bs-target="#mstudent">Students</a>
                             </li>
                             <li>
-                                <a href="#mcourse4" class="list nav-link" data-bs-toggle="tab" data-bs-target="#mcourse4">Course 4</a>
+                                <a href="#mgeneral" class="list nav-link" data-bs-toggle="tab" data-bs-target="#mgeneral">General</a>
                             </li>
                            
                         </ul>
                    </div>
                 </nav><br><br><br>
     
-                
+                <div class="generate mt-3">
+                    <a href="" data-bs-toggle="modal" data-bs-target="#mymodal"><p>Generate Report <span class="fa fa-download"></span></p></a>
+
+                    <div class="modal fade" id="mymodal">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title">Generate Monthly Report</h1>
+                                    <button class="btn-close" data-bs-dismiss="modal">&times;</button>
+                                </div>
+
+                                <div class="modal-body">
+                                    <div class="form">
+                                        <form action="" class="container was-validated">
+                                            <div class="nav navbar" id="mgenreport">
+                                                <ul class="nav-tabs">
+                                                    <div class="select">
+                                                        <p>Select Type:</p>
+                                                    </div>
+                        
+                                                   <div class="nav-tabs">
+                                                        <li class="nav-item one">
+                                                            <a href="#mone" class="list nav-link active" data-bs-toggle="tab" data-bs-target="#mone">One</a>
+                                                        </li>
+                        
+                                                        <li class="nav-item two item">
+                                                            <a href="#mmulti" class="list nav-link" data-bs-toggle="tab" data-bs-target="#mmulti">Multiple</a>
+                                                        </li>
+                                                   </div>
+                                                </ul>
+                                            </div>
+                            
+                                            <div class="tab-content" data-bs-parent="#mgenreport">
+    
+                                                <!-- one selection one selection one selection one selection one selection -->
+                                                <div class="tab-pane fade show active" id="mone">
+                                                    <div class="form">
+                                                        <form action="" class="container was-validated">
+                                                            
+                                                            <div class="row mt-2 form-group">
+                                                                <div class="col-12 first">
+                                                                    <label class="form-label" for="month">Month</label>
+                                                                    <select name="" id="month">
+                                                                        <option value="January">January</option>
+                                                                        <option value="February">February</option>
+                                                                        <option value="March">March</option>
+                                                                        <option value="May">May</option>
+                                                                        <option value="June">June</option>
+                                                                        <option value="July">July</option>
+                                                                        <option value="August">August</option>
+                                                                        <option value="September">September</option>
+                                                                        <option value="October">October</option>
+                                                                        <option value="November">November</option>
+                                                                        <option value="December">December</option>
+                                                                    </select>
+                                                                   
+                                                                </div>
+                        
+                                                                
+                                                            </div> <br>
+                        
+                                                            <div class="row mt-2 form-group">
+                                                                <div class="col-5 first">
+                                                                    <label class="form-label" for="course">Course</label>
+                                                                    <select name="" id="course">
+                                                                        <option value="Course 1">Course 1</option>
+                                                                        <option value="Course 2">Course 2</option>
+                                                                        <option value="Course 3">Course 3</option>
+                                                                        <option value="Course 4">Course 4</option>
+                                                                    </select>
+                                                                   
+                                                                </div>
+                                        
+                                                                <div class="col-5 second">
+                                                                    <label class="form-label" for="date">Date</label>
+                                                                    <input type="date">
+                                                                </div>
+                        
+                                                                
+                                                            </div> <br>
+                                        
+                                        
+                                                            <div class="submit mt-4">
+                                                                <button>Submit</button>
+                                                            </div>
+                                        
+                                                        </form>
+                                                    </div>
+                                                </div>
+                        
+                        
+                                                <!-- multiple selection multiple selection multiple selection multiple selection multiple selection -->
+                                                <div class="tab-pane fade" id="mmulti">
+                                                    <div class="form">
+                                                        <form action="" class="container was-validated">
+                                                            
+                                                            <div class="row mt-2 form-group">
+                                                                <div class="col-5 first">
+                                                                    <label class="form-label" for="month">Month</label>
+                                                                    <select name="" id="month">
+                                                                        <option value="January">January</option>
+                                                                        <option value="February">February</option>
+                                                                        <option value="March">March</option>
+                                                                        <option value="May">May</option>
+                                                                        <option value="June">June</option>
+                                                                        <option value="July">July</option>
+                                                                        <option value="August">August</option>
+                                                                        <option value="September">September</option>
+                                                                        <option value="October">October</option>
+                                                                        <option value="November">November</option>
+                                                                        <option value="December">December</option>
+                                                                    </select>
+                                                                   
+                                                                </div>
+
+                                                                <div class="col-5 second">
+                                                                    <label class="form-label" for="course">Course</label>
+                                                                    <select name="" id="course">
+                                                                        <option value="Course 1">Course 1</option>
+                                                                        <option value="Course 2">Course 2</option>
+                                                                        <option value="Course 3">Course 3</option>
+                                                                        <option value="Course 4">Course 4</option>
+                                                                    </select>
+                                                                   
+                                                                </div>
+                                                            </div> <br>
+                        
+                                                            <div class="row mt-2 form-group">
+                                                                <div class="col-5 first">
+                                                                    <label class="form-label" for="from">From(Date)</label>
+                                                                    <input type="date">
+                                                                   
+                                                                </div>
+                                        
+                                                                <div class="col-5 second">
+                                                                    <label class="form-label" for="date">To(Date)</label>
+                                                                    <input type="date">
+                                                                </div>
+                        
+                                                                
+                                                            </div> <br>
+                                        
+                                        
+                                                            <div class="submit mt-4">
+                                                                <button>Send</button>
+                                                            </div>
+                                        
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button class="btn btn-primary" data-bs-dismiss="modal">close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <!-- tabcontent for weekly nav bar tabcontent for weekly nav bar tabcontent for weekly nav bar -->
                 <div class="tab-content mytabcontent" data-target="#mreport">
     
@@ -770,7 +1056,7 @@
                     
     
                     <!-- monthlyly course 1 monthlyly course 1 -->
-                    <div class="tab-pane fade show active" id="mcourse1">
+                    <div class="tab-pane fade show active" id="mlecturer">
     
                         <!-- Already filled form  -->
                         <div class="row mt-2 filled">
@@ -778,7 +1064,7 @@
                                 <div class="row mt-4">
                                     <div class="col-5 first">
                                         <p class="hero">Month</p>
-                                        <p class="heroin">March</p>
+                                        <p class="heroin">January</p>
                                     </div>
     
                                     <div class="col-5 second">
@@ -791,54 +1077,31 @@
     
                                 <div class="row mt-1">
                                     <div class="col-5 first">
-                                        <p class="hero">Course Code</p>
-                                        <p class="heroin">GST 101</p>
+                                        <p class="hero">Title</p>
+                                        <p class="heroin">Behavioural</p>
                                     </div>
     
                                     <div class="col-5 second">
-                                        <p class="hero">Course Title</p>
-                                        <p class="heroin">Introduction to Technology</p>
+                                        <p class="hero">Comment</p>
+                                        <p class="heroin">Mr. Akin and Mrs. Stella</p>
                                     </div>
                                 </div>
     
-                                <div class="row mt-1">
-                                    <div class="col-5 first">
-                                        <p class="hero">NBTE Curriculum</p>
-                                        <p class="heroin">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                                    </div>
-    
-                                    <div class="col-5 second mco">
-                                        <p class="hero">MOCTECH Course Outline</p>
-                                        <p class="heroin">Eius excepturi labore architecto molestiae expedita esse perspiciatis ipsa sit a rem. Libero repellendus dolorum et ab sint modi, iste totam fuga? Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis quidem iusto neque eum, voluptatum unde earum distinctio ipsam fuga sed! Officiis provident incidunt assumenda consequatur aliquid ea accusantium, alias ut.</p>
-                                    </div>
-                                </div>
     
                                 <div class="row mt-1">
-                                    <div class="col-5 first">
-                                        <p class="hero">Work Report</p>
-                                        <p class="heroin">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa temporibus cupiditate odio distinctio magnam sapiente reprehenderit voluptas adipisci, sunt nemo nobis ad aliquam, sint a rem harum quos hic blanditiis.</p>
-                                    </div>
-            
-                                    <div class="col-5 second">
-                                        <p class="hero">Attendance Average</p>
-                                        <p class="heroin">12/30</p>
-                                    </div>
-            
-                                    
-                                </div>
-    
-                                <div class="row mt-1">
-    
                                     <div class="col-5 first">
                                         <p class="hero">File</p>
                                         <img src="" alt="">
                                     </div>
-    
+            
                                     <div class="col-5 second">
-                                        <p class="hero">Work type</p>
-                                        <p>Theory</p>
+                                        <p class="hero">Report</p>
+                                        <p class="heroin">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa temporibus cupiditate odio distinctio magnam sapiente reprehenderit voluptas adipisci, sunt nemo nobis ad aliquam, sint a rem harum quos hic blanditiis.</p>
                                     </div>
+            
                                 </div>
+    
+                                
                             </div>
                         </div>
                        
@@ -846,15 +1109,15 @@
                     </div>
     
                     <!-- monthlyly course 2 monthlyly course 2 -->
-                    <div class="tab-pane fade" id="mcourse2">
+                    <div class="tab-pane fade" id="mnonacad">
     
                         <!-- Already filled form  -->
                         <div class="row mt-2 filled">
                             <div class="col-12">
                                 <div class="row mt-4">
                                     <div class="col-5 first">
-                                        <p class="hero">monthly</p>
-                                        <p class="heroin">May</p>
+                                        <p class="hero">Month</p>
+                                        <p class="heroin">January</p>
                                     </div>
     
                                     <div class="col-5 second">
@@ -867,54 +1130,31 @@
     
                                 <div class="row mt-1">
                                     <div class="col-5 first">
-                                        <p class="hero">Course Code</p>
-                                        <p class="heroin">GST 101</p>
+                                        <p class="hero">Title</p>
+                                        <p class="heroin">Behavioural</p>
                                     </div>
     
                                     <div class="col-5 second">
-                                        <p class="hero">Course Title</p>
-                                        <p class="heroin">Introduction to Technology</p>
+                                        <p class="hero">Comment</p>
+                                        <p class="heroin">Mr. Akin and Mrs. Stella</p>
                                     </div>
                                 </div>
     
-                                <div class="row mt-1">
-                                    <div class="col-5 first">
-                                        <p class="hero">NBTE Curriculum</p>
-                                        <p class="heroin">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                                    </div>
-    
-                                    <div class="col-5 second mco">
-                                        <p class="hero">MOCTECH Course Outline</p>
-                                        <p class="heroin">Eius excepturi labore architecto molestiae expedita esse perspiciatis ipsa sit a rem. Libero repellendus dolorum et ab sint modi, iste totam fuga? Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis quidem iusto neque eum, voluptatum unde earum distinctio ipsam fuga sed! Officiis provident incidunt assumenda consequatur aliquid ea accusantium, alias ut.</p>
-                                    </div>
-                                </div>
     
                                 <div class="row mt-1">
-                                    <div class="col-5 first">
-                                        <p class="hero">Work Report</p>
-                                        <p class="heroin">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa temporibus cupiditate odio distinctio magnam sapiente reprehenderit voluptas adipisci, sunt nemo nobis ad aliquam, sint a rem harum quos hic blanditiis.</p>
-                                    </div>
-            
-                                    <div class="col-5 second">
-                                        <p class="hero">Attendance Average</p>
-                                        <p class="heroin">12/30</p>
-                                    </div>
-            
-                                    
-                                </div>
-    
-                                <div class="row mt-1">
-    
                                     <div class="col-5 first">
                                         <p class="hero">File</p>
                                         <img src="" alt="">
                                     </div>
-    
+            
                                     <div class="col-5 second">
-                                        <p class="hero">Work type</p>
-                                        <p>Theory</p>
+                                        <p class="hero">Report</p>
+                                        <p class="heroin">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa temporibus cupiditate odio distinctio magnam sapiente reprehenderit voluptas adipisci, sunt nemo nobis ad aliquam, sint a rem harum quos hic blanditiis.</p>
                                     </div>
+            
                                 </div>
+    
+                                
                             </div>
                         </div>
                        
@@ -922,15 +1162,15 @@
                     </div>
     
                     <!-- monthlyly course 3 monthlyly course 3 -->
-                    <div class="tab-pane fade" id="mcourse3">
+                    <div class="tab-pane fade" id="mstudent">
     
                         <!-- Already filled form  -->
                         <div class="row mt-2 filled">
                             <div class="col-12">
                                 <div class="row mt-4">
                                     <div class="col-5 first">
-                                        <p class="hero">Monthly</p>
-                                        <p class="heroin">July</p>
+                                        <p class="hero">Month</p>
+                                        <p class="heroin">January</p>
                                     </div>
     
                                     <div class="col-5 second">
@@ -943,54 +1183,31 @@
     
                                 <div class="row mt-1">
                                     <div class="col-5 first">
-                                        <p class="hero">Course Code</p>
-                                        <p class="heroin">GST 101</p>
+                                        <p class="hero">Title</p>
+                                        <p class="heroin">Behavioural</p>
                                     </div>
     
                                     <div class="col-5 second">
-                                        <p class="hero">Course Title</p>
-                                        <p class="heroin">Introduction to Technology</p>
+                                        <p class="hero">Comment</p>
+                                        <p class="heroin">Mr. Akin and Mrs. Stella</p>
                                     </div>
                                 </div>
     
-                                <div class="row mt-1">
-                                    <div class="col-5 first">
-                                        <p class="hero">NBTE Curriculum</p>
-                                        <p class="heroin">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                                    </div>
-    
-                                    <div class="col-5 second mco">
-                                        <p class="hero">MOCTECH Course Outline</p>
-                                        <p class="heroin">Eius excepturi labore architecto molestiae expedita esse perspiciatis ipsa sit a rem. Libero repellendus dolorum et ab sint modi, iste totam fuga? Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis quidem iusto neque eum, voluptatum unde earum distinctio ipsam fuga sed! Officiis provident incidunt assumenda consequatur aliquid ea accusantium, alias ut.</p>
-                                    </div>
-                                </div>
     
                                 <div class="row mt-1">
-                                    <div class="col-5 first">
-                                        <p class="hero">Work Report</p>
-                                        <p class="heroin">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa temporibus cupiditate odio distinctio magnam sapiente reprehenderit voluptas adipisci, sunt nemo nobis ad aliquam, sint a rem harum quos hic blanditiis.</p>
-                                    </div>
-            
-                                    <div class="col-5 second">
-                                        <p class="hero">Attendance Average</p>
-                                        <p class="heroin">12/30</p>
-                                    </div>
-            
-                                    
-                                </div>
-    
-                                <div class="row mt-1">
-    
                                     <div class="col-5 first">
                                         <p class="hero">File</p>
                                         <img src="" alt="">
                                     </div>
-    
+            
                                     <div class="col-5 second">
-                                        <p class="hero">Work type</p>
-                                        <p>Theory</p>
+                                        <p class="hero">Report</p>
+                                        <p class="heroin">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa temporibus cupiditate odio distinctio magnam sapiente reprehenderit voluptas adipisci, sunt nemo nobis ad aliquam, sint a rem harum quos hic blanditiis.</p>
                                     </div>
+            
                                 </div>
+    
+                                
                             </div>
                         </div>
                        
@@ -998,15 +1215,15 @@
                     </div>
     
                     <!-- monthlyly course 4 monthlyly course 4 -->
-                    <div class="tab-pane fade" id="mcourse4">
+                    <div class="tab-pane fade" id="mgeneral">
     
                         <!-- Already filled form  -->
                         <div class="row mt-2 filled">
                             <div class="col-12">
                                 <div class="row mt-4">
                                     <div class="col-5 first">
-                                        <p class="hero">Monthly</p>
-                                        <p class="heroin">August</p>
+                                        <p class="hero">Month</p>
+                                        <p class="heroin">January</p>
                                     </div>
     
                                     <div class="col-5 second">
@@ -1019,54 +1236,31 @@
     
                                 <div class="row mt-1">
                                     <div class="col-5 first">
-                                        <p class="hero">Course Code</p>
-                                        <p class="heroin">GST 101</p>
+                                        <p class="hero">Title</p>
+                                        <p class="heroin">Behavioural</p>
                                     </div>
     
                                     <div class="col-5 second">
-                                        <p class="hero">Course Title</p>
-                                        <p class="heroin">Introduction to Technology</p>
+                                        <p class="hero">Comment</p>
+                                        <p class="heroin">Mr. Akin and Mrs. Stella</p>
                                     </div>
                                 </div>
     
-                                <div class="row mt-1">
-                                    <div class="col-5 first">
-                                        <p class="hero">NBTE Curriculum</p>
-                                        <p class="heroin">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                                    </div>
-    
-                                    <div class="col-5 second mco">
-                                        <p class="hero">MOCTECH Course Outline</p>
-                                        <p class="heroin">Eius excepturi labore architecto molestiae expedita esse perspiciatis ipsa sit a rem. Libero repellendus dolorum et ab sint modi, iste totam fuga? Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis quidem iusto neque eum, voluptatum unde earum distinctio ipsam fuga sed! Officiis provident incidunt assumenda consequatur aliquid ea accusantium, alias ut.</p>
-                                    </div>
-                                </div>
     
                                 <div class="row mt-1">
-                                    <div class="col-5 first">
-                                        <p class="hero">Work Report</p>
-                                        <p class="heroin">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa temporibus cupiditate odio distinctio magnam sapiente reprehenderit voluptas adipisci, sunt nemo nobis ad aliquam, sint a rem harum quos hic blanditiis.</p>
-                                    </div>
-            
-                                    <div class="col-5 second">
-                                        <p class="hero">Attendance Average</p>
-                                        <p class="heroin">12/30</p>
-                                    </div>
-            
-                                    
-                                </div>
-    
-                                <div class="row mt-1">
-    
                                     <div class="col-5 first">
                                         <p class="hero">File</p>
                                         <img src="" alt="">
                                     </div>
-    
+            
                                     <div class="col-5 second">
-                                        <p class="hero">Work type</p>
-                                        <p>Theory</p>
+                                        <p class="hero">Report</p>
+                                        <p class="heroin">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa temporibus cupiditate odio distinctio magnam sapiente reprehenderit voluptas adipisci, sunt nemo nobis ad aliquam, sint a rem harum quos hic blanditiis.</p>
                                     </div>
+            
                                 </div>
+    
+                                
                             </div>
                         </div>
                        
@@ -1095,21 +1289,7 @@
                     </div> -->
                 </nav><br><br><br>
 
-                <!-- <div class="">
-                    <div class="row">
-                        <div class=" col-3 Astaff block up">
-                            <a href="acastaffstatus.html"><p>Academic Staff</p></a>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-3 Nastaff block up">
-                                <a href="nonacastaffstatus.html"><p>Non-Academic Staff</p></a>
-                            </div>
-                        </div>
-                    </div>
-        
-                    
-                </div> -->
+                
 
                 <div class="row">
                     <div class=" col-3 block up">
@@ -1118,6 +1298,43 @@
                     
                     <div class=" col-3 block up">
                         <a href="nonacastaffstatus.html"><p>Non-Academic Staff</p></a>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class=" col-6 block up">
+                        <a href="" data-bs-toggle="modal" data-bs-target="#mymodalstudent"><p>Students</p></a>
+                    </div>
+
+                    <div class="modal fade" id="mymodalstudent">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title">View Student Profile</h1>
+                                    <button class="btn-close" data-bs-dismiss="modal">&times;</button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="form">
+                                        <form action="" class="container was-validated">
+                                            <div class="row mt-3 form-group">
+                                                <div class="col-8">
+                                                    <label class="form-label" for="type">Matric No</label>
+                                                   <input type="text" required>
+                                                </div>
+                            
+                            
+                                                <div class="update mt-4 form-group">
+                                                    <button><a href="viewstudentpage.html">Submit</a></button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button class="btn btn-primary" data-bs-dismiss="modal">close</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -1161,7 +1378,7 @@
                                     <p>SELECT MESSAGE TYPE:</p>
                                 </div>
     
-                               <div class="nav-group">
+                               <div class="nav-tabs">
                                     <li class="nav-item one">
                                         <a href="#pmsg" class="list nav-link active" data-bs-toggle="tab" data-bs-target="#pmsg">Private</a>
                                     </li>
@@ -1520,7 +1737,18 @@
                                     <button class="btn-close" data-bs-dismiss="modal">&times;</button>
                                 </div>
                                 <div class="modal-body">
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde libero quam modi voluptatum consequatur veritatis non quidem iusto! Et explicabo harum dignissimos quae perspiciatis nisi dolorum libero, aut alias. Ipsum?</p>
+                                    <div class="form">
+                                        <form action="" class="container was-validated">
+                                            <div class="row mt-4 form-group">
+                                                <label class="form-label" for="new Semester">Enter New Semester</label>
+                                                <input type="text" id="newmester" required>
+                                            </div>
+
+                                            <div class="update mt-4 form-group">
+                                                <button>Update</button>
+                                            </div>
+                                        </form>
+                                    </div>
                                 </div>
                                 <div class="modal-footer">
                                     <button class="btn btn-primary" data-bs-dismiss="modal">close</button>
@@ -1530,19 +1758,190 @@
                     </div>
                     
                     <div class=" col-5 Astaff block up">
-                        <a href=""><p>Add New Session</p></a>
+                        <a href="" data-bs-toggle="modal" data-bs-target="#mymodaltwo"><p>Add New Session</p></a>
+                    </div>
+ 
+                    <div class="modal fade" id="mymodaltwo">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title">Update New Session</h1>
+                                    <button class="btn-close" data-bs-dismiss="modal">&times;</button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="form">
+                                        <form action="" class="container was-validated">
+                                            <div class="row mt-4 form-group">
+                                                <label class="form-label" for="new Semester">Enter New Session</label>
+                                                <input type="text" id="newmester" required>
+                                            </div>
+
+                                            <div class="update mt-4 form-group">
+                                                <button>Update</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button class="btn btn-primary" data-bs-dismiss="modal">close</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
     
                <div class="row">
                     <div class="col-5 Nastaff block down">
-                        <a href="assigntask.html"><p>Assign Tasks</p></a>
+                        <a href="" data-bs-toggle="modal" data-bs-target="#mymodaltthree"><p>Assign Tasks</p></a>
+                    </div>
+
+                    <div class="modal fade" id="mymodaltthree">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title">Assign Tasks</h1>
+                                    <button class="btn-close" data-bs-dismiss="modal">&times;</button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="form">
+                                        <form action="" class="container was-validated">
+                                            <div class="row mt-3 form-group">
+                                                <div class="col-5 first">
+                                                    <label class="form-label" for="type">Staff type</label>
+                                                    <select name="" id="">
+                                                        <option value="Academic">Academic Staff</option> 
+                                                        <option value="Non-Academic">Non-Academic Staff</option> 
+                                                    </select>
+                                                </div>
+                            
+                                                <div class="col-5 second">
+                                                    <label class="form-label" for="department">Department</label>
+                                                    <select name="" id="">
+                                                        <option value="None">None</option> 
+                                                        <option value="Administration">Administration</option> 
+                                                        <option value="General">General</option> 
+                                                        <option value="Engineering">Engineering</option> 
+                                                        <option value="Carpentery">Carpentery</option> 
+                                                        <option value="Welding">Welding</option> 
+                                                        <option value="Fashion Designing">Fashion Designing</option> 
+                                                    </select>
+                                                </div>
+                            
+                                            </div>
+                            
+                                            <div class="row mt-2 form-group">
+                                                <div class="col-5 first">
+                                                    <label class="form-label" for="designation">Designation</label>
+                                                    <select name="" id="">
+                                                        <option value="None">None</option> 
+                                                        <option value="Admin staff">Admin Staff</option> 
+                                                        <option value="Admin">Admin</option> 
+                                                        <option value="Lecturer">Lecturer</option> 
+                                                        <option value="Assistant Lecturer">Assistant Lecturer</option>  
+                                                        <option value="Driver">Driver</option>  
+                                                    </select>
+                                                </div>
+                            
+                                                <div class="col-5 second">
+                                                    <label class="form-label" for="name">Name</label>
+                                                    <select name="" id="name">
+                                                        <option value="Vincent Okoro">Vincent Okoro</option> 
+                                                        <option value="Stanely Ugwu">Stanely Ugwu</option> 
+                                                        <option value="Chioma Gold">Chioma Gold</option> 
+                                                        <option value="Sandra okene">Sandra okene</option> 
+                                                    </select>
+                                                </div>
+                            
+                                                <div class="update mt-4 form-group">
+                                                    <button><a href="assigntask.html">Continue</a></button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button class="btn btn-primary" data-bs-dismiss="modal">close</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
     
                     <div class="col-5 Stuts block down">
-                        <a href=""><p>Delete/Modify Profile</p></a>
+                        <a href="modifyprofile.html"><p>Delete/Modify Profile</p></a>
                     </div>
                </div>
+
+               <div class="row">
+                    <div class="col-5 block down">
+                        <a href="" data-bs-toggle="modal" data-bs-target="#mymodalfour"><p>Assign Lecture Periods</p></a>
+                    </div>
+
+                    <div class="modal fade" id="mymodalfour">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title">Assign Lecture Time</h1>
+                                    <button class="btn-close" data-bs-dismiss="modal">&times;</button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="form">
+                                        <form action="" class="container was-validated">
+                                            <div class="row mt-3 form-group">
+                                                <div class="col-5 first">
+                                                    <label class="form-label" for="type">Type</label>
+                                                    <select name="" id="">
+                                                        <option value="Ond">OND</option> 
+                                                        <option value="hnd">HND</option> 
+                                                    </select>
+                                                </div>
+                            
+                                                <div class="col-5 second">
+                                                    <label class="form-label" for="Department">Department</label>
+                                                    <select name="" id=""> 
+                                                        <option value="Engineering">Engineering</option> 
+                                                        <option value="Carpentery">Carpentery</option> 
+                                                        <option value="Welding">Welding</option> 
+                                                        <option value="Fashion Designing">Fashion Designing</option> 
+                                                    </select>
+                                                </div>
+                            
+                                            </div>
+                            
+                                            <div class="row mt-2 form-group">
+                                                <div class="col-5 first">
+                                                    <label class="form-label" for="courses">Courses</label>
+                                                    <select name="" id="">
+                                                        <option value="GST101">GST101</option> 
+                                                        <option value="Gst301">Gst301</option> 
+                                                        <option value="Man204">Man204</option>  
+                                                        <option value="LAN413">LAN413</option>  
+                                                    </select>
+                                                </div>
+                            
+                                                <div class="col-5 second">
+                                                    <label class="form-label" for="periods">Number of Lecture Periods</label>
+                                                    <input type="number" id="periods">
+                                                </div>
+                            
+                                                <div class="update mt-4 form-group">
+                                                    <button>Submit</button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button class="btn btn-primary" data-bs-dismiss="modal">close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                    <div class="col-5 Stuts block down">
+                        <a href="adddeletecourse.html"><p>Add/Delete Courses</p></a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -1550,11 +1949,7 @@
     
     
 
-    <!-- <div class="container-fluid">
-        <div class="navbar-two">
-            <h3>Notification Area</h3>
-        </div>
-    </div> -->
+    
 
 </body>
 

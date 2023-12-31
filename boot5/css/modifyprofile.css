@@ -1,0 +1,182 @@
+body{
+    padding: 0;
+    margin: 0;
+    /* background-color: rgb(246, 241, 236); */
+}
+
+.title{
+    background-color: black;
+}
+
+.cancel button{
+    background: none;
+    outline: none;
+    margin-left: -38%;
+    color: white;
+}
+
+
+.navbar h1{
+    color: white;
+    margin-left: 20px;
+    font-size: 25px; 
+}
+
+
+.navbar .nav-pills{
+    display: flex;
+    justify-content: space-around;
+    /* margin-top: 5px; */
+    border-radius: 1px;
+    margin-right: 3%;
+}
+
+.navbar .nav-pills .nav-item{
+    justify-content: space-between;
+    margin: 5px;
+    background-color: rgb(4, 4, 90);
+    border-radius: 10px;
+}
+nav .nav-pills .nav-item a{
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bolder;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.navbar .nav-pills .nav-item .active{
+    animation: none;
+    transform: none;
+    background-color: none;
+    background: none;
+    color: rgb(242, 152, 49);
+}
+
+.navbar .nav-pills .nav-item .active:hover{
+    cursor: pointer;
+    color: rgb(242, 152, 49);
+    transform: none;
+    /* background-color: rgb(252, 246, 246); */
+}
+.navbar .nav-pills .nav-item:hover{
+    color: rgb(242, 152, 49);
+    transform: none;
+    /* background-color: rgb(252, 246, 246); */
+}
+
+
+/* form form form form form form  */
+.form p{
+    font-weight: bold;
+}
+
+.form .form-group .col-5,
+.filled .col-5{
+    width: 50%;
+}
+.form .form-group label{
+    width: 100%;
+    font-weight: 500;
+    font-family: 'Franklin Gothic Medium';
+    font-size: 15px;
+}
+
+
+.form .form-group input,
+.form .form-group textarea,
+.form .form-group select{
+    width: 100%;
+    height: 50%;
+}
+
+.form .form-group .check{
+    width: 30px;
+    /* height: 18%; */
+}
+
+.form .submit{
+    margin-top: 50px;
+}
+
+.form .submit button{
+    width: 100px;
+    padding: 5px;
+    border-radius: 8px;
+}
+.form .mco label{
+    font-size: 15px;
+    font-weight: 500;
+    width: 100%;
+}
+
+.form .attav label{
+    font-size: 15px;
+    font-weight: 500;
+    width: 100%;
+}
+
+.filled,
+.form{
+    margin: 1%;
+}
+
+
+.submit{
+    /* margin-left: 450px; */
+    text-align: center;
+}
+.submit button{
+    text-align: center;
+    padding-left: 18px;
+    padding-right: 18px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+
+
+@media only screen
+and (min-width:319px) and (max-width:425px){
+
+    .navbar h1{
+        color: white;
+        margin-left: 20px;
+        font-size: 18px; 
+    }
+    .navbar .nav-pills{
+        margin: 1%;
+    }
+    .navbar .nav-pills .nav-item{
+        justify-content: space-between;
+        margin: 5px;
+        border-radius: 10px;
+        text-align: center;
+        /* margin-left: 60px; */
+        /* height: 40px;
+        padding-bottom: 5px; */
+    }
+    nav .nav-pills .nav-item a{
+        font-size: 14px;
+        font-weight: 400;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    
+    .cancel button{
+        background: none;
+        outline: none;
+        margin-left: -18%;
+        color: white;
+    }
+    
+}
+
+@media only screen
+  and (min-width:375px) and (max-width:427px){
+    
+}
+
+@media only screen
+  and (min-width:427px) and (max-width:768px){
+    
+}
