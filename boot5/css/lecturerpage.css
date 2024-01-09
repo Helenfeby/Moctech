@@ -18,34 +18,12 @@ body{
     border-radius: 30px;
 }
 
- /* attendance attendance  */
-#ond-nav .title,
-#hnd-nav .title{
-    /* text-align: left;
-    margin-left: -21px; */
-}
 
-#ond-nav .title h1,
-#hnd-nav .title h1{
-    /* margin-left: -135px; */
-}
-#ond-nav .sortdown,
-#hnd-nav .sortdown{
-    /* margin-left: 80%;
-    margin-top: -35px; */
-}
 
 
 /* plus and sortdown design */
 /* plus and sortdown design */
-#workplan .title{
-    /* text-align: left;
-    margin-left: -71px; */
-}
 
-#workplan .title h1{
-    /* margin-left: -130px; */
-}
 
 #workplan #plus,
 #weekly #wplus,
@@ -54,10 +32,7 @@ body{
     /* margin-top: -35px; */
 }
 
-#workplan .sortdown{
-    /* margin-left: 80%;
-    margin-top: -36px; */
-}
+
 
 
     
@@ -112,9 +87,7 @@ body{
     list-style: none;
     
 }
-.sidenav-items .first{
-    /* margin-top: 20px; */
-}
+
 .sidenav-items a{
     text-decoration: none;
     color: black;
@@ -221,7 +194,7 @@ body{
 
 .activerow{
     margin: 8px;
-    margin-top: -6px;
+    margin-top: -18px;
 }
 .activerow2{
     margin-left: 8px;
@@ -356,13 +329,13 @@ table .taskstab{
     text-align: justify;
 }
 
-table button{
+/* table button{
     font-size: 14px;
     background-color: rgb(154, 153, 153);
     width: fit-content;
     border-radius: 5px;
     border: none;
-}
+} */
 
 table .almost{
     background-color: rgb(255, 238, 0);
@@ -408,6 +381,34 @@ table .complete{
 .tablebg .twop{
     margin-left: 90%;
     margin-top: -40px;
+}
+
+table button{
+    /* font-size: 14px; */
+    font-weight: 400; 
+    /* border: 2px solid black; */
+    color: black;
+    background-color: rgb(163, 163, 163);
+    padding: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    /* width: fit-content; */
+    border-radius: 5px; 
+}
+
+table .submit{
+    background-color: rgb(1, 74, 2);
+    font-weight: 700;
+    padding: 8px;
+    font-size: 14px;
+    font-weight: 400;
+    color: white;
+    padding: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: fit-content;
+    border-radius: 5px;
+    border: none;
 }
 
 
@@ -556,6 +557,7 @@ nav .nav-tabs .nav-item a{
 .filled,
 .form{
     margin-left: 1px;
+    margin-right: 1px;
 }
 
 .filled{
@@ -710,19 +712,14 @@ nav .nav-tabs .nav-item a{
 #sendmsg .navbar{
     background-color: transparent;
 }
-#sendmsg .select{
-    /* float: left; */
-    /* margin-left: -35%; */
-}
+
 #sendmsg .select p{
     font-weight: bold;
     font-size: 18px;
     color: black;
 }
 
-#sendmsg .nav-tabs .select{
-    /* margin-top: 28px; */
-}
+
 
 #sendmsg .nav-tabs .one{
     margin-left: 25px;
@@ -948,9 +945,7 @@ nav .nav-tabs .nav-item a{
     color: black;
 }
 
-.modal .nav-tabs .select{
-    /* margin-top: 28px; */
-}
+
 
 .modal .nav-tabs .one{
     margin-left: 25px;
@@ -1021,7 +1016,91 @@ nav .nav-tabs .nav-item a{
     padding-bottom: 0px;
 }
 
+/* notifications notifications notifications */
+#notify{
+    padding: 5px;
+}
+#notify .navbar{
+    background-color: transparent;
+}
 
+#notify .select p{
+    font-weight: bold;
+    font-size: 18px;
+    color: black;
+}
+
+
+
+#notify .nav-tabs .one{
+    margin-left: 25px;
+}
+#notify .nav-tabs .nav-item{
+    border: none;
+    background: none;
+}
+#notify .nav-tabs .nav-item input{
+    font-weight: bold;
+}
+
+
+#notify .navbar .nav-tabs{
+    display: flex;
+    list-style-type: none;
+    /* gap: 1rem; */
+}
+#notify .navbar .nav-tabs .nav-item{
+    justify-content: space-between;
+    margin: auto;
+    padding: 8px;
+    border-radius: 10px;
+}
+#notify .nav-tabs .nav-item a{
+    color: black;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+}
+#notify .navbar .nav-tabs .nav-group{
+    display: flex;
+    /* margin-right: 1%; */
+}
+#notify .nav-tabs .select{
+    margin-top: 15px;
+    margin-left: -18px;
+}
+#notify .mytabcontent .tab-pane .textarea{
+    width: 100%;
+    /* height: 100%; */
+}
+
+#notify .navbar .nav-tabs .nav-item .active{
+    animation: none;
+    transform: none;
+    background-color: none;
+    background: none;
+    color: rgb(242, 152, 49);
+}
+
+#notify .navbar .nav-tabs .nav-item .active:hover{
+    cursor: pointer;
+    color: rgb(108, 108, 108);
+    /* padding: 5px; */
+    transform: none;
+}
+#notify .navbar .nav-tabs .nav-item:hover{
+    /* padding: 5px;  */
+    transform: none;
+    /* background-color: rgb(252, 246, 246); */
+}
+
+#notify .main{
+    padding: 5px;
+    background-color: rgb(196, 192, 192);
+    margin-top: 5px;
+    border-radius: 10px;
+    margin: 10px;
+}
 
 @media only screen
 and (max-width:318px){
@@ -1497,9 +1576,6 @@ and (min-width:319px) and (max-width:374px){
         margin-left: 3px; 
     }
     
-    #sendmsg .nav-tabs .one{
-        /* margin-left: -15px; */
-    }
 
     #sendmsg .nav-tabs .item{
         margin-left: -35px;

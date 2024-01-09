@@ -267,9 +267,7 @@ body{
     font-size: 3px;
 }
 
-table{
-    text-align: center;
-}
+
 
 .mytabcontent{
     display: block;
@@ -417,7 +415,7 @@ nav .nav-tabs .nav-item a{
 
 .filled,
 .form{
-    margin-left: 30px;
+    margin-left: 0px;
 }
 .filled{
     background-color: #ecebeb;
@@ -455,15 +453,18 @@ nav .nav-tabs .nav-item a{
     margin-top: 10px;
     border-right: 5px solid  white;
 }
+table{
+    text-align: center;
+}
 .tablediv{
-    background-color: gray;
+    background-color: transparent;
     padding: 10px;
     /* border-top: 5px solid  rgb(248, 217, 179); */
     /* border-radius: 5px; */
 }
 .table-responsive{
     margin: auto;
-    background-color: white;
+    /* background-color: white; */
     /* border-radius: 5px; */
 }
 .table{
@@ -471,10 +472,47 @@ nav .nav-tabs .nav-item a{
     padding: 10px;
 }
 
+table button{
+    /* font-size: 14px;
+    font-weight: 400;
+    border: 2px solid black;
+    color: black;
+    background-color: rgb(100, 99, 99); */ 
+    padding: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    /* width: fit-content; */
+    color: black;
+    border-radius: 5px; 
+    border: 1px solid rgb(136, 135, 135);
+    background-color: rgb(207, 203, 203);
+}
+
+
+
+table .submit{
+    background-color: rgb(1, 74, 2);
+    font-weight: 700;
+    padding: 8px;
+    font-size: 14px;
+    font-weight: 400;
+    color: white;
+    padding: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: fit-content;
+    border-radius: 5px;
+    border: none;
+}
+
+
+
+
 /* view messages view messages view messages  */
 /* view messages view messages view messages view messages view messages */
 .sidenav .msg{
-    margin: 3%;
+    margin: 5%;
+    margin-top: 8%;
 }
 .sidenav .badge{
     margin: auto;

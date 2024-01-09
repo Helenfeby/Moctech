@@ -101,13 +101,17 @@ table button{
     font-size: 14px;
     font-weight: 400;
     color: white;
-    background-color: rgb(60, 2, 2);
+    background-color: black;
+    /* background-color: rgb(60, 2, 2); */
     padding: 8px;
     padding-left: 10px;
     padding-right: 10px;
     width: fit-content;
     border-radius: 5px;
     border: none;
+}
+table .activebut{
+    background-color: rgb(60, 2, 2);
 }
 .tablebg .head{
     background-color: black;
@@ -151,4 +155,8 @@ table .submit{
     background-color: rgb(1, 74, 2);
     font-weight: 700;
     padding: 8px;
+}
+
+.tablebg .table .week{
+    width: 45px;
 }

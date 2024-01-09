@@ -52,7 +52,7 @@ body{
 
 
 .sidenav{
-    width: 14%;
+    width: 13%;
     height: 100%;
     position: fixed;
     overflow-x: hidden;
@@ -132,7 +132,7 @@ body{
 }
 
 .real{
-    margin-left: 15%;
+    margin-left: 14%;
     background-color: white;
     border-radius: 10px;
     box-shadow: 1px 5px 8px rgb(63, 62, 62);
@@ -254,10 +254,12 @@ table{
 
 /* view tasks view tasks view tasks view tasks view tasks view tasks view tasks view tasks */
 
-.tablebg .tick:checked{
-    color: #060606;
-    background-color: #012970;
+/* view tasks view tasks view tasks view tasks  */
+
+.tablebg{
+    border-left: 1px solid black;
 }
+
 
 .head{
     background-color: rgb(103, 6, 6);
@@ -290,6 +292,32 @@ table{
     margin-top: -30px;
     margin-left: 96%;
 }
+
+
+table .taskstab{
+    text-align: justify;
+}
+
+/* table button{
+    font-size: 14px;
+    background-color: rgb(154, 153, 153);
+    width: fit-content;
+    border-radius: 5px;
+    border: none;
+} */
+
+table .almost{
+    background-color: rgb(255, 238, 0);
+}
+
+table .complete{
+    background-color: green;
+}
+
+.table-responsive .table tr{
+    width: 20px;
+}
+
 
 .tablebg .head{
     background-color: black;
@@ -324,36 +352,32 @@ table{
     margin-top: -40px;
 }
 
-.tablebg{
-    border-left: 1px solid black;
-}
-
-
-table .taskstab{
-    text-align: justify;
-}
-
 table button{
+    /* font-size: 14px; */
+    font-weight: 400; 
+    /* border: 2px solid black; */
+    color: black;
+    background-color: rgb(163, 163, 163);
+    padding: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    /* width: fit-content; */
+    border-radius: 5px; 
+}
+
+table .submit{
+    background-color: rgb(1, 74, 2);
+    font-weight: 700;
+    padding: 8px;
     font-size: 14px;
-    background-color: rgb(126, 125, 125);
+    font-weight: 400;
+    color: white;
+    padding: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
     width: fit-content;
     border-radius: 5px;
     border: none;
-    padding: 2px;
-    padding-left: 8px;
-    padding-right: 8px;
-}
-
-table .almost{
-    background-color: rgb(255, 238, 0);
-}
-
-table .complete{
-    background-color: green;
-}
-
-.table-responsive .table tr{
-    width: 20px;
 }
 
 
@@ -503,6 +527,7 @@ nav .nav-tabs .nav-item a{
 .filled,
 .form{
     margin-left: 1px;
+    margin-right: 1px;
 }
 
 .filled{
@@ -632,7 +657,7 @@ nav .nav-tabs .nav-item a{
 }
 
 #messages .navbar .nav-pills .nav-item .active{
-    background-color: rgb(57, 55, 55);
+    background-color: rgb(70, 67, 67);
     color: rgb(242, 152, 49);
 }
 
@@ -943,6 +968,97 @@ nav .nav-tabs .nav-item a{
 
 .modal .tab-pane{
     padding-bottom: 0px;
+}
+
+/* notifications notifications notifications */
+#notify{
+    padding: 5px;
+}
+#notify .navbar{
+    background-color: transparent;
+}
+#notify .select{
+    /* float: left; */
+    /* margin-left: -35%; */
+}
+#notify .select p{
+    font-weight: bold;
+    font-size: 18px;
+    color: black;
+}
+
+#notify .nav-tabs .select{
+    /* margin-top: 28px; */
+}
+
+#notify .nav-tabs .one{
+    margin-left: 25px;
+}
+#notify .nav-tabs .nav-item{
+    border: none;
+    background: none;
+}
+#notify .nav-tabs .nav-item input{
+    font-weight: bold;
+}
+
+
+#notify .navbar .nav-tabs{
+    display: flex;
+    list-style-type: none;
+    /* gap: 1rem; */
+}
+#notify .navbar .nav-tabs .nav-item{
+    justify-content: space-between;
+    margin: auto;
+    padding: 8px;
+    border-radius: 10px;
+}
+#notify .nav-tabs .nav-item a{
+    color: black;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+}
+#notify .navbar .nav-tabs .nav-group{
+    display: flex;
+    /* margin-right: 1%; */
+}
+#notify .nav-tabs .select{
+    margin-top: 15px;
+    margin-left: -18px;
+}
+#notify .mytabcontent .tab-pane .textarea{
+    width: 100%;
+    /* height: 100%; */
+}
+
+#notify .navbar .nav-tabs .nav-item .active{
+    animation: none;
+    transform: none;
+    background-color: none;
+    background: none;
+    color: rgb(242, 152, 49);
+}
+
+#notify .navbar .nav-tabs .nav-item .active:hover{
+    cursor: pointer;
+    color: rgb(108, 108, 108);
+    /* padding: 5px; */
+    transform: none;
+}
+#notify .navbar .nav-tabs .nav-item:hover{
+    /* padding: 5px;  */
+    transform: none;
+    /* background-color: rgb(252, 246, 246); */
+}
+
+#notify .main{
+    padding: 5px;
+    background-color: rgb(196, 192, 192);
+    margin-top: 5px;
+    border-radius: 10px;
+    margin: 10px;
 }
 
 

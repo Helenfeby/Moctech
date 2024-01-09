@@ -25,7 +25,8 @@
             </div>
             <div class="name mt-3">
                 <p>Mr. Vincent Okoro</p>
-                <i>Admin- Engineering</i>
+                <i>Admin</i><br>
+                <i>Engineering</i>
             </div>
 
             <a href="#display" class="list nav-link active mt-5" data-bs-toggle="tab" data-bs-target="#display">
@@ -34,6 +35,8 @@
             <a href="#tasks" class="list nav-link" data-bs-toggle="tab" data-bs-target="#tasks">
                 <p> View Tasks</p>
             </a>
+
+            <a href="#markattendance" class="list nav-link" data-bs-toggle="tab" data-bs-target="#markattendance"><p>Mark Attendance</p></a>
             <!-- workplan workplan workplan workplan workplan workplan -->
             <a href="#staffstatus" class="list nav-link" data-bs-toggle="tab" data-bs-target="#staffstatus">
                 <p>View Staff Status</p>
@@ -61,6 +64,10 @@
 
             <a href="#messages" class="list nav-link" data-bs-toggle="tab" data-bs-target="#messages">
                 <p>Messages <span class="badge bg-success badge-number"> 3</span></p>
+            </a>
+
+            <a href="#notify" class="list nav-link" data-bs-toggle="tab" data-bs-target="#notify">
+                <p> Notification</p>
             </a>
 
         </div>
@@ -271,30 +278,41 @@
             </div>
         </div>
         
+          
         <!-- View tasks  View tasks  View tasks  View tasks  View tasks -->
-        <div class="tab-pane fade" id="tasks">    
+        <div class="tab-pane fade" id="tasks">
+
             <nav class="nav navbar">
                 <span class="btn" onclick="openNav()"><i class="fa fa-bars"></i></span>
 
                 <div class="title">
                     <h1>VIEW TASKS </h1>
                 </div>
+
                 <!-- <div class="col-3 search-bar">
                     <form class="search-form d-flex align-items-center" method="POST" action="#">
-                      <input type="text" name="query" placeholder="Search..." title="Enter search keyword">
-                      <button type="submit" title="Search"><i class="fa fa-search"></i></button>
+                    <input type="text" name="query" placeholder="Search..." title="Enter search keyword">
+                    <button type="submit" title="Search"><i class="fa fa-search"></i></button>
                     </form>
                 </div> -->
+
+            
             </nav>
+
+            <!-- Session one Session one Session one Session one Session one -->
             <div class="head mt-4">
                 <h1>Session- 2023-2024</h1>
+
                 <div id="sortdown">
-                    <a href="#semesters" class="collapsed list nav-link" data-bs-toggle="collapse" data-bs-target="#semesters"><span class="fa fa-sort-down"></span></a>
+                    <a href="#semester1" class="collapsed list nav-link" data-bs-toggle="collapse" data-bs-target="#semester1"><span class="fa fa-sort-down"></span></a>
                 </div>
             </div>
-            
+
+
             <div class="sessiontasks" data-bs-target="#sortdown" data-bs-parent="#sortdown">
-                <div class="nav-content collapse" id="semesters">
+
+                <div class="nav-content collapse" id="semester1">
+                    <!-- 1st semester 1st semester  -->
                     <div class="tablebg">
                         <div class="head semes">
                             <div class="onep">
@@ -321,9 +339,8 @@
                                     <th>Venue</th>
                                     <th>Tasks</th>
                                     <th>Done <br> (Me)</th>
-                                    <th>Done <br> (Course Rep)</th>
-                                    <th>Done <br> (HOD/Admin)</th>
-                                    <th>Observed</th>
+                                    <th>Save</th>
+                                    <th>Status</th>
                                 </tr>
                                 <tr>
                                     <td>1</td>
@@ -331,9 +348,11 @@
                                     <td>12.00pm - 2.30pm</td>
                                     <td>Odili Lecture Hall</td>
                                     <td class="taskstab"><span class="fa fa-circle"></span> RLT 203 Lecture</td>
-                                    <td><input type="checkbox" name="check"></td>
-                                    <td><input type="checkbox" name="check"></td>
-                                    <td><input type="checkbox" name="check"></td>
+                                    <td>
+                                        <button><input type="radio" name="one"> <span class="fa fa-check"></span></button> 
+                                        <button><input type="radio" name="one"> <span class="fa fa-times"></span></button>
+                                    </td>
+                                    <td><button class="save">Save</button></td>
                                     <td><button>Completed</button></td>
                                 </tr>
         
@@ -343,9 +362,11 @@
                                     <td>12.00pm - 2.30pm</td>
                                     <td>Azikiwe Lecture Hall</td>
                                     <td class="taskstab"><span class="fa fa-circle"></span> RLT 203 Practicals on Solar Installation</td>
-                                    <td><input type="checkbox" name="check"></td>
-                                    <td><input type="checkbox" name="check"></td>
-                                    <td><input type="checkbox" name="check"></td>
+                                    <td>
+                                        <button><input type="radio" name="one"> <span class="fa fa-check"></span></button> 
+                                        <button><input type="radio" name="one"> <span class="fa fa-times"></span></button>
+                                    </td>
+                                    <td><button class="save">Save</button></td>
                                     <td><button class="almost">Completed</button></td>
                                 </tr>
         
@@ -356,9 +377,11 @@
                                     <td>12.00pm - 2.30pm</td>
                                     <td>Odili Lecture Hall</td>
                                     <td class="taskstab"><span class="fa fa-circle"></span> RLT 203 Lecture</td>
-                                    <td><input type="checkbox" name="check"></td>
-                                    <td><input type="checkbox" name="check"></td>
-                                    <td><input type="checkbox" name="check"></td>
+                                    <td>
+                                        <button><input type="radio" name="one"> <span class="fa fa-check"></span></button> 
+                                        <button><input type="radio" name="one"> <span class="fa fa-times"></span></button>
+                                    </td>
+                                    <td><button class="save">Save</button></td>
                                     <td><button class="complete">Completed</button></td>
                                 </tr>
         
@@ -369,23 +392,14 @@
                                     <td>12.00pm - 2.30pm</td>
                                     <td>Odili Lecture Hall</td>
                                     <td class="taskstab"><span class="fa fa-circle"></span> RLT 203 Lecture</td>
-                                    <td><input type="checkbox" name="check"></td>
-                                    <td><input type="checkbox" name="check"></td>
-                                    <td><input type="checkbox" name="check"></td>
+                                    <td>
+                                        <button><input type="radio" name="one"> <span class="fa fa-check"></span></button> 
+                                        <button><input type="radio" name="one"> <span class="fa fa-times"></span></button>
+                                    </td>
+                                    <td><button class="save">Save</button></td>
                                     <td><button>Completed</button></td>
                                 </tr>
         
-                                <tr>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td><button>Forward</button></td>
-                                </tr>
         
         
                             </table>
@@ -402,18 +416,19 @@
                                     <th>Date</th>
                                     <th>Tasks</th>
                                     <th>Done <br> (Me)</th>
-                                    <th>Done <br> (Course Rep)</th>
-                                    <th>Done <br> (HOD/Admin)</th>
-                                    <th>Observed</th>
+                                    <th>Save</th>
+                                    <th>Status</th>
                                 </tr>
         
                                 <tr>
                                     <td>January</td>
                                     <td>22/05/23</td>
                                     <td class="taskstab"><span class="fa fa-circle"></span> 1st Test</td>
-                                    <td><input type="checkbox" name="check"></td>
-                                    <td><input type="checkbox" name="check"></td>
-                                    <td><input type="checkbox" name="check"></td>
+                                    <td>
+                                        <button><input type="radio" name="one"> <span class="fa fa-check"></span></button> 
+                                        <button><input type="radio" name="one"> <span class="fa fa-times"></span></button>
+                                    </td>
+                                    <td><button class="save">Save</button></td>
                                     <td><button>Completed</button></td>
                                 </tr>
         
@@ -421,9 +436,11 @@
                                     <td>February</td>
                                     <td>22/05/23</td>
                                     <td class="taskstab"><span class="fa fa-circle"></span> 2nd Test</td>
-                                    <td><input type="checkbox" name="check"></td>
-                                    <td><input type="checkbox" name="check"></td>
-                                    <td><input type="checkbox" name="check"></td>
+                                    <td>
+                                        <button><input type="radio" name="one"> <span class="fa fa-check"></span></button> 
+                                        <button><input type="radio" name="one"> <span class="fa fa-times"></span></button>
+                                    </td>
+                                    <td><button class="save">Save</button></td>
                                     <td><button>Completed</button></td>
                                 </tr>
         
@@ -431,21 +448,14 @@
                                     <td>March</td>
                                     <td>22/05/23</td>
                                     <td class="taskstab"><span class="fa fa-circle"></span> Practicals Presentation</td>
-                                    <td><input type="checkbox" name="check"></td>
-                                    <td><input type="checkbox" name="check"></td>
-                                    <td><input type="checkbox" name="check"></td>
+                                    <td>
+                                        <button><input type="radio" name="one"> <span class="fa fa-check"></span></button> 
+                                        <button><input type="radio" name="one"> <span class="fa fa-times"></span></button>
+                                    </td>
+                                    <td><button class="save">Save</button></td>
                                     <td><button>Completed</button></td>
                                 </tr>
         
-                                <tr>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td><button>Forward</button></td>
-                                </tr>
                             </table>
     
                             <!-- Semester Table Semester Table Semester Table Semester Table Semester Table -->
@@ -459,18 +469,19 @@
                                     <th>Date</th>
                                     <th>Tasks</th>
                                     <th>Done <br> (Me)</th>
-                                    <th>Done <br> (Course Rep)</th>
-                                    <th>Done <br> (HOD/Admin)</th>
-                                    <th>Observed</th>
+                                    <th>Save</th>
+                                    <th>Status</th>
                                 </tr>
         
                                 <tr>
                                     <td>2022-2023</td>
                                     <td>22/05/23</td>
                                     <td class="taskstab"><span class="fa fa-circle"></span> Completed Curriculum</td>
-                                    <td><input type="checkbox" name="check"></td>
-                                    <td><input type="checkbox" name="check"></td>
-                                    <td><input type="checkbox" name="check"></td>
+                                    <td>
+                                        <button><input type="radio" name="one"> <span class="fa fa-check"></span></button> 
+                                        <button><input type="radio" name="one"> <span class="fa fa-times"></span></button>
+                                    </td>
+                                    <td><button class="save">Save</button></td>
                                     <td><button>Completed</button></td>
                                 </tr>
         
@@ -478,28 +489,21 @@
                                     <td>2022-2023</td>
                                     <td>22/05/23</td>
                                     <td class="taskstab"><span class="fa fa-circle"></span> Completed Practicals</td>
-                                    <td><input type="checkbox" name="check"></td>
-                                    <td><input type="checkbox" name="check"></td>
-                                    <td><input type="checkbox" name="check"></td>
+                                    <td>
+                                        <button><input type="radio" name="one"> <span class="fa fa-check"></span></button> 
+                                        <button><input type="radio" name="one"> <span class="fa fa-times"></span></button>
+                                    </td>
+                                    <td><button class="save">Save</button></td>
                                     <td><button>Completed</button></td>
                                 </tr>
         
-                                <tr>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td><button>Forward</button></td>
-                                </tr>
                             </table>
                         </div>
                     </div>
     
-    
+                    <!-- 2nd semester 2nd semester 2nd semester  -->
                     <div class="tablebg">
-                        
+                    
                         <div class="head semes mt-5">
                             <div class="onep">
                                 <p>2nd Semester</p>
@@ -511,8 +515,8 @@
                         </div>
 
                         <div class="table-responsive">
-                            <!-- weekly table weekly table weekly table weekly table weekly table -->
-                            <table class="table table-bordered table-striped table-hover table- wtasks">
+                             <!-- weekly table weekly table weekly table weekly table weekly table -->
+                             <table class="table table-bordered table-striped table-hover table- wtasks">
                                 <div class="head">
                                     <p>Weekly Tasks</p>
                                 </div>
@@ -524,9 +528,8 @@
                                     <th>Venue</th>
                                     <th>Tasks</th>
                                     <th>Done <br> (Me)</th>
-                                    <th>Done <br> (Course Rep)</th>
-                                    <th>Done <br> (HOD/Admin)</th>
-                                    <th>Observed</th>
+                                    <th>Save</th>
+                                    <th>Status</th>
                                 </tr>
                                 <tr>
                                     <td>1</td>
@@ -534,9 +537,11 @@
                                     <td>12.00pm - 2.30pm</td>
                                     <td>Odili Lecture Hall</td>
                                     <td class="taskstab"><span class="fa fa-circle"></span> RLT 203 Lecture</td>
-                                    <td><input type="checkbox" name="check"></td>
-                                    <td><input type="checkbox" name="check"></td>
-                                    <td><input type="checkbox" name="check"></td>
+                                    <td>
+                                        <button><input type="radio" name="one"> <span class="fa fa-check"></span></button> 
+                                        <button><input type="radio" name="one"> <span class="fa fa-times"></span></button>
+                                    </td>
+                                    <td><button class="save">Save</button></td>
                                     <td><button>Completed</button></td>
                                 </tr>
         
@@ -546,9 +551,11 @@
                                     <td>12.00pm - 2.30pm</td>
                                     <td>Azikiwe Lecture Hall</td>
                                     <td class="taskstab"><span class="fa fa-circle"></span> RLT 203 Practicals on Solar Installation</td>
-                                    <td><input type="checkbox" name="check"></td>
-                                    <td><input type="checkbox" name="check"></td>
-                                    <td><input type="checkbox" name="check"></td>
+                                    <td>
+                                        <button><input type="radio" name="one"> <span class="fa fa-check"></span></button> 
+                                        <button><input type="radio" name="one"> <span class="fa fa-times"></span></button>
+                                    </td>
+                                    <td><button class="save">Save</button></td>
                                     <td><button class="almost">Completed</button></td>
                                 </tr>
         
@@ -559,9 +566,11 @@
                                     <td>12.00pm - 2.30pm</td>
                                     <td>Odili Lecture Hall</td>
                                     <td class="taskstab"><span class="fa fa-circle"></span> RLT 203 Lecture</td>
-                                    <td><input type="checkbox" name="check"></td>
-                                    <td><input type="checkbox" name="check"></td>
-                                    <td><input type="checkbox" name="check"></td>
+                                    <td>
+                                        <button><input type="radio" name="one"> <span class="fa fa-check"></span></button> 
+                                        <button><input type="radio" name="one"> <span class="fa fa-times"></span></button>
+                                    </td>
+                                    <td><button class="save">Save</button></td>
                                     <td><button class="complete">Completed</button></td>
                                 </tr>
         
@@ -572,50 +581,43 @@
                                     <td>12.00pm - 2.30pm</td>
                                     <td>Odili Lecture Hall</td>
                                     <td class="taskstab"><span class="fa fa-circle"></span> RLT 203 Lecture</td>
-                                    <td><input type="checkbox" name="check"></td>
-                                    <td><input type="checkbox" name="check"></td>
-                                    <td><input type="checkbox" name="check"></td>
+                                    <td>
+                                        <button><input type="radio" name="one"> <span class="fa fa-check"></span></button> 
+                                        <button><input type="radio" name="one"> <span class="fa fa-times"></span></button>
+                                    </td>
+                                    <td><button class="save">Save</button></td>
                                     <td><button>Completed</button></td>
                                 </tr>
         
-                                <tr>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td><button>Forward</button></td>
-                                </tr>
         
         
                             </table>
     
-    
+                            <!-- monthly table monthly table  monthly table  monthly table  -->
                             <table class="table table-bordered table-striped table-hover table- mtasks">
                                 <div class="head mt-4">
                                     <p>Monthly Tasks</p>
                                 </div>
+                                
                                 
                                 <tr>
                                     <th>Month</th>
                                     <th>Date</th>
                                     <th>Tasks</th>
                                     <th>Done <br> (Me)</th>
-                                    <th>Done <br> (Course Rep)</th>
-                                    <th>Done <br> (HOD/Admin)</th>
-                                    <th>Observed</th>
+                                    <th>Save</th>
+                                    <th>Status</th>
                                 </tr>
         
                                 <tr>
                                     <td>January</td>
                                     <td>22/05/23</td>
                                     <td class="taskstab"><span class="fa fa-circle"></span> 1st Test</td>
-                                    <td><input type="checkbox" name="check"></td>
-                                    <td><input type="checkbox" name="check"></td>
-                                    <td><input type="checkbox" name="check"></td>
+                                    <td>
+                                        <button><input type="radio" name="one"> <span class="fa fa-check"></span></button> 
+                                        <button><input type="radio" name="one"> <span class="fa fa-times"></span></button>
+                                    </td>
+                                    <td><button class="save">Save</button></td>
                                     <td><button>Completed</button></td>
                                 </tr>
         
@@ -623,9 +625,11 @@
                                     <td>February</td>
                                     <td>22/05/23</td>
                                     <td class="taskstab"><span class="fa fa-circle"></span> 2nd Test</td>
-                                    <td><input type="checkbox" name="check"></td>
-                                    <td><input type="checkbox" name="check"></td>
-                                    <td><input type="checkbox" name="check"></td>
+                                    <td>
+                                        <button><input type="radio" name="one"> <span class="fa fa-check"></span></button> 
+                                        <button><input type="radio" name="one"> <span class="fa fa-times"></span></button>
+                                    </td>
+                                    <td><button class="save">Save</button></td>
                                     <td><button>Completed</button></td>
                                 </tr>
         
@@ -633,24 +637,17 @@
                                     <td>March</td>
                                     <td>22/05/23</td>
                                     <td class="taskstab"><span class="fa fa-circle"></span> Practicals Presentation</td>
-                                    <td><input type="checkbox" name="check"></td>
-                                    <td><input type="checkbox" name="check"></td>
-                                    <td><input type="checkbox" name="check"></td>
+                                    <td>
+                                        <button><input type="radio" name="one"> <span class="fa fa-check"></span></button> 
+                                        <button><input type="radio" name="one"> <span class="fa fa-times"></span></button>
+                                    </td>
+                                    <td><button class="save">Save</button></td>
                                     <td><button>Completed</button></td>
                                 </tr>
         
-                                <tr>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td><button>Forward</button></td>
-                                </tr>
                             </table>
     
-                            <!-- general semsester Table general semsester Table general semsester Table general semsester Table general semsester Table -->
+                            <!-- Semester Table Semester Table Semester Table Semester Table Semester Table -->
                             <table class="table table-bordered table-striped table-hover table- gtasks">
                                 <div class="head mt-4">
                                     <p>General Tasks</p>
@@ -661,18 +658,19 @@
                                     <th>Date</th>
                                     <th>Tasks</th>
                                     <th>Done <br> (Me)</th>
-                                    <th>Done <br> (Course Rep)</th>
-                                    <th>Done <br> (HOD/Admin)</th>
-                                    <th>Observed</th>
+                                    <th>Save</th>
+                                    <th>Status</th>
                                 </tr>
         
                                 <tr>
                                     <td>2022-2023</td>
                                     <td>22/05/23</td>
                                     <td class="taskstab"><span class="fa fa-circle"></span> Completed Curriculum</td>
-                                    <td><input type="checkbox" name="check"></td>
-                                    <td><input type="checkbox" name="check"></td>
-                                    <td><input type="checkbox" name="check"></td>
+                                    <td>
+                                        <button><input type="radio" name="one"> <span class="fa fa-check"></span></button> 
+                                        <button><input type="radio" name="one"> <span class="fa fa-times"></span></button>
+                                    </td>
+                                    <td><button class="save">Save</button></td>
                                     <td><button>Completed</button></td>
                                 </tr>
         
@@ -680,44 +678,37 @@
                                     <td>2022-2023</td>
                                     <td>22/05/23</td>
                                     <td class="taskstab"><span class="fa fa-circle"></span> Completed Practicals</td>
-                                    <td><input type="checkbox" name="check"></td>
-                                    <td><input type="checkbox" name="check"></td>
-                                    <td><input type="checkbox" name="check"></td>
+                                    <td>
+                                        <button><input type="radio" name="one"> <span class="fa fa-check"></span></button> 
+                                        <button><input type="radio" name="one"> <span class="fa fa-times"></span></button>
+                                    </td>
+                                    <td><button class="save">Save</button></td>
                                     <td><button>Completed</button></td>
                                 </tr>
         
-                                <tr>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td><button>Forward</button></td>
-                                </tr>
                             </table>
                         </div>
                     </div>
                 </div>
-            </div> 
-
-
+            </div>
+                
+            
             <!-- Session two Session two Session two Session two Session two -->
             <div class="head mt-4">
                 <h1>Session- 2022-2023</h1>
     
                 <div id="sortdown">
-                    <a href="#semesters" class="collapsed list nav-link" data-bs-toggle="collapse" data-bs-target="#semesters"><span class="fa fa-sort-down"></span></a>
+                    <a href="#semester2" class="collapsed list nav-link" data-bs-toggle="collapse" data-bs-target="#semester2"><span class="fa fa-sort-down"></span></a>
                 </div>
             </div>
 
-
             <div class="sessiontasks" data-bs-target="#sortdown" data-bs-parent="#sortdown">
 
-                <div class="nav-content collapse" id="semesters">
+                <div class="nav-content collapse" id="semester2">
+                    <!-- 1st semester 1st semester 1st semester  -->
                     <div class="tablebg">
-                
-                        <div class="head semes">
+
+                        <div class="head semes mt-5">
                             <div class="onep">
                                 <p>1st Semester</p>
                             </div>
@@ -726,8 +717,7 @@
                                 <p>2022-2023</p>
                             </div>
                         </div>
-    
-    
+
                         <div class="table-responsive">
                             <!-- weekly table weekly table weekly table weekly table weekly table -->
                             <table class="table table-bordered table-striped table-hover table- wtasks">
@@ -742,9 +732,8 @@
                                     <th>Venue</th>
                                     <th>Tasks</th>
                                     <th>Done <br> (Me)</th>
-                                    <th>Done <br> (Course Rep)</th>
-                                    <th>Done <br> (HOD/Admin)</th>
-                                    <th>Observed</th>
+                                    <th>Save</th>
+                                    <th>Status</th>
                                 </tr>
                                 <tr>
                                     <td>1</td>
@@ -752,9 +741,11 @@
                                     <td>12.00pm - 2.30pm</td>
                                     <td>Odili Lecture Hall</td>
                                     <td class="taskstab"><span class="fa fa-circle"></span> RLT 203 Lecture</td>
-                                    <td><input type="checkbox" name="check"></td>
-                                    <td><input type="checkbox" name="check"></td>
-                                    <td><input type="checkbox" name="check"></td>
+                                    <td>
+                                        <button><input type="radio" name="one"> <span class="fa fa-check"></span></button> 
+                                        <button><input type="radio" name="one"> <span class="fa fa-times"></span></button>
+                                    </td>
+                                    <td><button class="save">Save</button></td>
                                     <td><button>Completed</button></td>
                                 </tr>
         
@@ -764,9 +755,11 @@
                                     <td>12.00pm - 2.30pm</td>
                                     <td>Azikiwe Lecture Hall</td>
                                     <td class="taskstab"><span class="fa fa-circle"></span> RLT 203 Practicals on Solar Installation</td>
-                                    <td><input type="checkbox" name="check"></td>
-                                    <td><input type="checkbox" name="check"></td>
-                                    <td><input type="checkbox" name="check"></td>
+                                    <td>
+                                        <button><input type="radio" name="one"> <span class="fa fa-check"></span></button> 
+                                        <button><input type="radio" name="one"> <span class="fa fa-times"></span></button>
+                                    </td>
+                                    <td><button class="save">Save</button></td>
                                     <td><button class="almost">Completed</button></td>
                                 </tr>
         
@@ -777,9 +770,11 @@
                                     <td>12.00pm - 2.30pm</td>
                                     <td>Odili Lecture Hall</td>
                                     <td class="taskstab"><span class="fa fa-circle"></span> RLT 203 Lecture</td>
-                                    <td><input type="checkbox" name="check"></td>
-                                    <td><input type="checkbox" name="check"></td>
-                                    <td><input type="checkbox" name="check"></td>
+                                    <td>
+                                        <button><input type="radio" name="one"> <span class="fa fa-check"></span></button> 
+                                        <button><input type="radio" name="one"> <span class="fa fa-times"></span></button>
+                                    </td>
+                                    <td><button class="save">Save</button></td>
                                     <td><button class="complete">Completed</button></td>
                                 </tr>
         
@@ -790,23 +785,14 @@
                                     <td>12.00pm - 2.30pm</td>
                                     <td>Odili Lecture Hall</td>
                                     <td class="taskstab"><span class="fa fa-circle"></span> RLT 203 Lecture</td>
-                                    <td><input type="checkbox" name="check"></td>
-                                    <td><input type="checkbox" name="check"></td>
-                                    <td><input type="checkbox" name="check"></td>
+                                    <td>
+                                        <button><input type="radio" name="one"> <span class="fa fa-check"></span></button> 
+                                        <button><input type="radio" name="one"> <span class="fa fa-times"></span></button>
+                                    </td>
+                                    <td><button class="save">Save</button></td>
                                     <td><button>Completed</button></td>
                                 </tr>
         
-                                <tr>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td><button>Forward</button></td>
-                                </tr>
         
         
                             </table>
@@ -823,18 +809,19 @@
                                     <th>Date</th>
                                     <th>Tasks</th>
                                     <th>Done <br> (Me)</th>
-                                    <th>Done <br> (Course Rep)</th>
-                                    <th>Done <br> (HOD/Admin)</th>
-                                    <th>Observed</th>
+                                    <th>Save</th>
+                                    <th>Status</th>
                                 </tr>
         
                                 <tr>
                                     <td>January</td>
                                     <td>22/05/23</td>
                                     <td class="taskstab"><span class="fa fa-circle"></span> 1st Test</td>
-                                    <td><input type="checkbox" name="check"></td>
-                                    <td><input type="checkbox" name="check"></td>
-                                    <td><input type="checkbox" name="check"></td>
+                                    <td>
+                                        <button><input type="radio" name="one"> <span class="fa fa-check"></span></button> 
+                                        <button><input type="radio" name="one"> <span class="fa fa-times"></span></button>
+                                    </td>
+                                    <td><button class="save">Save</button></td>
                                     <td><button>Completed</button></td>
                                 </tr>
         
@@ -842,9 +829,11 @@
                                     <td>February</td>
                                     <td>22/05/23</td>
                                     <td class="taskstab"><span class="fa fa-circle"></span> 2nd Test</td>
-                                    <td><input type="checkbox" name="check"></td>
-                                    <td><input type="checkbox" name="check"></td>
-                                    <td><input type="checkbox" name="check"></td>
+                                    <td>
+                                        <button><input type="radio" name="one"> <span class="fa fa-check"></span></button> 
+                                        <button><input type="radio" name="one"> <span class="fa fa-times"></span></button>
+                                    </td>
+                                    <td><button class="save">Save</button></td>
                                     <td><button>Completed</button></td>
                                 </tr>
         
@@ -852,21 +841,14 @@
                                     <td>March</td>
                                     <td>22/05/23</td>
                                     <td class="taskstab"><span class="fa fa-circle"></span> Practicals Presentation</td>
-                                    <td><input type="checkbox" name="check"></td>
-                                    <td><input type="checkbox" name="check"></td>
-                                    <td><input type="checkbox" name="check"></td>
+                                    <td>
+                                        <button><input type="radio" name="one"> <span class="fa fa-check"></span></button> 
+                                        <button><input type="radio" name="one"> <span class="fa fa-times"></span></button>
+                                    </td>
+                                    <td><button class="save">Save</button></td>
                                     <td><button>Completed</button></td>
                                 </tr>
         
-                                <tr>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td><button>Forward</button></td>
-                                </tr>
                             </table>
     
                             <!-- Semester Table Semester Table Semester Table Semester Table Semester Table -->
@@ -880,18 +862,19 @@
                                     <th>Date</th>
                                     <th>Tasks</th>
                                     <th>Done <br> (Me)</th>
-                                    <th>Done <br> (Course Rep)</th>
-                                    <th>Done <br> (HOD/Admin)</th>
-                                    <th>Observed</th>
+                                    <th>Save</th>
+                                    <th>Status</th>
                                 </tr>
         
                                 <tr>
                                     <td>2022-2023</td>
                                     <td>22/05/23</td>
                                     <td class="taskstab"><span class="fa fa-circle"></span> Completed Curriculum</td>
-                                    <td><input type="checkbox" name="check"></td>
-                                    <td><input type="checkbox" name="check"></td>
-                                    <td><input type="checkbox" name="check"></td>
+                                    <td>
+                                        <button><input type="radio" name="one"> <span class="fa fa-check"></span></button> 
+                                        <button><input type="radio" name="one"> <span class="fa fa-times"></span></button>
+                                    </td>
+                                    <td><button class="save">Save</button></td>
                                     <td><button>Completed</button></td>
                                 </tr>
         
@@ -899,26 +882,19 @@
                                     <td>2022-2023</td>
                                     <td>22/05/23</td>
                                     <td class="taskstab"><span class="fa fa-circle"></span> Completed Practicals</td>
-                                    <td><input type="checkbox" name="check"></td>
-                                    <td><input type="checkbox" name="check"></td>
-                                    <td><input type="checkbox" name="check"></td>
+                                    <td>
+                                        <button><input type="radio" name="one"> <span class="fa fa-check"></span></button> 
+                                        <button><input type="radio" name="one"> <span class="fa fa-times"></span></button>
+                                    </td>
+                                    <td><button class="save">Save</button></td>
                                     <td><button>Completed</button></td>
                                 </tr>
         
-                                <tr>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td><button>Forward</button></td>
-                                </tr>
                             </table>
                         </div>
                     </div>
     
-    
+                    <!-- 2nd semester 2nd semester 2nd semester  -->
                     <div class="tablebg">
                         
                         <div class="head semes mt-5">
@@ -927,7 +903,7 @@
                             </div>
             
                             <div class="twop">
-                                <p>2022-2023</p>
+                                <p>2023-2024</p>
                             </div>
                         </div>
 
@@ -945,9 +921,8 @@
                                     <th>Venue</th>
                                     <th>Tasks</th>
                                     <th>Done <br> (Me)</th>
-                                    <th>Done <br> (Course Rep)</th>
-                                    <th>Done <br> (HOD/Admin)</th>
-                                    <th>Observed</th>
+                                    <th>Save</th>
+                                    <th>Status</th>
                                 </tr>
                                 <tr>
                                     <td>1</td>
@@ -955,9 +930,11 @@
                                     <td>12.00pm - 2.30pm</td>
                                     <td>Odili Lecture Hall</td>
                                     <td class="taskstab"><span class="fa fa-circle"></span> RLT 203 Lecture</td>
-                                    <td><input type="checkbox" name="check"></td>
-                                    <td><input type="checkbox" name="check"></td>
-                                    <td><input type="checkbox" name="check"></td>
+                                    <td>
+                                        <button><input type="radio" name="one"> <span class="fa fa-check"></span></button> 
+                                        <button><input type="radio" name="one"> <span class="fa fa-times"></span></button>
+                                    </td>
+                                    <td><button class="save">Save</button></td>
                                     <td><button>Completed</button></td>
                                 </tr>
         
@@ -967,9 +944,11 @@
                                     <td>12.00pm - 2.30pm</td>
                                     <td>Azikiwe Lecture Hall</td>
                                     <td class="taskstab"><span class="fa fa-circle"></span> RLT 203 Practicals on Solar Installation</td>
-                                    <td><input type="checkbox" name="check"></td>
-                                    <td><input type="checkbox" name="check"></td>
-                                    <td><input type="checkbox" name="check"></td>
+                                    <td>
+                                        <button><input type="radio" name="one"> <span class="fa fa-check"></span></button> 
+                                        <button><input type="radio" name="one"> <span class="fa fa-times"></span></button>
+                                    </td>
+                                    <td><button class="save">Save</button></td>
                                     <td><button class="almost">Completed</button></td>
                                 </tr>
         
@@ -980,9 +959,11 @@
                                     <td>12.00pm - 2.30pm</td>
                                     <td>Odili Lecture Hall</td>
                                     <td class="taskstab"><span class="fa fa-circle"></span> RLT 203 Lecture</td>
-                                    <td><input type="checkbox" name="check"></td>
-                                    <td><input type="checkbox" name="check"></td>
-                                    <td><input type="checkbox" name="check"></td>
+                                    <td>
+                                        <button><input type="radio" name="one"> <span class="fa fa-check"></span></button> 
+                                        <button><input type="radio" name="one"> <span class="fa fa-times"></span></button>
+                                    </td>
+                                    <td><button class="save">Save</button></td>
                                     <td><button class="complete">Completed</button></td>
                                 </tr>
         
@@ -993,50 +974,43 @@
                                     <td>12.00pm - 2.30pm</td>
                                     <td>Odili Lecture Hall</td>
                                     <td class="taskstab"><span class="fa fa-circle"></span> RLT 203 Lecture</td>
-                                    <td><input type="checkbox" name="check"></td>
-                                    <td><input type="checkbox" name="check"></td>
-                                    <td><input type="checkbox" name="check"></td>
+                                    <td>
+                                        <button><input type="radio" name="one"> <span class="fa fa-check"></span></button> 
+                                        <button><input type="radio" name="one"> <span class="fa fa-times"></span></button>
+                                    </td>
+                                    <td><button class="save">Save</button></td>
                                     <td><button>Completed</button></td>
                                 </tr>
         
-                                <tr>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td><button>Forward</button></td>
-                                </tr>
         
         
                             </table>
     
-    
+                            <!-- monthly table monthly table  monthly table  monthly table  -->
                             <table class="table table-bordered table-striped table-hover table- mtasks">
                                 <div class="head mt-4">
                                     <p>Monthly Tasks</p>
                                 </div>
+                                
                                 
                                 <tr>
                                     <th>Month</th>
                                     <th>Date</th>
                                     <th>Tasks</th>
                                     <th>Done <br> (Me)</th>
-                                    <th>Done <br> (Course Rep)</th>
-                                    <th>Done <br> (HOD/Admin)</th>
-                                    <th>Observed</th>
+                                    <th>Save</th>
+                                    <th>Status</th>
                                 </tr>
         
                                 <tr>
                                     <td>January</td>
                                     <td>22/05/23</td>
                                     <td class="taskstab"><span class="fa fa-circle"></span> 1st Test</td>
-                                    <td><input type="checkbox" name="check"></td>
-                                    <td><input type="checkbox" name="check"></td>
-                                    <td><input type="checkbox" name="check"></td>
+                                    <td>
+                                        <button><input type="radio" name="one"> <span class="fa fa-check"></span></button> 
+                                        <button><input type="radio" name="one"> <span class="fa fa-times"></span></button>
+                                    </td>
+                                    <td><button class="save">Save</button></td>
                                     <td><button>Completed</button></td>
                                 </tr>
         
@@ -1044,9 +1018,11 @@
                                     <td>February</td>
                                     <td>22/05/23</td>
                                     <td class="taskstab"><span class="fa fa-circle"></span> 2nd Test</td>
-                                    <td><input type="checkbox" name="check"></td>
-                                    <td><input type="checkbox" name="check"></td>
-                                    <td><input type="checkbox" name="check"></td>
+                                    <td>
+                                        <button><input type="radio" name="one"> <span class="fa fa-check"></span></button> 
+                                        <button><input type="radio" name="one"> <span class="fa fa-times"></span></button>
+                                    </td>
+                                    <td><button class="save">Save</button></td>
                                     <td><button>Completed</button></td>
                                 </tr>
         
@@ -1054,24 +1030,17 @@
                                     <td>March</td>
                                     <td>22/05/23</td>
                                     <td class="taskstab"><span class="fa fa-circle"></span> Practicals Presentation</td>
-                                    <td><input type="checkbox" name="check"></td>
-                                    <td><input type="checkbox" name="check"></td>
-                                    <td><input type="checkbox" name="check"></td>
+                                    <td>
+                                        <button><input type="radio" name="one"> <span class="fa fa-check"></span></button> 
+                                        <button><input type="radio" name="one"> <span class="fa fa-times"></span></button>
+                                    </td>
+                                    <td><button class="save">Save</button></td>
                                     <td><button>Completed</button></td>
                                 </tr>
         
-                                <tr>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td><button>Forward</button></td>
-                                </tr>
                             </table>
     
-                            <!-- general semsester Table general semsester Table general semsester Table general semsester Table general semsester Table -->
+                            <!-- Semester Table Semester Table Semester Table Semester Table Semester Table -->
                             <table class="table table-bordered table-striped table-hover table- gtasks">
                                 <div class="head mt-4">
                                     <p>General Tasks</p>
@@ -1082,18 +1051,19 @@
                                     <th>Date</th>
                                     <th>Tasks</th>
                                     <th>Done <br> (Me)</th>
-                                    <th>Done <br> (Course Rep)</th>
-                                    <th>Done <br> (HOD/Admin)</th>
-                                    <th>Observed</th>
+                                    <th>Save</th>
+                                    <th>Status</th>
                                 </tr>
         
                                 <tr>
                                     <td>2022-2023</td>
                                     <td>22/05/23</td>
                                     <td class="taskstab"><span class="fa fa-circle"></span> Completed Curriculum</td>
-                                    <td><input type="checkbox" name="check"></td>
-                                    <td><input type="checkbox" name="check"></td>
-                                    <td><input type="checkbox" name="check"></td>
+                                    <td>
+                                        <button><input type="radio" name="one"> <span class="fa fa-check"></span></button> 
+                                        <button><input type="radio" name="one"> <span class="fa fa-times"></span></button>
+                                    </td>
+                                    <td><button class="save">Save</button></td>
                                     <td><button>Completed</button></td>
                                 </tr>
         
@@ -1101,26 +1071,356 @@
                                     <td>2022-2023</td>
                                     <td>22/05/23</td>
                                     <td class="taskstab"><span class="fa fa-circle"></span> Completed Practicals</td>
-                                    <td><input type="checkbox" name="check"></td>
-                                    <td><input type="checkbox" name="check"></td>
-                                    <td><input type="checkbox" name="check"></td>
+                                    <td>
+                                        <button><input type="radio" name="one"> <span class="fa fa-check"></span></button> 
+                                        <button><input type="radio" name="one"> <span class="fa fa-times"></span></button>
+                                    </td>
+                                    <td><button class="save">Save</button></td>
                                     <td><button>Completed</button></td>
                                 </tr>
         
-                                <tr>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td><button>Forward</button></td>
-                                </tr>
                             </table>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
+
+    
+        <!-- Mark Attendance Mark Attendance Mark Attendance Mark Attendance Mark Attendance -->
+        <div class="tab-pane fade" id="marktasks"> 
+            <div class="navbar">
+                <span class="btn" onclick="openNav()"><i class="fa fa-bars"></i></span>
+
+               <div class="title">
+                    <h1>Mark Attendance</h1>
+               </div>
+            </div>
+            
+
+
+            <div class="tablediv">
+
+                <div class="row">
+                    <div class="col-lg-12">
+        
+                        <div class="table-responsive">
+                            <table class="table table-bordered table-striped table-hover table-">
+                                <tr>
+                                    <th>Reg course / Lectures</th>
+                                    <th>Lecture 1</th>
+                                    <th>Lecture 2</th>
+                                    <th>Lecture 3</th>
+                                    <th>Lecture 4</th>
+                                    <th>Lecture 5</th>
+                                    <th>Lecture 6</th>
+                                    <th>Lecture 7</th>
+                                    <th>Lecture 8</th>
+                                    <th>Save</th>
+                                    
+                                </tr>
+                                <tr>
+                                    <th>GST 102</th>
+                                    <td>
+                                        <button><input type="radio" name="one"> <span class="fa fa-check"></span></button> 
+                                        <button><input type="radio" name="one"> <span class="fa fa-times"></span></button>
+                                    </td>
+                                    <td>
+                                        <button><input type="radio" name="two"> <span class="fa fa-check"></span></button> 
+                                        <button><input type="radio" name="two"> <span class="fa fa-times"></span></button>
+                                    </td>
+                                    <td>
+                                        <button><input type="radio" name="three"> <span class="fa fa-check"></span></button> 
+                                        <button><input type="radio" name="three"> <span class="fa fa-times"></span></button>
+                                    </td>
+                                    <td>
+                                        <button><input type="radio" name="four"> <span class="fa fa-check"></span></button> 
+                                        <button><input type="radio" name="four"> <span class="fa fa-times"></span></button>
+                                    </td>
+                                    <td>
+                                        <button><input type="radio" name="five"> <span class="fa fa-check"></span></button> 
+                                        <button><input type="radio" name="five"> <span class="fa fa-times"></span></button>
+                                    </td>
+                                    <td>
+                                        <button><input type="radio" name="six"> <span class="fa fa-check"></span></button> 
+                                        <button><input type="radio" name="six"> <span class="fa fa-times"></span></button>
+                                    </td>
+                                    <td>
+                                        <button><input type="radio" name="seven"> <span class="fa fa-check"></span></button> 
+                                        <button><input type="radio" name="seven"> <span class="fa fa-times"></span></button>
+                                    </td>
+                                    <td>
+                                        <button><input type="radio" name="eight"> <span class="fa fa-check"></span></button> 
+                                        <button><input type="radio" name="eight"> <span class="fa fa-times"></span></button>
+                                    </td>
+                                    <td><button class="submit">Save</button></td>
+                                </tr>
+                                
+                                <tr>
+                                    <th>Course 2</th>
+                                    <td>
+                                        <button><input type="radio" name="one"> <span class="fa fa-check"></span></button> 
+                                        <button><input type="radio" name="one"> <span class="fa fa-times"></span></button>
+                                    </td>
+                                    <td>
+                                        <button><input type="radio" name="two"> <span class="fa fa-check"></span></button> 
+                                        <button><input type="radio" name="two"> <span class="fa fa-times"></span></button>
+                                    </td>
+                                    <td>
+                                        <button><input type="radio" name="three"> <span class="fa fa-check"></span></button> 
+                                        <button><input type="radio" name="three"> <span class="fa fa-times"></span></button>
+                                    </td>
+                                    <td>
+                                        <button><input type="radio" name="four"> <span class="fa fa-check"></span></button> 
+                                        <button><input type="radio" name="four"> <span class="fa fa-times"></span></button>
+                                    </td>
+                                    <td>
+                                        <button><input type="radio" name="five"> <span class="fa fa-check"></span></button> 
+                                        <button><input type="radio" name="five"> <span class="fa fa-times"></span></button>
+                                    </td>
+                                    <td>
+                                        <button><input type="radio" name="six"> <span class="fa fa-check"></span></button> 
+                                        <button><input type="radio" name="six"> <span class="fa fa-times"></span></button>
+                                    </td>
+                                    <td>
+                                        <button><input type="radio" name="seven"> <span class="fa fa-check"></span></button> 
+                                        <button><input type="radio" name="seven"> <span class="fa fa-times"></span></button>
+                                    </td>
+                                    <td>
+                                        <button><input type="radio" name="eight"> <span class="fa fa-check"></span></button> 
+                                        <button><input type="radio" name="eight"> <span class="fa fa-times"></span></button>
+                                    </td>
+                                    <td><button class="submit">Save</button></td>
+                                </tr>
+
+                                <tr>
+                                    <th>Course 3</th>
+                                    <td>
+                                        <button><input type="radio" name="one"> <span class="fa fa-check"></span></button> 
+                                        <button><input type="radio" name="one"> <span class="fa fa-times"></span></button>
+                                    </td>
+                                    <td>
+                                        <button><input type="radio" name="two"> <span class="fa fa-check"></span></button> 
+                                        <button><input type="radio" name="two"> <span class="fa fa-times"></span></button>
+                                    </td>
+                                    <td>
+                                        <button><input type="radio" name="three"> <span class="fa fa-check"></span></button> 
+                                        <button><input type="radio" name="three"> <span class="fa fa-times"></span></button>
+                                    </td>
+                                    <td>
+                                        <button><input type="radio" name="four"> <span class="fa fa-check"></span></button> 
+                                        <button><input type="radio" name="four"> <span class="fa fa-times"></span></button>
+                                    </td>
+                                    <td>
+                                        <button><input type="radio" name="five"> <span class="fa fa-check"></span></button> 
+                                        <button><input type="radio" name="five"> <span class="fa fa-times"></span></button>
+                                    </td>
+                                    <td>
+                                        <button><input type="radio" name="six"> <span class="fa fa-check"></span></button> 
+                                        <button><input type="radio" name="six"> <span class="fa fa-times"></span></button>
+                                    </td>
+                                    <td>
+                                        <button><input type="radio" name="seven"> <span class="fa fa-check"></span></button> 
+                                        <button><input type="radio" name="seven"> <span class="fa fa-times"></span></button>
+                                    </td>
+                                    <td>
+                                        <button><input type="radio" name="eight"> <span class="fa fa-check"></span></button> 
+                                        <button><input type="radio" name="eight"> <span class="fa fa-times"></span></button>
+                                    </td>
+                                    <td><button class="submit">Save</button></td>
+                                </tr>
+
+                                <tr>
+                                    <th>Course 4</th>
+                                    <td>
+                                        <button><input type="radio" name="one"> <span class="fa fa-check"></span></button> 
+                                        <button><input type="radio" name="one"> <span class="fa fa-times"></span></button>
+                                    </td>
+                                    <td>
+                                        <button><input type="radio" name="two"> <span class="fa fa-check"></span></button> 
+                                        <button><input type="radio" name="two"> <span class="fa fa-times"></span></button>
+                                    </td>
+                                    <td>
+                                        <button><input type="radio" name="three"> <span class="fa fa-check"></span></button> 
+                                        <button><input type="radio" name="three"> <span class="fa fa-times"></span></button>
+                                    </td>
+                                    <td>
+                                        <button><input type="radio" name="four"> <span class="fa fa-check"></span></button> 
+                                        <button><input type="radio" name="four"> <span class="fa fa-times"></span></button>
+                                    </td>
+                                    <td>
+                                        <button><input type="radio" name="five"> <span class="fa fa-check"></span></button> 
+                                        <button><input type="radio" name="five"> <span class="fa fa-times"></span></button>
+                                    </td>
+                                    <td>
+                                        <button><input type="radio" name="six"> <span class="fa fa-check"></span></button> 
+                                        <button><input type="radio" name="six"> <span class="fa fa-times"></span></button>
+                                    </td>
+                                    <td>
+                                        <button><input type="radio" name="seven"> <span class="fa fa-check"></span></button> 
+                                        <button><input type="radio" name="seven"> <span class="fa fa-times"></span></button>
+                                    </td>
+                                    <td>
+                                        <button><input type="radio" name="eight"> <span class="fa fa-check"></span></button> 
+                                        <button><input type="radio" name="eight"> <span class="fa fa-times"></span></button>
+                                    </td>
+                                    <td><button class="submit">Save</button></td>
+                                </tr>
+
+                                <tr>
+                                    <th>Course 5</th>
+                                    <td>
+                                        <button><input type="radio" name="one"> <span class="fa fa-check"></span></button> 
+                                        <button><input type="radio" name="one"> <span class="fa fa-times"></span></button>
+                                    </td>
+                                    <td>
+                                        <button><input type="radio" name="two"> <span class="fa fa-check"></span></button> 
+                                        <button><input type="radio" name="two"> <span class="fa fa-times"></span></button>
+                                    </td>
+                                    <td>
+                                        <button><input type="radio" name="three"> <span class="fa fa-check"></span></button> 
+                                        <button><input type="radio" name="three"> <span class="fa fa-times"></span></button>
+                                    </td>
+                                    <td>
+                                        <button><input type="radio" name="four"> <span class="fa fa-check"></span></button> 
+                                        <button><input type="radio" name="four"> <span class="fa fa-times"></span></button>
+                                    </td>
+                                    <td>
+                                        <button><input type="radio" name="five"> <span class="fa fa-check"></span></button> 
+                                        <button><input type="radio" name="five"> <span class="fa fa-times"></span></button>
+                                    </td>
+                                    <td>
+                                        <button><input type="radio" name="six"> <span class="fa fa-check"></span></button> 
+                                        <button><input type="radio" name="six"> <span class="fa fa-times"></span></button>
+                                    </td>
+                                    <td>
+                                        <button><input type="radio" name="seven"> <span class="fa fa-check"></span></button> 
+                                        <button><input type="radio" name="seven"> <span class="fa fa-times"></span></button>
+                                    </td>
+                                    <td>
+                                        <button><input type="radio" name="eight"> <span class="fa fa-check"></span></button> 
+                                        <button><input type="radio" name="eight"> <span class="fa fa-times"></span></button>
+                                    </td>
+                                    <td><button class="submit">Save</button></td>
+                                </tr>
+
+                                <tr>
+                                    <th>Course 6</th>
+                                    <td>
+                                        <button><input type="radio" name="one"> <span class="fa fa-check"></span></button> 
+                                        <button><input type="radio" name="one"> <span class="fa fa-times"></span></button>
+                                    </td>
+                                    <td>
+                                        <button><input type="radio" name="two"> <span class="fa fa-check"></span></button> 
+                                        <button><input type="radio" name="two"> <span class="fa fa-times"></span></button>
+                                    </td>
+                                    <td>
+                                        <button><input type="radio" name="three"> <span class="fa fa-check"></span></button> 
+                                        <button><input type="radio" name="three"> <span class="fa fa-times"></span></button>
+                                    </td>
+                                    <td>
+                                        <button><input type="radio" name="four"> <span class="fa fa-check"></span></button> 
+                                        <button><input type="radio" name="four"> <span class="fa fa-times"></span></button>
+                                    </td>
+                                    <td>
+                                        <button><input type="radio" name="five"> <span class="fa fa-check"></span></button> 
+                                        <button><input type="radio" name="five"> <span class="fa fa-times"></span></button>
+                                    </td>
+                                    <td>
+                                        <button><input type="radio" name="six"> <span class="fa fa-check"></span></button> 
+                                        <button><input type="radio" name="six"> <span class="fa fa-times"></span></button>
+                                    </td>
+                                    <td>
+                                        <button><input type="radio" name="seven"> <span class="fa fa-check"></span></button> 
+                                        <button><input type="radio" name="seven"> <span class="fa fa-times"></span></button>
+                                    </td>
+                                    <td>
+                                        <button><input type="radio" name="eight"> <span class="fa fa-check"></span></button> 
+                                        <button><input type="radio" name="eight"> <span class="fa fa-times"></span></button>
+                                    </td>
+                                    <td><button class="submit">Save</button></td>
+                                </tr>
+
+                                <tr>
+                                    <th>Course 7</th>
+                                    <td>
+                                        <button><input type="radio" name="one"> <span class="fa fa-check"></span></button> 
+                                        <button><input type="radio" name="one"> <span class="fa fa-times"></span></button>
+                                    </td>
+                                    <td>
+                                        <button><input type="radio" name="two"> <span class="fa fa-check"></span></button> 
+                                        <button><input type="radio" name="two"> <span class="fa fa-times"></span></button>
+                                    </td>
+                                    <td>
+                                        <button><input type="radio" name="three"> <span class="fa fa-check"></span></button> 
+                                        <button><input type="radio" name="three"> <span class="fa fa-times"></span></button>
+                                    </td>
+                                    <td>
+                                        <button><input type="radio" name="four"> <span class="fa fa-check"></span></button> 
+                                        <button><input type="radio" name="four"> <span class="fa fa-times"></span></button>
+                                    </td>
+                                    <td>
+                                        <button><input type="radio" name="five"> <span class="fa fa-check"></span></button> 
+                                        <button><input type="radio" name="five"> <span class="fa fa-times"></span></button>
+                                    </td>
+                                    <td>
+                                        <button><input type="radio" name="six"> <span class="fa fa-check"></span></button> 
+                                        <button><input type="radio" name="six"> <span class="fa fa-times"></span></button>
+                                    </td>
+                                    <td>
+                                        <button><input type="radio" name="seven"> <span class="fa fa-check"></span></button> 
+                                        <button><input type="radio" name="seven"> <span class="fa fa-times"></span></button>
+                                    </td>
+                                    <td>
+                                        <button><input type="radio" name="eight"> <span class="fa fa-check"></span></button> 
+                                        <button><input type="radio" name="eight"> <span class="fa fa-times"></span></button>
+                                    </td>
+                                    <td><button class="submit">Save</button></td>
+                                </tr>
+
+                                <tr>
+                                    <th>Course 8</th>
+                                    <td>
+                                        <button><input type="radio" name="one"> <span class="fa fa-check"></span></button> 
+                                        <button><input type="radio" name="one"> <span class="fa fa-times"></span></button>
+                                    </td>
+                                    <td>
+                                        <button><input type="radio" name="two"> <span class="fa fa-check"></span></button> 
+                                        <button><input type="radio" name="two"> <span class="fa fa-times"></span></button>
+                                    </td>
+                                    <td>
+                                        <button><input type="radio" name="three"> <span class="fa fa-check"></span></button> 
+                                        <button><input type="radio" name="three"> <span class="fa fa-times"></span></button>
+                                    </td>
+                                    <td>
+                                        <button><input type="radio" name="four"> <span class="fa fa-check"></span></button> 
+                                        <button><input type="radio" name="four"> <span class="fa fa-times"></span></button>
+                                    </td>
+                                    <td>
+                                        <button><input type="radio" name="five"> <span class="fa fa-check"></span></button> 
+                                        <button><input type="radio" name="five"> <span class="fa fa-times"></span></button>
+                                    </td>
+                                    <td>
+                                        <button><input type="radio" name="six"> <span class="fa fa-check"></span></button> 
+                                        <button><input type="radio" name="six"> <span class="fa fa-times"></span></button>
+                                    </td>
+                                    <td>
+                                        <button><input type="radio" name="seven"> <span class="fa fa-check"></span></button> 
+                                        <button><input type="radio" name="seven"> <span class="fa fa-times"></span></button>
+                                    </td>
+                                    <td>
+                                        <button><input type="radio" name="eight"> <span class="fa fa-check"></span></button> 
+                                        <button><input type="radio" name="eight"> <span class="fa fa-times"></span></button>
+                                    </td>
+                                    <td><button class="submit">Save</button></td>
+                                </tr>
+                               
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
         </div>
 
 
@@ -1145,7 +1445,7 @@
             <div class="choose">
                 <div class="row">
                     <div class=" col-10 Astaff block up">
-                        <a href="viewlecturerpage.html">
+                        <a href="acastaffstatus.html">
                             <p>Academic Staff</p>
                         </a>
                     </div>
@@ -1153,7 +1453,7 @@
 
                 <div class="row">
                     <div class="col-10 Nastaff block down">
-                        <a href="viewnonacadpage.html">
+                        <a href="nonacastaffstatus.html">
                             <p>Non-Academic Staff</p>
                         </a>
                     </div>
@@ -3122,8 +3422,270 @@
             </div>
         </div>
 
-        
+        <!-- Notifications Notifications Notifications Notifications -->
+        <div class="tab-pane fade" id="notify">
 
+            <div class="nav navbar">
+
+                <span class="btn" onclick="openNav()"><i class="fa fa-bars"></i></span>
+
+                <div class="title">
+                    <h1>NOTIFICATIONS </h1>
+                </div>
+            </div>
+
+            <div class="nav navbar">
+                <ul class="nav-tabs type">
+                    <div class="select">
+                        <p>SELECT TYPE:</p>
+                    </div>
+
+                    <div class="nav-group" id="notifytype">
+                        <li class="nav-item one">
+                            <a href="#pmsg" class="list nav-link active" data-bs-toggle="tab"
+                                data-bs-target="#pmsg">Private
+                            </a>
+                        </li>
+
+                        <li class="nav-item two item">
+                            <a href="#dmsg" class="list nav-link" data-bs-toggle="tab"
+                                data-bs-target="#dmsg">Department
+                            </a>
+                        </li>
+
+                        <li class="nav-item three item">
+                            <a href="#gmsg" class="list nav-link" data-bs-toggle="tab"
+                                data-bs-target="#gmsg">General
+                            </a>
+                        </li>
+                    </div>
+                </ul>
+            </div>
+
+
+
+            <!-- send messages send messages send messages send messages send messages -->
+
+
+            <div class="tab-content mytabcontent" data-bs-parent="#notifytype">
+
+                <!-- private message private message private message private message private message -->
+                <div class="tab-pane fade show active" id="pmsg">
+                    <div class="form">
+                        <form action="" class="container was-validated">
+
+
+                            <div class="row mt-4 form-group">
+                                <div class="col-5 first">
+                                    <label class="form-label" for="monthly">Title</label>
+                                    <select name="" id="title">
+                                        <option value="Academic Staff">Academic Staff</option>
+                                        <option value="Non-Academic Staff">Non-Academic Staff</option>
+                                        <option value="Admin">Admin</option>
+                                        <option value="Students">Students</option>
+                                    </select>
+                                </div>
+
+                                <div class="col-5 second">
+                                    <label class="form-label" for="week">Department</label>
+                                    <select name="" id="dept">
+                                        <option value="None">None</option>
+                                        <option value="Computer Science">Computer Science</option>
+                                        <option value="Engineering">Engineering</option>
+                                        <option value="Welding">Welding</option>
+                                        <option value="Fashion Designing">Fashion Designing</option>
+                                    </select>
+                                </div>
+
+
+                            </div> <br>
+
+                            <div class="row mt-1 form-group">
+                                <div class="col-5 first">
+                                    <label class="form-label" for="">Name</label>
+                                    <select name="" id="name">
+                                        <ul>
+                                            <li>
+                                                <option type="checkbox" value="Williams Barth">Williams Barth
+                                                </option>
+                                                <option type="checkbox" value="Rita Hycinth">Rita Hycinth</option>
+                                                <option type="checkbox" value="Diamien Okonkwo">Diamien Okonkwo
+                                                </option>
+                                                <option type="checkbox" value="Chioma Nwaigwe">Chioma Nwaigwe
+                                                </option>
+
+                                            </li>
+                                        </ul>
+                                    </select>
+
+                                </div>
+
+                                <div class="col-5 second">
+                                    <label class="form-label" for="description">Description</label>
+                                    <input type="text" id="description" required>
+                                </div>
+                            </div> <br>
+
+                            <div class="row mt-1 form-group">
+                                <div class="textarea">
+                                    <label class="form-label" for="message">Message</label> <br>
+                                    <textarea name="" rows="5" placeholder="Drop a Message..."></textarea>
+                                </div>
+
+
+                            </div>
+
+
+
+                            <div class="submit mt-4">
+                                <button>Send</button>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+
+
+                <!-- Department Message Department Message Department Message Department Message -->
+                <div class="tab-pane fade" id="dmsg">
+                    <div class="form">
+                        <form action="" class="container was-validated">
+
+
+                            <div class="row mt-4 form-group">
+                                <div class="col-5 first">
+                                    <label class="form-label" for="week">Title</label>
+                                    <select name="" id="">
+                                        <option value="Academic Staff">Academic Staff</option>
+                                        <option value="Non-Academic Staff">Non-Academic Staff</option>
+                                        <option value="Admin">Admin</option>
+                                        <option value="Students">Students</option>
+                                    </select>
+                                </div>
+
+                                <div class="col-5 second">
+                                    <label class="form-label" for="week">Department</label>
+                                    <select name="" id="">
+                                        <option value="None">None</option>
+                                        <option value="Computer Science">Computer Science</option>
+                                        <option value="Engineering">Engineering</option>
+                                        <option value="Welding">Welding</option>
+                                        <option value="Fashion Designing">Fashion Designing</option>
+                                    </select>
+                                </div>
+
+
+                            </div> <br>
+
+                            <div class="row mt-1 form-group">
+
+                                <div class="col-5 first">
+                                    <label class="form-label" for="course">Course</label>
+                                    <select name="" id="">
+                                        <option value="None">None</option>
+                                        <option value="GST 101">GST 101</option>
+                                        <option value="Lan 456">Lan 456</option>
+                                        <option value="CIT 245">CIT 245</option>
+                                        <option value="Gst 208">Gst 208</option>
+                                    </select>
+                                </div>
+
+                                <div class="col-5 second">
+                                    <label class="form-label" for="description">Description</label>
+                                    <input type="text" id="description" required>
+                                </div>
+                            </div> <br>
+
+                            <div class="row mt-1 form-group">
+                                <div class="textarea">
+                                    <label class="form-label" for="message">Message</label> <br>
+                                    <textarea name="" id="" rows="5" placeholder="Drop a Message..."></textarea>
+                                </div>
+
+
+                            </div>
+
+
+
+                            <div class="submit mt-4">
+                                <button>Send</button>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+
+                <!-- General message General message General message General message -->
+                <div class="tab-pane fade" id="gmsg">
+                    <div class="form">
+                        <form action="" class="container was-validated">
+
+
+                            <div class="row mt-4 form-group">
+                                <div class="col-5 first">
+                                    <label class="form-label" for="week">Title</label>
+                                    <select name="" id="">
+                                        <option value="All">All</option>
+                                    </select>
+                                </div>
+
+                                <div class="col-5 second">
+                                    <label class="form-label" for="week">Department</label>
+                                    <select name="" id="">
+                                        <option value="None">None</option>
+                                        <option value="Computer Science">Computer Science</option>
+                                        <option value="Engineering">Engineering</option>
+                                        <option value="Welding">Welding</option>
+                                        <option value="Fashion Designing">Fashion Designing</option>
+                                    </select>
+                                </div>
+
+
+                            </div> <br>
+
+                            <div class="row mt-1 form-group">
+
+                                <div class="col-5 first">
+                                    <label class="form-label" for="course">Course</label>
+                                    <select name="" id="">
+                                        <option value="None">None</option>
+                                        <option value="GST 101">GST 101</option>
+                                        <option value="Lan 456">Lan 456</option>
+                                        <option value="CIT 245">CIT 245</option>
+                                        <option value="Gst 208">Gst 208</option>
+                                    </select>
+                                </div>
+
+                                <div class="col-5 second">
+                                    <label class="form-label" for="description">Description</label>
+                                    <input type="text" id="description" required>
+                                </div>
+                            </div> <br>
+
+                            <div class="row mt-1 form-group">
+                                <div class="textarea">
+                                    <label class="form-label" for="message">Message</label> <br>
+                                    <textarea name="" id="" cols="100" rows="5"
+                                        placeholder="Drop a Message...">
+                                    </textarea>
+                                </div>
+
+
+                            </div>
+
+
+
+                            <div class="submit mt-4">
+                                <button>Send</button>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+    
+
+        </div>
     </div>
 
     </div>

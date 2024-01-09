@@ -96,33 +96,54 @@
                             
                             
                             <tr>
-                                <th>Week</th>
+                                <th class="week">Week</th>
                                 <th>Date</th>
                                 <th>Time</th>
                                 <th>Venue</th>
                                 <th>Tasks</th>
+                                <th>Staff</th>
+                                <th>Course Rep</th>
+                                <th>Admin</th>
                                 <th>Delete</th>
                             </tr>
         
                             <tr class="tab-content plus" data-bs-target="#wplus" data-bs-parent="#wplus">
-                                <td class="nav-content collapse" id="addtasks"><input type="number"></td>
+                                <td class="nav-content collapse" id="addtasks"><input type="number" class="week"></td>
                                 <td class="nav-content collapse" id="addtasks"><input type="date"></td>
                                 <td class="nav-content collapse" id="addtasks"><input type="text"></td>
                                 <td class="nav-content collapse" id="addtasks"><input type="text"></td>
                                 <td class="nav-content collapse taskstab" id="addtasks"><span class="fa fa-circle"></span> <input type="text"></td>
-                                <td class="nav-content collapse" id="addtasks"><button>Save</button></td>
+                                <td class="nav-content collapse" id="addtasks"><input type="checkbox" name="check"></td>
+                                <td class="nav-content collapse" id="addtasks"><input type="checkbox" name="check"></td>
+                                <td class="nav-content collapse" id="addtasks"><input type="checkbox" name="check"></td>
+                                <td class="nav-content collapse" id="addtasks"><button class="activebut">Save</button></td>
                             </tr>
                             
                             <tr>
-                                <td>1</td>
+                                <td>1</td> 
                                 <td>22/05/23</td>
                                 <td>12.00pm - 2.30pm</td>
                                 <td>Odili Lecture Hall</td>
                                 <td class="taskstab"><span class="fa fa-circle"></span> RLT 203 Lecture</td>
-                                <td><button>Delete</button></td>
+                                <td>
+                                    <button><input type="radio" name="one"> <span class="fa fa-check"></span></button> 
+                                    <button><input type="radio" name="one"> <span class="fa fa-times"></span></button>
+                                </td>
+                                <td>
+                                    <button><input type="radio" name="one"> <span class="fa fa-check"></span></button> 
+                                    <button><input type="radio" name="one"> <span class="fa fa-times"></span></button>
+                                </td>
+                                <td>
+                                    <button><input type="radio" name="one"> <span class="fa fa-check"></span></button> 
+                                    <button><input type="radio" name="one"> <span class="fa fa-times"></span></button>
+                                </td>
+                                <td><button class="activebut">Delete</button></td>
                             </tr>
         
                             <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
@@ -150,6 +171,9 @@
                                 <th>Month</th>
                                 <th>Date</th>
                                 <th>Tasks</th>
+                                <th>Staff</th>
+                                <th>Course Rep</th>
+                                <th>Admin</th>
                                 <th>Delete</th>
                             </tr>
         
@@ -157,17 +181,35 @@
                                 <td class="nav-content collapse" id="addmtasks"><input type="month"></td>
                                 <td class="nav-content collapse" id="addmtasks"><input type="date"></td>
                                 <td class="nav-content collapse taskstab" id="addmtasks"><span class="fa fa-circle"></span> <input type="text"></td>
-                                <td class="nav-content collapse" id="addmtasks"><button>Save</button></td>
+                                <td class="nav-content collapse" id="addmtasks"><input type="checkbox" name="check"></td>
+                                <td class="nav-content collapse" id="addmtasks"><input type="checkbox" name="check"></td>
+                                <td class="nav-content collapse" id="addmtasks"><input type="checkbox" name="check"></td>
+                                <td class="nav-content collapse" id="addmtasks"><button class="activebut">Save</button></td>
                             </tr>
         
                             <tr>
                                 <td>January</td>
                                 <td>22/05/23</td>
                                 <td class="taskstab"><span class="fa fa-circle"></span> 1st Test</td>
-                                <td><button>Delete</button></td>
+                                <td>
+                                    <button><input type="radio" name="one"> <span class="fa fa-check"></span></button> 
+                                    <button><input type="radio" name="one"> <span class="fa fa-times"></span></button>
+                                </td>
+                                <td>
+                                    <button><input type="radio" name="one"> <span class="fa fa-check"></span></button> 
+                                    <button><input type="radio" name="one"> <span class="fa fa-times"></span></button>
+                                </td>
+                                <td>
+                                    <button><input type="radio" name="one"> <span class="fa fa-check"></span></button> 
+                                    <button><input type="radio" name="one"> <span class="fa fa-times"></span></button>
+                                </td>
+                                <td><button class="activebut">Delete</button></td>
                             </tr>
         
                             <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
@@ -190,6 +232,9 @@
                                 <th>Session</th>
                                 <th>Date</th>
                                 <th>Tasks</th>
+                                <th>Staff</th>
+                                <th>Course Rep</th>
+                                <th>Admin</th>
                                 <th>Delete </th>
                             </tr>
         
@@ -197,7 +242,10 @@
                                 <td class="nav-content collapse" id="addgtasks"><input type="month"></td>
                                 <td class="nav-content collapse" id="addgtasks"><input type="date"></td>
                                 <td class="nav-content collapse taskstab" id="addgtasks"><span class="fa fa-circle"></span> <input type="text"></td>
-                                <td class="nav-content collapse" id="addgtasks"><button>Save</button></td>
+                                <td class="nav-content collapse" id="addgtasks"><input type="checkbox" name="check"></td>
+                                <td class="nav-content collapse" id="addgtasks"><input type="checkbox" name="check"></td>
+                                <td class="nav-content collapse" id="addgtasks"><input type="checkbox" name="check"></td>
+                                <td class="nav-content collapse" id="addgtasks"><button class="activebut">Save</button></td>
                             </tr>
         
         
@@ -205,10 +253,25 @@
                                 <td>2023-2024</td>
                                 <td>22/05/23</td>
                                 <td class="taskstab"><span class="fa fa-circle"></span> Completed Curriculum</td>
-                                <td><button>Delete</button></td>
+                                <td>
+                                    <button><input type="radio" name="one"> <span class="fa fa-check"></span></button> 
+                                    <button><input type="radio" name="one"> <span class="fa fa-times"></span></button>
+                                </td>
+                                <td>
+                                    <button><input type="radio" name="one"> -</span></button> 
+                                    <button><input type="radio" name="one"> -</button>
+                                </td>
+                                <td>
+                                    <button><input type="radio" name="one"> <span class="fa fa-check"></span></button> 
+                                    <button><input type="radio" name="one"> <span class="fa fa-times"></span></button>
+                                </td>
+                                <td><button class="activebut">Delete</button></td>
                             </tr>
         
                             <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
@@ -250,33 +313,54 @@
                             
                             
                             <tr>
-                                <th>Week</th>
+                                <th class="week">Week</th>
                                 <th>Date</th>
                                 <th>Time</th>
                                 <th>Venue</th>
                                 <th>Tasks</th>
+                                <th>Staff</th>
+                                <th>Course Rep</th>
+                                <th>Admin</th>
                                 <th>Delete</th>
                             </tr>
         
                             <tr class="tab-content plus" data-bs-target="#wplus" data-bs-parent="#wplus">
-                                <td class="nav-content collapse" id="addtasks"><input type="number"></td>
+                                <td class="nav-content collapse" id="addtasks"><input type="number" class="week"></td>
                                 <td class="nav-content collapse" id="addtasks"><input type="date"></td>
                                 <td class="nav-content collapse" id="addtasks"><input type="text"></td>
                                 <td class="nav-content collapse" id="addtasks"><input type="text"></td>
                                 <td class="nav-content collapse taskstab" id="addtasks"><span class="fa fa-circle"></span> <input type="text"></td>
-                                <td class="nav-content collapse" id="addtasks"><button>Save</button></td>
+                                <td class="nav-content collapse" id="addtasks"><input type="checkbox" name="check"></td>
+                                <td class="nav-content collapse" id="addtasks"><input type="checkbox" name="check"></td>
+                                <td class="nav-content collapse" id="addtasks"><input type="checkbox" name="check"></td>
+                                <td class="nav-content collapse" id="addtasks"><button class="activebut">Save</button></td>
                             </tr>
                             
-                            <tr>
-                                <td>1</td>
+                            <!-- <tr>
+                                <td>1</td> 
                                 <td>22/05/23</td>
                                 <td>12.00pm - 2.30pm</td>
                                 <td>Odili Lecture Hall</td>
                                 <td class="taskstab"><span class="fa fa-circle"></span> RLT 203 Lecture</td>
-                                <td><button>Delete</button></td>
-                            </tr>
+                                <td>
+                                    <button><input type="radio" name="one"> <span class="fa fa-check"></span></button> 
+                                    <button><input type="radio" name="one"> <span class="fa fa-times"></span></button>
+                                </td>
+                                <td>
+                                    <button><input type="radio" name="one"> <span class="fa fa-check"></span></button> 
+                                    <button><input type="radio" name="one"> <span class="fa fa-times"></span></button>
+                                </td>
+                                <td>
+                                    <button><input type="radio" name="one"> <span class="fa fa-check"></span></button> 
+                                    <button><input type="radio" name="one"> <span class="fa fa-times"></span></button>
+                                </td>
+                                <td><button class="activebut">Delete</button></td>
+                            </tr> -->
         
                             <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
@@ -304,6 +388,9 @@
                                 <th>Month</th>
                                 <th>Date</th>
                                 <th>Tasks</th>
+                                <th>Staff</th>
+                                <th>Course Rep</th>
+                                <th>Admin</th>
                                 <th>Delete</th>
                             </tr>
         
@@ -311,17 +398,35 @@
                                 <td class="nav-content collapse" id="addmtasks"><input type="month"></td>
                                 <td class="nav-content collapse" id="addmtasks"><input type="date"></td>
                                 <td class="nav-content collapse taskstab" id="addmtasks"><span class="fa fa-circle"></span> <input type="text"></td>
-                                <td class="nav-content collapse" id="addmtasks"><button>Save</button></td>
+                                <td class="nav-content collapse" id="addmtasks"><input type="checkbox" name="check"></td>
+                                <td class="nav-content collapse" id="addmtasks"><input type="checkbox" name="check"></td>
+                                <td class="nav-content collapse" id="addmtasks"><input type="checkbox" name="check"></td>
+                                <td class="nav-content collapse" id="addmtasks"><button class="activebut">Save</button></td>
                             </tr>
         
-                            <tr>
+                            <!-- <tr>
                                 <td>January</td>
                                 <td>22/05/23</td>
                                 <td class="taskstab"><span class="fa fa-circle"></span> 1st Test</td>
-                                <td><button>Delete</button></td>
-                            </tr>
+                                <td>
+                                    <button><input type="radio" name="one"> <span class="fa fa-check"></span></button> 
+                                    <button><input type="radio" name="one"> <span class="fa fa-times"></span></button>
+                                </td>
+                                <td>
+                                    <button><input type="radio" name="one"> <span class="fa fa-check"></span></button> 
+                                    <button><input type="radio" name="one"> <span class="fa fa-times"></span></button>
+                                </td>
+                                <td>
+                                    <button><input type="radio" name="one"> <span class="fa fa-check"></span></button> 
+                                    <button><input type="radio" name="one"> <span class="fa fa-times"></span></button>
+                                </td>
+                                <td><button class="activebut">Delete</button></td>
+                            </tr> -->
         
                             <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
@@ -344,6 +449,9 @@
                                 <th>Session</th>
                                 <th>Date</th>
                                 <th>Tasks</th>
+                                <th>Staff</th>
+                                <th>Course Rep</th>
+                                <th>Admin</th>
                                 <th>Delete </th>
                             </tr>
         
@@ -351,18 +459,36 @@
                                 <td class="nav-content collapse" id="addgtasks"><input type="month"></td>
                                 <td class="nav-content collapse" id="addgtasks"><input type="date"></td>
                                 <td class="nav-content collapse taskstab" id="addgtasks"><span class="fa fa-circle"></span> <input type="text"></td>
-                                <td class="nav-content collapse" id="addgtasks"><button>Save</button></td>
+                                <td class="nav-content collapse" id="addgtasks"><input type="checkbox" name="check"></td>
+                                <td class="nav-content collapse" id="addgtasks"><input type="checkbox" name="check"></td>
+                                <td class="nav-content collapse" id="addgtasks"><input type="checkbox" name="check"></td>
+                                <td class="nav-content collapse" id="addgtasks"><button class="activebut">Save</button></td>
                             </tr>
         
         
-                            <tr>
+                            <!-- <tr>
                                 <td>2023-2024</td>
                                 <td>22/05/23</td>
                                 <td class="taskstab"><span class="fa fa-circle"></span> Completed Curriculum</td>
-                                <td><button>Delete</button></td>
-                            </tr>
+                                <td>
+                                    <button><input type="radio" name="one"> <span class="fa fa-check"></span></button> 
+                                    <button><input type="radio" name="one"> <span class="fa fa-times"></span></button>
+                                </td>
+                                <td>
+                                    <button><input type="radio" name="one"> -</span></button> 
+                                    <button><input type="radio" name="one"> -</button>
+                                </td>
+                                <td>
+                                    <button><input type="radio" name="one"> <span class="fa fa-check"></span></button> 
+                                    <button><input type="radio" name="one"> <span class="fa fa-times"></span></button>
+                                </td>
+                                <td><button class="activebut">Delete</button></td>
+                            </tr> -->
         
                             <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
